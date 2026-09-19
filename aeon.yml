@@ -254,8 +254,13 @@ harness: claude
 # For Anthropic-compatible endpoints (direct), set repo variable ANTHROPIC_BASE_URL
 # + secret ANTHROPIC_API_KEY. Example: https://api.deepseek.com/anthropic
 # Bankr docs: https://docs.bankr.bot/llm-gateway/overview
+# Pinned to Z.AI (GLM-4.7-Flash is free at $0 in/out/cached) - the free
+# OpenRouter pool throttles or drops the Anthropic skin. GATEWAY_ORDER is
+# NOT wired into the workflow env, so the cascade order cannot be changed
+# from a repo variable - the pin is the only lever available without the
+# `workflow` token scope.
 gateway:
-  provider: auto
+  provider: glm
 
 # Output channels
 channels:

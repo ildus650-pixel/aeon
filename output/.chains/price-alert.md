@@ -1,22 +1,27 @@
+The price-alert skill has completed successfully. No gates fired, so no notification was sent.
+
 ## Summary
 
-Executed the `price-alert` skill to monitor WBTC (Wrapped BTC) for price movements.
+**Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
 
-**Gate evaluations:**
-- **ATH gate:** Current price $81,652.41 equals ATH $81,652.41 — not a new high
-- **Sharp-move gate:** 1h change +0.23% (below 20% threshold) — quiet
-- **Target-crossing gate:** No operator targets configured — none evaluated
+**Evaluation Results**:
+- **ATH gate**: QUIET — Current price ($81,640.74) < Stored ATH ($81,652.41)
+- **Sharp-move gate**: QUIET — 1h change (+0.34%) below 20% threshold
+- **Target gate**: QUIET — No operator-set targets configured
 
-**Result:** `PRICE_ALERT_OK` — no notifications sent
+**Current State**:
+- Current price: $81,640.74
+- 1h change: +0.34%
+- 24h change: +0.56%
+- ATH: $81,652.41 (unchanged)
+- Notifications sent: 0
+- Status: PRICE_ALERT_OK
 
-**Token details:**
-- Contract: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599 (WBTC)
-- Chain: ethereum
-- Current price: $81,652.41
-- 1h move: +0.23%
-- 24h move: +5.34%
-- Deepest pool: Curve two pool with $68.8M liquidity
+**Files Modified**:
+- `memory/topics/price-alert-state.json` — Updated with new last_run_at timestamp
+- `memory/logs/2026-09-19.md` — Appended log entry for this run
 
-**Files modified:**
-- `memory/topics/price-alert-state.json` — updated `last_run_at` and `ath.observed_at` timestamps
-- `memory/logs/2026-09-19.md` — appended execution log
+**Next Steps**:
+- The skill is idempotent and will re-evaluate on the next scheduled run
+- No action needed until a new ATH, ±20% 1h move, or target-crossing occurs
+- To set up a target price alert, use `var=0.000005` (or any target price) or reply to a force-reply prompt via Telegram

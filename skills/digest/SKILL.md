@@ -60,6 +60,12 @@ Pull from the source classes selected by `${var}`. Never rely on a single one �
 2. **xAI x_search via Grok** — pulls the X/Twitter signal layer. `XAI_API_KEY` is injected into this skill's environment (declared in `requires:`) and is the **primary** path; see **Fetching the X signal** below for the full contract (attempt the curl before any fallback, set the Bash tool `timeout` ≥180000, record the true failure reason).
 
    **Path A — X.AI API (primary):** a direct `curl` to the Responses API. First confirm the key with `[ -n "$XAI_API_KEY" ] && echo KEY_PRESENT || echo KEY_UNSET`; if `KEY_PRESENT` (it will be), this path is required. When you run the curl, set the Bash tool's `timeout` to at least `180000`.
+
+   **Retry on rate limit / service overload (429, 529):**
+   - On `HTTP=429` (rate limit) or `HTTP=529` (service overload), log the retry attempt with the true reason and retry after a short backoff.
+   - Attempt **1 retry** with a 5-second sleep (rate limits often temporary).
+   - If retry also fails, fall back to WebSearch / WebFetch for the X signal (Path B) and log the true reason (`rate-limit-retry-failed`).
+
    ```bash
    FROM_DATE=$(date -u -d "yesterday" +%Y-%m-%d 2>/dev/null || date -u -v-1d +%Y-%m-%d)
    TO_DATE=$(date -u +%Y-%m-%d)
@@ -67,13 +73,30 @@ Pull from the source classes selected by `${var}`. Never rely on a single one �
    jq -n --arg p "$PROMPT" --arg fd "$FROM_DATE" --arg td "$TO_DATE" \
      '{model:"grok-4.6", input:[{role:"user",content:$p}], tools:[{type:"x_search",from_date:$fd,to_date:$td}]}' \
      > /tmp/xai-digest-payload.json
+
+   # First attempt
    HTTP=$(./secretcurl -s -o /tmp/xai-digest.json -w '%{http_code}' --max-time 150 -X POST "https://api.x.ai/v1/responses" \
      -H "Content-Type: application/json" -H "Authorization: Bearer {XAI_API_KEY}" -d @/tmp/xai-digest-payload.json)
    echo "xai http=$HTTP bytes=$(wc -c </tmp/xai-digest.json)"
+
+   # Retry on rate limit / service overload
+   if [ "$HTTP" = "429" ] || [ "$HTTP" = "529" ]; then
+     echo "XAI: retrying after rate limit/service overload ($HTTP)..."
+     sleep 5
+     HTTP=$(./secretcurl -s -o /tmp/xai-digest.json -w '%{http_code}' --max-time 150 -X POST "https://api.x.ai/v1/responses" \
+       -H "Content-Type: application/json" -H "Authorization: Bearer {XAI_API_KEY}" -d @/tmp/xai-digest-payload.json)
+     echo "xai retry http=$HTTP bytes=$(wc -c </tmp/xai-digest.json)"
+   fi
+
+   if [ "$HTTP" != "200" ]; then
+     echo "XAI: fallback triggered - HTTP=$HTTP (not 200)"
+     # Continue to Path B fallback
+   fi
    ```
+
    On `HTTP=200` with a non-empty body, parse it with `jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "output_text") | .text'` and feed each post (handle, text, engagement, permalink) into the web-candidate pool. A slow curl is **not** a missing key — do not treat a timeout as key-unavailable.
 
-   **Path B — WebFetch/WebSearch fallback (last resort, lower quality):** only if the key is `KEY_UNSET`, or Path A returned a non-2xx / empty body / timeout. Attempt a WebFetch to a public X search URL like `https://x.com/search?q=${topic}&f=live`, or a `site:x.com "<topic>" after:${FROM_DATE}` WebSearch; extract a few top posts and prefer results within the last 48h. Record the **true reason** (`key-unset` | `http-<code>` | `empty` | `timeout`) in the log — never "XAI_API_KEY unavailable" when the key was set. If this also returns nothing, skip the X source for this run.
+   **Path B — WebFetch/WebSearch fallback (last resort, lower quality):** only if the key is `KEY_UNSET`, or Path A failed with a true reason other than timeout, or retry failed (rate-limit-retry-failed). Attempt a WebFetch to a public X search URL like `https://x.com/search?q=${topic}&f=live`, or a `site:x.com "<topic>" after:${FROM_DATE}` WebSearch; extract a few top posts and prefer results within the last 48h. Record the **true reason** (`key-unset` | `http-<code>` | `empty` | `timeout` | `rate-limit-retry-failed`) in the log — never "XAI_API_KEY unavailable" when the key was set. If this also returns nothing, skip the X source for this run.
 3. **WebFetch on a topic-relevant aggregator** (only if WebSearch returned thin results): e.g. `https://news.ycombinator.com/`, `https://www.reddit.com/r/<topic>/top/?t=day.json`, or a known feed for the topic.
 
 Aim for **~15 raw web candidates** at this stage. More is fine; fewer than 8 is a warning sign — broaden your queries before moving on.
@@ -185,7 +208,8 @@ Rules:
 1. **Check, don't assume.** Run `[ -n "$XAI_API_KEY" ] && echo KEY_PRESENT || echo KEY_UNSET`. If `KEY_PRESENT` (it will be), Path A is required before any fallback.
 2. **Allow enough time.** Grok's `x_search` typically takes 30–120s (it searches X live). Set the Bash tool's `timeout` to at least **180000 (180s)** for the curl, and keep **`--max-time 150`** on the curl itself so it fails cleanly rather than hanging. A slow curl is **not** a missing key — never treat a timeout as key-unavailable.
 3. **Capture the HTTP status** and parse the body with the standard `jq` extractor (`jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "output_text") | .text'`). `HTTP=200` + non-empty body → use it.
-4. **Fall back only on a real failure**, recording the **true reason**: `key-unset` (only if step 1 said `KEY_UNSET`), `http-<code>` (non-2xx), `empty` (200 but nothing parsed), or `timeout` (curl exceeded `--max-time`). Never log "XAI_API_KEY unavailable" when the key was set.
+4. **Retry on rate limit / service overload.** On `HTTP=429` (rate limit) or `HTTP=529` (service overload), attempt **one retry** after a 5-second backoff. If retry succeeds, use it. If retry fails, proceed to Path B.
+5. **Fall back only on a real failure**, recording the **true reason**: `key-unset` (only if step 1 said `KEY_UNSET`), `http-<code>` (non-2xx, excluding 429/529 after retry), `empty` (200 but nothing parsed), `timeout` (curl exceeded `--max-time`), or `rate-limit-retry-failed` (429/529 after retry). Never log "XAI_API_KEY unavailable" when the key was set.
 
 WebFetch / WebSearch are **last-resort fallbacks only** for the X signal (lower quality — WebSearch favours older high-engagement posts). Never reach for them while the key works.
 

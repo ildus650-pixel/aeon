@@ -79,7 +79,7 @@ jobs:
           done
           exit "$missing"
       - name: eyebrow verify (drift / rug-pull gate)
-        uses: alexverify/eyebrow/action@b2cebcb8bdd555b5f64ba9bf43a4c7bbb59b112b # v0.4.2
+        uses: alexverify/eyebrow/action@3618f9a268e324227d91bc4c42cf7f988807a7ab # v0.4.7
         with:
           version: v0.4.2
           path: .

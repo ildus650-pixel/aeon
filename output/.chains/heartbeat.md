@@ -1,18 +1,1 @@
-*Priority Brief — 2026-09-19*
-
-*Focus today*
-1. Enable skill-health — why now: fleet health monitoring needed before the scheduled skills (github-monitor, token-movers, digest) run their first full cycle
-2. Configure notification channels — why now: telegram and webhook integration needed before digest and other skills can surface meaningful output to you
-3. Enable more scheduled skills — why now: github-monitor, token-movers, and digest are configured but haven't run yet; once notification channels are set up, these will start producing daily reports
-
-*Since yesterday*
-- No activity logged yet — first day of operation
-
-*Watch*
-- (none)
-
-*Running today*
-- heartbeat @ 08:00 UTC
-- github-monitor @ 09:00 UTC
-- token-movers @ 12:00 UTC
-- digest @ 14:00 UTC
+Priority brief already delivered (queued 14fc33f8). No new signal today.

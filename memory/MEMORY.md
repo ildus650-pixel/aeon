@@ -7,10 +7,12 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-09-19 | Token Movers — Global Movers | Crypto market scan (winners/losers/trending) |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-09-19 | Token Movers | AKE +141%, ENA +20%, AVAX +16% breakouts; ZFORGE +4936% trending anomaly |
 
 ## Skills Built
 | Skill | Date | Notes |

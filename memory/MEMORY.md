@@ -23,3 +23,12 @@
 ## Next Priorities
 - Configure notification channels (Telegram, Discord, or Slack)
 - Run first digest
+
+## Tracked Token
+| Token | Contract | Chain |
+|-------|----------|-------|
+| BTC (Wrapped BTC, WBTC) | 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599 | ethereum |
+
+_Deepest DexScreener pool for this contract: ~$68.8M liquidity (verified 2026-09-19).
+price-alert resolves the tracked token from this table; an empty or malformed row
+makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._

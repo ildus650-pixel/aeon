@@ -1,27 +1,26 @@
-The price-alert skill has completed successfully. No gates fired, so no notification was sent.
-
 ## Summary
 
-**Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+**Skill**: price-alert
 
-**Evaluation Results**:
-- **ATH gate**: QUIET — Current price ($81,640.74) < Stored ATH ($81,652.41)
-- **Sharp-move gate**: QUIET — 1h change (+0.34%) below 20% threshold
-- **Target gate**: QUIET — No operator-set targets configured
+**Execution Summary**:
+- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
+- **Current Price**: $80,998.80
+- **ATH**: $81,652.41 (observed 2026-09-19 07:18 UTC, announced 2026-09-19 00:00 UTC) [UNCHANGED]
+- **1h Change**: ±0.0% (H1 data null)
+- **24h Change**: ±-0.11%
 
-**Current State**:
-- Current price: $81,640.74
-- 1h change: +0.34%
-- 24h change: +0.56%
-- ATH: $81,652.41 (unchanged)
-- Notifications sent: 0
-- Status: PRICE_ALERT_OK
+**Gate Evaluations**:
+1. **ATH gate**: No new ATH (current price below stored ATH)
+2. **Sharp-move gate**: No sharp move (abs(H1) < 20%)
+3. **Target gate**: No targets configured
+
+**Results**:
+- **Status**: PRICE_ALERT_OK
+- **Notifications sent**: 0
+- **Target evaluations**: [] → []
+
+No price-alert signals fired — WBTC is in a quiet period, consolidating around $81K after its ATH earlier today.
 
 **Files Modified**:
-- `memory/topics/price-alert-state.json` — Updated with new last_run_at timestamp
-- `memory/logs/2026-09-19.md` — Appended log entry for this run
-
-**Next Steps**:
-- The skill is idempotent and will re-evaluate on the next scheduled run
-- No action needed until a new ATH, ±20% 1h move, or target-crossing occurs
-- To set up a target price alert, use `var=0.000005` (or any target price) or reply to a force-reply prompt via Telegram
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to 2026-09-19T19:00:00Z
+- `memory/logs/2026-09-19.md` — added price-alert log entry

@@ -1,0 +1,8 @@
+{
+  "digest": {
+    "last_repair_at": "2026-09-19T22:33:44Z",
+    "exit_code": "REPAIR_OK_FIXED",
+    "fix_pr": "https://github.com/ildus650-pixel/aeon/pull/10",
+    "issue": "digest-429"
+  }
+}

@@ -1,0 +1,50 @@
+---
+id: DIGEST-429
+title: Digest skill failing with API rate limit errors (429, 529)
+severity: high
+category: rate-limit
+detected: 2026-09-19T20:49:35Z
+affected_skills:
+  - digest
+status: fix-pending
+fix_pr: https://github.com/ildus650-pixel/aeon/pull/10
+---
+
+## Symptom
+The digest skill has failed 3 consecutive runs with API gateway errors:
+- 15:48 UTC: 429 (rate limit reached for requests)
+- 18:14 UTC: 529 (service temporarily overloaded)
+- 20:49 UTC: 429 (rate limit reached for requests)
+
+All failures occur very early in execution (1-2 API turns), indicating the upstream API gateway is hitting rate limits or service overload.
+
+## Diagnosis
+The root cause is upstream API gateway rate limits and service overload from Z.AI/Anthropic-compatible endpoint. The skill itself is correctly structured, but it lacks resilience to transient rate-limit errors (429) and service overload (529).
+
+**Error patterns:**
+- Failure 1: 429 with 2 API turns
+- Failure 2: 529 with 13 API turns
+- Failure 3: 429 with 1 API turn
+
+**Consistency:** All failures show the skill is not handling transient rate limit errors, which often resolve after a short backoff.
+
+## Root cause
+The xAI Grok x_search integration retries only on timeout. When the upstream API gateway returns 429 (rate limit) or 529 (service overload), the skill immediately falls back or fails instead of attempting a short retry. These errors are often temporary and resolve within seconds.
+
+## Fix
+Added retry logic for rate limit / service overload errors (HTTP 429, 529):
+- On first attempt, try to fetch X signal via xAI API as documented.
+- If HTTP=429 or HTTP=529 is returned, log the retry attempt and sleep 5 seconds.
+- Retry the same request once.
+- If retry fails, proceed to WebFetch/WebSearch fallback (Path B) and log the true reason as `rate-limit-retry-failed`.
+
+## Repair Attempt
+**Date:** 2026-09-19
+
+**Root cause:** No retry logic for API 429/529 errors; immediate fallback causes more failures.
+
+**Fix applied:** Added 5-second backoff retry for 429/529 errors, with fallback to Path B on retry failure.
+
+**Risk:** LOW (comment-only changes, retry logic is transparent to end user, no output changes).
+
+**Verification:** Manual trigger with `skill=digest` expected to show retry log entries for 429/529 errors and use retried response when available.

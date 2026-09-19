@@ -21,6 +21,10 @@
 ## Lessons Learned
 - Digest format: Markdown with clickable links, under 4000 chars
 - Always save files AND commit before logging
+- Use `skill-repair` for systematic troubleshooting: Preflight → Triage → Diagnose → Repair → Verify → Log
+
+## Issues Fixed (skill-repair)
+- **digest-429** (2026-09-19): Added retry logic for API rate limit / service overload (429, 529) errors with 5-second backoff; digest now survives transient gateway errors instead of failing immediately
 
 ## Next Priorities
 - Configure notification channels (Telegram, Discord, or Slack)

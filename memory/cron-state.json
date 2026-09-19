@@ -45,6 +45,13 @@
   },
   "digest": {
     "last_dispatch": "2026-09-19T15:48:40Z",
-    "last_status": "dispatched"
+    "last_status": "failed",
+    "last_failed": "2026-09-19T15:52:23Z",
+    "total_runs": 1,
+    "total_successes": 0,
+    "total_failures": 1,
+    "consecutive_failures": 1,
+    "success_rate": 0,
+    "last_error": "\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"glm-4.7-flash\":{\"inputTokens\":1207,\"outp"
   }
 }

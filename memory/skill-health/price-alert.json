@@ -1,10 +1,10 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-09-20T05:17:27Z",
-  "quality_score": 4,
-  "assessment": "Substantive and well-structured - provides verifiable gate evaluations, clear status tracking, and substantive summary. Aligns with strategy's priorities for correct, depth-first work and early signal.",
+  "last_analyzed": "2026-09-20T13:56:55Z",
+  "quality_score": 3,
+  "assessment": "Acceptable execution of price-alert skill for WBTC",
   "flags": [],
-  "avg_score": 4.13,
+  "avg_score": 4,
   "history": [
     {
       "date": "2026-09-19",
@@ -52,6 +52,12 @@
       "date": "2026-09-20",
       "score": 4,
       "ts": "2026-09-20T05:17:27Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-20",
+      "score": 3,
+      "ts": "2026-09-20T13:56:55Z",
       "harness": "claude"
     }
   ]

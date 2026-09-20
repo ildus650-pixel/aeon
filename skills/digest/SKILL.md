@@ -67,13 +67,33 @@ Pull from the source classes selected by `${var}`. Never rely on a single one �
    jq -n --arg p "$PROMPT" --arg fd "$FROM_DATE" --arg td "$TO_DATE" \
      '{model:"grok-4.6", input:[{role:"user",content:$p}], tools:[{type:"x_search",from_date:$fd,to_date:$td}]}' \
      > /tmp/xai-digest-payload.json
-   HTTP=$(./secretcurl -s -o /tmp/xai-digest.json -w '%{http_code}' --max-time 150 -X POST "https://api.x.ai/v1/responses" \
-     -H "Content-Type: application/json" -H "Authorization: Bearer {XAI_API_KEY}" -d @/tmp/xai-digest-payload.json)
-   echo "xai http=$HTTP bytes=$(wc -c </tmp/xai-digest.json)"
-   ```
-   On `HTTP=200` with a non-empty body, parse it with `jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "output_text") | .text'` and feed each post (handle, text, engagement, permalink) into the web-candidate pool. A slow curl is **not** a missing key — do not treat a timeout as key-unavailable.
 
-   **Path B — WebFetch/WebSearch fallback (last resort, lower quality):** only if the key is `KEY_UNSET`, or Path A returned a non-2xx / empty body / timeout. Attempt a WebFetch to a public X search URL like `https://x.com/search?q=${topic}&f=live`, or a `site:x.com "<topic>" after:${FROM_DATE}` WebSearch; extract a few top posts and prefer results within the last 48h. Record the **true reason** (`key-unset` | `http-<code>` | `empty` | `timeout`) in the log — never "XAI_API_KEY unavailable" when the key was set. If this also returns nothing, skip the X source for this run.
+   # Retry for rate limit (429) and service overload (529)
+   RETRY_COUNT=0
+   MAX_RETRIES=1
+   while [ $RETRY_COUNT -le $MAX_RETRIES ]; do
+     HTTP=$(./secretcurl -s -o /tmp/xai-digest.json -w '%{http_code}' --max-time 150 -X POST "https://api.x.ai/v1/responses" \
+       -H "Content-Type: application/json" -H "Authorization: Bearer {XAI_API_KEY}" -d @/tmp/xai-digest-payload.json)
+
+     echo "xai http=$HTTP bytes=$(wc -c </tmp/xai-digest.json)"
+
+     # If 429 or 529 and we have retries left, wait and retry
+     if [ "$HTTP" = "429" ] || [ "$HTTP" = "529" ]; then
+       if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+         echo "xai rate-limit detected (HTTP $HTTP), retrying after 5s..."
+         sleep 5
+         RETRY_COUNT=$((RETRY_COUNT + 1))
+         continue
+       else
+         break
+       fi
+     fi
+     break
+   done
+   ```
+   On `HTTP=200` with a non-empty body, parse it with `jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "output_text") | .text'` and feed each post (handle, text, engagement, permalink) into the web-candidate pool. A slow curl is **not** a missing key — do not treat a timeout as key-unavailable. If retry exhausted and HTTP is 429/529, fall back to Path B.
+
+   **Path B — WebFetch/WebSearch fallback (last resort, lower quality):** only if the key is `KEY_UNSET`, or Path A returned a non-2xx / empty body / timeout. Attempt a WebFetch to a public X search URL like `https://x.com/search?q=${topic}&f=live`, or a `site:x.com "<topic>" after:${FROM_DATE}` WebSearch; extract a few top posts and prefer results within the last 48h. Record the **true reason** (`key-unset` | `http-<code>` | `empty` | `timeout` | `rate-limit-exhausted`) in the log — never "XAI_API_KEY unavailable" when the key was set. If this also returns nothing, skip the X source for this run.
 3. **WebFetch on a topic-relevant aggregator** (only if WebSearch returned thin results): e.g. `https://news.ycombinator.com/`, `https://www.reddit.com/r/<topic>/top/?t=day.json`, or a known feed for the topic.
 
 Aim for **~15 raw web candidates** at this stage. More is fine; fewer than 8 is a warning sign — broaden your queries before moving on.
@@ -133,6 +153,8 @@ _TL;DR: <one sentence covering the day's gravity. Concrete, no adjectives.>_
 - Total length: **≤3000 chars** (the old 4000 was too loose — discipline forces cuts).
 - Every item: title + summary + link. Include a "Why it matters" line whenever you can state a concrete consequence (price impact, user-facing change, upstream dependency, deadline, precedent). If you can't write one without hand-waving, **omit the line** — do not replace it with filler like "this could be significant" or "watch this space".
 - On thin-news days where fewer than 3 items clear the bar: log `DIGEST_FETCH_EMPTY` (or `DIGEST_THIN` if 1–2 items survived) in the run log and **skip the notification** rather than padding.
+
+**Retry behavior:** On HTTP 429 or 529 errors from xAI API, the skill will retry once after a 5-second backoff. If the retry also fails with these codes, it falls back to WebFetch/WebSearch for X signal, logging the reason as `rate-limit-exhausted`. If X signal ultimately unavailable, the skill continues with web + RSS sources, logging the reason in run notes.
 
 **Alternate RSS layout (RSS-only runs):** when `sources = rss`, you may instead group items by feed name if that reads better than a single ranked list — this preserves the original RSS-digest presentation:
 

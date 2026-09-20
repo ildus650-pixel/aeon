@@ -54,14 +54,14 @@
   },
   "digest": {
     "last_dispatch": "2026-09-20T13:49:12Z",
-    "last_status": "dispatched",
-    "last_failed": "2026-09-20T05:16:13Z",
-    "total_runs": 4,
+    "last_status": "failed",
+    "last_failed": "2026-09-20T13:54:17Z",
+    "total_runs": 5,
     "total_successes": 0,
-    "total_failures": 4,
-    "consecutive_failures": 4,
+    "total_failures": 5,
+    "consecutive_failures": 5,
     "success_rate": 0,
-    "last_error": "kens\":5699,\"outputTokens\":528,\"cacheReadInputTokens\":49782,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.066586,\"contextWindow\":200000,\"maxOutputTokens\":32000}},\"permission_denials\":["
+    "last_error": "/tmp/xai-digest-payload.json && HTTP=$(./secretcurl -s -o /tmp/xai-digest.json -w '%{http_code}' --max-time 150 -X POST \\\"https://api.x.ai/v1/responses\\\" -H \\\"Content-Type: application/json\\\" -H \\\"Aut"
   },
   "skill-repair": {
     "last_dispatch": "2026-09-20T13:49:12Z",

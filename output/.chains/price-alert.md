@@ -1,41 +1,35 @@
 ## Summary
 
-Successfully executed the **price-alert** skill for WBTC (Wrapped Bitcoin) on Ethereum.
+**Skill execution complete: price-alert**
 
-### What I did:
+### What was done
 
-1. **Parsed var** — Empty var, so MODE=execute with no targets
-2. **Resolved tracked token** — WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
-3. **Fetched current price** — $80,520.58 from USDT pair (highest liquidity pool)
-4. **Evaluated alert gates**:
-   - **ATH gate**: No alert (price $80,520.58 < ATH $81,652.41)
-   - **Sharp-move gate**: No alert (1h: +0.2% < ±20% threshold)
+1. **Parsed var** — No var provided (MODE=execute, TARGETS=())
+
+2. **Resolved tracked token** — WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
+
+3. **Fetched current price** — From DexScreener API
+   - Current price: $80,807.71
+   - 1h change: -0.37%
+   - 24h change: -0.31%
+   - Deepest pool: Uniswap V3 (0x4585FE77225b41b697C938B018E2Ac67Ac5a20c0)
+
+4. **Evaluated gates**
+   - **ATH gate**: No new ATH (price $80,807.71 < ATH $81,652.41)
+   - **Sharp-move gate**: No sharp move (| -0.37% | < 20%)
    - **Target-crossing gate**: No targets configured
-5. **Updated state** — Advanced `last_run_at` timestamp
-6. **Logged run** — Appended entry to `memory/logs/2026-09-20.md`
 
-### Files modified:
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
-- `memory/logs/2026-09-20.md` — Added new alert run log
+5. **Updated state** — Persisted new last_run_at timestamp to `memory/topics/price-alert-state.json`
 
-### Notifications sent: 0
+6. **Validated state** — JSON structure verified with jq
 
-The token is trading calmly — no new all-time highs, no sharp 1h moves, and no target levels configured. Price is down 0.87% over 24h and up 0.2% over 1h.
+7. **Logged run** — Appended entry to `memory/logs/2026-09-20.md`
 
-## Summary (final)
+### Files modified
 
-### What I did:
-1. **Parsed var** — Empty var, so MODE=execute with no targets
-2. **Resolved tracked token** — WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
-3. **Fetched current price** — $80,520.58 from USDT pair (highest liquidity pool)
-4. **Evaluated alert gates** — No alerts fired (ATH, sharp-move, or targets)
-5. **Updated state** — Advanced `last_run_at` timestamp
-6. **Logged run** — Appended entry to `memory/logs/2026-09-20.md`
+- `memory/topics/price-alert-state.json` — Updated last_run_at timestamp
+- `memory/logs/2026-09-20.md` — Added price-alert run entry
 
-### Files modified:
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
-- `memory/logs/2026-09-20.md` — Added new alert run log
+### Status: PRICE_ALERT_OK
 
-### Notifications sent: 0
-
-The skill completed cleanly with **PRICE_ALERT_OK** status. WBTC is trading calmly with no new all-time highs, no sharp 1h moves (only +0.2%), and no target levels configured.
+No gates fired; no notifications sent. The token price is below ATH and moving quietly (±0.4% over 24h).

@@ -1,17 +1,24 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-09-19T16:06:20Z",
-  "quality_score": 2,
-  "assessment": "Minimal interactive prompt without substantive work",
+  "last_analyzed": "2026-09-20T19:40:48Z",
+  "quality_score": 1,
+  "assessment": "Placeholder prompt without substantive result",
   "flags": [
+    "empty_output",
     "generic_content"
   ],
-  "avg_score": 2,
+  "avg_score": 1.5,
   "history": [
     {
       "date": "2026-09-19",
       "score": 2,
       "ts": "2026-09-19T16:06:20Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-20",
+      "score": 1,
+      "ts": "2026-09-20T19:40:48Z",
       "harness": "claude"
     }
   ]

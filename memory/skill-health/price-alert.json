@@ -1,10 +1,10 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-09-20T00:24:50Z",
+  "last_analyzed": "2026-09-20T05:17:27Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured price alert output with verifiable data on WBTC. Tracks key metrics (price, 24h/1h change, deepest pool) and gate evaluations cleanly. No flags - this is specific, actionable monitoring output.",
+  "assessment": "Substantive and well-structured - provides verifiable gate evaluations, clear status tracking, and substantive summary. Aligns with strategy's priorities for correct, depth-first work and early signal.",
   "flags": [],
-  "avg_score": 4.14,
+  "avg_score": 4.13,
   "history": [
     {
       "date": "2026-09-19",
@@ -46,6 +46,12 @@
       "date": "2026-09-20",
       "score": 4,
       "ts": "2026-09-20T00:24:50Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-20",
+      "score": 4,
+      "ts": "2026-09-20T05:17:27Z",
       "harness": "claude"
     }
   ]

@@ -73,6 +73,18 @@ Pull from the source classes selected by `${var}`. Never rely on a single one �
    ```
    On `HTTP=200` with a non-empty body, parse it with `jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "output_text") | .text'` and feed each post (handle, text, engagement, permalink) into the web-candidate pool. A slow curl is **not** a missing key — do not treat a timeout as key-unavailable.
 
+   **Retry on rate limit / service overload:** if `HTTP=429` or `HTTP=529`, wait 5 seconds and retry once before falling back:
+   ```bash
+   if [ "$HTTP" = "429" ] || [ "$HTTP" = "529" ]; then
+     echo "xai rate-limit detected, retrying after 5s..."
+     sleep 5
+     HTTP=$(./secretcurl -s -o /tmp/xai-digest.json -w '%{http_code}' --max-time 150 -X POST "https://api.x.ai/v1/responses" \
+       -H "Content-Type: application/json" -H "Authorization: Bearer {XAI_API_KEY}" -d @/tmp/xai-digest-payload.json)
+     echo "xai retry http=$HTTP bytes=$(wc -c </tmp/xai-digest.json)"
+   fi
+   ```
+   After retry, continue with the same parsing logic. If retry also returns 429/529 or fails, proceed to Path B fallback.
+
    **Path B — WebFetch/WebSearch fallback (last resort, lower quality):** only if the key is `KEY_UNSET`, or Path A returned a non-2xx / empty body / timeout. Attempt a WebFetch to a public X search URL like `https://x.com/search?q=${topic}&f=live`, or a `site:x.com "<topic>" after:${FROM_DATE}` WebSearch; extract a few top posts and prefer results within the last 48h. Record the **true reason** (`key-unset` | `http-<code>` | `empty` | `timeout`) in the log — never "XAI_API_KEY unavailable" when the key was set. If this also returns nothing, skip the X source for this run.
 3. **WebFetch on a topic-relevant aggregator** (only if WebSearch returned thin results): e.g. `https://news.ycombinator.com/`, `https://www.reddit.com/r/<topic>/top/?t=day.json`, or a known feed for the topic.
 

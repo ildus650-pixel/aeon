@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-09-21T07:14:13Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-21T14:18:42Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-19T18:21:04Z",
     "total_runs": 15,
     "total_successes": 7,
@@ -12,7 +12,7 @@
     "last_error": "vice_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"glm-4.7-flash\":{\"inputTokens\""
   },
   "price-alert": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-09-20T23:39:09Z",
     "total_runs": 17,
     "total_successes": 11,
@@ -20,7 +20,7 @@
     "consecutive_failures": 2,
     "success_rate": 0.65,
     "last_quality_score": 4,
-    "last_dispatch": "2026-09-21T07:14:13Z",
+    "last_dispatch": "2026-09-21T14:18:42Z",
     "last_failed": "2026-09-21T07:17:54Z",
     "last_error": "501dad\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
@@ -29,8 +29,8 @@
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-09-20T09:50:04Z",
-    "last_status": "success",
+    "last_dispatch": "2026-09-21T14:18:42Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-20T09:57:13Z",
     "total_runs": 2,
     "total_successes": 2,
@@ -40,8 +40,8 @@
     "last_quality_score": 4
   },
   "token-movers": {
-    "last_dispatch": "2026-09-20T19:25:38Z",
-    "last_status": "success",
+    "last_dispatch": "2026-09-21T14:18:42Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-20T19:43:55Z",
     "total_runs": 4,
     "total_successes": 2,
@@ -53,8 +53,8 @@
     "last_error": "error: harness run exceeded --timeout 1800s "
   },
   "digest": {
-    "last_dispatch": "2026-09-21T07:14:13Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-21T14:18:42Z",
+    "last_status": "dispatched",
     "last_failed": "2026-09-21T07:22:29Z",
     "total_runs": 7,
     "total_successes": 0,
@@ -64,8 +64,8 @@
     "last_error": "okens\":895,\"cacheReadInputTokens\":110676,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.11915300000000001,\"contextWindow\":200000,\"maxOutputTokens\":32000}},\"permission_denials\":[{\"tool_"
   },
   "skill-repair": {
-    "last_dispatch": "2026-09-21T07:14:13Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-21T14:18:42Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-20T23:48:12Z",
     "total_runs": 10,
     "total_successes": 3,

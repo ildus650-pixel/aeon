@@ -1,0 +1,1 @@
+*skill-repair — REPAIR_OK_SYSTEMIC*\nTarget: digest\nRoot cause: xAI API HTTP 529 (service overloaded) — no retry logic\nFix: Added retry logic for HTTP 429/529 with 5-second backoff (risk: LOW)\nPR: https://github.com/ildus650-pixel/aeon/pull/11  Issue: ISS-9\nVerify: workflow_dispatch skill=digest

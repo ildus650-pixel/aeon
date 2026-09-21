@@ -54,14 +54,14 @@
   },
   "digest": {
     "last_dispatch": "2026-09-21T14:18:42Z",
-    "last_status": "dispatched",
-    "last_failed": "2026-09-21T07:22:29Z",
-    "total_runs": 7,
+    "last_status": "failed",
+    "last_failed": "2026-09-21T14:22:43Z",
+    "total_runs": 8,
     "total_successes": 0,
-    "total_failures": 7,
-    "consecutive_failures": 7,
+    "total_failures": 8,
+    "consecutive_failures": 8,
     "success_rate": 0,
-    "last_error": "okens\":895,\"cacheReadInputTokens\":110676,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.11915300000000001,\"contextWindow\":200000,\"maxOutputTokens\":32000}},\"permission_denials\":[{\"tool_"
+    "last_error": "aee0ae\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "skill-repair": {
     "last_dispatch": "2026-09-21T14:18:42Z",

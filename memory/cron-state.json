@@ -66,8 +66,8 @@
     "last_quality_score": 4
   },
   "skill-repair": {
-    "last_dispatch": "2026-09-21T22:49:31Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-22T01:20:47Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-21T19:47:57Z",
     "total_runs": 13,
     "total_successes": 4,

@@ -41,16 +41,16 @@
   },
   "token-movers": {
     "last_dispatch": "2026-09-22T19:57:35Z",
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-09-21T19:37:58Z",
-    "total_runs": 7,
+    "total_runs": 8,
     "total_successes": 3,
-    "total_failures": 4,
-    "consecutive_failures": 1,
-    "success_rate": 0.43,
+    "total_failures": 5,
+    "consecutive_failures": 2,
+    "success_rate": 0.38,
     "last_quality_score": 2,
-    "last_failed": "2026-09-22T16:53:51Z",
-    "last_error": "cf2ae0\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
+    "last_failed": "2026-09-22T20:01:29Z",
+    "last_error": "cg-demo-api-key: {COINGECKO_API_KEY}\\\") && echo \\\"Using demo key: set\\\" || echo \\\"No key: keyless\\\"\\n./secretcurl -s \\\"${CG_HDR[@]}\\\" \\\"https://api.coingecko.com/api/v3/search/trending\\\" > /tmp/coinge"
   },
   "digest": {
     "last_dispatch": "2026-09-22T19:57:35Z",

@@ -94,10 +94,10 @@ d. **Recent failed runs (last 5, not just 1)**:
 
    ```bash
    gh run list --workflow=aeon.yml --limit 50 --json databaseId,name,conclusion,createdAt \
-     | jq -r '[.[] | select(.name | contains("{name}")) | select(.conclusion=="failure")] | .[0:5]'
+     | jq -r '[.[] | select(.name | contains("{name}")) | select(.conclusion=="failure")] | .[0:5] | .[].databaseId'
    ```
 
-   For each, prefer `gh run view "$RUN_ID" --log-failed` (already filtered to failed steps) over the full log; fall back to `gh run view "$RUN_ID" --log` only if `--log-failed` returns nothing. Then:
+   For each, prefer `gh run view "$RUN_ID" --log-failed --log --max-log-lines 500` (already filtered to failed steps) over the full log; fall back to `gh run view "$RUN_ID" --log` only if `--log-failed` returns nothing. Then:
 
    ```bash
    gh api "repos/{owner}/{repo}/actions/runs/$RUN_ID/check-runs" \

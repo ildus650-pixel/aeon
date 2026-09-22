@@ -1,0 +1,8 @@
+{
+  "price-alert": {
+    "last_repair_at": "2026-09-22T19:58:00Z",
+    "exit_code": "REPAIR_OK_SYSTEMIC",
+    "fix_pr": "https://github.com/ildus650-pixel/aeon/pull/15",
+    "issue": "ISS-8"
+  }
+}

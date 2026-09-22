@@ -39,6 +39,24 @@ The skill makes frequent DexScreener API calls without sufficient delay between 
 
 **If still failing:** Increase backoff to 1-2 seconds or implement exponential backoff.
 
+## Repair attempt 2 — 2026-09-22 (skill-repair diagnosis fix)
+
+**Diagnosis:** The price-alert skill itself completed successfully (PRICE_ALERT_OK), but skill-repair failed when trying to diagnose it, consuming 25454+ input tokens with GLM-4.7 flash.
+
+**Root cause:** skill-repair's diagnosis phase fetches 5 failed runs and full logs, causing token exhaustion.
+
+**Fix applied:** Reduced diagnosis verbosity:
+- Limit failed runs from 5 to 3
+- Add `--max-log-lines 500` to log fetch commands
+
+**PR:** https://github.com/ildus650-pixel/aeon/pull/15 (updated with both fixes)
+
+**Verification plan:**
+1. Run skill-repair with `var=price-alert` to verify diagnosis completes without token exhaustion
+2. Confirm diagnosis uses < 5000 input tokens
+
+**If still failing:** Increase `--max-log-lines` to 300 or reduce runs to 2.
+
 ## Source status
 
 cron_state=ok | issues_index=ok | gh_runs=ok | gh_logs=ok | git_log=ok | check_runs=ok

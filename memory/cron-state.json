@@ -67,15 +67,15 @@
   },
   "skill-repair": {
     "last_dispatch": "2026-09-22T06:28:24Z",
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-09-22T01:38:09Z",
-    "total_runs": 14,
+    "total_runs": 15,
     "total_successes": 5,
-    "total_failures": 9,
-    "consecutive_failures": 0,
-    "success_rate": 0.36,
+    "total_failures": 10,
+    "consecutive_failures": 1,
+    "success_rate": 0.33,
     "last_quality_score": 4,
-    "last_failed": "2026-09-21T22:53:36Z",
-    "last_error": "459fe0\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
+    "last_failed": "2026-09-22T06:35:00Z",
+    "last_error": "ebSearchRequests\":0,\"costUSD\":0.2259105,\"contextWindow\":200000,\"maxOutputTokens\":32000}},\"permission_denials\":[{\"tool_name\":\"Bash\",\"tool_use_id\":\"call_7a3c9c61b8514ea8ad164f38\",\"tool_input\":{\"command\""
   }
 }

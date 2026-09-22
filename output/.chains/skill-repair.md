@@ -1,7 +1,7 @@
-skill-repair — REPAIR_DIAGNOSED_NO_FIX
+skill-repair — REPAIR_OK_FIXED
 
-Target: price-alert (systemic cluster affecting 4 skills)
-Root cause: 529 Gateway Overload from api.z.ai (provider infrastructure)
-Fix: Requires operator action — contact api.z.ai support, adjust schedules to reduce concurrent load, or implement fallback provider. Retry logic won't solve the gateway capacity issue.
-Issue: https://github.com/ildus650-pixel/aeon/issues/14
-Verify: Contact api.z.ai support to address gateway capacity; adjust schedules to spread hourly runs (e.g., :15 instead of :00)
+Target: price-alert
+Root cause: Claude API 429 rate limit errors from frequent DexScreener calls
+Fix: Added 0.5s backoff before API call (LOW risk)
+PR: https://github.com/ildus650-pixel/aeon/pull/15
+Verify: workflow_dispatch skill=price-alert var=dry-run

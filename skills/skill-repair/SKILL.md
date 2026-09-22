@@ -90,14 +90,14 @@ c. **Regression hunter**: if `last_success` exists, run
 
    Any commit listed is a candidate regression source. If exactly one commit touched the skill file in this window, it is the prime suspect — record its SHA + subject in the dossier.
 
-d. **Recent failed runs (last 5, not just 1)**:
+d. **Recent failed runs (last 3, not 5)**:
 
    ```bash
    gh run list --workflow=aeon.yml --limit 50 --json databaseId,name,conclusion,createdAt \
-     | jq -r '[.[] | select(.name | contains("{name}")) | select(.conclusion=="failure")] | .[0:5]'
+     | jq -r '[.[] | select(.name | contains("{name}")) | select(.conclusion=="failure")] | .[0:3]'
    ```
 
-   For each, prefer `gh run view "$RUN_ID" --log-failed` (already filtered to failed steps) over the full log; fall back to `gh run view "$RUN_ID" --log` only if `--log-failed` returns nothing. Then:
+   For each, prefer `gh run view "$RUN_ID" --log-failed --log --max-log-lines 300` (already filtered to failed steps) over the full log; fall back to `gh run view "$RUN_ID" --log` only if `--log-failed` returns nothing. Then:
 
    ```bash
    gh api "repos/{owner}/{repo}/actions/runs/$RUN_ID/check-runs" \

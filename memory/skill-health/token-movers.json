@@ -1,10 +1,12 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-09-22T23:21:35Z",
-  "quality_score": 4,
-  "assessment": "Solid data-driven market signal with specific verifiable metrics and actionable tags",
-  "flags": [],
-  "avg_score": 2.25,
+  "last_analyzed": "2026-09-23T22:27:38Z",
+  "quality_score": 2,
+  "assessment": "Generic placeholder that asks for input instead of delivering any findings or analysis",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 2.2,
   "history": [
     {
       "date": "2026-09-19",
@@ -28,6 +30,12 @@
       "date": "2026-09-22",
       "score": 4,
       "ts": "2026-09-22T23:21:35Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-23",
+      "score": 2,
+      "ts": "2026-09-23T22:27:38Z",
       "harness": "claude"
     }
   ]

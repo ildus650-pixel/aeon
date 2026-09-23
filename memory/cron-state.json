@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-09-23T06:04:52Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-23T15:33:00Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-19T18:21:04Z",
     "total_runs": 21,
     "total_successes": 7,
@@ -12,7 +12,7 @@
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"glm-4.7-flash\":{\"inputToke"
   },
   "price-alert": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-09-23T06:12:55Z",
     "total_runs": 25,
     "total_successes": 12,
@@ -20,7 +20,7 @@
     "consecutive_failures": 1,
     "success_rate": 0.48,
     "last_quality_score": 4,
-    "last_dispatch": "2026-09-23T11:29:13Z",
+    "last_dispatch": "2026-09-23T15:33:00Z",
     "last_failed": "2026-09-23T11:37:22Z",
     "last_error": "\\n      h24_change: .priceChange.h24,\\n      pool_url: .url,\\n      liquidity: .liquidity.usd,\\n      dex: .dexId,\\n      pair_addr: .pairAddress\\n    }\\n  )\\n'\",\"description\":\"Find deepest Ethereum p"
   },
@@ -29,8 +29,8 @@
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-09-23T11:29:13Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-23T15:33:00Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-22T12:11:42Z",
     "total_runs": 5,
     "total_successes": 4,
@@ -42,8 +42,8 @@
     "last_error": "90a052\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "token-movers": {
-    "last_dispatch": "2026-09-22T22:52:37Z",
-    "last_status": "success",
+    "last_dispatch": "2026-09-23T15:33:00Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-22T23:24:39Z",
     "total_runs": 9,
     "total_successes": 4,
@@ -55,8 +55,8 @@
     "last_error": "cg-demo-api-key: {COINGECKO_API_KEY}\\\") && echo \\\"Using demo key: set\\\" || echo \\\"No key: keyless\\\"\\n./secretcurl -s \\\"${CG_HDR[@]}\\\" \\\"https://api.coingecko.com/api/v3/search/trending\\\" > /tmp/coinge"
   },
   "digest": {
-    "last_dispatch": "2026-09-23T06:04:52Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-23T15:33:00Z",
+    "last_status": "dispatched",
     "last_failed": "2026-09-23T06:11:20Z",
     "total_runs": 13,
     "total_successes": 1,
@@ -68,8 +68,8 @@
     "last_quality_score": 4
   },
   "skill-repair": {
-    "last_dispatch": "2026-09-23T11:29:13Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-09-23T15:33:00Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-23T01:30:55Z",
     "total_runs": 22,
     "total_successes": 7,

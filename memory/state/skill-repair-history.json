@@ -1,4 +1,9 @@
 {
+  "token-movers": {
+    "last_repair_at": "2026-09-25T20:00:00Z",
+    "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
+    "issue": "ISS-10"
+  },
   "digest": {
     "last_repair_at": "2026-09-25T00:00:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",

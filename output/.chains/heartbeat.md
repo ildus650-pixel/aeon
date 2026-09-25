@@ -1,20 +1,23 @@
-*Priority Brief — 2026-09-25*
+Priority Brief — 2026-09-25
 
-*Focus today*
-1. Fix digest chronic failure (1/19 runs, 18 failures, 10 consecutive) — why now: 5% success rate, daily content pipeline broken, retry PRs exist but not merged
-2. Resolve 529 Gateway Overload (systemic, affecting multiple skills) — why now: blocks API calls across the fleet, 2-day old issue, gh actions health issues
-3. Heartbeat unreliability (8/28 runs, 20 failures, 5 consecutive) — why now: monitoring degraded, unclear root cause beyond gateway issues
+Focus today
+1. Fix 529 Gateway Overload — why now: systemic hourly failures blocking all API calls, 2-day old, affecting the entire fleet
+2. Configure notification channels — why now: operators missing email delivery despite briefs being sent
+3. Resolve digest chronic failures — why now: 5% success rate, retry PRs exist but not merged, daily content pipeline broken
 
-*Since yesterday*
-- moved: price-alert runs 3x (2 errors resolved, 1 success), token-movers 3x (mixed), skill-repair 1x
-- stuck: digest (10 consecutive failures), heartbeat (5 consecutive failures), skill-repair blocked by cooldown
+Since yesterday
+- digest repair blocked by cooldown (last repair: 2026-09-25T00:00:00Z)
+- heartbeat sent BRIEF_SENT (no change — it's the current briefing)
+- price-alert still failing intermittently
+- github-monitor showing persistent errors with scope_issue
 
-*Watch* (no meaningful updates)
-- Recent PRs add retry logic for rate limits (digest #10/#11/#13, price-alert #15) — not merged
+Watch (no meaningful updates found)
 
-*Running today*
-- 09:00 UTC: github-monitor
-- 09:30 UTC: pr-triage
-- 12:00 UTC: token-movers
-- 14:00 UTC: digest
-- 18:00 UTC: skill-health
+Running today
+- skill-repair @ 00:00 UTC
+- price-alert @ 01:00 UTC
+- token-movers @ 03:00 UTC
+- digest @ 05:00 UTC
+- github-monitor @ 08:00 UTC
+- heartbeat @ 11:36 UTC
+- skill-repair @ 11:36 UTC

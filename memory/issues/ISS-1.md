@@ -40,7 +40,16 @@ The digest skill has failed on 13/14 runs (7% success rate) with **529 gateway o
 2. Multiple gateway failover (skill currently pins to Z.AI)
 3. Operator coordination with gateway provider
 
-## Recommendations
+## Repair Attempt — 2026-09-23
+
+**Attempted**: 0 (diagnostic only — issue filed for operator action)
+
+**Reason**: Root cause is external gateway service overload, not fixable via code changes. The skill code is correct; it requires either:
+1. Gateway provider retry/backoff logic (not implemented in current skill)
+2. Multiple gateway failover (skill currently pins to Z.AI)
+3. Operator coordination with gateway provider
+
+**Recommendations**:
 
 **Immediate**:
 - Do not retry this skill automatically — gateway is overloaded, additional attempts will likely fail
@@ -51,6 +60,18 @@ The digest skill has failed on 13/14 runs (7% success rate) with **529 gateway o
 - Implement gateway failover in skill code: when Z.AI fails, retry with alternative gateway (e.g., openai/gpt-5-mini fallback)
 - Add exponential backoff + circuit breaker before giving up
 - Monitor gateway status and surface as health issue when unavailable
+
+## Repair Attempt — 2026-09-25
+
+**Status**: REPAIR_DIAGNOSED_NO_FIX (operator recommendation)
+
+**Action**: Skill is currently **enabled** in aeon.yml (line 41). Given persistent 529 gateway errors from api.z.ai across all runs (10 consecutive failures, 5% success rate), the recommended action is:
+
+**Disable the skill temporarily** by changing `enabled: false` in aeon.yml line 41 until the gateway recovers. This prevents a failing skill from consuming resources and polluting the run logs.
+
+**Code-level fix requires**: Gateway failover implementation or operator coordination with Z.AI provider — outside the scope of code-only repair.
+
+**Risk**: None (skill is already failing; disabling it stops the failure pattern)
 
 ## Verification
 

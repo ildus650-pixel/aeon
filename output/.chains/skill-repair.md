@@ -1,10 +1,1 @@
-⚠️ skill-repair — REPAIR_BLOCKED
-
-**Target:** price-alert
-**Reason:** Cooldown active (last repair 2026-09-23T19:30:00Z within 24h)
-**Open PR:** #15 (fix/skill-repair-price-alert-2026-09-22) - still open since yesterday
-
-To re-dispatch repair for price-alert, delete the cooldown entry:
-rm memory/state/skill-repair-history.json["price-alert"]
-
-Then run: gh workflow run aeon.yml -F skill=skill-repair -F var=price-alert
+*skill-repair — REPAIR_DIAGNOSED_NO_FIX*\nTarget: digest (gateway-outage)\nRoot cause: External Z.AI gateway overload (529 errors), not fixable via code\nAction: Recommend disabling digest in aeon.yml until gateway recovers\nIssue: ISS-1

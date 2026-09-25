@@ -1,6 +1,6 @@
 {
   "digest": {
-    "last_repair_at": "2026-09-23T19:13:00Z",
+    "last_repair_at": "2026-09-25T00:00:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
     "issue": "ISS-1"
   },

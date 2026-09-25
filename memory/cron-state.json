@@ -30,16 +30,16 @@
   },
   "github-monitor": {
     "last_dispatch": "2026-09-25T15:55:20Z",
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-09-24T10:44:58Z",
-    "total_runs": 8,
+    "total_runs": 9,
     "total_successes": 6,
-    "total_failures": 2,
-    "consecutive_failures": 1,
-    "success_rate": 0.75,
+    "total_failures": 3,
+    "consecutive_failures": 2,
+    "success_rate": 0.67,
     "last_quality_score": 3,
-    "last_failed": "2026-09-25T11:43:26Z",
-    "last_error": " for aeonfun/aeon\"}},{\"tool_name\":\"Bash\",\"tool_use_id\":\"call_8b381c1b42cc49d6977d79ed\",\"tool_input\":{\"command\":\"gh release list -R aeonfun/aeon --limit 5 --exclude-drafts --exclude-pre-releases --json"
+    "last_failed": "2026-09-25T15:59:08Z",
+    "last_error": "\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"glm-4.7-flash\":{\"inputTokens\":35595,\"out"
   },
   "token-movers": {
     "last_dispatch": "2026-09-25T15:55:20Z",

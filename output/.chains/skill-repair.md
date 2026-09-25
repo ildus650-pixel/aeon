@@ -1,1 +1,3 @@
-*skill-repair — REPAIR_DIAGNOSED_NO_FIX*\nTarget: digest (gateway-outage)\nRoot cause: External Z.AI gateway overload (529 errors), not fixable via code\nAction: Recommend disabling digest in aeon.yml until gateway recovers\nIssue: ISS-1
+⚠️ skill-repair — REPAIR_BLOCKED
+
+Target: digest\nReason: Cooldown active — last repair 2 hours ago (2026-09-25T00:00:00Z)\nAction: Delete the cooldown entry in memory/state/skill-repair-history.json to override, or wait 24h

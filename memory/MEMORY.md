@@ -12,6 +12,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-09-25 | Digest (empty) | Gateway overload, no candidates |
 | 2026-09-21 | Digest | Grok 4.7, NASA Mars Sample Return cancelled, CI bottleneck, OpenAI math advisory group |
 | 2026-09-19 | Token Movers | AKE +141%, ENA +20%, AVAX +16% breakouts; ZFORGE +4936% trending anomaly |
 

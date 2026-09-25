@@ -1,15 +1,23 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-21T22:55:46Z",
+  "last_analyzed": "2026-09-25T15:58:07Z",
   "quality_score": 4,
-  "assessment": "Solid news digest covering diverse tech/science topics with verifiable claims and clear 'why it matters' framing",
-  "flags": [],
+  "assessment": "Well-structured, substantive report of failures; specific error details and actionable diagnosis",
+  "flags": [
+    "api_error"
+  ],
   "avg_score": 4,
   "history": [
     {
       "date": "2026-09-21",
       "score": 4,
       "ts": "2026-09-21T22:55:46Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-25",
+      "score": 4,
+      "ts": "2026-09-25T15:58:07Z",
       "harness": "claude"
     }
   ]

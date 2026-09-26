@@ -67,6 +67,20 @@ The skill makes frequent DexScreener API calls without sufficient delay between 
 
 **Action required:** Operator must review and merge PR #15 to apply the rate-limit backoff fix.
 
+## Repair attempt 4 — 2026-09-26
+
+**Diagnosis:** The 0.5s backoff from PR #15 was insufficient. Price-alert continues to fail with 3 consecutive failures (success rate: 44%).
+
+**Root cause:** 0.5s delay still insufficient for Claude API rate limits during repeated daily executions. The cumulative effect of tool delays across 10+ calls per run pushes Claude into throttling territory.
+
+**Fix applied:** Increased sleep delay to 2s in price-alert SKILL.md (Step 3). This provides a clear safety margin beyond the failed 0.5s attempt.
+
+**PR status:** Open, created 2026-09-26, https://github.com/ildus650-pixel/aeon/pull/17
+
+**Risk:** LOW — Minimal, conservative change with clear safety margin. Adds 2s per run (~7.2s/day overhead for daily executions).
+
+**If still failing after this PR:** Implement exponential backoff (e.g., increasing delay with each failed attempt) or reduce the number of tool calls in the skill.
+
 ## Source status
 
 cron_state=ok | issues_index=ok | gh_runs=ok | gh_logs=ok | git_log=ok | check_runs=ok

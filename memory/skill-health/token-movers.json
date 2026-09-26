@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-09-24T15:31:51Z",
-  "quality_score": 5,
-  "assessment": "Substantive, well-structured movers report with verifiable CoinGecko data, actionable signals, and proper tagging.",
+  "last_analyzed": "2026-09-26T15:18:16Z",
+  "quality_score": 3,
+  "assessment": "Acceptable output - correctly surfaced a verifiable issue with actionable link, though minimal context",
   "flags": [],
-  "avg_score": 2.67,
+  "avg_score": 2.71,
   "history": [
     {
       "date": "2026-09-19",
@@ -40,6 +40,12 @@
       "date": "2026-09-24",
       "score": 5,
       "ts": "2026-09-24T15:31:51Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-26",
+      "score": 3,
+      "ts": "2026-09-26T15:18:16Z",
       "harness": "claude"
     }
   ]

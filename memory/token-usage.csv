@@ -42,3 +42,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-25,skill-repair,claude-sonnet-5,462107,9148,983044,0
 2026-09-26,price-alert,claude-sonnet-5,31263,4396,706226,0
 2026-09-26,github-monitor,claude-sonnet-5,649725,8286,783652,0
+2026-09-26,token-movers,claude-sonnet-5,98845,5522,553937,0

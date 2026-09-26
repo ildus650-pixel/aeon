@@ -1,10 +1,10 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-09-25T20:09:23Z",
+  "last_analyzed": "2026-09-26T12:09:03Z",
   "quality_score": 4,
-  "assessment": "Substantive, verifiable work that surfaces signal clearly; clean run with no actionable items.",
+  "assessment": "Concise, actionable PR signal with verifiable details",
   "flags": [],
-  "avg_score": 3.71,
+  "avg_score": 3.75,
   "history": [
     {
       "date": "2026-09-19",
@@ -46,6 +46,12 @@
       "date": "2026-09-25",
       "score": 4,
       "ts": "2026-09-25T20:09:23Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-26",
+      "score": 4,
+      "ts": "2026-09-26T12:09:03Z",
       "harness": "claude"
     }
   ]

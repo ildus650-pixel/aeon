@@ -95,7 +95,8 @@ If the state file's `contract` is set and differs from the resolved contract →
 ### 3. Fetch current price (DexScreener primary)
 
 ```bash
-sleep 2
+# Rate-limit safeguard: 1s delay to avoid API throttling and timeout
+sleep 1
 RESP=$(curl -fsS "https://api.dexscreener.com/latest/dex/tokens/${CONTRACT}" 2>/dev/null || echo "")
 ```
 

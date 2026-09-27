@@ -2,7 +2,7 @@
 name: price-alert timeout and rate-limit
 description: price-alert skill hitting timeout and rate-limit errors
 status: fix-pending
-fix_pr: https://github.com/ildus650-pixel/aeon/pull/17
+fix_pr: https://github.com/ildus650-pixel/aeon/pull/18
 category: timeout
 severity: high
 ---
@@ -84,6 +84,28 @@ causes the skill to exceed the 30-minute timeout window.
 **Category change:** Changed from `rate-limit` to `timeout` based on current error pattern.
 
 **Risk:** LOW - the sleep is already in place and working for rate-limiting, just need to optimize for timeout.
+
+## Repair attempt 5 — 2026-09-27 (timeout fix)
+
+**Diagnosis:** The skill now shows timeout errors instead of 429 rate-limit errors. The 2s sleep from PR #17 resolved the rate-limiting issue but introduced a timeout issue.
+
+**Root cause:** The cumulative delay of 2s per DexScreener API call across multiple operations exceeds the 30-minute timeout window.
+
+**Fix applied:** Reduced sleep from 2s to 1s before DexScreener API call:
+- Still prevents rate-limiting (1s > 0.5s from PR #15)
+- Halves the cumulative delay
+- Maintains rate-limit protection while reducing timeout risk
+
+**PR:** https://github.com/ildus650-pixel/aeon/pull/18
+
+**Risk:** LOW - minimal change (sleep reduction), no algorithm changes, no state mutation.
+
+**Verification plan:**
+1. Run skill with `var=dry-run` to verify completion without timeout or rate-limit errors
+2. Check that price-alert state file updates successfully
+3. Confirm no timeout errors or 429 rate-limit errors in run logs
+
+**If still failing after this PR:** Further reduce sleep to 0.5s or implement a dynamic backoff strategy based on API response time.
 
 ## Source status
 

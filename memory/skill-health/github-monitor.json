@@ -1,10 +1,10 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-09-27T19:10:20Z",
-  "quality_score": 3,
-  "assessment": "Completed the basic monitoring task effectively: scanned 1 repo, found a notable PR (aeonfun/aeon#1093) and surfaced it with a verifiable link. Output is factual and actionable, though minimal.",
+  "last_analyzed": "2026-09-28T12:59:32Z",
+  "quality_score": 4,
+  "assessment": "Good — specific, actionable finding with verifiable details",
   "flags": [],
-  "avg_score": 3.67,
+  "avg_score": 3.7,
   "history": [
     {
       "date": "2026-09-19",
@@ -58,6 +58,12 @@
       "date": "2026-09-27",
       "score": 3,
       "ts": "2026-09-27T19:10:20Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-28",
+      "score": 4,
+      "ts": "2026-09-28T12:59:32Z",
       "harness": "claude"
     }
   ]

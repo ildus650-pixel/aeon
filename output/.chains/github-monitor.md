@@ -1,6 +1,5 @@
-*GitHub Monitor* — 1 repo scanned, 0 need action
-
+*GitHub Monitor* — 1 repo scanned, 1 needs attention
 ▶ INFO
-  • Note aeonfun/aeon#1093 — PR opened 72h ago, no review requested — https://github.com/aeonfun/aeon/pull/1093
+  • Investigate aeonfun/aeon#1083 — open issue without priority label, 7 days old — https://github.com/aeonfun/aeon/issues/1083
 
-sources: aeonfun/aeon=ok
+_sources: aeonfun/aeon=ok_

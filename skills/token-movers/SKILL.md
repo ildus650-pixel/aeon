@@ -59,6 +59,43 @@ Produce an **actionable** movers report. Plain % change lists are noise — the 
 
 ## Source: coingecko — market movers (winners / losers / trending)
 
+### Helper: retry_with_backoff_webfetch
+
+```bash
+retry_with_backoff_webfetch() {
+  local url="$1"
+  local retries=3
+  local delay=2
+
+  for attempt in $(seq 1 $retries); do
+    local response
+    response=$(WebFetch "$url" 2>&1 || echo "webfetch_failed")
+
+    # Check if response is valid JSON and not an error
+    if echo "$response" | jq -e . >/dev/null 2>&1; then
+      echo "$response"
+      return 0
+    fi
+
+    # Check for error status in response
+    local http_code
+    http_code=$(echo "$response" | jq -r 'if has("error") then .error.status.code // "unknown" else "unknown" end' 2>/dev/null || echo "unknown")
+
+    # Retry on 5xx or 429 (rate limit / overload)
+    if [[ "$http_code" =~ ^(5|429)$ ]] && [ $attempt -lt $retries ]; then
+      echo "::warning::CoinGecko returned $http_code on attempt $attempt/$retries — retrying in ${delay}s..." >&2
+      sleep $delay
+      delay=$((delay * 2))  # Exponential backoff
+      continue
+    fi
+
+    # Permanent error or last attempt failed
+    echo "::error::CoinGecko API failed after $attempt attempts: $http_code — $response" >&2
+    return 1
+  done
+}
+```
+
 ### 1. Fetch data
 
 Fetch market data and trending coins in parallel. Request multi-timeframe changes for context:
@@ -75,13 +112,13 @@ Fetch market data and trending coins in parallel. Request multi-timeframe change
 CG_HDR=(); [ -n "${COINGECKO_API_KEY:+x}" ] && CG_HDR=(-H "x-cg-demo-api-key: {COINGECKO_API_KEY}")
 
 # Top 250 coins by market cap with 1h, 24h, and 7d % change
-./secretcurl -s "${CG_HDR[@]}" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=1h,24h,7d"
+COINGECKO_MARKETS=$(retry_with_backoff_webfetch "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=1h,24h,7d")
 
 # Trending searches (top coins people are searching for)
-./secretcurl -s "${CG_HDR[@]}" "https://api.coingecko.com/api/v3/search/trending"
+COINGECKO_TRENDING=$(retry_with_backoff_webfetch "https://api.coingecko.com/api/v3/search/trending")
 ```
 
-If curl fails or returns empty JSON, retry once with **WebFetch** against the same URL.
+If curl fails or returns empty JSON, retry with **WebFetch** against the same URL using a new helper function `retry_with_backoff_webfetch` that adds 2s delay between retries for 5xx / 429 errors.
 
 ### 2. Filter before ranking
 

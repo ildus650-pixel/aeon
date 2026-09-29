@@ -1,8 +1,8 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-28T12:58:36Z",
+  "last_analyzed": "2026-09-29T00:23:16Z",
   "quality_score": 4,
-  "assessment": "Well-structured digest with verifiable tech news; Fireworks claims include specific benchmarks and source link; SpaceX and Parley items are reasonable summaries with links. Meets strategy's priority of surfacing signal early while maintaining verifiability.",
+  "assessment": "Substantive, well-sourced, and verifiable digest with clear significance indicators",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -22,6 +22,12 @@
       "date": "2026-09-28",
       "score": 4,
       "ts": "2026-09-28T12:58:36Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-29",
+      "score": 4,
+      "ts": "2026-09-29T00:23:16Z",
       "harness": "claude"
     }
   ]

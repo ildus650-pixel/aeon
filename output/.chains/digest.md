@@ -1,14 +1,20 @@
-ℹ️ Daily Digest
+*Digest — 2026-09-29*
 
-*Digest — 2026-09-28*
+_TL;DR: AMD acquires AI startup World Labs for $8.2B; Bitget confirms $388M third-party hack; Bitcoin approaches record quarterly gains._
 
-_TL;DR: Fireworks releases Ember-1, an efficient AI model; SpaceX attempts historic Starship orbital test today; new federated IRC protocol launches._
+1. *AMD acquires World Labs for $8.2B to expand AI capabilities*
+   AMD announces it's buying Fei-Fei Li's World Labs, an AI startup focused on 3D scene generation. The $8.2B acquisition gives AMD access to cutting-edge generative AI technology for its compute infrastructure.
+   Why it matters: Major consolidation in the generative AI space with implications for hardware AI acceleration
+   https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/
 
-1. **Fireworks' Ember-1 model delivers Kimi K3 quality with 40% fewer tokens**
-   Built on Kimi K3 architecture with optimized reasoning, Ember-1 maintains similar benchmarks including Terminal Bench 2.1 (82.0%), SWE-Interact (20.0%), and DeepSWE 1.1 (75.2%) while cutting reasoning traces by 35-50%. Internal tests show no quality difference with substantial token savings. Available as Research Preview on Fireworks Serverless with fine-tuning support. [[link](https://fireworks.ai/blog/ember-1)]
+2. *Bitget CEO: $388M hack exploited third-party security vulnerabilities*
+   Bitget reports a massive breach where stolen assets have been partially frozen. Investigators are assessing a potential North Korean connection while the exchange works to recover funds.
+   Why it matters: Largest exchange breach to date, raising questions about third-party security dependencies in crypto infrastructure
+   https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability
 
-2. **SpaceX Starship launches for first-ever orbital test today**
-   Today marks SpaceX's first attempt to get Starship into orbit, a major milestone in spaceflight development. The mega rocket will undergo its first orbital test flight from Starbase, marking a significant step in the development of the next-generation launch vehicle. [[link](https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live)]
+3. *Bitcoin eyes best Q3 in nine years despite geopolitical tensions*
+   BTC dropped below $83,000 amid US-Iran war developments but remains up more than 40% for the quarter, suggesting resilience ahead of key inflation and jobs data releases.
+   Why it matters: Clear trend reversal for Bitcoin; the quarterly performance could influence longer-term institutional positioning
+   https://cointelegraph.com/markets/btc-price-eyes-best-q3-in-nine-years-three-things-to-know-in-bitcoin-this-week
 
-3. **Parley: Federated, decentralised chat that speaks plain IRC**
-   A new federated chat protocol that enables IRC-style communication across different networks. Parley aims to restore user agency in messaging by allowing interoperability between different chat services through IRC compatibility. [[link](https://git.mills.io/prologic/parley)]
+*Also worth a glance:* California bans public officials from memecoins · Nvidia launches safety platform for AI agents

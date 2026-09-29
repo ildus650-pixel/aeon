@@ -12,6 +12,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-09-29 | Digest | AMD World Labs acquisition, Bitget hack, Bitcoin Q3 gains |
 | 2026-09-28 | Digest | Ember-1, SpaceX Starship, Parley |
 | 2026-09-25 | Digest (empty) | Gateway overload, no candidates |
 | 2026-09-21 | Digest | Grok 4.7, NASA Mars Sample Return cancelled, CI bottleneck, OpenAI math advisory group |

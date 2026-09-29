@@ -1,3 +1,7 @@
-token-movers: COINGEKO_GATEWAY_OVERLOAD — 529 gateway overload on WebFetch calls to CoinGecko APIs
+*Token Movers — 2026-09-29*
 
-🔗 https://github.com/aeonfun/aeon/issues/1
+API Unavailable — CoinGecko returned 403 Forbidden, GeckoTerminal is rate-limited (529 errors). Skipping run.
+
+Sources: coingecko=unreachable geckoterminal=rate-limited
+
+*Market pulse:* — [no data available]

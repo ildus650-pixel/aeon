@@ -14,5 +14,10 @@
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
     "issue": "ISS-8",
     "fix_pr": "https://github.com/ildus650-pixel/aeon/pull/15"
+  },
+  "skill-repair": {
+    "last_repair_at": "2026-09-29T18:00:00Z",
+    "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
+    "reason": "Systemic API degradation from GLM Gateway - upstream issue, requires operator action"
   }
 }

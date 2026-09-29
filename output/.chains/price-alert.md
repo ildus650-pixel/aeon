@@ -1,31 +1,36 @@
-Perfect! The price-alert skill has completed successfully. Here's a summary:
+All steps complete. Here's the run summary:
+
+**Price Alert skill run — 2026-09-29T22:15:37Z**
+
+### Step-by-step result
+
+1. **Parse var**: Empty → `MODE=execute`, `TARGETS=()` (ATH + sharp-move gates only).
+
+2. **Tracked token**: `WBTC` — `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599` on `ethereum` (from MEMORY.md). State file contract matched → no token change.
+
+3. **Price fetch**: DexScreener returned 18 WBTC pairs on Ethereum. Deepest pool selected:
+   - **USDT pair** (Uniswap) — $27.68M liquidity
+   - **Price**: $83,641.92
+   - **1h change**: +0.13% · **24h change**: +0.57%
+   - **Chart**: https://dexscreener.com/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2
+
+4. **ATH gate**: Current $83,641.92 < stored ATH $86,433.84 → **UNCHANGED**
+
+5. **Sharp-move gate**: `abs(0.13) < 20.0` → **QUIET**
+
+6. **Target-crossing gate**: `TARGETS=()` → **none**
+
+7. **Combined verdict**: `OK` — no gates fired. No notifications sent (silent on normal days, as designed).
+
+### Files modified
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to `2026-09-29T22:15:37Z`
+- `memory/logs/2026-09-29.md` — appended `### price-alert (3rd run)` log block
+
+### Status: PRICE_ALERT_OK
 
 ## Summary
-
-**Skill**: price-alert  
-**Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-
-### Evaluation Results
-
-| Gate | Trigger Condition | Result |
-|------|-------------------|--------|
-| ATH | New all-time high | ❌ No (price $84,367.19 < ATH $86,433.84) |
-| Sharp Move | ±20% in 1h | ❌ No (0.46% < 20% threshold) |
-| Targets | Operator-set levels | ❌ None configured |
-
-### Details
-- **Current Price**: $84,367.19
-- **1h Change**: +0.46%
-- **24h Change**: +1.12%
-- **ATH**: $86,433.84 (set 2026-09-23 06:06 UTC) - Unchanged
-- **Liquidity Pool**: 0x4585fe77225b41b697c938b018e2ac67ac5a20c0 (~$41.86M)
-
-### Status
-- **Notifications sent**: 0
-- **Final status**: `PRICE_ALERT_OK` (quiet run, no gates fired)
-
-### Files Modified
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
-- `memory/logs/2026-09-29.md` — appended run log entry
-
-The skill ran cleanly without triggering any alerts. All state was persisted correctly.
+- Read the tracked token (WBTC) from MEMORY.md and confirmed the state file contract matches.
+- Fetched the current WBTC price from DexScreener; selected the deepest liquidity pool on Ethereum.
+- Evaluated all three gates (ATH, sharp-move, target-crossing): none fired.
+- Updated state `last_run_at` and appended today's log entry.
+- No notifications sent — clean run, no price event to alert on.

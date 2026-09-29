@@ -264,6 +264,13 @@ harness: claude
 # stays primary — free at $0 in/out/cached — and the free OpenRouter pool takes
 # over when Z.AI is overloaded. Both tiers cost nothing, and neither being
 # available no longer ends the run: `auto` fails over on ANY provider failure.
+#
+# OPENROUTER_MODEL{,_SONNET,_HAIKU} also had to change. They pointed at
+# `deepseek/deepseek-v4-flash-0731:free`, which does not exist: the real id has
+# no `:free` suffix and is a paid model ($0.000000018/$0.00000032 per token),
+# so the OpenRouter leg would have 404'd on the model lookup even after failing
+# over correctly. All three now read `openrouter/free`, priced $0 in and out and
+# a router rather than a pinned id, so there is no stale model to break on.
 gateway:
   provider: auto
 

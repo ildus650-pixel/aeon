@@ -254,13 +254,18 @@ harness: claude
 # For Anthropic-compatible endpoints (direct), set repo variable ANTHROPIC_BASE_URL
 # + secret ANTHROPIC_API_KEY. Example: https://api.deepseek.com/anthropic
 # Bankr docs: https://docs.bankr.bot/llm-gateway/overview
-# Pinned to Z.AI (GLM-4.7-Flash is free at $0 in/out/cached) - the free
-# OpenRouter pool throttles or drops the Anthropic skin. GATEWAY_ORDER is
-# NOT wired into the workflow env, so the cascade order cannot be changed
-# from a repo variable - the pin is the only lever available without the
-# `workflow` token scope.
+# Was pinned to `glm` alone. A pin means ONE provider and NO failover, so when
+# api.z.ai answered 529 ("service temporarily overloaded") the run died at
+# "All gateway providers failed (glm)" and the skill was lost — 44 of 101 runs
+# failed that way between 2026-09-25 and 2026-09-29.
+#
+# GATEWAY_ORDER is now wired into the workflow env, so the order is the repo
+# variable (glm openrouter) instead of an untouchable default. GLM-4.7-Flash
+# stays primary — free at $0 in/out/cached — and the free OpenRouter pool takes
+# over when Z.AI is overloaded. Both tiers cost nothing, and neither being
+# available no longer ends the run: `auto` fails over on ANY provider failure.
 gateway:
-  provider: glm
+  provider: auto
 
 # Output channels
 channels:

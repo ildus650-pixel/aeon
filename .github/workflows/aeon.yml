@@ -666,6 +666,13 @@ jobs:
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
           BANKR_LLM_KEY: ${{ secrets.BANKR_LLM_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Cascade order for gateway.provider=auto. It was NOT wired into the
+          # env before, so llm-gateway.sh always used its built-in default and
+          # the order could not be set from a repo variable. GATEWAY_ORDER
+          # ("glm openrouter") now applies: GLM-4.7-Flash is primary and the
+          # free OpenRouter pool takes over when Z.AI is overloaded, so a 529
+          # fails over instead of ending the run.
+          GATEWAY_ORDER: ${{ vars.GATEWAY_ORDER }}
           # Native harness-provider keys — read at run time by the api-key auth
           # paths (codex→OpenAI, pi→Anthropic/OpenAI, vibe→Mistral). The OAuth
           # captures need nothing here: their creds are already on disk from install.
@@ -1443,6 +1450,13 @@ jobs:
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
           BANKR_LLM_KEY: ${{ secrets.BANKR_LLM_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Cascade order for gateway.provider=auto. It was NOT wired into the
+          # env before, so llm-gateway.sh always used its built-in default and
+          # the order could not be set from a repo variable. GATEWAY_ORDER
+          # ("glm openrouter") now applies: GLM-4.7-Flash is primary and the
+          # free OpenRouter pool takes over when Z.AI is overloaded, so a 529
+          # fails over instead of ending the run.
+          GATEWAY_ORDER: ${{ vars.GATEWAY_ORDER }}
           # Native harness-provider keys — read at run time by the api-key auth
           # paths (codex→OpenAI, pi→Anthropic/OpenAI, vibe→Mistral). The OAuth
           # captures need nothing here: their creds are already on disk from install.
@@ -1716,6 +1730,13 @@ jobs:
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
           BANKR_LLM_KEY: ${{ secrets.BANKR_LLM_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Cascade order for gateway.provider=auto. It was NOT wired into the
+          # env before, so llm-gateway.sh always used its built-in default and
+          # the order could not be set from a repo variable. GATEWAY_ORDER
+          # ("glm openrouter") now applies: GLM-4.7-Flash is primary and the
+          # free OpenRouter pool takes over when Z.AI is overloaded, so a 529
+          # fails over instead of ending the run.
+          GATEWAY_ORDER: ${{ vars.GATEWAY_ORDER }}
           # Native harness-provider keys — read at run time by the api-key auth
           # paths (codex→OpenAI, pi→Anthropic/OpenAI, vibe→Mistral). The OAuth
           # captures need nothing here: their creds are already on disk from install.

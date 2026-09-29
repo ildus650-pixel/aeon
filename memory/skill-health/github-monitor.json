@@ -1,10 +1,10 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-09-28T12:59:32Z",
+  "last_analyzed": "2026-09-29T18:16:43Z",
   "quality_score": 4,
-  "assessment": "Good — specific, actionable finding with verifiable details",
+  "assessment": "Clean, verifiable report that correctly handled the no-signal case and surfaced a real technical issue (PR fetch scope) for the operator.",
   "flags": [],
-  "avg_score": 3.7,
+  "avg_score": 3.73,
   "history": [
     {
       "date": "2026-09-19",
@@ -64,6 +64,12 @@
       "date": "2026-09-28",
       "score": 4,
       "ts": "2026-09-28T12:59:32Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-29",
+      "score": 4,
+      "ts": "2026-09-29T18:16:43Z",
       "harness": "claude"
     }
   ]

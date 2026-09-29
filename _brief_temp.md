@@ -1,5 +1,3 @@
-ℹ️ Priority Brief — 2026-09-29
-
 *Priority Brief — 2026-09-29*
 
 *Focus today*

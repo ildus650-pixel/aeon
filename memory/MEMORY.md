@@ -12,6 +12,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-09-30 | Digest | GPT 6.1 Sol, AI safety platform, Bitget hack, Trump AI accord |
 | 2026-09-29 | Digest | AMD World Labs acquisition, Bitget hack, Bitcoin Q3 gains |
 | 2026-09-28 | Digest | Ember-1, SpaceX Starship, Parley |
 | 2026-09-25 | Digest (empty) | Gateway overload, no candidates |

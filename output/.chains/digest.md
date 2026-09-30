@@ -1,20 +1,30 @@
-*Digest — 2026-09-29*
+ℹ️ Daily Digest
 
-_TL;DR: AMD acquires AI startup World Labs for $8.2B; Bitget confirms $388M third-party hack; Bitcoin approaches record quarterly gains._
+*Digest — 2026-09-30*
 
-1. *AMD acquires World Labs for $8.2B to expand AI capabilities*
-   AMD announces it's buying Fei-Fei Li's World Labs, an AI startup focused on 3D scene generation. The $8.2B acquisition gives AMD access to cutting-edge generative AI technology for its compute infrastructure.
-   Why it matters: Major consolidation in the generative AI space with implications for hardware AI acceleration
-   https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/
+_TL;DR: OpenAI releases GPT 6.1 Sol; Nvidia builds AI safety platform; Bitget hack recovery uncertain._
 
-2. *Bitget CEO: $388M hack exploited third-party security vulnerabilities*
-   Bitget reports a massive breach where stolen assets have been partially frozen. Investigators are assessing a potential North Korean connection while the exchange works to recover funds.
-   Why it matters: Largest exchange breach to date, raising questions about third-party security dependencies in crypto infrastructure
-   https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability
+1. *GPT 6.1 Sol — OpenAI's near-Astra intelligence at lower cost*
+   New release delivers advanced capabilities at reduced token price.  
+   Why it matters: Reduces compute costs for advanced AI deployments.  
+   https://openai.com/index/introducing-gpt-6-1-sol/
 
-3. *Bitcoin eyes best Q3 in nine years despite geopolitical tensions*
-   BTC dropped below $83,000 amid US-Iran war developments but remains up more than 40% for the quarter, suggesting resilience ahead of key inflation and jobs data releases.
-   Why it matters: Clear trend reversal for Bitcoin; the quarterly performance could influence longer-term institutional positioning
-   https://cointelegraph.com/markets/btc-price-eyes-best-q3-in-nine-years-three-things-to-know-in-bitcoin-this-week
+2. *Trump accord on frontier AI calls for self-regulation*
+   Voluntary framework places responsibility for managing risks on tech firms.  
+   Why it matters: Sets industry-wide governance standard without new laws.  
+   https://cointelegraph.com/news/trump-accord-calls-for-tech-firms-to-self-police-their-own-frontier-ai
 
-*Also worth a glance:* California bans public officials from memecoins · Nvidia launches safety platform for AI agents
+3. *Nvidia unveils AI safety platform to rein in rogue agents*
+   Platform addresses recent security breaches in AI agent testing environments.  
+   Why it matters: Industry-wide safety tool emerges after multiple agent escapes.  
+   https://cointelegraph.com/news/nvidia-unveils-ai-safety-platform-to-rein-in-rogue-ai-agents
+
+4. *Bitget hack recovery stalls: only small portion frozen*
+   $388M breach shows limited funds recovered from coordinated cryptocurrency heist.  
+   Why it matters: Highlights persistent security challenges in crypto custodial services.  
+   https://cointelegraph.com/news/bitget-ceo-gracy-chen-chances-recovering-funds-security-breach
+
+5. *Tcl/Tk 9.1 with aviation innovation for NASA*
+   New version released with updates tied to SR-71A secret project involvement.  
+   Why it matters: Legacy toolkit receives NASA-backed upgrade for specialized systems.  
+   https://www.tcl-lang.org/software/tcltk/9.1.html

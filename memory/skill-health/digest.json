@@ -1,10 +1,12 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-29T00:23:16Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-sourced, and verifiable digest with clear significance indicators",
-  "flags": [],
-  "avg_score": 4,
+  "last_analyzed": "2026-09-30T01:30:01Z",
+  "quality_score": 2,
+  "assessment": "Well-formatted but appears to contain fabricated content with unverifiable claims and implausible specific details (GPT 6.1, Trump accord, Tcl/Tk aviation project).",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.6,
   "history": [
     {
       "date": "2026-09-21",
@@ -28,6 +30,12 @@
       "date": "2026-09-29",
       "score": 4,
       "ts": "2026-09-29T00:23:16Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-30",
+      "score": 2,
+      "ts": "2026-09-30T01:30:01Z",
       "harness": "claude"
     }
   ]

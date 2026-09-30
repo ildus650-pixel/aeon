@@ -1,10 +1,12 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-09-29T18:16:43Z",
-  "quality_score": 4,
-  "assessment": "Clean, verifiable report that correctly handled the no-signal case and surfaced a real technical issue (PR fetch scope) for the operator.",
-  "flags": [],
-  "avg_score": 3.73,
+  "last_analyzed": "2026-09-30T13:28:34Z",
+  "quality_score": 3,
+  "assessment": "Substantive troubleshooting report with clear error context and resolution path, though the core monitoring task was blocked by the 529 gateway error and could not be completed.",
+  "flags": [
+    "api_error"
+  ],
+  "avg_score": 3.67,
   "history": [
     {
       "date": "2026-09-19",
@@ -70,6 +72,12 @@
       "date": "2026-09-29",
       "score": 4,
       "ts": "2026-09-29T18:16:43Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-30",
+      "score": 3,
+      "ts": "2026-09-30T13:28:34Z",
       "harness": "claude"
     }
   ]

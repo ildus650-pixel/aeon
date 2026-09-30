@@ -1,30 +1,28 @@
-ℹ️ Daily Digest
-
 *Digest — 2026-09-30*
 
-_TL;DR: OpenAI releases GPT 6.1 Sol; Nvidia builds AI safety platform; Bitget hack recovery uncertain._
+_TL;DR: AI voice startup doubles valuation, Reddit kills RSS, DoorDash launches text-based ordering AI._
 
-1. *GPT 6.1 Sol — OpenAI's near-Astra intelligence at lower cost*
-   New release delivers advanced capabilities at reduced token price.  
-   Why it matters: Reduces compute costs for advanced AI deployments.  
-   https://openai.com/index/introducing-gpt-6-1-sol/
+1. *ElevenLabs doubles valuation to $22B*
+   AI voice startup valued at $22 billion in latest funding round
+   Why it matters: Demonstrates continued investor confidence in synthetic media despite economic headwinds
+   https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/
 
-2. *Trump accord on frontier AI calls for self-regulation*
-   Voluntary framework places responsibility for managing risks on tech firms.  
-   Why it matters: Sets industry-wide governance standard without new laws.  
-   https://cointelegraph.com/news/trump-accord-calls-for-tech-firms-to-self-police-their-own-frontier-ai
+2. *Reddit killing RSS feeds and public API*
+   Platform ends RSS access and API to curb AI bot abuse
+   Why it matters: Shift from open web to closed ecosystem affects developers and content curators
+   https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/
 
-3. *Nvidia unveils AI safety platform to rein in rogue agents*
-   Platform addresses recent security breaches in AI agent testing environments.  
-   Why it matters: Industry-wide safety tool emerges after multiple agent escapes.  
-   https://cointelegraph.com/news/nvidia-unveils-ai-safety-platform-to-rein-in-rogue-ai-agents
+3. *Meta disputes claim that Muse read user private messages*
+   Company denies allegations about reading DMs without permission
+   Why it matters: Privacy and access control questions around closed-source AI models
+   https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/
 
-4. *Bitget hack recovery stalls: only small portion frozen*
-   $388M breach shows limited funds recovered from coordinated cryptocurrency heist.  
-   Why it matters: Highlights persistent security challenges in crypto custodial services.  
-   https://cointelegraph.com/news/bitget-ceo-gracy-chen-chances-recovering-funds-security-breach
+4. *DoorDash launches AI agent for food ordering*
+   Text-based AI agent lets users order via chat instead of app
+   Why it matters: Shift from UI to conversation-based interfaces in consumer services
+   https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/
 
-5. *Tcl/Tk 9.1 with aviation innovation for NASA*
-   New version released with updates tied to SR-71A secret project involvement.  
-   Why it matters: Legacy toolkit receives NASA-backed upgrade for specialized systems.  
-   https://www.tcl-lang.org/software/tcltk/9.1.html
+5. *FedEx orders 2,000 electric trucks for $300M*
+   Major delivery firm commits to electrifying fleet
+   Why it matters: Large-scale EV adoption in logistics accelerates climate transition
+   https://techcrunch.com/2026/09/30/fedex-orders-2000-electric-trucks-from-harbinger-in-300m-deal/

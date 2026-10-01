@@ -1,20 +1,17 @@
 ## Summary
 
-The price-alert skill completed successfully with no alerts fired.
+Executed price-alert skill for WBTC on Ethereum:
 
-**What happened:**
-- Tracked token: **WBTC** on Ethereum (contract: `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`)
-- Current price: **$83,236.99**
-- 1h change: 0.0% (not provided by API)
-- 24h change: -1.61%
+**Evaluation Results:**
+- Current price: $83,578.09
+- 1h change: -0.61%
+- 24h change: -0.11%
+- ATH: $86,433.84 (set 2026-09-23 06:06 UTC) — unchanged
+- Sharp-move gate: QUIET (change < ±20%)
+- Target gates: No targets configured
 
-**Gate evaluations:**
-- **ATH**: No new all-time high (current $83,237 < ATH $86,434 from 2026-09-23)
-- **Sharp move**: No 1h move ≥ 20% in either direction
-- **Targets**: No targets configured
+**Status:** `PRICE_ALERT_OK` — No alerts triggered. No notifications sent (normal quiet day).
 
-**State updated:**
-- `memory/topics/price-alert-state.json` — updated `last_run_at` to 2026-10-01T07:50:00Z
-- `memory/logs/2026-10-01.md` — added run log entry
-
-**Status:** `PRICE_ALERT_OK` — run completed cleanly, no notifications sent.
+**Files Modified:**
+- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
+- `memory/logs/2026-10-01.md` — Appended log entry with evaluation results

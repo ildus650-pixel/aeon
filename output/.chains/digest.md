@@ -1,28 +1,15 @@
-*Digest — 2026-09-30*
+*Digest — 2026-10-01*
 
-_TL;DR: AI voice startup doubles valuation, Reddit kills RSS, DoorDash launches text-based ordering AI._
+_TL;DR: Photon raises $4.5M to kill mobile apps with AI agents, Microsoft catches hackers before a Zimbra bug is disclosed, and RAM prices spike._
 
-1. *ElevenLabs doubles valuation to $22B*
-   AI voice startup valued at $22 billion in latest funding round
-   Why it matters: Demonstrates continued investor confidence in synthetic media despite economic headwinds
-   https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/
+1. *Photon raises $4.5M to kill mobile apps with AI agents*
+   AI startup Photon held a funeral for mobile apps to launch a framework enabling developers to build AI agents that work over messaging platforms (iMessage, WhatsApp, Telegram, SMS/RCS, email, voice). The open-source SDK has attracted 40,000+ sign-ups with 10x revenue growth in four months, partners include OpenAI, LangChain, and Stripe, and customers range from fintech tools to dating platforms. Why it matters: Apps are dying; agents running in messaging will be the next major software platform.
+   [link](https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/)
 
-2. *Reddit killing RSS feeds and public API*
-   Platform ends RSS access and API to curb AI bot abuse
-   Why it matters: Shift from open web to closed ecosystem affects developers and content curators
-   https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/
+2. *Microsoft catches hackers exploiting Zimbra bug before disclosure*
+   Microsoft security researchers discovered hackers exploiting a vulnerability in Zimbra email software before the company publicly disclosed it. The exploit is being used to compromise mail servers, potentially exposing communications. Why it matters: Email infrastructure is a critical attack surface; many organizations run unpatched Zimbra installations.
+   [link](https://www.theregister.com/security/2026/10/01/microsoft-catches-hackers-exploiting-zimbra-bug-before-disclosure/)
 
-3. *Meta disputes claim that Muse read user private messages*
-   Company denies allegations about reading DMs without permission
-   Why it matters: Privacy and access control questions around closed-source AI models
-   https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/
-
-4. *DoorDash launches AI agent for food ordering*
-   Text-based AI agent lets users order via chat instead of app
-   Why it matters: Shift from UI to conversation-based interfaces in consumer services
-   https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/
-
-5. *FedEx orders 2,000 electric trucks for $300M*
-   Major delivery firm commits to electrifying fleet
-   Why it matters: Large-scale EV adoption in logistics accelerates climate transition
-   https://techcrunch.com/2026/09/30/fedex-orders-2000-electric-trucks-from-harbinger-in-300m-deal/
+3. *RAM supply worsening, Micron CEO celebrates 'much higher' prices*
+   Micron CEO Sanjay Mehrotra predicted a supply shortage of DRAM memory chips with prices rising "much higher" due to data center demand outstripping supply. The shortage is impacting everything from servers to consumer electronics. Why it matters: Hardware inflation hits cloud costs and consumer prices; Micron's visibility on this affects supply chain planning.
+   [link](https://www.theregister.com/systems/2026/10/01/ram-supply-set-to-worsen-says-micron-as-ceo-celebrates-much-higher-prices/)

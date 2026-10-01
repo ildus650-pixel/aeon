@@ -7,11 +7,13 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-10-01 | Token Movers — Global Movers | Bitcoin $83,842 (+0.05%) |
 | 2026-09-19 | Token Movers — Global Movers | Crypto market scan (winners/losers/trending) |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-01 | Digest | Photon $4.5M agents, Zimbra exploit, RAM shortage |
 | 2026-09-30 | Digest | ElevenLabs $22B valuation, Reddit RSS kill, DoorDash AI agent |
 | 2026-09-30 | Digest | GPT 6.1 Sol, AI safety platform, Bitget hack, Trump AI accord |
 | 2026-09-29 | Digest | AMD World Labs acquisition, Bitget hack, Bitcoin Q3 gains |

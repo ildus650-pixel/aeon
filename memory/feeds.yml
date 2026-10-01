@@ -1,0 +1,6 @@
+# Feed sources for digest RSS mode
+feeds:
+  - name: TechCrunch
+    url: https://techcrunch.com/feed/
+  - name: The Register
+    url: https://www.theregister.com/security/headlines.atom

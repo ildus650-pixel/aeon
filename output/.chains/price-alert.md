@@ -1,17 +1,16 @@
 ## Summary
 
-Executed price-alert skill for WBTC on Ethereum:
+Executed the **price-alert** skill for WBTC (Wrapped BTC) on Ethereum.
 
-**Evaluation Results:**
-- Current price: $83,578.09
-- 1h change: -0.61%
-- 24h change: -0.11%
-- ATH: $86,433.84 (set 2026-09-23 06:06 UTC) — unchanged
-- Sharp-move gate: QUIET (change < ±20%)
-- Target gates: No targets configured
+**Gates evaluated:**
+- **ATH gate**: QUIET (price $84,719.32 < ATH $86,433.84)
+- **Sharp-move gate**: QUIET (H1 change -0.06%, below ±20% threshold)
+- **Target-crossing gate**: QUIET (no targets configured)
 
-**Status:** `PRICE_ALERT_OK` — No alerts triggered. No notifications sent (normal quiet day).
+**No alerts triggered** — this was a quiet run with no significant price movements.
 
-**Files Modified:**
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
-- `memory/logs/2026-10-01.md` — Appended log entry with evaluation results
+**Files created/modified:**
+- `memory/logs/2026-10-01.md` — appended price-alert log entry
+- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
+
+**Status**: `PRICE_ALERT_OK` (no gates fired, no notifications sent)

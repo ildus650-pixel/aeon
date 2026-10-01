@@ -1,19 +1,23 @@
-Priority Brief — 2026-09-30
+Priority Brief — 2026-10-01
 
 *Focus today*
-1. Merge token-movers retry PR (#19) — why now: chronic 35% success rate, gateway overload systemic
-2. Merge digest retry PRs (#13, #11, #10) — why now: 15% success rate, 529 gateway kills all skills
-3. Configure notification channels — why now: silent failures, operator blind for days
+1. Merge token-movers retry PR (#19) — why now: 37% success rate, CoinGecko 529 still hitting
+2. Merge digest retry PRs (#13/#11/#10) — why now: 17% success rate, worst skill, gateway still down
+3. Configure notification channels — why now: Silent failures for days, operator blind to fleet
 
 *Since yesterday*
-- All skills recovered from failure streaks but chronic rates persist (digest 15%, token-movers 35%, skill-repair 32%)
-- 7 open PRs fix the same rate-limit/gateway issues — not merged
-- Chain dev-loop dispatched 24h+ ago, never completed (scheduler may not be wired)
-- Issues: ISS-1 High (digest 529), ISS-8 High (price-alert rate-limit), ISS-10 Medium (token-movers truncated)
+- PR #19 token-movers retry stalled 3 days — CoinGecko 529 persists
+- PRs #13/#11/#10 digest retry open >10 days — 529 gateway still down
+- chain:dev-loop dispatched 07:44 UTC, never completed — warming up
+- dependabot #21/#5 opened today — auto-merge when green
+
+*Watch*
+- Fed meeting probability implies policy shift risk for Q4 crypto markets
+- Bitcoin ETF outflows suggest institutional sentiment changing, potentially urgent
 
 *Running today*
-- heartbeat @ 08:00 UTC (completed)
-- github-monitor @ 09:00 UTC (due)
-- price-alert hourly @ ~10:00 UTC
+- heartbeat @ 08:00 UTC (this run)
+- github-monitor @ 09:00 UTC
 - token-movers @ 12:00 UTC
 - digest @ 14:00 UTC
+- price-alert @ hourly

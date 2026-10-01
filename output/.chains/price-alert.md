@@ -1,37 +1,20 @@
-I've executed the price-alert skill and here are my findings:
+## Summary
 
-## Price Alert Run Summary
+The price-alert skill completed successfully with no alerts fired.
 
-**Token:** WBTC (Wrapped BTC)  
-**Contract:** 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599  
-**Chain:** ethereum
+**What happened:**
+- Tracked token: **WBTC** on Ethereum (contract: `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`)
+- Current price: **$83,236.99**
+- 1h change: 0.0% (not provided by API)
+- 24h change: -1.61%
 
-### Current Market Data
-- **Current Price:** $83,522.68
-- **1h Change:** +0.09%
-- **24h Change:** +0.19%
-- **Deepest Pool:** Uniswap v3 USDT (~$27.3M liquidity)
+**Gate evaluations:**
+- **ATH**: No new all-time high (current $83,237 < ATH $86,434 from 2026-09-23)
+- **Sharp move**: No 1h move ≥ 20% in either direction
+- **Targets**: No targets configured
 
-### Gate Evaluations
+**State updated:**
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to 2026-10-01T07:50:00Z
+- `memory/logs/2026-10-01.md` — added run log entry
 
-1. **ATH Gate:** 
-   - Previous ATH: $86,433.84 (set 2026-09-23 06:06 UTC)
-   - Current price is below ATH → **QUIET**
-
-2. **Sharp-Move Gate:**
-   - Threshold: ±20%
-   - Current 1h change: +0.09% → **QUIET** (not significant)
-
-3. **Target Crossing Gate:**
-   - No targets configured → **N/A**
-
-### Results
-- **Verdicts fired:** NONE
-- **Notifications sent:** 0
-- **Status:** PRICE_ALERT_OK
-
-No alerts triggered this run. The price is trading below the previous ATH but showing modest positive movement over both 1h and 24h periods.
-
----
-
-Since I'm in read-only mode, the workflow will handle persisting state updates and logging this run to `memory/logs/2026-10-01.md` after completion.
+**Status:** `PRICE_ALERT_OK` — run completed cleanly, no notifications sent.

@@ -15,7 +15,6 @@
 |------|------|------------|
 | 2026-10-01 | Digest | Photon $4.5M agents, Zimbra exploit, RAM shortage |
 | 2026-09-30 | Digest | ElevenLabs $22B valuation, Reddit RSS kill, DoorDash AI agent |
-| 2026-09-30 | Digest | GPT 6.1 Sol, AI safety platform, Bitget hack, Trump AI accord |
 | 2026-09-29 | Digest | AMD World Labs acquisition, Bitget hack, Bitcoin Q3 gains |
 | 2026-09-28 | Digest | Ember-1, SpaceX Starship, Parley |
 | 2026-09-25 | Digest (empty) | Gateway overload, no candidates |
@@ -44,3 +43,6 @@ price-alert resolves the tracked token from this table; an empty or malformed ro
 makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 
 - [github-monitor (2026-09-28)](memory/logs/2026-09-28.md) — 1 repo scanned, 1 issue logged
+
+## Today's Activity
+- [token-movers (2026-10-02)](memory/logs/2026-10-02.md) — Global movers scan: RAIL +32.9% (PUMP-RISK), broad risk-on tape (92/100 green)

@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-09-30T18:34:48Z",
-  "quality_score": 4,
-  "assessment": "Clean, functional output that delivers specific data with good context; the data appears valid and the fallback handling is pragmatic.",
+  "last_analyzed": "2026-10-02T00:15:05Z",
+  "quality_score": 2,
+  "assessment": "Interactive prompt with no substantive output or analysis",
   "flags": [],
-  "avg_score": 2.89,
+  "avg_score": 2.8,
   "history": [
     {
       "date": "2026-09-19",
@@ -58,6 +58,12 @@
       "date": "2026-09-30",
       "score": 4,
       "ts": "2026-09-30T18:34:48Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-02",
+      "score": 2,
+      "ts": "2026-10-02T00:15:05Z",
       "harness": "claude"
     }
   ]

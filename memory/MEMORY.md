@@ -46,4 +46,4 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-09-28)](memory/logs/2026-09-28.md) — 1 repo scanned, 1 issue logged
 
 ## Today's Activity
-- [token-movers (2026-10-02)](memory/logs/2026-10-02.md) — Global movers scan: RAIL +32.9% (PUMP-RISK), broad risk-on tape (92/100 green)
+- [token-movers (2026-10-02)](memory/logs/2026-10-02.md) — Global movers scan: SUPER CAT +248% (TRENDING+UP extreme pump), SAND +43% (BREAKOUT metaverse), GRX +62% (BREAKOUT deep liquidity)

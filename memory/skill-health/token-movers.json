@@ -1,10 +1,12 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-02T16:24:19Z",
-  "quality_score": 2,
-  "assessment": "Ran but produced only an interactive prompt with no substantive analysis or data.",
-  "flags": [],
-  "avg_score": 2.73,
+  "last_analyzed": "2026-10-03T18:43:07Z",
+  "quality_score": 3,
+  "assessment": "Acceptable - complete but lacks verifiability and analysis depth",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 2.75,
   "history": [
     {
       "date": "2026-09-19",
@@ -70,6 +72,12 @@
       "date": "2026-10-02",
       "score": 2,
       "ts": "2026-10-02T16:24:19Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-03",
+      "score": 3,
+      "ts": "2026-10-03T18:43:07Z",
       "harness": "claude"
     }
   ]

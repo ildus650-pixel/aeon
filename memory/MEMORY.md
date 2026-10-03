@@ -13,6 +13,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-03 | Digest | OpenAI culture crisis, AI czar appointment, Bitcoin surges |
 | 2026-10-02 | Digest | Pope AI stance, $300M Nvidia export probe, OpenAI subpoena, FortiMail zero-day |
 | 2026-10-01 | Digest | Photon $4.5M agents, Zimbra exploit, RAM shortage |
 | 2026-09-30 | Digest | ElevenLabs $22B valuation, Reddit RSS kill, DoorDash AI agent |

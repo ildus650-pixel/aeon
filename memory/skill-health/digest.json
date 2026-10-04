@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-03T21:45:57Z",
-  "quality_score": 3,
-  "assessment": "Acceptable - well-structured digest with sources and signal, but I cannot verify the 2026 claims from real sources",
+  "last_analyzed": "2026-10-04T19:25:01Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-sourced signal on high-impact crypto/fintech developments.",
   "flags": [],
-  "avg_score": 3.67,
+  "avg_score": 3.7,
   "history": [
     {
       "date": "2026-09-21",
@@ -58,6 +58,12 @@
       "date": "2026-10-03",
       "score": 3,
       "ts": "2026-10-03T21:45:57Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-04",
+      "score": 4,
+      "ts": "2026-10-04T19:25:01Z",
       "harness": "claude"
     }
   ]

@@ -1,25 +1,19 @@
-*Digest — 2026-10-03*
+*Daily Digest — 2026-10-04*
 
-_TL;DR: OpenAI faces internal culture crisis as new AI czar joins Trump's orbit and Bitcoin surges toward October records._
+_TL;DR: Trump creates a Super Intelligence Force under the intel chief, Japan sanctions Russian crypto exchange Garantex, and El Salvador secures $138M IMF loan tied to Bitcoin policy changes._
 
-1. *OpenAI safety employee resigns, claiming the company's 'culture is broken'*
-   An OpenAI safety employee has quit, accusing the organization of having a broken culture. The departure highlights growing tensions between AI safety advocates and the company's commercial priorities.
-   Why it matters: Internal disputes over safety vs. speed could slow governance efforts and invite regulatory scrutiny as AI regulation expands.
-   https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/
+1. *Trump unveils his new Super Intelligence Force*
+   US President Donald Trump announced a new Super Intelligence Force that will be led by intel chief Jay Clayton, according to TechCrunch. The task force is his latest response to the debate over AI safety, signaling a major US policy shift on artificial intelligence governance.
+   https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/
 
-2. *Trump is expected to appoint Jay Clayton as new AI czar*
-   Jay Clayton, a former SEC chair, is reportedly poised to lead AI innovation oversight alongside tech CEOs' "self policing" efforts.
-   Why it matters: Bringing in a Wall Street regulator to oversee AI could shift the governance model from voluntary industry standards toward stricter compliance and enforcement.
-   https://cointelegraph.com/news/trump-is-expected-to-appoint-jay-clayton-as-new-ai-czar-reports/
+2. *Japan adds Garantex to list of Russia sanctions over Ukraine war*
+   Japan has expanded its sanctions list to include the Russian cryptocurrency exchange Garantex, which has previously been sanctioned by the US, the EU and other jurisdictions for helping Russian entities evade financial restrictions. The action restricts payments and capital transactions with Garantex, aiming to reduce Russia's earnings from crude oil exports.
+   https://cointelegraph.com/news/japan-adds-garantex-to-list-of-russia-sanctions-over-ukraine-war/
 
-3. *Bitcoin briefly hits $87K as weak US jobs data sends bond yields lower*
-   BTC gained after below-expectation payrolls pushed Treasury yields down, though order-book resistance kept prices from reaching new macro highs.
-   Why it matters: The move toward $87K challenges previous resistance levels and sets the stage for an October rally as institutional flows return.
-   https://cointelegraph.com/bitcoin-briefly-hits-87k-as-weak-us-jobs-data-sends-bond-yields-lower/
+3. *El Salvador receives $138 million from IMF after Bitcoin waivers granted*
+   El Salvador has secured $138 million in funding from the International Monetary Fund after the agency granted waivers on loan conditions tied to the country's Bitcoin policy. In exchange, the IMF required El Salvador to transfer majority ownership and operational control of the Chivo wallet to a private operator, reduce state involvement in Bitcoin activities, strengthen crypto regulation, and prohibit further Bitcoin accumulation beyond donations.
+   https://cointelegraph.com/news/el-salvador-receives-138-million-from-imf-after-bitcoin-waivers-granted/
 
-4. *Bitcoin ETFs kick off "Uptober" with $103M inflow*
-   The first day of October brought significant investment into Bitcoin exchange-traded funds, marking a strong start to the traditional bull market month.
-   Why it matters: $103M in a single day signals renewed institutional confidence and could catalyze further flows as market participants position for the quarter.
-   https://cointelegraph.com/bitcoin-etfs-kick-off-uptober-with-103m-inflow/
-
-*Also worth a glance:* Kolibri: A Sovereign Open-Weight Model (AI autonomy) · Crypto job postings triple but applications fall (labor market divergence)
+4. *Russia's Finance Ministry pays wages in digital rubles for first time*
+   Russia's Finance Ministry has become the first government body to pay employee wages in the digital ruble, the country's central bank digital currency. Work on the introduction of the digital ruble to the budget process is being carried out by the Bank of Russia together with the Ministry of Finance, marking a significant step in Russia's adoption of digital currency.
+   https://cointelegraph.com/news/russias-finance-ministry-pays-wages-in-digital-rubles-for-first-time/

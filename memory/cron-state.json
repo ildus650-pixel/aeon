@@ -12,7 +12,7 @@
     "last_error": "28aa82\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "price-alert": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-10-04T11:30:07Z",
     "total_runs": 75,
     "total_successes": 43,
@@ -20,7 +20,7 @@
     "consecutive_failures": 1,
     "success_rate": 0.57,
     "last_quality_score": 5,
-    "last_dispatch": "2026-10-04T15:53:09Z",
+    "last_dispatch": "2026-10-04T19:12:18Z",
     "last_failed": "2026-10-04T16:00:33Z",
     "last_error": "command\":\"CONTRACT=\\\"0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599\\\" && CHAIN=\\\"ethereum\\\" && echo \\\"=== DexScreener API call ===\\\" && curl -fsS \\\"https://api.dexscreener.com/latest/dex/tokens/${CONTRACT"
   },
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-04T15:53:09Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-04T19:12:18Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-04T16:04:10Z",
     "total_runs": 41,
     "total_successes": 9,

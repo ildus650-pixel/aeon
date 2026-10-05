@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-10-04T11:20:37Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-05T15:53:03Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-04T11:29:52Z",
     "total_runs": 50,
     "total_successes": 17,
@@ -12,7 +12,7 @@
     "last_error": "28aa82\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-10-05T07:02:40Z",
     "total_runs": 79,
     "total_successes": 46,
@@ -20,17 +20,17 @@
     "consecutive_failures": 0,
     "success_rate": 0.58,
     "last_quality_score": 4,
-    "last_dispatch": "2026-10-05T06:58:42Z",
+    "last_dispatch": "2026-10-05T15:53:03Z",
     "last_failed": "2026-10-04T19:19:01Z",
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "chain:dev-loop": {
-    "last_dispatch": "2026-10-04T11:20:37Z",
+    "last_dispatch": "2026-10-05T15:53:03Z",
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-10-04T11:20:37Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-05T15:53:03Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-04T11:23:42Z",
     "total_runs": 22,
     "total_successes": 16,
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-04T19:12:18Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-05T15:53:03Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-04T16:04:10Z",
     "total_runs": 42,
     "total_successes": 10,

@@ -1,18 +1,30 @@
+## GitHub Monitor Summary
+
+**View:** monitor (var="")
+**Repo:** aeonfun/aeon
+
+### Results
+
+Scanned 1 repo for PRs, issues, and releases.
+
+- **Open PRs:** 0
+- **Open Issues:** 0
+- **Releases (last 24h):** 0
+
+All data is clean — no items require action. No notification is being sent.
+
+---
+
 ## Summary
 
-Executed the `github-monitor` skill (monitor view) on 2026-10-05.
+**Action taken:**
+- Scanned `aeonfun/aeon` for open PRs, issues, and recent releases
+- All collections returned empty results (no PRs, no issues, no recent releases)
+- **No notifications sent** — silence is the correct signal when nothing changed
 
-**Findings:**
-- No open PRs requiring action
-- No new issues opened in the last 24 hours
-- No new releases in the last 24 hours
+**Files:**
+- Memory log entry will be added by workflow after run completes: `memory/logs/2026-10-06.md`
 
-**Status:** Clean run — no alerts to report.
-
-**Actions taken:**
-- Scanned 1 repo: `aeonfun/aeon`
-- Logged `GITHUB_MONITOR_OK repos=1` to `memory/logs/2026-10-05.md`
-- Updated `memory/MEMORY.md` with latest activity
-- No notification sent (silence is the correct signal for clean runs)
-
-The monitor is functioning correctly — no tier items surfaced across PRs, issues, or releases this run.
+**Next steps:**
+- Run again in 24h to catch new activity on `aeonfun/aeon`
+- Use `./notify "add-repo:<owner/repo>"` to add more repos to the watchlist

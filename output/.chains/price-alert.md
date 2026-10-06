@@ -1,23 +1,31 @@
-The skill execution is complete. No alerts were fired because:
-- No new all-time high (current: $85,539.70 vs ATH: $87,078.30)
-- No sharp 1h move (only -0.43%)
-- No operator-set targets configured
+---
+
+**Price Threshold Alert**
+
+WBTC is currently trading at **$85,599.07** with:
+- 1-hour change: **+0.1%**
+- 24-hour change: **-0.21%**
+
+**Status:**
+- ATH (all-time high): $87,078.30 — **unchanged** (not a new high)
+- Sharp-move gate: **quiet** (|±20% in 1h| threshold not met)
+- Target-crossing gate: **quiet** (no targets set)
+
+**Result:** No alerts triggered — normal market movement, no action required.
+
+---
 
 ## Summary
 
-**Skill**: price-alert
+**Completed:**
+- Fetched current WBTC price from DexScreener API
+- Evaluated all three alert gates (ATH, sharp-move, target-crossing)
+- No gates fired (normal market conditions)
+- Updated state file with `last_run_at`, `ath.observed_at`, `ath.announced_at`, and `last_alerts.ath`
+- Appended run log to `memory/logs/2026-10-06.md`
 
-**Token monitored**: WBTC (Wrapped BTC, 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+**Files modified:**
+- `memory/topics/price-alert-state.json` — updated timestamps and last alert markers
+- `memory/logs/2026-10-06.md` — added price-alert run log entry
 
-**Evaluation results**:
-- ATH gate: QUIET (price $85,539.70 < ATH $87,078.30)
-- Sharp-move gate: QUIET (1h change -0.43%, threshold ±20%)
-- Target-crossing gate: N/A (no targets configured)
-
-**Status**: PRICE_ALERT_OK
-
-**Changes made**:
-- Updated `memory/topics/price-alert-state.json` with current run timestamp
-
-**Follow-up actions**:
-- To receive price alerts when WBTC hits a target level, configure a target using `./notify "set-target:<price>"` (e.g., `./notify "set-target:90000"` to alert when price crosses $90,000)
+**No notifications sent** — all gates quiet.

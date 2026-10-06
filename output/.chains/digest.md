@@ -1,19 +1,23 @@
-*Daily Digest — 2026-10-04*
+*Digest — 2026-10-06*
 
-_TL;DR: Trump creates a Super Intelligence Force under the intel chief, Japan sanctions Russian crypto exchange Garantex, and El Salvador secures $138M IMF loan tied to Bitcoin policy changes._
+_TL;DR: Anthropic gives startups a free enterprise AI tier, LibreOffice doubles down on no-AI philosophy, and Khosla bets an ex-DeepMind startup will win the human-hiring agent market._
 
-1. *Trump unveils his new Super Intelligence Force*
-   US President Donald Trump announced a new Super Intelligence Force that will be led by intel chief Jay Clayton, according to TechCrunch. The task force is his latest response to the debate over AI safety, signaling a major US policy shift on artificial intelligence governance.
-   https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/
+1. *Anthropic gives startups free year of Claude Team and $1,000 in credits*
+   Anthropic launches a program providing startups with a free year of Claude Team access and $1,000 in token credits. The move targets companies building on top of AI models rather than model providers alone, signaling growing competition for enterprise AI adoption.
+   https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/
 
-2. *Japan adds Garantex to list of Russia sanctions over Ukraine war*
-   Japan has expanded its sanctions list to include the Russian cryptocurrency exchange Garantex, which has previously been sanctioned by the US, the EU and other jurisdictions for helping Russian entities evade financial restrictions. The action restricts payments and capital transactions with Garantex, aiming to reduce Russia's earnings from crude oil exports.
-   https://cointelegraph.com/news/japan-adds-garantex-to-list-of-russia-sanctions-over-ukraine-war/
+2. *LibreOffice says 'no AI' is now a software feature*
+   The open-source document editor maker declares "no AI" as a default configuration option, rejecting automatic AI features. The company cites user privacy and avoids shipping AI integrated by default, positioning itself against the industry trend of embedding AI into productivity tools.
+   https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/
 
-3. *El Salvador receives $138 million from IMF after Bitcoin waivers granted*
-   El Salvador has secured $138 million in funding from the International Monetary Fund after the agency granted waivers on loan conditions tied to the country's Bitcoin policy. In exchange, the IMF required El Salvador to transfer majority ownership and operational control of the Chivo wallet to a private operator, reduce state involvement in Bitcoin activities, strengthen crypto regulation, and prohibit further Bitcoin accumulation beyond donations.
-   https://cointelegraph.com/news/el-salvador-receives-138-million-from-imf-after-bitcoin-waivers-granted/
+3. *Vinod Khosla believes ex-DeepMind engineer's Wajo will win agent market on trust*
+   VC Vinod Khosla backs ex-DeepMind engineer's Wajo startup, which builds an agent that can hire humans to complete tasks. Khosla argues Wajo will win on trustworthiness as businesses become wary of autonomous AI systems.
+   https://techcrunch.com/2026/10/06/vinod-khosla-believes-ex-deepmind-engineers-wajo-will-win-agent-market-on-trust/
 
-4. *Russia's Finance Ministry pays wages in digital rubles for first time*
-   Russia's Finance Ministry has become the first government body to pay employee wages in the digital ruble, the country's central bank digital currency. Work on the introduction of the digital ruble to the budget process is being carried out by the Bank of Russia together with the Ministry of Finance, marking a significant step in Russia's adoption of digital currency.
-   https://cointelegraph.com/news/russias-finance-ministry-pays-wages-in-digital-rubles-for-first-time/
+4. *Microsoft extends Outlook 'naughty step' with two more file type restrictions*
+   Microsoft adds .msix and .msixbundle package files to Outlook's blocked attachments list. The restrictions target software distribution formats that could execute arbitrary code when opened, extending existing protections against malicious attachments.
+   https://www.theregister.com/software/2026/10/06/microsoft-extends-the-outlook-naughty-step-with-two-more-file-types/
+
+5. *Atlassian warns of critical file access flaw in datacenter products*
+   Atlassian disclosed a critical vulnerability allowing unauthorized file access in its Data Center products. The flaw could let attackers read arbitrary files on the server, requiring immediate patching for affected deployments.
+   https://www.theregister.com/security/2026/10/06/atlassian-warns-of-critical-file-access-flaw-in-its-datacenter-products/

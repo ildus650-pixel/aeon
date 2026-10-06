@@ -13,6 +13,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-06 | Digest | Anthropic startup credits, LibreOffice no-AI stance, Wajo agent market |
 | 2026-10-04 | Digest | Trump Super Intelligence Force, Japan Garantex sanctions, El Salvador IMF $138M, Russia digital rubles |
 | 2026-10-03 | Digest | OpenAI culture crisis, AI czar appointment, Bitcoin surges |
 | 2026-10-02 | Digest | Pope AI stance, $300M Nvidia export probe, OpenAI subpoena, FortiMail zero-day |

@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-04T16:03:22Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-structured output with specific, verifiable price and volume data. Surface notable trends and actionable insights.",
+  "last_analyzed": "2026-10-06T02:33:24Z",
+  "quality_score": 2,
+  "assessment": "Minimal interaction prompt without substantive analysis",
   "flags": [],
-  "avg_score": 2.85,
+  "avg_score": 2.79,
   "history": [
     {
       "date": "2026-09-19",
@@ -82,6 +82,12 @@
       "date": "2026-10-04",
       "score": 4,
       "ts": "2026-10-04T16:03:22Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-06",
+      "score": 2,
+      "ts": "2026-10-06T02:33:24Z",
       "harness": "claude"
     }
   ]

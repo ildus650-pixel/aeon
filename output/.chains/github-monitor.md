@@ -1,7 +1,3 @@
 ℹ️ GitHub Monitor
 
-*GitHub Monitor* — 1 repo scanned, 0 need action
-
-▶ INFO
-  • Note aeonfun/aeon#1193 — chore: add Biome formatter and format check for all apps — https://github.com/aeonfun/aeon/issues/1193
-  • Note aeonfun/aeon#1181 — feat(plugin): 0.2.0 - connect to the hosted Aeon MCP server — https://github.com/aeonfun/aeon/issues/1181
+No GitHub activity to report across aeonfun/aeon today. Clean run — no new issues, releases, or PRs requiring attention.

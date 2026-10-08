@@ -1,21 +1,19 @@
-ℹ️ Aeon Priority Brief — 2026-10-05
-
-*Priority Brief — 2026-10-05*
+*Priority Brief — 2026-10-08*
 
 *Focus today*
-1. Fix fleet reliability — why now: heartbeat 34%, digest 24% success; self-healing skill-repair failing too
-2. Merge 7 stale skill-repair PRs (digest ×3, price-alert ×3, token-movers ×1) — why now: fixes sit open 1–2 weeks, never applied
-3. Configure one notification channel (Telegram, Discord, or Slack) — why now: all alerts silently dropped; you receive nothing
+1. Fix heartbeat RESEND_API_KEY guard — why now: 5 consecutive failures (32% success rate), P0 critical infrastructure
+2. Review price-alert rate-limit backoff PRs — why now: 4 consecutive failures (55% success rate), alerts for tracked BTC
+3. Review Dependabot updates (actions/mcp-server) — why now: two open security/critical updates, requires review
 
 *Since yesterday*
-- price-alert ran 4× quiet; WBTC climbed $84.8K → $86.6K, now only ~$500 (0.6%) below ATH
-- github-monitor, token-movers, digest all completed; token-movers tagged ETHFI +7.11%, SI +45.3%, STRK +15.7%
-- No new PRs or urgent issues opened today; price-alert's latest failure was yesterday 19:19 UTC, digest's 16:04 UTC
-- 7 health issues still open on GitHub (digest, price-alert, token-movers tagged today)
+- token-movers completed global movers scan with extreme pump SIF +418.36% (PUMP-RISK)
+- github-monitor scanned 1 repo, no alerts logged
+- skill-repair ran multiple times today (3 tool runs) — under the hood analysis shows 33-75 tool calls across multiple sub-skills
+
+*Watch*
+- (omitted — no headlines found)
 
 *Running today*
-- price-alert @ 00:00–23:00 UTC (hourly)
-- heartbeat @ 08:00 UTC (this run)
-- github-monitor @ 09:00 UTC
-- token-movers @ 12:00 UTC
 - digest @ 14:00 UTC
+- skill-repair @ reactive (when triggered)
+- heartbeat @ 08:00 UTC (this run)

@@ -1,0 +1,13 @@
+### token-movers
+- Mode: movers | Source: coingecko | Scope: global
+- Var: (empty)
+- Pulse: Broad risk-off — 15/100 top coins are green, median -3.6%
+- Winners: PYTH (+14.9%), BTW (+8.1%), BDX (+3.5%), AERO (+3.4%), ATOM (+3.2%), ONDO (+2.8%), FIL (+2.6%), STX (+1.7%), FIGR_HELOC (+1.0%), LIT (+1.0%)
+- Losers: NEAR (-14.8%), ZEC (-10.2%), ZRO (-9.6%), VVV (-9.5%), RNDR (-8.7%), INJ (-8.4%), PUMP (-8.4%), AVAX (-8.2%), ICP (-8.2%), ADA (-7.8%)
+- Trending: SIMD, DRV, QTC, NEAR, PENGU, PONS, ZEC
+- Notable: SIMD - TRENDING+UP 20.4% on $782 volume - extreme microcap pump; DRV - TRENDING+UP 19.4% on $2.3M volume; QTC - TRENDING+UP 49.4% on $84.8M volume - PUMP-RISK, microcap; NEAR - #21 rank down 14.8% with CAPITULATION flag; ZEC - TRENDING+DOWN 10.4% on $1.5B volume - major privacy coin under pressure
+- Notification sent: pending approval
+- FORCE_REPLY_OFFERED: deep-dive (force-reply to be sent)
+
+### token-movers — under the hood
+- 🔧 12 tool calls — 3× WebFetch, 1× Python, 1× Write

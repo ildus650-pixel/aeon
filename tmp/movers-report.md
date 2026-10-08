@@ -1,12 +1,8 @@
-Now let me provide you with the complete movers report:
+# Token Movers — 2026-10-08
 
----
+Broad risk-off — 15/100 top coins are green, median -3.6%; losers dominate across L1s and DeFi.
 
-## Token Movers — 2026-10-08
-
-**Broad risk-off — 15/100 top coins are green, median -3.6%; losers dominate across L1s and DeFi.**
-
-### Top Winners (24h)
+## Top Winners (24h)
 
 1. **PYTH** (Pyth Network) — $0.084 +14.9% / 7d +2.5% / 1h -0.3% • $103M / #97 [MAJOR]
 2. **BTW** (Bitway) — $1.40 +8.1% / 7d +0.0% / 1h -0.5% • $10M / #33
@@ -19,7 +15,7 @@ Now let me provide you with the complete movers report:
 9. **FIGR_HELOC** (Figure Heloc) — $1.03 +1.0% / 7d -0.4% / 1h -0.1% • $24B / #9 [MAJOR]
 10. **LIT** (Lighter) — $3.61 +1.0% / 7d +4.8% / 1h -0.7% • $165M / #83
 
-### Top Losers (24h)
+## Top Losers (24h)
 
 1. **NEAR** (NEAR Protocol) — $4.54 -14.8% / 7d -22.6% / 1h -1.1% • $1.5B / #21 [TRENDING+DOWN] [CAPITULATION]
 2. **ZEC** (Zcash) — $1,183 -10.2% / 7d -12.8% / 1h +0.9% • $1.5B / #10 [TRENDING+DOWN] [MAJOR]
@@ -32,7 +28,7 @@ Now let me provide you with the complete movers report:
 9. **ICP** (Internet Computer) — $2.94 -8.2% / 7d -6.8% / 1h -1.0% • $83M / #60
 10. **ADA** (Cardano) — $0.235 -7.8% / 7d -9.2% / 1h -0.4% • $8.8B / #17 [MAJOR]
 
-### Trending
+## Trending
 
 1. **SIMD** (Super Intelligent Identity) — #800, $0.0228, 24h +20.4% [TRENDING+UP] [MICROCAP]
 2. **DRV** (Derive) — #124, $0.441, 24h +19.4% [TRENDING+UP] [MICROCAP]
@@ -42,33 +38,10 @@ Now let me provide you with the complete movers report:
 6. **PONS** (Pons) — #165, $0.349, 24h -7.9% [TRENDING+DOWN] [MICROCAP]
 7. **ZEC** (Zcash) — #10, $1,183, 24h -10.4% [TRENDING+DOWN] [MAJOR] [MICROCAP]
 
-### Notable
+## Notable
 
 • **SIMD** — TRENDING+UP 20.4% on $782 volume — extreme microcap pump with no liquidity signal yet
 • **DRV** — TRENDING+UP 19.4% on $2.3M volume — sustained momentum from Derive
 • **QTC** — TRENDING+UP 49.4% on $84.8M volume — high-risk microcap with massive gain
 • **NEAR** — #21 rank down 14.8% with CAPITULATION flag — sustained pressure on major L1
 • **ZEC** — TRENDING+DOWN 10.4% on $1.5B volume — major privacy coin under pressure
-
----
-
-Want a deep-dive report on any mover? Reply with a ticker or contract.
-
-## Summary
-
-**What I did:**
-- Fetched CoinGecko market data (top 250) and trending coins
-- Filtered out stablecoins and illiquid tokens (<$1M 24h volume)
-- Analyzed 24h, 7d, and 1h price changes
-- Tagged winners/losers/trending with market signals [TRENDING+UP/DOWN], [BREAKOUT], [CAPITULATION], [PUMP-RISK], [MICROCAP], [MAJOR]
-- Generated comprehensive movers report with 10 winners, 10 losers, and 7 trending tokens
-- Created detailed notable section highlighting extreme microcap pumps (SIMD +20.4%, QTC +49.4%) and major L1/privacy coin pressure (NEAR -14.8%, ZEC -10.2%)
-
-**Files created:**
-- `/home/runner/work/aeon/aeon/tmp/movers-report.md` — Full movers report
-- `/home/runner/work/aeon/aeon/tmp/token-movers-log.txt` — Log entry content (would be appended to memory/logs/2026-10-08.md)
-
-**Key signals:**
-- Broad risk-off tape: only 15% of top 100 coins green
-- Extreme microcap pump risk: SIMD (+20.4%) and QTC (+49.4%) with PUMP-RISK tags
-- Major L1 pressure: NEAR (-14.8%, CAPITULATION) and ZEC (-10.2%, TRENDING+DOWN)

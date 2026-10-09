@@ -1,19 +1,22 @@
+Price-alert skill completed successfully. 
+
 ## Summary
 
-**Price Alert skill completed successfully.**
+**Tracked Token**: WBTC (Wrapped BTC) on Ethereum
 
-**What happened:**
-- Tracked token: WBTC on Ethereum (contract: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-- Current price: $82,875.70
-- 1h change: +0.01% | 24h change: +2.11%
-- No gates fired: ATH unchanged, no sharp move (±20%), no targets set
+**Current Price**: $82,421.80
+- 1-hour change: +0.20%
+- 24-hour change: +0.91%
 
-**Files modified:**
-- `memory/topics/price-alert-state.json` — updated last_run_at and ath.announced_at timestamps
+**Gate Evaluations**:
+- **ATH gate**: QUIET — Current price ($82,421.80) below previous ATH ($87,078.30)
+- **Sharp-move gate**: QUIET — 0.20% change in 1h, below ±20% threshold
+- **Target-crossing gate**: No targets configured
 
-**Status:** `PRICE_ALERT_OK` — clean run, no notifications sent.
+**Status**: `PRICE_ALERT_OK` — No alerts fired on this run.
 
-**Follow-up:**
-- To set price targets, pass `target_price` values to this skill (e.g., `var=100000,120000`)
-- To register a target via Telegram reply, use `var=set-target:<price>` format
-- Target alerts fire only once per direction and respect 4h dedup windows
+**Actions**:
+- Updated `memory/topics/price-alert-state.json` with latest run timestamp
+- Appended run details to `memory/logs/2026-10-09.md`
+
+No notifications were sent — the token is trading within normal ranges with no ATH or sharp moves detected.

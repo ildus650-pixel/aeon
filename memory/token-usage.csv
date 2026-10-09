@@ -95,4 +95,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-08,heartbeat,claude-sonnet-5,240692,4622,283443,0
 2026-10-08,github-monitor,claude-sonnet-5,308201,5879,673184,0
 2026-10-08,token-movers,claude-sonnet-5,205408,14892,1461235,0
-2026-10-09,price-alert,claude-sonnet-5,506324,2719,26304,0
+2026-10-09,digest,claude-sonnet-5,463898,5356,431301,0

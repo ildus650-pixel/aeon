@@ -13,6 +13,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-09 | Digest | Google agentic AI, OpenAI revenue, Goodfire agent monitors |
 | 2026-10-08 | Digest | Nous Research $1.5B, Meta Muse iPad, Microsoft AI PCs, Mecka AI $60M, HealthLeap $38M |
 | 2026-10-06 | Digest | Anthropic startup credits, LibreOffice no-AI stance, Wajo agent market |
 | 2026-10-04 | Digest | Trump Super Intelligence Force, Japan Garantex sanctions, El Salvador IMF $138M, Russia digital rubles |

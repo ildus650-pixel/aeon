@@ -1,28 +1,25 @@
-*Digest — 2026-10-08*
+ℹ️ Daily Digest
 
-_TL;DR: Nous Research hits $1.5B valuation and launches AI agents, Meta's Muse assistant expands to iPad, and Microsoft ships AI PCs with Nvidia chips._
+*Digest — 2026-10-09*
 
-1. *Nous Research confirms $1.5B valuation, launches AI agents for business users*
-   Nous Research, developer of the Hermes Agent framework, closed a $90M Series B to reach $1.5B valuation and roll out AI agents for enterprise workflows.
-   Why it matters: Direct AI agent infrastructure funding at record valuation
-   https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/
+_TL;DR: Google adds agentic AI to Gemini, OpenAI faces revenue and safety controversies, and a startup launches a $99 smart ring with AI agents._
 
-2. *Meta's Muse launches on iPad just a month after its mobile debut*
-   Meta's AI assistant Muse is now available on iPad, rapidly expanding reach and integrations after its mobile-only launch.
-   Why it matters: AI assistant platform moves quickly across form factors
-   https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/
+1. *Google turns Gemini into an AI agent that can plan and execute business tasks*
+   Google's AI model now plans, delegates work to subagents, and uses multiple models across business apps with its own email address. This extends beyond chatbots into actual task automation for enterprises.
+   https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/
 
-3. *Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11*
-   Microsoft unveiled Surface Laptop Ultra and AI PCs running Nvidia chips designed specifically for running AI models and agents.
-   Why it matters: Hardware stack optimized for AI workloads lowers entry barriers
-   https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/
+2. *OpenAI's revenue reportedly $20B less than previously projected*
+   Earlier reports claimed annualized revenue around $70 billion, but new reporting suggests a much lower figure, highlighting uncertainty around the company's scale and growth trajectory.
+   https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/
 
-4. *Robot data startup Mecka AI nabs $60M from Sequoia*
-   Mecka AI collects human motion data to train humanoid robots, raising $60M from Sequoia to scale operations.
-   Why it matters: Robotics and AI convergence gains major venture backing
-   https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/
+3. *Goodfire launches cheaper AI agent monitoring with 'inside-out' approach*
+   The startup's monitors peek inside the model while it works and only call backup when something looks fishy, reducing the cost of catching rogue agents compared to paying a second AI to read everything.
+   https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/
 
-5. *HealthLeap raises $38M for AI hospital patient triage*
-   HealthLeap's AI flags patients who may need closer monitoring, securing $38M including $8M seed and $30M Series A.
-   Why it matters: Clinical AI deployment scale-up hits $38M funding round
-   https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/
+4. *Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect*
+   Three researchers dismissed for mishandling sensitive information refute the allegations in an open letter, saying their firing creates a chilling effect on the company's AI safety culture.
+   https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/
+
+5. *Natura's $99 smart ring lets you summon AI agents with a finger press*
+   The Interface smart ring doubles as a health tracker and lets users complete tasks, capture thoughts, and control devices through voice or button taps — making AI agents accessible at a consumer price point.
+   https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/

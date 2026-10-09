@@ -1,31 +1,19 @@
----
 
-**Price Threshold Alert**
-
-WBTC is currently trading at **$85,599.07** with:
-- 1-hour change: **+0.1%**
-- 24-hour change: **-0.21%**
-
-**Status:**
-- ATH (all-time high): $87,078.30 — **unchanged** (not a new high)
-- Sharp-move gate: **quiet** (|±20% in 1h| threshold not met)
-- Target-crossing gate: **quiet** (no targets set)
-
-**Result:** No alerts triggered — normal market movement, no action required.
-
----
 
 ## Summary
 
-**Completed:**
-- Fetched current WBTC price from DexScreener API
-- Evaluated all three alert gates (ATH, sharp-move, target-crossing)
-- No gates fired (normal market conditions)
-- Updated state file with `last_run_at`, `ath.observed_at`, `ath.announced_at`, and `last_alerts.ath`
-- Appended run log to `memory/logs/2026-10-06.md`
+Ran `price-alert` for the tracked token **WBTC** (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum.
 
-**Files modified:**
-- `memory/topics/price-alert-state.json` — updated timestamps and last alert markers
-- `memory/logs/2026-10-06.md` — added price-alert run log entry
+**Result: `PRICE_ALERT_OK` — no gate fired, no notification sent.**
 
-**No notifications sent** — all gates quiet.
+- **Current price**: $81,820.33 (deepest pool: Uniswap V3 WBTC/USDT, $30.5M liquidity)
+- **1h**: +0.2% · **24h**: −1.56%
+- **ATH gate**: $87,078.30 unchanged — current price is below the stored ATH, so no new high.
+- **Sharp-move gate**: QUIET — |+0.2%| < 20% threshold.
+- **Targets**: none set (empty `var`).
+
+**Files touched:**
+- `memory/topics/price-alert-state.json` — `last_run_at` bumped to `2026-10-09T13:40:00Z`; ATH/last_alerts/targets unchanged.
+- `memory/logs/2026-10-09.md` — new log block appended (file didn't exist before today).
+
+No follow-up actions needed — nothing crossed a threshold.

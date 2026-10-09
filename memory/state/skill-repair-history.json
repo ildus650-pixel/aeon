@@ -10,10 +10,10 @@
     "issue": "ISS-1"
   },
   "price-alert": {
-    "last_repair_at": "2026-09-23T19:30:00Z",
-    "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
+    "last_repair_at": "2026-10-09T12:00:00Z",
+    "exit_code": "REPAIR_OK_FIXED",
     "issue": "ISS-8",
-    "fix_pr": "https://github.com/ildus650-pixel/aeon/pull/15"
+    "fix_pr": "https://github.com/ildus650-pixel/aeon/pull/25"
   },
   "skill-repair": {
     "last_repair_at": "2026-09-29T18:00:00Z",

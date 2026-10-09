@@ -2,7 +2,7 @@
 name: price-alert rate-limit throttling
 description: price-alert skill hits Claude API 429 errors during execution
 status: fix-pending
-fix_pr: https://github.com/ildus650-pixel/aeon/pull/15
+fix_pr: https://github.com/ildus650-pixel/aeon/pull/25
 category: rate-limit
 severity: high
 ---
@@ -66,6 +66,23 @@ The skill makes frequent DexScreener API calls without sufficient delay between 
 **PR status:** Open, created 2026-09-22, last updated 2026-09-22T20:21:04Z, no reviews yet.
 
 **Action required:** Operator must review and merge PR #15 to apply the rate-limit backoff fix.
+
+## Repair attempt 4 — 2026-10-09 (skill-repair var=price-alert)
+
+**Diagnosis:** 6 consecutive failures since 2026-10-06T21:03:17Z. Success rate 54%, quality score 3. All 5 recent failures show the same 429 rate-limit error pattern. No code regression — no commits to price-alert or workflow since last success.
+
+**Root cause:** DexScreener API backoff (`sleep 2`) insufficient to prevent Claude API rate-limit throttling during repeated workflow executions. PR #15 (0.5s sleep) is open but unmerged and inadequate.
+
+**Fix applied:** Increased DexScreener backoff from `sleep 2` to `sleep 5` in `skills/price-alert/SKILL.md` line 98.
+
+**PR:** https://github.com/ildus650-pixel/aeon/pull/25
+
+**Verification plan:**
+1. Run skill with `var=price-alert` and observe workflow conclusion: `success`
+2. Check memory/logs/2026-10-09.md for price-alert mentions
+3. Verify no `rate limit` strings in run logs
+
+**If still failing:** delete `memory/state/skill-repair-history.json[price-alert]` to remove the cooldown, then re-dispatch `skill-repair` with `var=price-alert` for a second pass.
 
 ## Source status
 

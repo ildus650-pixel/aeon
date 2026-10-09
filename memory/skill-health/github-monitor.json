@@ -1,12 +1,12 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-10-08T17:51:16Z",
-  "quality_score": 2,
-  "assessment": "Ran but low quality - generic boilerplate with no real signal",
+  "last_analyzed": "2026-10-09T09:39:03Z",
+  "quality_score": 4,
+  "assessment": "Substantive monitoring output with clear analysis and verifiable facts",
   "flags": [
-    "generic_content"
+    "stale_data"
   ],
-  "avg_score": 3.63,
+  "avg_score": 3.65,
   "history": [
     {
       "date": "2026-09-19",
@@ -120,6 +120,12 @@
       "date": "2026-10-08",
       "score": 2,
       "ts": "2026-10-08T17:51:16Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-09",
+      "score": 4,
+      "ts": "2026-10-09T09:39:03Z",
       "harness": "claude"
     }
   ]

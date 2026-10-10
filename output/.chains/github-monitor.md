@@ -1,19 +1,21 @@
 ## Summary
 
-Successfully executed the **github-monitor** skill with the default monitor view.
+**GitHub Monitor** — 1 repo scanned, 0 need action
 
-**Results:**
-- 1 repository scanned: `aeonfun/aeon`
-- No items surfaced across all tiers (ACT NOW, REVIEW, INFO)
-- GITHUB_MONITOR_OK repos=1
+Scanned `aeonfun/aeon` for PRs, issues, and releases from the last 24h:
 
-**Analysis:**
-- **Open PRs**: PR #1181 exists but is a draft created on 2026-10-07 (2 days ago). Drafts are only eligible for INFO if stale >7d, so this doesn't qualify.
-- **Issues**: No new issues within the last 24 hours
-- **Releases**: v0.1.0 was published on 2026-07-09, far older than 24 hours
+- **Open PRs**: 1 found (PR #1181 - draft, connected to hosted MCP server, 49h old)
+  - Not ACT NOW: it's a draft
+  - Not REVIEW: it's a draft  
+  - Not INFO: draft requires >7d to surface
 
-**Output:**
-```
-- view: monitor (var="")
-- GITHUB_MONITOR_OK repos=1
-```
+- **Open Issues**: 1 found (issue #1181, same title as PR, 54h old)
+  - Not in alert window: not created within last 24h
+
+- **Releases**: 1 found (v0.1.0, 92 days old)
+  - Not in alert window: not published within last 24h
+
+**Result**: Clean day — no items surfaced. Logged `GITHUB_MONITOR_OK repos=1`.
+
+**Files modified:**
+- `memory/logs/2026-10-10.md` — appended monitor entry

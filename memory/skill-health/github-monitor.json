@@ -1,12 +1,10 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-10-09T09:39:03Z",
-  "quality_score": 4,
-  "assessment": "Substantive monitoring output with clear analysis and verifiable facts",
-  "flags": [
-    "stale_data"
-  ],
-  "avg_score": 3.65,
+  "last_analyzed": "2026-10-10T21:40:26Z",
+  "quality_score": 5,
+  "assessment": "Excellent - clean, verifiable scan with no action items surfaced. Precise, actionable output that correctly applies all filtering criteria (draft exclusion, 24h window).",
+  "flags": [],
+  "avg_score": 3.71,
   "history": [
     {
       "date": "2026-09-19",
@@ -126,6 +124,12 @@
       "date": "2026-10-09",
       "score": 4,
       "ts": "2026-10-09T09:39:03Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-10",
+      "score": 5,
+      "ts": "2026-10-10T21:40:26Z",
       "harness": "claude"
     }
   ]

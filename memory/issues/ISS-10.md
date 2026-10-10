@@ -75,3 +75,7 @@ Apply rate-limit fix by compressing preamble and reducing token consumption:
 4. **Consolidate formatting** — Reduce repetition in formatting rules sections
 
 Expected token reduction: ~40-50% (from 1.7M to ~0.8-1M tokens).
+
+**PR:** https://github.com/ildus650-pixel/aeon/pull/26
+
+**Verification:** Manual trigger via workflow_dispatch with `skill=token-movers`.

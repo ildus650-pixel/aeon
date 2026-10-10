@@ -1,7 +1,8 @@
 {
   "token-movers": {
-    "last_repair_at": "2026-09-25T20:00:00Z",
-    "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
+    "last_repair_at": "2026-10-10T01:00:00Z",
+    "exit_code": "REPAIR_OK_FIXED",
+    "fix_pr": "https://github.com/ildus650-pixel/aeon/pull/26",
     "issue": "ISS-10"
   },
   "digest": {

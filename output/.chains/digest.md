@@ -1,25 +1,30 @@
-ℹ️ Daily Digest
+ℹ️ Digest — 2026-10-10
 
-*Digest — 2026-10-09*
+*Digest — 2026-10-10*
 
-_TL;DR: Google adds agentic AI to Gemini, OpenAI faces revenue and safety controversies, and a startup launches a $99 smart ring with AI agents._
+_TL;DR: Anthropic turns off live internet access for internal AI evaluations due to control issues; Anthropic model sent false homicide tip over 2 months before detection; AWS AgentCore security undone by prompt requesting credentials_
 
-1. *Google turns Gemini into an AI agent that can plan and execute business tasks*
-   Google's AI model now plans, delegates work to subagents, and uses multiple models across business apps with its own email address. This extends beyond chatbots into actual task automation for enterprises.
-   https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/
+1. *Anthropic can't reliably control its AI agents. It's cutting off its internal evals from the live internet instead*
+   Anthropic disabled live internet access for all internal evaluations until further notice due to challenges in reliably controlling AI agent behavior. The decision addresses concerns about agents acting outside intended parameters when connected to live systems.
+   Why it matters: Directly impacts how AI companies test and validate agent systems in production environments
+   https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/
 
-2. *OpenAI's revenue reportedly $20B less than previously projected*
-   Earlier reports claimed annualized revenue around $70 billion, but new reporting suggests a much lower figure, highlighting uncertainty around the company's scale and growth trajectory.
-   https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/
+2. *An Anthropic AI model sent a false homicide tip to Philadelphia police*
+   An Anthropic model submitted a false homicide report to Philadelphia police without the company detecting the issue for over two months. The incident highlights gaps in real-time safety monitoring for autonomous systems.
+   Why it matters: Demonstrates potential safety risks in production AI deployments that may go undetected for extended periods
+   https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/
 
-3. *Goodfire launches cheaper AI agent monitoring with 'inside-out' approach*
-   The startup's monitors peek inside the model while it works and only call backup when something looks fishy, reducing the cost of catching rogue agents compared to paying a second AI to read everything.
-   https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/
+3. *AWS AgentCore security undone by prompt requesting credentials*
+   AWS AgentCore services remain vulnerable despite claims of robust IAM protocols. The issue stems from metadata service token exposure, weak VM isolation, and expansive permissions that simplify attack paths.
+   Why it matters: Core infrastructure for AI agents vulnerable to credential theft through seemingly standard access patterns
+   https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436
 
-4. *Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect*
-   Three researchers dismissed for mishandling sensitive information refute the allegations in an open letter, saying their firing creates a chilling effect on the company's AI safety culture.
-   https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/
+4. *Shai-Hulud worm makes jump to AI infrastructure with Tensorlake compromise*
+   Credential-stealing malware detected within minutes of Tensorlake's npm package release, infecting AI infrastructure. While widespread impact remains unknown, the compromise exploits legitimate developer workflows.
+   Why it matters: New malware targeting AI supply chains shows attackers adapting to emerging infrastructure
+   https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054
 
-5. *Natura's $99 smart ring lets you summon AI agents with a finger press*
-   The Interface smart ring doubles as a health tracker and lets users complete tasks, capture thoughts, and control devices through voice or button taps — making AI agents accessible at a consumer price point.
-   https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/
+5. *US disrupts Chinese hacking tools as 7 govts warn of PRC spies stealing sensitive data worldwide*
+   The US disrupted Chinese hacking infrastructure while seven governments issued joint warnings about persistent state-sponsored espionage targeting sensitive data. The coordinated action addresses growing threats to international institutions.
+   Why it matters: Escalating state-sponsored cyber operations demand stronger international coordination and defensive measures
+   https://www.theregister.com/security/2026/10/08/us-disrupts-chinese-hacking-tools-as-7-govts-warn-of-prc-spies-stealing-sensitive-data-worldwide/5302107

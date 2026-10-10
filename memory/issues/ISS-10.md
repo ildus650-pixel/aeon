@@ -1,36 +1,44 @@
 ---
 status: open
-title: token-movers intermittent failures with truncated API responses
+title: token-movers rate limit exhaustion (429 free-models-per-day)
 severity: medium
-category: api-change
-detected: 2026-09-25T20:00:00Z
+category: rate-limit
+detected: 2026-10-10T04:56:00Z
 affected_skills: token-movers
 ---
 
 ## Symptom
 
-Token-movers skill failing with truncated JSON error messages in `memory/cron-state.json`:
+Token-movers skill failing with Claude Code API rate limit error:
 
 ```
-"last_error": "a9730\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
+API Error: Request rejected (429) · Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day
 ```
+
+**Usage at failure:**
+- 1725,319 input tokens
+- 10,424 output tokens
+- 37 tool turns
+- Quality score: 4 (good output when successful)
+- Failure: 2026-10-10T01:08:57Z
 
 ## Diagnosis
 
-- **Failure pattern:** 3 consecutive failures out of 16 runs (19% failure rate)
-- **Success rate:** 38% (6/16 runs successful)
-- **Last success:** 2026-09-24T15:31:57Z
-- **Last failed:** 2026-09-25T19:59:13Z
-- **Quality score:** Last successful run had score 5 (good output when successful)
-- **Regression commits:** None in the 24h window since last success
-- **API health:** Manual tests show CoinGecko and GeckoTerminal responding successfully
+- **Failure pattern:** 3 consecutive failures out of 5 recent runs (60% failure rate)
+- **Success rate:** 40% (18/45 total runs)
+- **Last success:** 2026-10-08T22:43:14Z
+- **Last failed:** 2026-10-10T01:08:57Z
+- **Regression commits:** ebe47dc - 691 line skill file expansion (full file rewrite)
 
 ## Root cause
 
-Intermittent API responses returning malformed/empty JSON that isn't being properly caught by current error handling. The truncated error message suggests partial API response data, possibly from:
-- CoinGecko markets endpoint
-- GeckoTerminal endpoints
-- Or another third-party API used by the skill
+**Claude Code free model quota exhaustion.** The skill consumed 1.7M+ tokens across 37 turns, exceeding the free daily quota. This is NOT an external API issue (CoinGecko/GeckoTerminal/API are healthy) but a session token budget exhaustion within the run.
+
+The skill file was massively expanded in commit ebe47dc (691 new lines), increasing token consumption through:
+- Verbose preamble with detailed rule descriptions (11 parsing rules, each with examples)
+- Expanded memory log reading (last 30 days for single-token delta analysis)
+- More detailed logging and formatting sections
+- Longer examples and inline comments
 
 ## Source status
 
@@ -45,15 +53,25 @@ cron_state=ok | issues_index=ok | gh_runs=ok | gh_logs=ok | git_log=ok | check_r
 4. XAI API (optional) - social sentiment
 5. Chain RPCs (optional) - treasury balances
 
-**Current error handling:**
-- WebFetch fallback when curl fails or returns empty JSON
-- Graceful degradation for missing config/data
+**Token consumption hotspots:**
+- Preamble: 11 verbose parsing rules with examples
+- Log reading: 30 days of history for single-token runs
+- Repeated reading of skill file in each tool invocation
+- 37 tool turns (max turns before hitting quota)
 
 **Investigation needed:**
-- Check if CoinGecko or GeckoTerminal have recently changed their response format
-- Verify if rate-limiting is causing partial responses
-- Review the specific error message source in the skill's execution path
+- Reduce preamble verbosity (compress rule descriptions)
+- Limit log history to 7 days for delta analysis
+- Reduce rule examples in preamble
+- Use shorter, more direct instructions
 
-## Repair Attempt — 2026-09-25
+## Repair Attempt — 2026-10-10
 
-Diagnostic phase only. No fix applied. Issue filed to allow operator review before attempting fix.
+Apply rate-limit fix by compressing preamble and reducing token consumption:
+
+1. **Compress preamble** — Remove verbose examples from rule descriptions, keep only concise action items
+2. **Limit log history** — Reduce single-token delta analysis from 30 days to 7 days
+3. **Shorten inline comments** — Condense verbose explanations into brief notes
+4. **Consolidate formatting** — Reduce repetition in formatting rules sections
+
+Expected token reduction: ~40-50% (from 1.7M to ~0.8-1M tokens).

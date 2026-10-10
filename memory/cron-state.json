@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-10-10T07:04:52Z",
     "total_runs": 99,
     "total_successes": 55,
@@ -20,7 +20,7 @@
     "consecutive_failures": 2,
     "success_rate": 0.56,
     "last_quality_score": 2,
-    "last_dispatch": "2026-10-10T17:58:01Z",
+    "last_dispatch": "2026-10-10T21:32:35Z",
     "last_failed": "2026-10-10T18:04:43Z",
     "last_error": ",\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"input"
   },
@@ -29,8 +29,8 @@
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-10-10T17:58:01Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-10T21:32:35Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-09T09:39:04Z",
     "total_runs": 32,
     "total_successes": 21,
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-10T17:58:01Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-10T21:32:35Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-10T18:05:24Z",
     "total_runs": 55,
     "total_successes": 14,
@@ -68,8 +68,8 @@
     "last_quality_score": 4
   },
   "skill-repair": {
-    "last_dispatch": "2026-10-10T17:58:01Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-10T21:32:35Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-10T18:04:30Z",
     "total_runs": 69,
     "total_successes": 25,

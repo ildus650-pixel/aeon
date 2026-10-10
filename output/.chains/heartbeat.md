@@ -1,19 +1,20 @@
-*Priority Brief — 2026-10-08*
+Priority Brief — 2026-10-10
 
-*Focus today*
-1. Fix heartbeat RESEND_API_KEY guard — why now: 5 consecutive failures (32% success rate), P0 critical infrastructure
-2. Review price-alert rate-limit backoff PRs — why now: 4 consecutive failures (55% success rate), alerts for tracked BTC
-3. Review Dependabot updates (actions/mcp-server) — why now: two open security/critical updates, requires review
+Focus today
+1. Finish 3 blocked repair PRs — repair skill's 4 attempts stuck, token-movers/price-alert/heartbeat >24h open
+2. Configure notification channels — Next Priority unconfigured, alerts silently missed without Telegram/Discord/Slack
+3. Run first digest — strategy says run, but digest has 0.26 success rate, last failure yesterday
 
-*Since yesterday*
-- token-movers completed global movers scan with extreme pump SIF +418.36% (PUMP-RISK)
-- github-monitor scanned 1 repo, no alerts logged
-- skill-repair ran multiple times today (3 tool runs) — under the hood analysis shows 33-75 tool calls across multiple sub-skills
+Since yesterday
+- token-movers stuck: failed 2026-10-10T01:08:57Z, repair attempted 4 times, still failed
+- price-alert stuck: failed 2026-10-10T13:38:35Z, repair attempted, still failed
+- heartbeat stuck: failed 2026-10-10T13:37:28Z, repair attempted, still failed
+- skill-repair: failed to auto-fix any, consecutive failures now 1
 
-*Watch*
-- (omitted — no headlines found)
-
-*Running today*
+Running today
 - digest @ 14:00 UTC
-- skill-repair @ reactive (when triggered)
-- heartbeat @ 08:00 UTC (this run)
+- skill-repair @ reactive (should fire on consecutive_failures >= 3)
+- token-movers @ 12:00 UTC
+- price-alert @ 14:00 UTC
+- heartbeat @ 08:00 UTC (already dispatched, failed)
+- github-monitor @ 09:00 UTC

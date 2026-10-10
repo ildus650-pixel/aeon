@@ -69,13 +69,13 @@
   },
   "skill-repair": {
     "last_dispatch": "2026-10-10T06:56:10Z",
-    "last_status": "dispatched",
-    "last_success": "2026-10-09T02:38:16Z",
-    "total_runs": 66,
-    "total_successes": 23,
+    "last_status": "success",
+    "last_success": "2026-10-10T07:23:51Z",
+    "total_runs": 67,
+    "total_successes": 24,
     "total_failures": 43,
     "consecutive_failures": 0,
-    "success_rate": 0.35,
+    "success_rate": 0.36,
     "last_quality_score": 4,
     "last_failed": "2026-10-08T22:32:23Z",
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":364,\""

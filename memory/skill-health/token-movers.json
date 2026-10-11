@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-11T00:51:56Z",
-  "quality_score": 5,
-  "assessment": "Excellent — substantive, well-sourced, actionable token movers report with specific verifiable data, rankings, volumes, and clear signal",
+  "last_analyzed": "2026-10-11T21:55:14Z",
+  "quality_score": 4,
+  "assessment": "Substantive market data with clear winners/losers and signal tags; methodology specified (Coingecko, volume floor, stablecoin exclusion). Would rate 5 if percentages were directly sourced to API responses.",
   "flags": [],
-  "avg_score": 3,
+  "avg_score": 3.05,
   "history": [
     {
       "date": "2026-09-19",
@@ -112,6 +112,12 @@
       "date": "2026-10-11",
       "score": 5,
       "ts": "2026-10-11T00:51:56Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-11",
+      "score": 4,
+      "ts": "2026-10-11T21:55:14Z",
       "harness": "claude"
     }
   ]

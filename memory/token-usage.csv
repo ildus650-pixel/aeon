@@ -106,3 +106,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-11,token-movers,claude-sonnet-5,405044,32579,2003671,0
 2026-10-11,skill-repair,claude-sonnet-5,292077,11912,1824028,0
 2026-10-11,github-monitor,claude-sonnet-5,86664,5655,788430,0
+2026-10-11,token-movers,claude-sonnet-5,45145,1783,192732,0

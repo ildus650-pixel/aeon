@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-10-11T13:07:35Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-11T18:04:06Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-10T18:08:07Z",
     "total_runs": 60,
     "total_successes": 20,
@@ -29,8 +29,8 @@
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-10-11T13:07:35Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-11T18:04:06Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-10T21:40:27Z",
     "total_runs": 34,
     "total_successes": 22,
@@ -42,8 +42,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "token-movers": {
-    "last_dispatch": "2026-10-11T00:26:18Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-11T18:04:06Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-11T00:54:59Z",
     "total_runs": 47,
     "total_successes": 19,
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-11T00:26:18Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-11T18:04:06Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-10T21:43:22Z",
     "total_runs": 57,
     "total_successes": 15,
@@ -68,8 +68,8 @@
     "last_quality_score": 2
   },
   "skill-repair": {
-    "last_dispatch": "2026-10-11T13:07:35Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-11T18:04:06Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-11T06:30:02Z",
     "total_runs": 73,
     "total_successes": 27,

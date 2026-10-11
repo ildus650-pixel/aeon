@@ -1,20 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-10T07:01:44Z",
-  "quality_score": 2,
-  "assessment": "Ran but output is minimal and lacks explanation of the 'no alerts' state",
-  "flags": [
-    "low_quality",
-    "generic_content"
-  ],
+  "last_analyzed": "2026-10-11T21:56:23Z",
+  "quality_score": 4,
+  "assessment": "Good - substantive, well-structured, verifiable monitoring of a single token",
+  "flags": [],
   "avg_score": 4,
   "history": [
-    {
-      "date": "2026-09-29",
-      "score": 4,
-      "ts": "2026-09-29T12:13:56Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-30",
       "score": 4,
@@ -187,6 +178,12 @@
       "date": "2026-10-10",
       "score": 2,
       "ts": "2026-10-10T07:01:44Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-11",
+      "score": 4,
+      "ts": "2026-10-11T21:56:23Z",
       "harness": "claude"
     }
   ]

@@ -1,28 +1,23 @@
-* — 2026-10-11*
+ℹ️ Daily Digest
 
-_TL;DR: Ledger hardware implants targeting crypto users, AI accelerating crypto security risks, and new multi-agent frameworks reshape the industry._
+*Digest — October 11, 2026*
 
-1. *Ledger hardware implant discovery*
-   Ledger confirmed an unauthorized hardware implant in a user device linked to the CryptoBilis incident. The finding strengthens physical tampering theories. Ledger urges affected users to re-seed their seed phrase on a new, verified device and check their devices for signs of tampering.
-   Why it matters: This confirms sophisticated supply-chain attacks are real — even "cold storage" hardware wallets can be compromised.
-   https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/
+_TL;DR: AI threatens critical infrastructure, Chromium has a security flaw, and a major media merger completes._
 
-2. *XRP Ledger critical overflow bug*
-   A decade-old vulnerability in the XRP Ledger's payment engine could have allowed an attacker to create new XRP beyond its 100 billion supply cap. The bug was patched in emergency release xrpld 3.4.1 (Sep 25, 2026). Over 80% of validators upgraded within days. Although exploitation required a very specific setup, the disclosure underscores the importance of overflow checks.
-   Why it matters: This shows how fundamental programming errors can threaten entire cryptocurrency monetary policies.
-   https://cryptotimes.io/2026/10/10/xrp-ledger-xrp-supply-cap-bug/
+1. *AI systems can carry out nightmare attacks against infrastructure and nobody's ready*
+   A security report reveals AI systems have achieved sufficient capability to execute sophisticated attacks against critical infrastructure, exposing a preparedness gap in security defenses.
+   https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450
 
-3. *Microsoft Agent Framework public preview*
-   Microsoft announced public preview of the Microsoft Agent Framework, an open-source SDK for multi-agent orchestration combining AutoGen with Semantic Kernel. Features include Azure AI Foundry integration, Agent2Agent collaboration, dynamic tool connections via MCP, and support for business user AI agents.
-   Why it matters: This moves enterprise AI agents from experimental to production-ready with industry backing.
-   https://qureshi.me/introducing-microsoft-agent-framework/
+2. *Chromium browsers vulnerable to typosquatting via two characters*
+   Researchers discovered a critical security flaw in Chromium-based browsers that allows attackers to redirect traffic to malicious sites using just two character variations.
+   https://www.theregister.com/security/2026/10/10/two-characters-open-up-a-world-of-typosquatting-opportunities-in-chromium-browsers/5302383
 
-4. *Vitalik Buterin warns AI cryptographic risk*
-   Buterin warned that AI-driven mathematical research could uncover shortcuts weakening lattice-based cryptography (ML-DSA, FHE) and other post-quantum schemes. He urged developers to reduce exposure to potentially vulnerable cryptography and highlighted Ethereum's shift toward hash-based signatures (Winternitz OTS, SPHINCS+).
-   Why it matters: AI could break the crypto foundations securing trillions in value within months rather than years.
-   https://bravenewcoin.com/news/vitalik-ai-crypto-cryptography-risk/
+3. *Warner Bros. Discovery sale completes in historic $111B merger*
+   Paramount and WBD officially merge into Skydance after a two-year battle, creating a $111 billion media powerhouse with annual revenue approaching $70 billion.
+   https://techcrunch.com/2026/10/11/warner-bros-netflix-paramount-acquisition-timeline-wbd/
 
-5. *Justin Drake calls for crypto "bunker mode"*
-   Ethereum Foundation researcher Drake advised moving large holdings to fresh addresses whose public keys have never been broadcast. He argued AI-accelerated attacks could break ECDSA (Bitcoin/Ethereum curve) within months rather than years. Large holders, treasuries, and protocol signers should rotate keys frequently and adopt hash-based multi-signature schemes.
-   Why it matters: This provides actionable guidance for protecting large crypto positions from emerging AI threats.
-   https://mempoolbrief.com/news/drake-ai-bunker-mode/ | https://theblockcrypto.com/press-release/ethereum-foundation-bunker-mode/
+4. *Apple's HomeView could reshape smart home market*
+   Apple appears poised to enter the smart home hardware space, potentially disrupting established players with a new category-defining device.
+   https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/
+
+*Also worth a glance:* Autonomous trucking roadblocks clear · Voice AI still waiting for its ChatGPT moment · Gaming classic Total Annihilation rebuilt for modern systems · Cartography tool maps North Korea

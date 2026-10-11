@@ -1,1 +1,6 @@
-*skill-repair — REPAIR_BLOCKED*\nTarget: token-movers\nReason: 2 open PRs already exist — rate limit fix (PR #26) and CoinGecko retry fix (PR #19)\nPRs: #26 https://github.com/ildus650-pixel/aeon/pull/26 | #19 https://github.com/ildus650-pixel/aeon/pull/19\nStatus: Repair already in progress — no new action needed
+skill-repair — REPAIR_BLOCKED
+Target: token-movers
+Root cause: Open PRs already exist for this skill (rate limit fix + CoinGecko retry), no new repair needed
+Fix: —
+PR: —  Issue: —
+Verify: workflow_dispatch skill=token-movers

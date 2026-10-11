@@ -26,6 +26,27 @@ The skill makes frequent DexScreener API calls without sufficient delay between 
 - Category: rate-limit
 - Affected skills: price-alert only (not systemic cluster)
 
+## Repair attempt 4 — 2026-10-11
+
+**Diagnosis:**
+- All 3 recent runs (2026-10-10T17:58:10Z, T21:32:35Z, T21:32:41Z) fail with 429 "Rate limit exceeded: free-models-per-day"
+- Error from OpenRouter free-tier quota exhaustion (1000 requests/day shared across price-alert, digest, skill-repair, heartbeat)
+- Error duration: 186s (3+ minutes), API part: 1.1s — the sleep backoff itself is not the issue
+- Sleep backoff fixes (PR #15: 0.5s, PR #24: 0.5s, PR #25: 5s) did not resolve the issue
+
+**Root cause:**
+This is a **systemic quota exhaustion** on the OpenRouter free-tier model (openrouter/free). Multiple skills run concurrently (price-alert, digest, skill-repair, heartbeat), all consuming tokens from the same daily quota. The free-tier limit (1000 requests/day) is exceeded across all skills combined, causing 429 errors regardless of sleep backoff values.
+
+**Why sleep backoff didn't work:**
+Sleep reduces execution time, not token consumption. The skill completes successfully (no PRICE_ALERT_FETCH_FAIL, no PRICE_ALERT_BAD_PRICE), the error is from the Claude RUN hitting the OpenRouter free-tier quota, not from DexScreener API rate limits.
+
+**Exit taxonomy:** `REPAIR_DIAGNOSED_NO_FIX`
+
+**Required operator action:**
+- Option A: Upgrade OpenRouter tier or add credits (billing)
+- Option B: Reduce frequency of price-alert from hourly to 2h in aeon.yml (requires explicit authorization)
+- Option C: Add `model: claude-haiku-4-5-20251001` to price-alert to reduce token consumption (low-risk change)
+
 ## Repair attempt — 2026-09-22
 
 **Fix applied:** Added 0.5s sleep before DexScreener API call to reduce rate of requests.

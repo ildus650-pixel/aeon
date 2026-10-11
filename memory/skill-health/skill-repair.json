@@ -1,10 +1,10 @@
 {
   "skill": "skill-repair",
-  "last_analyzed": "2026-10-11T00:33:24Z",
+  "last_analyzed": "2026-10-11T06:26:50Z",
   "quality_score": 4,
-  "assessment": "Correct no-op: accurately reports that open PRs already cover the token-movers repair (rate limit fix + CoinGecko retry), with clear root cause and next verification step.",
+  "assessment": "Substantive, verifiable diagnosis of a system-level quota issue with clear remediation paths.",
   "flags": [],
-  "avg_score": 3.93,
+  "avg_score": 3.94,
   "history": [
     {
       "date": "2026-09-21",
@@ -94,6 +94,12 @@
       "date": "2026-10-11",
       "score": 4,
       "ts": "2026-10-11T00:33:24Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-11",
+      "score": 4,
+      "ts": "2026-10-11T06:26:50Z",
       "harness": "claude"
     }
   ]

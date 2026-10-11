@@ -10,10 +10,10 @@
     "issue": "ISS-1"
   },
   "price-alert": {
-    "last_repair_at": "2026-09-23T19:30:00Z",
+    "last_repair_at": "2026-10-11T21:44:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
     "issue": "ISS-8",
-    "fix_pr": "https://github.com/ildus650-pixel/aeon/pull/15"
+    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, skill-repair, heartbeat). Sleep backoff fixes ineffective — error is from Claude RUN hitting model quota, not DexScreener rate limits. Requires operator action: upgrade tier, reduce frequency, or switch to Haiku."
   },
   "skill-repair": {
     "last_repair_at": "2026-09-29T18:00:00Z",

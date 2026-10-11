@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-08T22:43:13Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-structured movers report with verifiable token data and clear market signals. Good utility for risk monitoring.",
+  "last_analyzed": "2026-10-11T00:51:56Z",
+  "quality_score": 5,
+  "assessment": "Excellent — substantive, well-sourced, actionable token movers report with specific verifiable data, rankings, volumes, and clear signal",
   "flags": [],
-  "avg_score": 2.88,
+  "avg_score": 3,
   "history": [
     {
       "date": "2026-09-19",
@@ -106,6 +106,12 @@
       "date": "2026-10-08",
       "score": 4,
       "ts": "2026-10-08T22:43:13Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-11",
+      "score": 5,
+      "ts": "2026-10-11T00:51:56Z",
       "harness": "claude"
     }
   ]

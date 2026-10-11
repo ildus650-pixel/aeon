@@ -1,10 +1,13 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-10T01:26:32Z",
-  "quality_score": 4,
-  "assessment": "Well-structured, timely digest with specific sources and analysis",
-  "flags": [],
-  "avg_score": 3.71,
+  "last_analyzed": "2026-10-11T00:37:43Z",
+  "quality_score": 2,
+  "assessment": "Well-formatted but contains a demonstrably mismatched citation — Item 1's TechCrunch URL is about Microsoft/Satya Nadella/AI, not the Ledger hardware implant story — plus unverifiable specifics (xrpld 3.4.1, '80% of validators', exact dates), which violates the 'correct, verifiable work over looks-finished' priority.",
+  "flags": [
+    "low_quality",
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.6,
   "history": [
     {
       "date": "2026-09-21",
@@ -88,6 +91,12 @@
       "date": "2026-10-10",
       "score": 4,
       "ts": "2026-10-10T01:26:32Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-11",
+      "score": 2,
+      "ts": "2026-10-11T00:37:43Z",
       "harness": "claude"
     }
   ]

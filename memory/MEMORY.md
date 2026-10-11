@@ -24,6 +24,7 @@
 | 2026-09-30 | Digest | ElevenLabs $22B valuation, Reddit RSS kill, DoorDash AI agent |
 | 2026-09-29 | Digest | AMD World Labs acquisition, Bitget hack, Bitcoin Q3 gains |
 | 2026-09-28 | Digest | Ember-1, SpaceX Starship, Parley |
+| 2026-10-11 | Digest | Ledger hardware implant, XRP Ledger bug, AI agents, crypto security |
 | 2026-09-25 | Digest (empty) | Gateway overload, no candidates |
 | 2026-09-21 | Digest | Grok 4.7, NASA Mars Sample Return cancelled, CI bottleneck, OpenAI math advisory group |
 | 2026-09-19 | Token Movers | AKE +141%, ENA +20%, AVAX +16% breakouts; ZFORGE +4936% trending anomaly |

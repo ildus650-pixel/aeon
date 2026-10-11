@@ -42,8 +42,8 @@
     "last_error": ",\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"input"
   },
   "token-movers": {
-    "last_dispatch": "2026-10-10T17:58:01Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-11T00:26:18Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-08T22:43:14Z",
     "total_runs": 46,
     "total_successes": 18,
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-10T21:32:35Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-11T00:26:18Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-10T21:43:22Z",
     "total_runs": 56,
     "total_successes": 14,
@@ -68,8 +68,8 @@
     "last_quality_score": 4
   },
   "skill-repair": {
-    "last_dispatch": "2026-10-10T21:32:35Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-11T00:26:18Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-10T18:04:30Z",
     "total_runs": 70,
     "total_successes": 25,

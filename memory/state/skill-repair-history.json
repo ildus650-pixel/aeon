@@ -16,8 +16,9 @@
     "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, skill-repair, heartbeat). Sleep backoff fixes ineffective — error is from Claude RUN hitting model quota, not DexScreener rate limits. Requires operator action: upgrade tier, reduce frequency, or switch to Haiku."
   },
   "skill-repair": {
-    "last_repair_at": "2026-09-29T18:00:00Z",
+    "last_repair_at": "2026-10-12T01:05:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
-    "reason": "Systemic API degradation from GLM Gateway - upstream issue, requires operator action"
+    "issue": "ISS-11",
+    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair). skill-repair itself consumes quota and fails with the same 429/quota error. No applicable code-fix playbook for the repair skill itself — requires operator action: upgrade tier, add alternate gateway key, or reduce fleet frequency."
   }
 }

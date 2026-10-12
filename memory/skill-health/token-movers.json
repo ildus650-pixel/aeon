@@ -1,10 +1,12 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-11T21:55:14Z",
-  "quality_score": 4,
-  "assessment": "Substantive market data with clear winners/losers and signal tags; methodology specified (Coingecko, volume floor, stablecoin exclusion). Would rate 5 if percentages were directly sourced to API responses.",
-  "flags": [],
-  "avg_score": 3.05,
+  "last_analyzed": "2026-10-12T23:38:23Z",
+  "quality_score": 2,
+  "assessment": "Minimal prompt-only output; lacks substantive analysis or verifiable data",
+  "flags": [
+    "generic_content"
+  ],
+  "avg_score": 3,
   "history": [
     {
       "date": "2026-09-19",
@@ -118,6 +120,12 @@
       "date": "2026-10-11",
       "score": 4,
       "ts": "2026-10-11T21:55:14Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-12",
+      "score": 2,
+      "ts": "2026-10-12T23:38:23Z",
       "harness": "claude"
     }
   ]

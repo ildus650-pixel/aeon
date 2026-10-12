@@ -20,5 +20,11 @@
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
     "issue": "ISS-11",
     "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair). skill-repair itself consumes quota and fails with the same 429/quota error. No applicable code-fix playbook for the repair skill itself — requires operator action: upgrade tier, add alternate gateway key, or reduce fleet frequency."
+  },
+  "heartbeat": {
+    "last_repair_at": "2026-10-12T07:16:00Z",
+    "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
+    "issue": "ISS-11",
+    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair). Heartbeat skill failing with openrouter/free quota errors (truncated JSON in last_error). Requires operator action: upgrade tier, reduce fleet frequency, or switch to non-free gateway tier."
   }
 }

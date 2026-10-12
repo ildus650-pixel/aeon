@@ -6,6 +6,7 @@ status: open
 created: 2026-10-12
 affected_skills:
   - skill-repair
+  - heartbeat
 ---
 
 ## Symptom
@@ -58,6 +59,16 @@ The skill-repair skill has failed on 3 consecutive runs (consecutive_failures=3)
 - Add per-skill model pinning (`harness:`/`model:`) to route heavy skills to non-free tiers
 - Consider running skill-repair on a non-free tier (e.g., claude-haiku-4-5-20251001) to reduce quota pressure
 
+## Repair Attempt — 2026-10-12 (heartbeat)
+
+**Attempted**: 0 (operator action required — systemic fleet-level quota issue)
+
+**Reason**: Heartbeat skill failing with the same OpenRouter free-tier quota exhaustion signature as other fleet skills. The error is `openrouter/free` quota exceeded (truncated JSON in last_error field). Heartbeat has `consecutive_failures: 3`, `success_rate: 0.32` (20/62 runs), last failed 2026-10-11T21:59:53Z.
+
+**Systemic classification**: This is a fleet-wide quota exhaustion affecting multiple gateway-dependent skills (price-alert, digest, heartbeat, skill-repair). The fix requires operator action, not code changes.
+
+**Affected skills**: All skills using the OpenRouter free-tier gateway (price-alert, digest, heartbeat, skill-repair).
+
 ## Verification
 
 To verify when the issue is resolved:
@@ -67,12 +78,13 @@ To verify when the issue is resolved:
 
 ## Diagnosis Notes
 
-**Regression suspect**: None in skill-repair code since 2026-10-11T06:30:02Z (only 691b8e7 — digest success, unrelated)
+**Regression suspect**: None in heartbeat code since 2026-10-10T18:08:07Z (last success)
 
 **Error pattern**:
-- OpenRouter free-tier quota exhaustion is **consistent** across 3 recent runs
+- OpenRouter free-tier quota exhaustion is **consistent** across 3 consecutive heartbeat failures
 - Quota is shared daily budget (~1000 req/day), not per-second rate limit
 - Duration: ~3-6 hours between quota fill and reset
+- Same error signature as ISS-8 (price-alert) and ISS-11 (skill-repair)
 
 **Source status**:
 - cron_state: ok (has detailed error data with OpenRouter signature)

@@ -12,13 +12,13 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "dispatched",
-    "last_success": "2026-10-11T21:56:25Z",
-    "total_runs": 103,
-    "total_successes": 56,
+    "last_status": "success",
+    "last_success": "2026-10-12T01:08:50Z",
+    "total_runs": 104,
+    "total_successes": 57,
     "total_failures": 47,
     "consecutive_failures": 0,
-    "success_rate": 0.54,
+    "success_rate": 0.55,
     "last_quality_score": 4,
     "last_dispatch": "2026-10-12T00:59:54Z",
     "last_failed": "2026-10-11T13:14:24Z",

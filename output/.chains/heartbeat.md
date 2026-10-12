@@ -1,23 +1,25 @@
-Priority Brief — 2026-10-12
+## Priority Brief — 2026-10-12
 
-Focus today
-1. Fix OpenRouter free-tier quota exhaustion — why now: systemic 429 errors across heartbeat (failed 3x consecutively), digest (27% success), skill-repair (37%); ISS-8 diagnosis confirms this blocks the entire fleet
+### Focus today
+
+1. Fix OpenRouter free-tier quota exhaustion — why now: systemic 429 errors across heartbeat (failed 3x consecutively), digest (27% success), skill-repair (37%); ISS-11 diagnosis confirms this blocks the entire fleet
 2. Fix token-movers intermittent API failures — why now: ISS-10 open with truncated CoinGecko responses; PR #26 pending to address rate-limit throttling; market-moving tokens (STRK +90.5% 7d) at risk of being missed
 3. Configure notification channels — why now: MEMORY.md top priority; no digest sent despite aeon.yml enabling it; operator blind to fleet health and alerts
 
-Since yesterday
-- Heartbeat failed (last success Oct 10, now 2 days stale) — high-priority item #1 actively failing
-- token-movers last succeeded yesterday (STRK +90.5% breakout captured)
-- 7 open PRs pending (3 price-alert rate-limit chain, 3 token-movers fix chain, 1 dependency bump)
-- ISS-8 (OpenRouter quota) updated with diagnosis; ISS-10 (token-movers truncation) remains open
-- skill-repair last ran today with no new findings (since Oct 10)
-- github-monitor last ran yesterday with no alerts
+### Since yesterday
 
-Running today
-- heartbeat at 08:00 UTC
-- token-movers at 12:00 UTC
-- digest at 14:00 UTC
-- github-monitor at 09:00 UTC
-- skill-repair reactive at 15:41 UTC
+- [moved]: Heartbeat rate-limit fix PR #26 created but unresolved; ISS-11 opened tracking OpenRouter quota exhaustion across multiple skills
+- [stuck]: token-movers has 49% failure rate despite 10 successful runs; ISS-10 describes truncated CoinGecko API responses
+- [pending]: digest skill at 27% success rate — needs either notification config or gateway upgrade
+- [flagged]: github-monitor shows 34% failure rate, though consecutive failures at 0
 
-🔗 https://github.com/aeonfun/aeon/compare/main...
+### Watch
+
+(Omitted — WebSearch API overloaded, no meaningful headlines found this run)
+
+### Running today
+
+- 00:00 UTC: price-alert (tracked WBTC +2.5% 24h, ATH unchanged)
+- 12:00 UTC: token-movers (global movers scan)
+- 14:00 UTC: digest (AI agents, crypto, market news)
+- 18:00 UTC: skill-repair (reactive — watches for failing skills)

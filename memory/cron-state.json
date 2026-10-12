@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-10-12T01:08:50Z",
     "total_runs": 106,
     "total_successes": 57,
@@ -20,7 +20,7 @@
     "consecutive_failures": 2,
     "success_rate": 0.54,
     "last_quality_score": 4,
-    "last_dispatch": "2026-10-12T16:49:51Z",
+    "last_dispatch": "2026-10-12T23:21:08Z",
     "last_failed": "2026-10-12T16:57:11Z",
     "last_error": ",\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"input"
   },
@@ -29,8 +29,8 @@
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-10-11T18:04:06Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-12T23:21:08Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-11T18:12:41Z",
     "total_runs": 36,
     "total_successes": 23,
@@ -42,8 +42,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "token-movers": {
-    "last_dispatch": "2026-10-12T16:49:51Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-12T23:21:08Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-11T21:55:16Z",
     "total_runs": 50,
     "total_successes": 20,
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-12T16:49:51Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-12T23:21:08Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-12T16:57:03Z",
     "total_runs": 60,
     "total_successes": 16,

@@ -1,20 +1,23 @@
-Priority Brief — 2026-10-10
+Priority Brief — 2026-10-12
 
 Focus today
-1. Finish 3 blocked repair PRs — repair skill's 4 attempts stuck, token-movers/price-alert/heartbeat >24h open
-2. Configure notification channels — Next Priority unconfigured, alerts silently missed without Telegram/Discord/Slack
-3. Run first digest — strategy says run, but digest has 0.26 success rate, last failure yesterday
+1. Fix OpenRouter free-tier quota exhaustion — why now: systemic 429 errors across heartbeat (failed 3x consecutively), digest (27% success), skill-repair (37%); ISS-8 diagnosis confirms this blocks the entire fleet
+2. Fix token-movers intermittent API failures — why now: ISS-10 open with truncated CoinGecko responses; PR #26 pending to address rate-limit throttling; market-moving tokens (STRK +90.5% 7d) at risk of being missed
+3. Configure notification channels — why now: MEMORY.md top priority; no digest sent despite aeon.yml enabling it; operator blind to fleet health and alerts
 
 Since yesterday
-- token-movers stuck: failed 2026-10-10T01:08:57Z, repair attempted 4 times, still failed
-- price-alert stuck: failed 2026-10-10T13:38:35Z, repair attempted, still failed
-- heartbeat stuck: failed 2026-10-10T13:37:28Z, repair attempted, still failed
-- skill-repair: failed to auto-fix any, consecutive failures now 1
+- Heartbeat failed (last success Oct 10, now 2 days stale) — high-priority item #1 actively failing
+- token-movers last succeeded yesterday (STRK +90.5% breakout captured)
+- 7 open PRs pending (3 price-alert rate-limit chain, 3 token-movers fix chain, 1 dependency bump)
+- ISS-8 (OpenRouter quota) updated with diagnosis; ISS-10 (token-movers truncation) remains open
+- skill-repair last ran today with no new findings (since Oct 10)
+- github-monitor last ran yesterday with no alerts
 
 Running today
-- digest @ 14:00 UTC
-- skill-repair @ reactive (should fire on consecutive_failures >= 3)
-- token-movers @ 12:00 UTC
-- price-alert @ 14:00 UTC
-- heartbeat @ 08:00 UTC (already dispatched, failed)
-- github-monitor @ 09:00 UTC
+- heartbeat at 08:00 UTC
+- token-movers at 12:00 UTC
+- digest at 14:00 UTC
+- github-monitor at 09:00 UTC
+- skill-repair reactive at 15:41 UTC
+
+🔗 https://github.com/aeonfun/aeon/compare/main...

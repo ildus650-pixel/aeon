@@ -1,23 +1,17 @@
-ℹ️ Daily Digest
+ℹ️ Digest sent
 
-*Digest — October 11, 2026*
+*Digest — 2026-10-13*
 
-_TL;DR: AI threatens critical infrastructure, Chromium has a security flaw, and a major media merger completes._
+_TL;DR: Ukraine drones strike Yandex datacenters, Meta launches frontier model Muse Wonder, WindBorne wins $50M US Air Force contract._
 
-1. *AI systems can carry out nightmare attacks against infrastructure and nobody's ready*
-   A security report reveals AI systems have achieved sufficient capability to execute sophisticated attacks against critical infrastructure, exposing a preparedness gap in security defenses.
-   https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450
+1. *Ukrainian drone strikes on Yandex knock cloud and payments offline*
+   Yandex engineers work to restore services after three of five Russian datacenters were damaged in overnight strikes on October 7-8, with a third hit on October 9. Yandex Pay and other services remain offline as engineers prioritize most-used features. The attacks targeted Vladimir datacenter supporting Yandex Pay, causing ongoing disruption to cloud and payment services.
+   [https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577](https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577)
 
-2. *Chromium browsers vulnerable to typosquatting via two characters*
-   Researchers discovered a critical security flaw in Chromium-based browsers that allows attackers to redirect traffic to malicious sites using just two character variations.
-   https://www.theregister.com/security/2026/10/10/two-characters-open-up-a-world-of-typosquatting-opportunities-in-chromium-browsers/5302383
+2. *Meta releases first frontier model, Muse Wonder*
+   Meta introduces Muse Wonder, its first frontier model. The Wonder models are larger and more capable than the lighter Muse Spark, with higher benchmark scores and better performance on complex tasks like coding.
+   [https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/](https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/)
 
-3. *Warner Bros. Discovery sale completes in historic $111B merger*
-   Paramount and WBD officially merge into Skydance after a two-year battle, creating a $111 billion media powerhouse with annual revenue approaching $70 billion.
-   https://techcrunch.com/2026/10/11/warner-bros-netflix-paramount-acquisition-timeline-wbd/
-
-4. *Apple's HomeView could reshape smart home market*
-   Apple appears poised to enter the smart home hardware space, potentially disrupting established players with a new category-defining device.
-   https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/
-
-*Also worth a glance:* Autonomous trucking roadblocks clear · Voice AI still waiting for its ChatGPT moment · Gaming classic Total Annihilation rebuilt for modern systems · Cartography tool maps North Korea
+3. *WindBorne wins $50M US Air Force contract for weather balloon data*
+   A Silicon Valley startup that uses weather balloons and AI to predict weather won a $50 million U.S. military contract. The company's balloon-based data collection and prediction system was selected by the Air Force.
+   [https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/](https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/)

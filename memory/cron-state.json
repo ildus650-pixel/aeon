@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-10-13T18:19:42Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-13T22:57:30Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-12T16:58:06Z",
     "total_runs": 66,
     "total_successes": 22,
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-13T18:19:42Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-13T22:57:30Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-13T18:26:27Z",
     "total_runs": 63,
     "total_successes": 17,
@@ -68,8 +68,8 @@
     "last_quality_score": 4
   },
   "skill-repair": {
-    "last_dispatch": "2026-10-13T18:19:42Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-13T22:57:30Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-13T03:59:00Z",
     "total_runs": 80,
     "total_successes": 30,

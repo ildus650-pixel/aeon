@@ -29,8 +29,8 @@
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-10-12T23:21:08Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-13T03:42:20Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-11T18:12:41Z",
     "total_runs": 37,
     "total_successes": 23,
@@ -55,8 +55,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "digest": {
-    "last_dispatch": "2026-10-12T23:21:08Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-13T03:42:20Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-12T23:28:18Z",
     "total_runs": 61,
     "total_successes": 16,
@@ -68,8 +68,8 @@
     "last_quality_score": 2
   },
   "skill-repair": {
-    "last_dispatch": "2026-10-12T07:16:24Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-13T03:42:20Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-12T07:27:50Z",
     "total_runs": 77,
     "total_successes": 29,

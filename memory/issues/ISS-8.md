@@ -88,6 +88,23 @@ Sleep reduces execution time, not token consumption. The skill completes success
 
 **Action required:** Operator must review and merge PR #15 to apply the rate-limit backoff fix.
 
+## Repair attempt 5 — 2026-10-13
+
+**Diagnosis:**
+- Same OpenRouter free-tier quota exhaustion (429 "free-models-per-day"). Consistent across all recent failures.
+- price-alert is the largest single contributor to the shared `openrouter/free` daily quota (1000 req/day), running 24×/day at hourly cadence alongside digest, skill-repair, heartbeat, and token-movers.
+- Root cause confirmed: the failure is the model gateway, not the skill body — no `PRICE_ALERT_FETCH_FAIL`/`PRICE_ALERT_BAD_PRICE`, and sleep backoff (PR #15, 0.5s→5s) reduces execution time, not token consumption.
+
+**Fix applied:** Reversible schedule reduction in `aeon.yml` — `price-alert` from hourly (`0 * * * *`) to every 2 hours (`0 */2 * * *"`). Halves price-alert's quota share (24 → 12 runs/day), directly easing the shared-pool exhaustion. No skill code, workflow, or secrets touched. Risk: LOW.
+
+**PR:** https://github.com/ildus650-pixel/aeon/pull/27
+**Exit taxonomy:** `REPAIR_OK_FIXED`
+
+**Permanent fix still requires operator action** (not applied by this PR):
+- Upgrade the OpenRouter tier / add credits, OR
+- Set a non-free model id for price-alert (e.g. `model: claude-haiku-4-5-20251001` in aeon.yml), OR
+- Reduce fleet frequency further.
+
 ## Source status
 
 cron_state=ok | issues_index=ok | gh_runs=ok | gh_logs=ok | git_log=ok | check_runs=ok

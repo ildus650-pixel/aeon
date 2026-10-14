@@ -117,3 +117,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-13,token-movers,claude-sonnet-5,395608,20145,1442543,0
 2026-10-13,digest,claude-sonnet-5,22405,9206,1362761,0
 2026-10-14,heartbeat,claude-sonnet-5,59212,6021,379180,0
+2026-10-14,price-alert,claude-sonnet-5,47610,2812,366921,0

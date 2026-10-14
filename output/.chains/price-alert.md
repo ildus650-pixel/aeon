@@ -1,1 +1,1 @@
-Price-alert skill completed — WBTC: $83,177.81 (1h: -0.42%, 24h: 1.19%), ATH $87,078.30 unchanged. No gates fired.
+

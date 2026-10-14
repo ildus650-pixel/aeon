@@ -1025,36 +1025,16 @@ jobs:
             # fall over, exactly as the old inline `claude -p` cascade did.
             USED_GATEWAY=""
             for cand in $CANDIDATES; do
-              # One attempt per provider threw away transient failures. api.z.ai
-              # answers 529 "service temporarily overloaded" for minutes at a time,
-              # and that is exactly the failure a retry clears. Retrying is also the
-              # cheaper move: GLM is free and unmetered, while the OpenRouter free
-              # pool is capped per day ("Rate limit exceeded: free-models-per-day"),
-              # so burning the fallback on a momentary 529 costs the rest of the
-              # day. Only transient signatures retry — a bad key or a dead model id
-              # skips straight to the next provider.
-              PG_TRY=1
-              while :; do
-                echo "::notice::Routing attempt via '$cand' (try $PG_TRY/2)"
-                if CLAUDE_OUTPUT=$(
-                  GATEWAY="$cand"
-                  MODEL="$BASE_MODEL"
-                  source "$GW" >&2
-                  source "$LF" >&2   # optional Langfuse tracing (no-op unless LANGFUSE_* set)
-                  echo "$PROMPT" | bash "$RH" claude --model "$MODEL" "${RH_ARGS[@]}" 2>/tmp/harness-stderr.txt
-                ); then
-                  USED_GATEWAY="$cand"; CLAUDE_OK=1; break
-                fi
-                if [ "$PG_TRY" -lt 2 ] && grep -qE 'api_error_status":(429|500|502|503|504|529)|temporarily overloaded|Rate limit exceeded' /tmp/harness-stderr.txt 2>/dev/null; then
-                  PG_TRY=$((PG_TRY + 1))
-                  echo "::warning::provider '$cand' failed on a transient error — retrying in 25s"
-                  sleep 25
-                  continue
-                fi
-                break
-              done
-              # Leave the cascade before the failure diagnostics when either try won.
-              if [ "$CLAUDE_OK" = "1" ]; then break; fi
+              echo "::notice::Routing attempt via '$cand'"
+              if CLAUDE_OUTPUT=$(
+                GATEWAY="$cand"
+                MODEL="$BASE_MODEL"
+                source "$GW" >&2
+                source "$LF" >&2   # optional Langfuse tracing (no-op unless LANGFUSE_* set)
+                echo "$PROMPT" | bash "$RH" claude --model "$MODEL" "${RH_ARGS[@]}" 2>/tmp/harness-stderr.txt
+              ); then
+                USED_GATEWAY="$cand"; CLAUDE_OK=1; break
+              fi
               # Full diagnostic goes to the step log unconditionally (matches the
               # non-claude harness path below, which already does this at its
               # `tail -c 4000 ... >&2` line) — the ::warning:: summary line stays

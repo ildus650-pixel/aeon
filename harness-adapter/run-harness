@@ -155,8 +155,30 @@ fi
 
 OUT="$RH_TMPDIR/envelope.json"
 RH_SPAN_START=$(_rh_now)
-"${CMD[@]}" > "$OUT"
-rc=$?
+# One retry for a transient upstream failure. api.z.ai answers 529 "service
+# temporarily overloaded" for minutes at a time, and the provider cascade in
+# aeon.yml only sees this script's exit status — so without a retry a momentary
+# hiccup discards the whole provider. That matters because the next provider is
+# the OpenRouter free pool, which is capped per day ("Rate limit exceeded:
+# free-models-per-day"): spending it on a 529 costs the rest of the day. The
+# prompt is already buffered in RH_PROMPT_FILE above, so a second run is safe,
+# and each attempt gets its own --timeout budget. Only transient signatures
+# retry; a bad key or a dead model id exits immediately. Adapter stderr is
+# captured and re-emitted so the caller still sees the diagnostics it parses.
+RH_TRY=1
+while :; do
+  "${CMD[@]}" > "$OUT" 2>"$RH_TMPDIR/adapter-stderr.txt"
+  rc=$?
+  cat "$RH_TMPDIR/adapter-stderr.txt" >&2
+  if [ "$rc" -eq 0 ]; then break; fi
+  if [ "$RH_TRY" -lt 2 ] && grep -qE 'api_error_status":(429|500|502|503|504|529)|temporarily overloaded|Rate limit exceeded' "$RH_TMPDIR/adapter-stderr.txt" 2>/dev/null; then
+    echo "transient upstream failure — retrying once in 20s (try $RH_TRY/2)" >&2
+    RH_TRY=$((RH_TRY + 1))
+    sleep 20
+    continue
+  fi
+  break
+done
 RH_SPAN_END=$(_rh_now)
 if [ $rc -eq 124 ]; then
   echo "error: harness run exceeded --timeout ${TIMEOUT}s" >&2

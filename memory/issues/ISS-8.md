@@ -88,6 +88,24 @@ Sleep reduces execution time, not token consumption. The skill completes success
 
 **Action required:** Operator must review and merge PR #15 to apply the rate-limit backoff fix.
 
+## Repair attempt 5 — 2026-10-14
+
+**Diagnosis:**
+- Latest failure (run 38481208451, 2026-10-13T22:57:41Z) shows 529 error on glm gateway, then 429 on openrouter/free
+- 363 input tokens consumed by the Claude RUN before hitting quota
+- Same root cause as previous attempts: OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, skill-repair, heartbeat)
+- Sleep backoff does not help — the error occurs during the Claude RUN, not during DexScreener API calls
+
+**Root cause:**
+Consistent with repair attempts 2, 3, and 4. The free-tier quota limit is being reached collectively by all skills running on the same OpenRouter gateway key.
+
+**Exit taxonomy:** `REPAIR_DIAGNOSED_NO_FIX`
+
+**Required operator action:**
+- Option A: Upgrade OpenRouter tier or add credits (billing)
+- Option B: Reduce frequency of price-alert from hourly to 2h in aeon.yml (requires explicit authorization)
+- Option C: Add `model: claude-haiku-4-5-20251001` to price-alert to reduce token consumption (low-risk change)
+
 ## Source status
 
 cron_state=ok | issues_index=ok | gh_runs=ok | gh_logs=ok | git_log=ok | check_runs=ok

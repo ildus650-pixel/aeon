@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-13T23:03:42Z",
+  "last_analyzed": "2026-10-14T17:44:12Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured daily digest with verifiable sources and relevant signal",
+  "assessment": "Substantive news digest with properly cited, verifiable links covering diverse AI/tech topics relevant to operators",
   "flags": [],
-  "avg_score": 3.56,
+  "avg_score": 3.58,
   "history": [
     {
       "date": "2026-09-21",
@@ -112,6 +112,12 @@
       "date": "2026-10-13",
       "score": 4,
       "ts": "2026-10-13T23:03:42Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-14",
+      "score": 4,
+      "ts": "2026-10-14T17:44:12Z",
       "harness": "claude"
     }
   ]

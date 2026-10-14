@@ -13,7 +13,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-10-13 | Digest | OpenAI insider bugging, Ledger spy chip crypto thefts, AI alignment failure, Laplace self-driving red-teaming |
+| 2026-10-14 | Digest | Linux AI-assisted patches, ASML chip demand, AI tells research, Graphicle Rust agents |
 | 2026-10-10 | Digest | Anthropic AI control issues, AWS AgentCore security, Shai-Hulud worm targeting AI infrastructure, Chinese hacking tools disrupted |
 | 2026-10-09 | Digest | Google agentic AI, OpenAI revenue, Goodfire agent monitors |
 | 2026-10-08 | Digest | Nous Research $1.5B, Meta Muse iPad, Microsoft AI PCs, Mecka AI $60M, HealthLeap $38M |

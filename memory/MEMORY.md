@@ -13,6 +13,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-15 | Digest | Meta Muse Spark Open model, Rivian AI agents, zero-click spyware via ads |
 | 2026-10-14 | Digest | Linux AI-assisted patches, ASML chip demand, AI tells research, Graphicle Rust agents |
 | 2026-10-10 | Digest | Anthropic AI control issues, AWS AgentCore security, Shai-Hulud worm targeting AI infrastructure, Chinese hacking tools disrupted |
 | 2026-10-09 | Digest | Google agentic AI, OpenAI revenue, Goodfire agent monitors |

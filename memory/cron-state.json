@@ -43,16 +43,16 @@
   },
   "token-movers": {
     "last_dispatch": "2026-10-15T17:37:15Z",
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-10-13T18:32:47Z",
-    "total_runs": 53,
+    "total_runs": 54,
     "total_successes": 22,
-    "total_failures": 31,
-    "consecutive_failures": 1,
-    "success_rate": 0.42,
+    "total_failures": 32,
+    "consecutive_failures": 2,
+    "success_rate": 0.41,
     "last_quality_score": 4,
-    "last_failed": "2026-10-15T13:37:35Z",
-    "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
+    "last_failed": "2026-10-15T17:51:47Z",
+    "last_error": ",\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"input"
   },
   "digest": {
     "last_dispatch": "2026-10-15T17:37:15Z",

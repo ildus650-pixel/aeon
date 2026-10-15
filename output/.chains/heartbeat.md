@@ -1,20 +1,13 @@
-*Priority Brief — 2026-10-14*
+Priority Brief — 2026-10-15
 
 *Focus today*
-1. Configure notification channels — why now: operator blind to fleet health without configured channels; no digest sent despite aeon.yml enabling it
-2. PR #27 (price-alert schedule cut) — why now: new 2h fix for OpenRouter free-tier quota exhaustion, halves price-alert quota share
-3. PR #26 (token-movers rate limit) — why now: 40% success rate, 3 consecutive failures on 1.7M+ token runs, file expansion causing quota exhaustion
+1. Configure notification channels — why now: operator blind to fleet health without configured channels
+2. Resolve PR backlog — why now: fleet stabilization blocked on OpenRouter quota & rate-limit fixes
+3. Investigate stuck token-movers skill — why now: dispatched 19h ago, never reported back; 42% success rate
 
 *Since yesterday*
-- [moved]: PR #27 created 2h ago (OpenRouter quota fix)
-- [stuck]: PR #26, #25, #24, #22 still open (rate-limit fixes pending)
-- [recovered]: price-alert (0 consecutive failures), heartbeat (0 consecutive failures)
-
-*Watch* (no new headlines from overloaded WebSearch)
-
-*Running today*
-- github-monitor @ 09:00 UTC
-- token-movers @ 12:00 UTC
-- digest @ 14:00 UTC
-- price-alert @ 14:00 UTC (hourly)
-- skill-repair @ 18:00 UTC (reactive)
+- [moved]: price-alert recovered — 5 consecutive failures resolved, success 07:52 UTC today
+- [moved]: skill-repair recovered — 3 consecutive failures resolved, success 02:01 UTC yesterday
+- [moved]: heartbeat recovered — success 12:49 UTC yesterday
+- [stuck]: token-movers — dispatched 2026-10-14 17:33 UTC, never reported back
+- [stuck]: PR #27 (2h), #26 (4d), #25 (5d), #24 (6d), #22 (7d) all open

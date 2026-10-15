@@ -1,7 +1,25 @@
-*$SYMBOL — New ATH — 2026-10-15*
+## Summary
 
-$SYMBOL just printed a new all-time high at $82655.15.
-Previous ATH: $81416.77 (set 2026-10-15 03:01 UTC).
-24h move: ±1.24% · 1h move: ±0.3%
+**Price Alert Skill Execution**
 
-Chart: https://dexscreener.com/ethereum/0xeacadc656c9394fb09af25aebc0897fdffe484a1
+**Token:** WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
+
+**Current Market Data:**
+- Price: $82,458.61
+- 1h change: 0.00%
+- 24h change: 0.38%
+
+**Gate Evaluation:**
+- **ATH gate:** QUIET — Current price ($82,458.61) < ATH ($82,655.15)
+- **Sharp-move gate:** QUIET — ±20% threshold not met (0.00% < 20%)
+- **Target gate:** QUIET — No targets configured
+
+**Notifications sent:** 0 (clean run)
+
+**Files modified:**
+- `memory/topics/price-alert-state.json` — Updated `last_run_at` to 2026-10-15T20:36:00Z
+- `memory/logs/2026-10-15.md` — Appended run entry
+
+**Status:** PRICE_ALERT_OK — Run completed cleanly, no gates fired
+
+No notifications were sent as no events triggered (no new ATH, no sharp 1h move, no target crossings).

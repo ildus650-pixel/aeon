@@ -1,23 +1,23 @@
 ## Summary
 
-**Ran price-alert skill** — WBTC is not generating alerts today.
+**Skill execution complete:** price-alert
 
-**What happened:**
-- Current price: $81,689.50 (1h: -0.03%, 24h: -1.93%)
-- ATH: $87,078.30 (unchanged since 2026-10-06)
-- Sharp-move gate: QUIET (|1h change| = 0.03% < 20% threshold)
-- Target gate: NO TARGETS CONFIGURED
+**Run details:**
+- **Token:** WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+- **Current price:** $81,368.35
+- **1h change:** 0.0%
+- **24h change:** -1.62%
+- **ATH:** $87,078.30 (unchanged since 2026-10-06)
+
+**Gate evaluations:**
+- **ATH gate:** Quiet (price below ATH)
+- **Sharp-move gate:** Quiet (1h change 0.0% < ±20%)
+- **Target-crossing gate:** N/A (no targets set)
+
+**Results:**
+- Status: `PRICE_ALERT_OK`
 - Notifications sent: 0
+- Log entry appended to `memory/logs/2026-10-14.md`
+- State file updated with new `last_run_at`
 
-**Status:** `PRICE_ALERT_OK` — run completed cleanly, no alerts triggered.
-
-**Files modified:**
-- `memory/topics/price-alert-state.json` — updated last_run_at timestamp
-- `memory/logs/2026-10-14.md` — appended run log
-
-**What to do next:**
-- To set a target price alert, invoke the skill with `var=set-target:<price>` (e.g., `set-target:80000` for an alert when WBTC crosses $80,000)
-- Run with `var=dry-run` to test without sending notifications
-- Configure targets by replying to the ATH force-reply prompt (only appears when a genuine ATH is observed post-baseline)
-
-The skill is now complete and ready for next run.
+The run completed cleanly with no alerts triggered.

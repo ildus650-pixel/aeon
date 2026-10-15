@@ -3,14 +3,14 @@
   "chain": "ethereum",
   "ath": {
     "price_usd": 81416.77,
-    "observed_at": "2026-10-15T03:01:15+00:00",
+    "observed_at": "2026-10-15T07:47:54Z",
     "announced_at": "2026-10-15T03:01:15+00:00"
   },
   "last_alerts": {
-    "ath": null,
+    "ath": "2026-10-15T03:01:15+00:00",
     "sharp_move": null,
     "target_hit": null
   },
   "targets": {},
-  "last_run_at": "2026-10-15T03:01:15+00:00"
+  "last_run_at": "2026-10-15T07:47:54Z"
 }

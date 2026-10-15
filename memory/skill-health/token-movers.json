@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-13T18:32:45Z",
-  "quality_score": 4,
-  "assessment": "Solid, verifiable token-movers report with specific market data and clear signal",
+  "last_analyzed": "2026-10-15T20:53:25Z",
+  "quality_score": 1,
+  "assessment": "Output is empty - skill only prompted for user input without performing any substantive work",
   "flags": [],
-  "avg_score": 3.05,
+  "avg_score": 2.95,
   "history": [
     {
       "date": "2026-09-19",
@@ -130,6 +130,12 @@
       "date": "2026-10-13",
       "score": 4,
       "ts": "2026-10-13T18:32:45Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-15",
+      "score": 1,
+      "ts": "2026-10-15T20:53:25Z",
       "harness": "claude"
     }
   ]

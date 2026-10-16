@@ -12,14 +12,14 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "dispatched",
-    "last_success": "2026-10-16T19:04:08Z",
-    "total_runs": 125,
-    "total_successes": 70,
+    "last_status": "success",
+    "last_success": "2026-10-16T22:09:58Z",
+    "total_runs": 126,
+    "total_successes": 71,
     "total_failures": 55,
     "consecutive_failures": 0,
     "success_rate": 0.56,
-    "last_quality_score": 4,
+    "last_quality_score": 5,
     "last_dispatch": "2026-10-16T22:02:17Z",
     "last_failed": "2026-10-16T15:59:38Z",
     "last_error": "mand\":\"cp /tmp/dex.json /home/runner/work/aeon/aeon/dex_data.json\",\"description\":\"Save DexScreener data to working directory\"}},{\"tool_name\":\"Bash\",\"tool_use_id\":\"call-49d70972-1a41-46d3-8f8e-96eed47f"

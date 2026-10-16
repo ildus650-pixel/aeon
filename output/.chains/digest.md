@@ -1,15 +1,15 @@
-*Digest — 2026-10-15*
+ℹ️ AI Agents & Security Digest
 
-_TL;DR: Meta launches an open-weight Mac AI model; Rivian adds AI agents; governments weaponize ads for zero-click spyware._
+*AI Agents & Security — October 16, 2026*
 
-1. *Meta launches open-weight AI model for Macs*
-   Meta unveiled "Muse Spark Open," an 816 billion parameter model with a 1 million token context window designed for complex coding and agentic work. It runs locally on Macs with 1 TB RAM and is available via multiple APIs. This gives developers a cost-efficient, transparent alternative to closed-source models.
-   https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/
+_TL;DR: Bank of America spent $200M+ fixing Anthropic Mythos vulnerabilities; user authentication remains a weak link despite AI advances._
 
-2. *AI agents are coming to Rivian's cars*
-   Rivian plans to integrate Anthropic's Claude and other third-party AI agents into electric vehicles, allowing drivers to interact with AI systems through the car's interface. The system needs to connect AI context to vehicle controls while maintaining safety.
-   https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/
+1. *Bank of America hired 1,000 contractors to patch Mythos bugs*
+   CEO says "couple of hundred million plus" spent on remediation. Mythos identified vulnerabilities faster than humans, including a critical authentication bypass in Rejetto HTTP file server exploited in the wild. 69% of ransomware victims targeted multiple times within 12 months.
+   https://www.theregister.com/security/2026/10/15/bank-of-america-had-to-bring-in-1000-contractors-to-patch-all-the-bugs-mythos-identified/
 
-3. *Governments weaponize ads for zero-click spyware*
-   Citizen Lab found that spyware vendor Discover-Tech's platform enables zero-click attacks via advertising networks, infecting at least 45 Al Jazeera computers and potentially compromising millions of devices. Attackers deliver surveillance tools through normal ads.
-   https://techcrunch.com/2026/10/15/citizen-lab-says-governments-are-abusing-online-ads-to-hack-people-with-zero-click-spyware/
+2. *User refused to change password because everyone already knew it*
+   UK school data manager kept same password since 1998, writing it on a piece of paper taped to her desk. When policy required changes, she said "If I'm not in, they can log in as me and run the reports." Principal overruled the change after two days.
+   https://www.theregister.com/security/2026/10/16/user-refused-to-change-her-password-because-everyone-already-knew-it/
+
+*Also worth a glance:* Photographer's SD cards stolen in overnight smash-and-grab · NTLMv1 enforcement in Windows update breaks networking for some

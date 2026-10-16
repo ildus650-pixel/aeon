@@ -1,12 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-15T20:39:10Z",
-  "quality_score": 2,
-  "assessment": "Fluent but unverifiable generic tech news with fabricated claims and implausible details.",
-  "flags": [
-    "unverifiable_claim"
-  ],
-  "avg_score": 3.5,
+  "last_analyzed": "2026-10-16T19:08:06Z",
+  "quality_score": 4,
+  "assessment": "A clean, well-sourced security digest that delivers high-signal news with verifiable links.",
+  "flags": [],
+  "avg_score": 3.52,
   "history": [
     {
       "date": "2026-09-21",
@@ -126,6 +124,12 @@
       "date": "2026-10-15",
       "score": 2,
       "ts": "2026-10-15T20:39:10Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-16",
+      "score": 4,
+      "ts": "2026-10-16T19:08:06Z",
       "harness": "claude"
     }
   ]

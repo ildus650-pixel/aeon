@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-15T20:53:25Z",
-  "quality_score": 1,
-  "assessment": "Output is empty - skill only prompted for user input without performing any substantive work",
+  "last_analyzed": "2026-10-16T15:48:05Z",
+  "quality_score": 3,
+  "assessment": "Correctly prompted for deep-dive input in command-loop mode",
   "flags": [],
-  "avg_score": 2.95,
+  "avg_score": 2.96,
   "history": [
     {
       "date": "2026-09-19",
@@ -136,6 +136,12 @@
       "date": "2026-10-15",
       "score": 1,
       "ts": "2026-10-15T20:53:25Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-16",
+      "score": 3,
+      "ts": "2026-10-16T15:48:05Z",
       "harness": "claude"
     }
   ]

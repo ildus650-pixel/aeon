@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.56,
     "last_quality_score": 4,
-    "last_dispatch": "2026-10-16T11:40:25Z",
+    "last_dispatch": "2026-10-16T15:34:32Z",
     "last_failed": "2026-10-15T13:17:54Z",
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
@@ -42,8 +42,8 @@
     "last_error": "},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inpu"
   },
   "token-movers": {
-    "last_dispatch": "2026-10-15T20:32:28Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-16T15:34:32Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-15T20:56:35Z",
     "total_runs": 55,
     "total_successes": 23,
@@ -55,8 +55,8 @@
     "last_error": ",\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"input"
   },
   "digest": {
-    "last_dispatch": "2026-10-15T20:32:28Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-16T15:34:32Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-15T17:52:44Z",
     "total_runs": 67,
     "total_successes": 20,

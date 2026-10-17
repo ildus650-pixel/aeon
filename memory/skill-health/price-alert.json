@@ -1,19 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-17T09:09:45Z",
-  "quality_score": 1,
-  "assessment": "Skill produced no usable output - only placeholder framing for health scoring",
-  "flags": [
-    "empty_output"
-  ],
+  "last_analyzed": "2026-10-17T16:07:26Z",
+  "quality_score": 4,
+  "assessment": "Clean, data-driven monitoring output with clear gating logic and verifiable metrics",
+  "flags": [],
   "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-10-04",
-      "score": 4,
-      "ts": "2026-10-04T00:35:49Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-04",
       "score": 5,
@@ -186,6 +178,12 @@
       "date": "2026-10-17",
       "score": 1,
       "ts": "2026-10-17T09:09:45Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-17",
+      "score": 4,
+      "ts": "2026-10-17T16:07:26Z",
       "harness": "claude"
     }
   ]

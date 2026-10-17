@@ -1,28 +1,22 @@
-Perfect! The price-alert skill completed successfully. Here's a summary of the run:
-
 ## Summary
 
-**Skill**: price-alert  
-**Mode**: execute (no special var)  
-**Tracked Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
+Executed the price-alert skill for WBTC (Wrapped BTC).
 
-### Price Data
-- **Current**: $81,541.76 | 1h: +0.05% | 24h: -0.97%
-- **ATH**: $82,655.15 (set 2026-10-15 12:00 UTC) [UNCHANGED]
-- **Liquidity**: ~$31.2M on USDT pair
+**Results:**
+- **Current Price**: $81,681.02
+- **1h Change**: ±0.0% (no movement)
+- **24h Change**: ±-0.27% (slight decline)
+- **ATH**: $82,655.15 (unchanged from previous day)
 
-### Gate Evaluation
-- **ATH gate**: QUIET (price below ATH)
-- **Sharp-move gate**: QUIET (only 0.05% in 1h, threshold is ±20%)
+**Gates evaluated:**
+- **ATH gate**: QUIET (price did not exceed previous ATH)
+- **Sharp-move gate**: QUIET (1h change was 0%, below the 20% threshold)
 - **Target-crossing gate**: N/A (no targets configured)
 
-### Output
-- **Verdicts fired**: NONE
-- **Notifications sent**: 0
-- **Status**: PRICE_ALERT_OK
+**Status**: `PRICE_ALERT_OK` - No gates fired, no notifications sent. This is expected for a normal trading day.
 
-### Files Modified
-- `memory/topics/price-alert-state.json` — updated last_run_at to 2026-10-16T22:05:40Z
-- `memory/logs/2026-10-16.md` — appended run log entry
+**Files modified:**
+- `memory/topics/price-alert-state.json` - Updated `last_run_at` to 2026-10-17T00:25:34Z
+- `memory/logs/2026-10-17.md` - Created with price-alert run log
 
-No notifications were sent — this was a quiet day with no ATH, sharp moves, or target crossings for WBTC.
+The skill runs silently on normal days when no significant price events occur, which is the intended behavior per the skill design.

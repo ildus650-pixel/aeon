@@ -1,1 +1,16 @@
-{"contract":"0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599","chain":"ethereum","ath":{"price_usd":82655.15,"observed_at":"2026-10-16T22:05:40Z","announced_at":"2026-10-15T12:00:00Z"},"last_alerts":{"ath":"2026-10-15T12:00:00Z","sharp_move":null,"target_hit":null},"targets":{},"last_run_at":"2026-10-17T19:15:00Z"}
+{
+  "contract": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+  "chain": "ethereum",
+  "ath": {
+    "price_usd": 82655.15,
+    "observed_at": "2026-10-16T22:05:40Z",
+    "announced_at": "2026-10-15T12:00:00Z"
+  },
+  "last_alerts": {
+    "ath": "2026-10-15T12:00:00Z",
+    "sharp_move": null,
+    "target_hit": null
+  },
+  "targets": {},
+  "last_run_at": "2026-10-17T22:47:32Z"
+}

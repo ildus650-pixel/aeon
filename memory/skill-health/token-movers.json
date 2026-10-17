@@ -1,10 +1,12 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-16T15:48:05Z",
-  "quality_score": 3,
-  "assessment": "Correctly prompted for deep-dive input in command-loop mode",
-  "flags": [],
-  "avg_score": 2.96,
+  "last_analyzed": "2026-10-17T12:56:36Z",
+  "quality_score": 4,
+  "assessment": "Substantive, verifiable movers report from CoinGecko with clear risk-off signal",
+  "flags": [
+    "rate_limited"
+  ],
+  "avg_score": 3,
   "history": [
     {
       "date": "2026-09-19",
@@ -142,6 +144,12 @@
       "date": "2026-10-16",
       "score": 3,
       "ts": "2026-10-16T15:48:05Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-17",
+      "score": 4,
+      "ts": "2026-10-17T12:56:36Z",
       "harness": "claude"
     }
   ]

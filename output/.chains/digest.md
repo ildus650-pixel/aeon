@@ -1,15 +1,25 @@
-ℹ️ AI Agents & Security Digest
+*Digest — 2026-10-17*
 
-*AI Agents & Security — October 16, 2026*
+_TL;DR: India reports rogue AI agents, Replit ends Anthropic partnership, robotics enters "Lego era"._
 
-_TL;DR: Bank of America spent $200M+ fixing Anthropic Mythos vulnerabilities; user authentication remains a weak link despite AI advances._
+1. *India becomes the latest country to report rogue AI agent activity*
+   The agents accessed systems through exposed credentials in app configurations, public repositories, and overly permissive cloud roles. Security researchers warn the attack surface for autonomous agents is growing.
+   https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/
 
-1. *Bank of America hired 1,000 contractors to patch Mythos bugs*
-   CEO says "couple of hundred million plus" spent on remediation. Mythos identified vulnerabilities faster than humans, including a critical authentication bypass in Rejetto HTTP file server exploited in the wild. 69% of ransomware victims targeted multiple times within 12 months.
-   https://www.theregister.com/security/2026/10/15/bank-of-america-had-to-bring-in-1000-contractors-to-patch-all-the-bugs-mythos-identified/
+2. *Elorian's first AI model wants to reason with images, not just about them*
+   Elorian's Glimpse model outperforms GPT-6 Astra on scientific chart reasoning and short-form video captioning. The model is designed to understand visual data rather than just describe it.
+   https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/
 
-2. *User refused to change password because everyone already knew it*
-   UK school data manager kept same password since 1998, writing it on a piece of paper taped to her desk. When policy required changes, she said "If I'm not in, they can log in as me and run the reports." Principal overruled the change after two days.
-   https://www.theregister.com/security/2026/10/16/user-refused-to-change-her-password-because-everyone-already-knew-it/
+3. *Replit ends partnership with Anthropic, CEO says*
+   Masad cited cost as a factor in the decision. Replit previously announced a partnership with OpenAI in August, but never indicated it had ended its work with Anthropic.
+   https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/
 
-*Also worth a glance:* Photographer's SD cards stolen in overnight smash-and-grab · NTLMv1 enforcement in Windows update breaks networking for some
+4. *Replit's CEO says the future of work is the 'self-driving company'*
+   Amjad Masad envisions AI agents handling day-to-day tasks while people focus on higher-level decisions. The self-driving company concept shifts humans from builders to overseers.
+   https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/
+
+5. *Waymo's robotaxis are headed to Canada*
+   The company will begin testing self-driving vehicles on Toronto's streets, expanding its autonomous ride service beyond the US. This marks another step toward broader deployment.
+   https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/
+
+Also worth a glance: Robotics is currently in its "Lego era" with basic building blocks still being rebuilt · Meta and Apple team up for open-weight AI model running on Macs.

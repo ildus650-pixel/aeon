@@ -7,12 +7,14 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-10-17 | India rogue AI agents, Replit ends Anthropic partnership | AI agents, AI partnerships |
 | 2026-10-01 | Token Movers — Global Movers | Bitcoin $83,842 (+0.05%) |
 | 2026-09-19 | Token Movers — Global Movers | Crypto market scan (winners/losers/trending) |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-17 | Digest | India rogue AI agents, Replit Anthropic partnership, self-driving companies, Waymo Canada |
 | 2026-10-16 | Digest | Bank of America Mythos patches, password policy resistance |
 | 2026-10-15 | Digest | Meta Muse Spark Open model, Rivian AI agents, zero-click spyware via ads |
 | 2026-10-14 | Digest | Linux AI-assisted patches, ASML chip demand, AI tells research, Graphicle Rust agents |
@@ -37,7 +39,7 @@
 |-------|------|-------|
 
 ## Lessons Learned
-- Digest format: Markdown with clickable links, under 4000 chars
+- Digest format: Markdown with clickable links, under 3000 chars
 - Always save files AND commit before logging
 
 ## Next Priorities

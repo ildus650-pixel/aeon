@@ -1,33 +1,31 @@
 ## Summary
 
-I executed the **price-alert** skill successfully. Here's what happened:
+**Skill executed:** `price-alert`
 
-### Run Analysis
-
-**Tracked Token**: WBTC on Ethereum (contract: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-
-**Current Market Data**:
-- Price: $81,478.75
-- 1h Change: +0.29%
-- 24h Change: -0.25%
-- Pool URL: https://dexscreener.com/ethereum/0xcbcdf9626bc03e24f779434178a73a0b4bad62ed
+**Token tracked:** WBTC (Wrapped BTC) on Ethereum  
+**Contract:** 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
 
 ### Gate Evaluations
 
-1. **ATH Gate**: QUIET - Price ($81,478.75) is below ATH ($82,655.15), so no new all-time high
-2. **Sharp-Move Gate**: QUIET - 1h change (+0.29%) is below the 20% threshold
-3. **Target Gate**: No targets configured - no evaluations performed
+| Gate | Current | ATH | Result |
+|------|---------|-----|--------|
+| **ATH** | $81,528.50 | $82,655.15 (2026-10-16 22:05 UTC) | **QUIET** — price below ATH |
+| **Sharp move** | 1h: +0.18% | ≥20% threshold | **QUIET** — below 20% |
+| **Targets** | — | None set | **QUIET** — no targets configured |
 
-### Result
+### What happened
 
-**Status**: `PRICE_ALERT_OK` - No alerts fired
+- **No alerts triggered** — all gates suppressed
+- Current price: $81,528.50
+- 1h change: +0.18%
+- 24h change: -0.08%
+- ATH remains unchanged at $82,655.15
 
-**Verdicts fired**: NONE
-**Notifications sent**: 0
+### Files modified
 
-### State Updates
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to `2026-10-18T00:38:51Z`
+- `memory/logs/2026-10-18.md` — created and logged the run with status `PRICE_ALERT_OK`
 
-- Updated `last_run_at` in `memory/topics/price-alert-state.json`
-- Logged to `memory/logs/2026-10-17.md`
+### No notifications sent
 
-This is a normal quiet run. WBTC recently hit an ATH yesterday, so today's price pullback from that peak is expected. The skill is working correctly - it will notify immediately if the price makes a new all-time high, moves ±20% in an hour, or crosses any operator-set target levels.
+This is a normal, quiet day for WBTC — no ATH, no sharp 1h moves, and no operator-set targets to cross.

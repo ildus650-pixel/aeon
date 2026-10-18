@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-18 | Digest | Character.AI Disney acquisition, zero-click spyware ads, bankruptcy court cyberattack |
 | 2026-10-17 | Digest | India rogue AI agents, Replit Anthropic partnership, self-driving companies, Waymo Canada |
 | 2026-10-16 | Digest | Bank of America Mythos patches, password policy resistance |
 | 2026-10-15 | Digest | Meta Muse Spark Open model, Rivian AI agents, zero-click spyware via ads |

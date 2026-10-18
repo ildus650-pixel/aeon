@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-18T00:46:08Z",
+  "last_analyzed": "2026-10-18T05:33:26Z",
   "quality_score": 4,
-  "assessment": "Solid, verifiable run with clear gating structure and specific data points; proper no-op handling",
+  "assessment": "Substantive, well-structured, and verifiable. Complete monitoring report with specific market data, gate evaluations, and actionable status.",
   "flags": [],
   "avg_score": 3.87,
   "history": [
-    {
-      "date": "2026-10-05",
-      "score": 4,
-      "ts": "2026-10-05T07:02:38Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-05",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-18",
       "score": 4,
       "ts": "2026-10-18T00:46:08Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-18",
+      "score": 4,
+      "ts": "2026-10-18T05:33:26Z",
       "harness": "claude"
     }
   ]

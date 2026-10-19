@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TechCrunch</title>
+	<atom:link href="https://techcrunch.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Mon, 19 Oct 2026 12:56:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.10</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>TechCrunch</title>
+	<link>https://techcrunch.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Apple updates guidelines to ban nudify apps masquerading as regular apps to pass review</title>
+		<link>https://techcrunch.com/2026/10/19/apple-updates-guidelines-to-ban-nudify-apps-masquerading-as-regular-apps-to-pass-review/</link>
+		
+		<dc:creator><![CDATA[Ivan Mehta]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 12:56:14 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[app store]]></category>
+		<category><![CDATA[Apple]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178990</guid>
+
+					<description><![CDATA[Apple said that it will ban AI apps that don't moderate offensive content.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Musk pledges to give &#8216;every kid in America&#8217; one of his SpaceX shares</title>
+		<link>https://techcrunch.com/2026/10/19/musk-pledges-to-give-every-kid-in-america-one-of-his-spacex-shares/</link>
+		
+		<dc:creator><![CDATA[Sean O'Kane]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 12:42:55 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Elon Musk]]></category>
+		<category><![CDATA[SpaceX]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178988</guid>
+
+					<description><![CDATA[That's more than $10 billion in shares, or around 1% of Musk's current net worth.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Khosla Ventures doubles down on Even Healthcare to challenge India&#8217;s hospital economics</title>
+		<link>https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 07:30:00 +0000</pubDate>
+				<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Alpha Wave]]></category>
+		<category><![CDATA[Even Healthcare]]></category>
+		<category><![CDATA[Khosla Ventures]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178925</guid>
+
+					<description><![CDATA[Even Healthcare reaches a $300 million valuation in a Khosla Ventures-led round as it plans to expand its hospital network in India.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market</title>
+		<link>https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/</link>
+		
+		<dc:creator><![CDATA[Connie Loizos]]></dc:creator>
+		<pubDate>Sun, 18 Oct 2026 21:00:00 +0000</pubDate>
+				<category><![CDATA[Venture]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178953</guid>
+
+					<description><![CDATA[Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’</title>
+		<link>https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sun, 18 Oct 2026 20:37:40 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178960</guid>
+
+					<description><![CDATA[Anthropic said that it will commit 5% of its shares to the fund.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Everyone’s watching the Elizabeth Holmes documentary ‘You Can See Everything’</title>
+		<link>https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sun, 18 Oct 2026 19:03:38 +0000</pubDate>
+				<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[elizabeth holmes]]></category>
+		<category><![CDATA[Nathan Fielder]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178957</guid>
+
+					<description><![CDATA["You Can See Everything" is having the second biggest opening weekend ever for a documentary film.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Disney agrees to hire the majority of Character.AI’s workforce</title>
+		<link>https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sun, 18 Oct 2026 16:30:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[character.ai]]></category>
+		<category><![CDATA[Disney]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178949</guid>
+
+					<description><![CDATA[The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>TechCrunch Mobility: Rivian&#8217;s next act</title>
+		<link>https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/</link>
+		
+		<dc:creator><![CDATA[Kirsten Korosec]]></dc:creator>
+		<pubDate>Sun, 18 Oct 2026 16:05:00 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Tesla]]></category>
+		<category><![CDATA[Rivian]]></category>
+		<category><![CDATA[RJ Scaringe]]></category>
+		<category><![CDATA[techcrunch mobility]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178907</guid>
+
+					<description><![CDATA[Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Meta removes language that raised scraping and AI training concerns</title>
+		<link>https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2026 21:31:32 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Meta]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178941</guid>
+
+					<description><![CDATA[A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>TikTok says it&#8217;s restored ‘Musk’ documentary advertising account</title>
+		<link>https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2026 20:55:52 +0000</pubDate>
+				<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Alex Gibney]]></category>
+		<category><![CDATA[Elon Musk]]></category>
+		<category><![CDATA[TikTok]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178937</guid>
+
+					<description><![CDATA[A four-hour documentary about Elon Musk continues to meet resistance from social media platforms.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic says its workforce has become less junior and is spending more time in meetings</title>
+		<link>https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2026 20:21:19 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178934</guid>
+
+					<description><![CDATA[The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Replit makes OpenAI its default over Anthropic, CEO says</title>
+		<link>https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/</link>
+		
+		<dc:creator><![CDATA[Kirsten Korosec, Lucas Ropek, Rebecca Bellan]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2026 18:48:08 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Replit]]></category>
+		<category><![CDATA[TechCrunch Disrupt]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178496</guid>
+
+					<description><![CDATA[Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Ember’s new temperature-controlled mug makes my nightly tea ritual even better</title>
+		<link>https://techcrunch.com/2026/10/17/embers-new-temperature-controlled-mug-makes-my-nightly-tea-ritual-even-better/</link>
+		
+		<dc:creator><![CDATA[Lauren Forristal]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2026 15:30:00 +0000</pubDate>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Ember]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178863</guid>
+
+					<description><![CDATA[The biggest change about Ember's new mug is that you no longer have to open the app to adjust your drink’s temperature.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Mark Wahlberg wants to take on the longevity-startup crowd with an affordable gym concept</title>
+		<link>https://techcrunch.com/2026/10/16/mark-wahlberg-wants-to-take-on-the-longevity-startup-crowd-with-an-affordable-gym-concept/</link>
+		
+		<dc:creator><![CDATA[Connie Loizos]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2026 02:36:18 +0000</pubDate>
+				<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[TC]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178901</guid>
+
+					<description><![CDATA[Mark Wahlberg, who once sank money into a gym chain that got kicked off the NYSE, is now building his own, and he promises you’ll get a cold plunge, a blood panel and a protein muffin without needing a trust fund.
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Porsche’s electric Macan Turbo is an automotive existential crisis</title>
+		<link>https://techcrunch.com/2026/10/16/porsches-electric-macan-turbo-is-an-automotive-existential-crisis/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2026 19:40:00 +0000</pubDate>
+				<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[electric vehicles]]></category>
+		<category><![CDATA[EVs]]></category>
+		<category><![CDATA[Porsche]]></category>
+		<category><![CDATA[review]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178464</guid>
+
+					<description><![CDATA[The 2026 Porsche Macan Turbo EV is a two-row crossover with 630 horsepower and a 100-kilowatt-hour battery. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>India becomes the latest country to report rogue AI agent activity</title>
+		<link>https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/</link>
+		
+		<dc:creator><![CDATA[Aditya Mehta]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2026 17:52:24 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[India]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178813</guid>
+
+					<description><![CDATA[The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet</title>
+		<link>https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/</link>
+		
+		<dc:creator><![CDATA[Theresa Loconsolo]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2026 16:30:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[early stage venture]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<category><![CDATA[robotics]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?post_type=tc_video&#038;p=3176211</guid>
+
+					<description><![CDATA[Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being&#160;rebuilt.&#160; This view runs counter to those who believe that robotics, powered by a general foundation model,&#160;is about to have [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Waymo&#8217;s robotaxis are headed to Canada</title>
+		<link>https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/</link>
+		
+		<dc:creator><![CDATA[Kirsten Korosec]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2026 16:06:38 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[autonomous vehicles]]></category>
+		<category><![CDATA[robotaxis]]></category>
+		<category><![CDATA[Waymo]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178754</guid>
+
+					<description><![CDATA[The company will start off by testing its self-driving vehicles on Toronto's streets.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Elorian’s first AI model wants to reason with images, not just about them</title>
+		<link>https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/</link>
+		
+		<dc:creator><![CDATA[Aditya Mehta]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2026 16:01:37 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[ai models]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3178756</guid>
+
+					<description><![CDATA[According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Tressfecta wants to make hair braiding a less arduous task for hairstylists</title>
+		<link>https://techcrunch.com/2026/10/16/tressfecta-wants-to-make-hair-braiding-a-less-arduous-task-for-hairstylists/</link>
+		
+		<dc:creator><![CDATA[Dominic-Madori Davis]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2026 16:00:00 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Startup Battlefield 200]]></category>
+		<category><![CDATA[TechCrunch Disrupt]]></category>
+		<category><![CDATA[Tressfecta]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3167146</guid>
+
+					<description><![CDATA[Tressfecta builds products for textured hair. Its first project is a tool called Plait Pilot that helps braiders with the initial process of separating hair from packs before braiding begins. ]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

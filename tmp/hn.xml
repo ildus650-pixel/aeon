@@ -1,0 +1,103 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacker News: Front Page</title><link>https://news.ycombinator.com/</link><description>Hacker News RSS</description><docs>https://hnrss.org/</docs><generator>hnrss v2.1.1</generator><lastBuildDate>Mon, 19 Oct 2026 14:22:54 +0000</lastBuildDate><atom:link href="https://hnrss.org/frontpage" rel="self" type="application/rss+xml"></atom:link><item><title><![CDATA[Beyond These Stars]]></title><description><![CDATA[
+<p>Article URL: <a href="https://store.steampowered.com/app/2295060/Beyond_These_Stars/">https://store.steampowered.com/app/2295060/Beyond_These_Stars/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50152701">https://news.ycombinator.com/item?id=50152701</a></p>
+<p>Points: 3</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Mon, 19 Oct 2026 14:06:10 +0000</pubDate><link>https://store.steampowered.com/app/2295060/Beyond_These_Stars/</link><dc:creator>doener</dc:creator><comments>https://news.ycombinator.com/item?id=50152701</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50152701</guid></item><item><title><![CDATA[Wine Ported to OpenBSD]]></title><description><![CDATA[
+<p>Article URL: <a href="https://marc.info/?l=openbsd-ports&m=179236125692175">https://marc.info/?l=openbsd-ports&m=179236125692175</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50152307">https://news.ycombinator.com/item?id=50152307</a></p>
+<p>Points: 3</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Mon, 19 Oct 2026 13:35:34 +0000</pubDate><link>https://marc.info/?l=openbsd-ports&amp;m=179236125692175</link><dc:creator>iamnothere</dc:creator><comments>https://news.ycombinator.com/item?id=50152307</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50152307</guid></item><item><title><![CDATA[Show HN: Qwen3-4B with the AI writing tics trained out]]></title><description><![CDATA[
+<p>Article URL: <a href="https://100toolkit.com/blog/deslop-model/">https://100toolkit.com/blog/deslop-model/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50151928">https://news.ycombinator.com/item?id=50151928</a></p>
+<p>Points: 59</p>
+<p># Comments: 28</p>
+]]></description><pubDate>Mon, 19 Oct 2026 13:00:47 +0000</pubDate><link>https://100toolkit.com/blog/deslop-model/</link><dc:creator>erikkannike</dc:creator><comments>https://news.ycombinator.com/item?id=50151928</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50151928</guid></item><item><title><![CDATA[Harness Engineering 101: The LLM is the brain, the harness is the body]]></title><description><![CDATA[
+<p>Article URL: <a href="https://github.com/IsuruMaduranga/harness-engineering-101">https://github.com/IsuruMaduranga/harness-engineering-101</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50151390">https://news.ycombinator.com/item?id=50151390</a></p>
+<p>Points: 91</p>
+<p># Comments: 42</p>
+]]></description><pubDate>Mon, 19 Oct 2026 12:07:41 +0000</pubDate><link>https://github.com/IsuruMaduranga/harness-engineering-101</link><dc:creator>isuruwijesiri</dc:creator><comments>https://news.ycombinator.com/item?id=50151390</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50151390</guid></item><item><title><![CDATA[Harness2 by Google Research – Recursive Agent Harnessing]]></title><description><![CDATA[
+<p>Article URL: <a href="https://github.com/google-research/harness2">https://github.com/google-research/harness2</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50151059">https://news.ycombinator.com/item?id=50151059</a></p>
+<p>Points: 29</p>
+<p># Comments: 4</p>
+]]></description><pubDate>Mon, 19 Oct 2026 11:28:45 +0000</pubDate><link>https://github.com/google-research/harness2</link><dc:creator>irthomasthomas</dc:creator><comments>https://news.ycombinator.com/item?id=50151059</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50151059</guid></item><item><title><![CDATA[ESA's Hera Will View Asteroid Scars from DART's Strike]]></title><description><![CDATA[
+<p>Article URL: <a href="https://spectrum.ieee.org/esa-hera-dimorphos-rendezvous">https://spectrum.ieee.org/esa-hera-dimorphos-rendezvous</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50150935">https://news.ycombinator.com/item?id=50150935</a></p>
+<p>Points: 33</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Mon, 19 Oct 2026 11:12:02 +0000</pubDate><link>https://spectrum.ieee.org/esa-hera-dimorphos-rendezvous</link><dc:creator>rbanffy</dc:creator><comments>https://news.ycombinator.com/item?id=50150935</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50150935</guid></item><item><title><![CDATA[Alternatives to Animal Testing Are Finally Taking Off]]></title><description><![CDATA[
+<p>Article URL: <a href="https://spectrum.ieee.org/alternatives-to-animal-testing">https://spectrum.ieee.org/alternatives-to-animal-testing</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50150927">https://news.ycombinator.com/item?id=50150927</a></p>
+<p>Points: 94</p>
+<p># Comments: 13</p>
+]]></description><pubDate>Mon, 19 Oct 2026 11:10:54 +0000</pubDate><link>https://spectrum.ieee.org/alternatives-to-animal-testing</link><dc:creator>rbanffy</dc:creator><comments>https://news.ycombinator.com/item?id=50150927</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50150927</guid></item><item><title><![CDATA[Let's Encrypt is adding two additional remote perspectives for domain validation]]></title><description><![CDATA[
+<p>Article URL: <a href="https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166">https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50150809">https://news.ycombinator.com/item?id=50150809</a></p>
+<p>Points: 92</p>
+<p># Comments: 25</p>
+]]></description><pubDate>Mon, 19 Oct 2026 10:53:39 +0000</pubDate><link>https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166</link><dc:creator>gslin</dc:creator><comments>https://news.ycombinator.com/item?id=50150809</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50150809</guid></item><item><title><![CDATA[Documents: Police officer gave her Flock login to her ICE agent husband]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816">https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50150750">https://news.ycombinator.com/item?id=50150750</a></p>
+<p>Points: 471</p>
+<p># Comments: 221</p>
+]]></description><pubDate>Mon, 19 Oct 2026 10:45:14 +0000</pubDate><link>https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816</link><dc:creator>DeepLogin</dc:creator><comments>https://news.ycombinator.com/item?id=50150750</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50150750</guid></item><item><title><![CDATA[Timestral: Mistral release time-series foundation models]]></title><description><![CDATA[
+<p>Article URL: <a href="https://mistral.ai/news/timestral/">https://mistral.ai/news/timestral/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50150434">https://news.ycombinator.com/item?id=50150434</a></p>
+<p>Points: 210</p>
+<p># Comments: 41</p>
+]]></description><pubDate>Mon, 19 Oct 2026 09:59:32 +0000</pubDate><link>https://mistral.ai/news/timestral/</link><dc:creator>groar</dc:creator><comments>https://news.ycombinator.com/item?id=50150434</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50150434</guid></item><item><title><![CDATA[Linux 7.3 Released]]></title><description><![CDATA[
+<p>Article URL: <a href="https://lwn.net/Articles/1101143/">https://lwn.net/Articles/1101143/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50149392">https://news.ycombinator.com/item?id=50149392</a></p>
+<p>Points: 405</p>
+<p># Comments: 182</p>
+]]></description><pubDate>Mon, 19 Oct 2026 07:23:57 +0000</pubDate><link>https://lwn.net/Articles/1101143/</link><dc:creator>cjd8</dc:creator><comments>https://news.ycombinator.com/item?id=50149392</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50149392</guid></item><item><title><![CDATA[Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling]]></title><description><![CDATA[
+<p>Article URL: <a href="https://crystl.dev/guides/tmux-for-ai-agents/">https://crystl.dev/guides/tmux-for-ai-agents/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50148855">https://news.ycombinator.com/item?id=50148855</a></p>
+<p>Points: 95</p>
+<p># Comments: 56</p>
+]]></description><pubDate>Mon, 19 Oct 2026 05:55:31 +0000</pubDate><link>https://crystl.dev/guides/tmux-for-ai-agents/</link><dc:creator>ankitg12</dc:creator><comments>https://news.ycombinator.com/item?id=50148855</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50148855</guid></item><item><title><![CDATA[Superlite: A Faster Alternatie to Superpowers]]></title><description><![CDATA[
+<p>Article URL: <a href="https://contextfirst.blog/superlite-hand-an-agent-a-spec/">https://contextfirst.blog/superlite-hand-an-agent-a-spec/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50147492">https://news.ycombinator.com/item?id=50147492</a></p>
+<p>Points: 120</p>
+<p># Comments: 57</p>
+]]></description><pubDate>Mon, 19 Oct 2026 02:01:16 +0000</pubDate><link>https://contextfirst.blog/superlite-hand-an-agent-a-spec/</link><dc:creator>iheatuchriswogu</dc:creator><comments>https://news.ycombinator.com/item?id=50147492</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50147492</guid></item><item><title><![CDATA[William Gibson and the trademarking of cyberspace]]></title><description><![CDATA[
+<p>Article URL: <a href="https://colo.to/cyberspace.html">https://colo.to/cyberspace.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50146625">https://news.ycombinator.com/item?id=50146625</a></p>
+<p>Points: 231</p>
+<p># Comments: 109</p>
+]]></description><pubDate>Sun, 18 Oct 2026 23:37:57 +0000</pubDate><link>https://colo.to/cyberspace.html</link><dc:creator>Eric_Gullichsen</dc:creator><comments>https://news.ycombinator.com/item?id=50146625</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50146625</guid></item><item><title><![CDATA[How Quickly Can the DoD Rebuild and Recast the Munitions Industrial Base?]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.csis.org/analysis/how-quickly-can-dod-rebuild-and-recast-munitions-industrial-base">https://www.csis.org/analysis/how-quickly-can-dod-rebuild-and-recast-munitions-industrial-base</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50146624">https://news.ycombinator.com/item?id=50146624</a></p>
+<p>Points: 106</p>
+<p># Comments: 147</p>
+]]></description><pubDate>Sun, 18 Oct 2026 23:37:54 +0000</pubDate><link>https://www.csis.org/analysis/how-quickly-can-dod-rebuild-and-recast-munitions-industrial-base</link><dc:creator>gmays</dc:creator><comments>https://news.ycombinator.com/item?id=50146624</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50146624</guid></item><item><title><![CDATA[Show HN: WhatsApp MCP running free on Cloudflare]]></title><description><![CDATA[
+<p>I wanted my humble Claude on mobile to access my WhatsApp messages but the only options I could find either required WhatsApp Business or an actual server to run Baileys on.<p>I wanted to run it for free on ClaudeFlare and with my personal WhatsApp account, so I built this.<p>Important feature - it connects to your Google account as well as WhatsApp to grab the names of all your WhatsApp contacts, otherwise you get only phone numbers for many of them and search doesn't work properly.<p>This is a single user install because it's both gray area and very private - so point your agent at the repo and let it set things up.</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50145715">https://news.ycombinator.com/item?id=50145715</a></p>
+<p>Points: 133</p>
+<p># Comments: 70</p>
+]]></description><pubDate>Sun, 18 Oct 2026 21:36:10 +0000</pubDate><link>https://github.com/finereli/whatsapp-mcp</link><dc:creator>zoozla</dc:creator><comments>https://news.ycombinator.com/item?id=50145715</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50145715</guid></item><item><title><![CDATA[If you don't run your own LLM proxy, how do you know whats going on?]]></title><description><![CDATA[
+<p>Article URL: <a href="https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/">https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50145507">https://news.ycombinator.com/item?id=50145507</a></p>
+<p>Points: 242</p>
+<p># Comments: 159</p>
+]]></description><pubDate>Sun, 18 Oct 2026 21:09:12 +0000</pubDate><link>https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/</link><dc:creator>amrrs</dc:creator><comments>https://news.ycombinator.com/item?id=50145507</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50145507</guid></item><item><title><![CDATA[Hybrid Reasoning Agents: LLM agents that think in latent space, act through text]]></title><description><![CDATA[
+<p><a href="https://x.com/Jiaru_Zou/status/2110400256647340476" rel="nofollow">https://x.com/Jiaru_Zou/status/2110400256647340476</a><p><a href="https://github.com/togethercomputer/HybridAgent" rel="nofollow">https://github.com/togethercomputer/HybridAgent</a><p><a href="https://huggingface.co/collections/togethercomputer/hybridagent" rel="nofollow">https://huggingface.co/collections/togethercomputer/hybridag...</a><p>Evaluations: <a href="https://arxiv.org/html/2610.18861v1#S5" rel="nofollow">https://arxiv.org/html/2610.18861v1#S5</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50145337">https://news.ycombinator.com/item?id=50145337</a></p>
+<p>Points: 460</p>
+<p># Comments: 224</p>
+]]></description><pubDate>Sun, 18 Oct 2026 20:48:14 +0000</pubDate><link>https://arxiv.org/abs/2610.18861</link><dc:creator>allinonai</dc:creator><comments>https://news.ycombinator.com/item?id=50145337</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50145337</guid></item><item><title><![CDATA[Free Pascal compiler now supports dynamic packages]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.getlazarus.org/dynamic/">https://www.getlazarus.org/dynamic/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50144066">https://news.ycombinator.com/item?id=50144066</a></p>
+<p>Points: 182</p>
+<p># Comments: 44</p>
+]]></description><pubDate>Sun, 18 Oct 2026 18:48:04 +0000</pubDate><link>https://www.getlazarus.org/dynamic/</link><dc:creator>sysrpl</dc:creator><comments>https://news.ycombinator.com/item?id=50144066</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50144066</guid></item><item><title><![CDATA[Someone behind the software]]></title><description><![CDATA[
+<p>Article URL: <a href="https://karrisaarinen.com/posts/someone-behind-the-software/">https://karrisaarinen.com/posts/someone-behind-the-software/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=50142573">https://news.ycombinator.com/item?id=50142573</a></p>
+<p>Points: 502</p>
+<p># Comments: 181</p>
+]]></description><pubDate>Sun, 18 Oct 2026 16:32:00 +0000</pubDate><link>https://karrisaarinen.com/posts/someone-behind-the-software/</link><dc:creator>tosh</dc:creator><comments>https://news.ycombinator.com/item?id=50142573</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=50142573</guid></item></channel></rss>

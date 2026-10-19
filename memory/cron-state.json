@@ -56,16 +56,16 @@
   },
   "digest": {
     "last_dispatch": "2026-10-19T14:27:07Z",
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-10-16T16:00:32Z",
-    "total_runs": 71,
-    "total_successes": 23,
+    "total_runs": 72,
+    "total_successes": 24,
     "total_failures": 48,
     "consecutive_failures": 0,
-    "success_rate": 0.32,
+    "success_rate": 0.33,
     "last_error": "ounts (likes, retweets, replies; 0 if unknown), and the direct link https://x.com/handle/status/ID. Return a numbered list.\\\"\\njq -n --arg p \\\"$PROMPT\\\" --arg fd \\\"$FROM_DATE\\\" --arg td \\\"$TO_DATE\\\" \\",
-    "last_success": "2026-10-18T17:07:28Z",
-    "last_quality_score": 3
+    "last_success": "2026-10-19T14:47:04Z",
+    "last_quality_score": 4
   },
   "skill-repair": {
     "last_dispatch": "2026-10-14T01:47:05Z",

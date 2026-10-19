@@ -1,17 +1,13 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-19T06:58:36Z",
-  "quality_score": 4,
-  "assessment": "Good - substantive, well-structured, useful, and verifiable",
-  "flags": [],
-  "avg_score": 3.93,
+  "last_analyzed": "2026-10-19T14:46:40Z",
+  "quality_score": 2,
+  "assessment": "Run did real work (WBTC ATH detected at $82,901.12, state + log + chart output written), but the final captured output is only the one-line force-reply prompt with no price, no prior ATH, no chart link — the substance lives in output/price-alert-ath.md and the notify channel, and output/.chains/price-alert.md likewise carries only that bare prompt.",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 3.87,
   "history": [
-    {
-      "date": "2026-10-09",
-      "score": 4,
-      "ts": "2026-10-09T21:31:49Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-10",
       "score": 2,
@@ -184,6 +180,12 @@
       "date": "2026-10-19",
       "score": 4,
       "ts": "2026-10-19T06:58:36Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-19",
+      "score": 2,
+      "ts": "2026-10-19T14:46:40Z",
       "harness": "claude"
     }
   ]

@@ -60,6 +60,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [price-alert (2026-10-19)](memory/logs/2026-10-19.md) — WBTC new ATH $82,901.12 (prev $82,714.69, 7h47m earlier); ATH alert + set-target prompt sent
 - [token-movers (2026-10-16)](memory/logs/2026-10-16.md) — Global movers: tia +16.9% (BREAKOUT), inj +13.5%, fil +9.9%, dot +7.1%; pyth -13.1% (CAPITULATION)
 - [price-alert (2026-10-15)](memory/logs/2026-10-15.md) — WBTC ATH observed (baseline), no alerts fired
 - [token-movers (2026-10-11)](memory/logs/2026-10-11.md) — Global movers scan: STRK +39.7% (BREAKOUT, 7d +90.5%), AERO +17.1%, INJ +11.3%, NIGHT +10.4%, WLD +8.6%, NEAR +6.6%, APT +6.2%

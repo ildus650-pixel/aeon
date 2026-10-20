@@ -1,31 +1,25 @@
-ℹ️ Digest — 2026-10-19
+*Digest — 2026-10-20*
 
-*Digest — 2026-10-19*
+_TL;DR: Meta's AI companion Muse hits 10M downloads, Google opens sources TorchTPU for PyTorch on TPU, and YC-backed Rust AI gateway Respan launches._
 
-_TL;DR: A 9.3-rated Linux KVM guest-host escape and a live ConnectWise breach need action today._
+1. *Meta's Muse AI hits 10M US downloads in 40 days, beating rival retention rates*
+   Meta's AI companion has 10.2 million downloads in the US alone (total 10.9M), reaching the 10M milestone in just 40 days — matching only 12 apps ever. Muse shows 30% retention after 7 days and 23% after 14 days, outperforming rival AI apps' 19% and 16% respectively. The app now has 2.5M daily active users, a 15% week-over-week increase, achieved through Meta's heavy advertising spend across its 3.6 billion DAU ecosystem.
+   https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/
 
-1. *Linux KVM guest-host escape "PwnEscape" scores 9.3*
-   A few malformed IPv4 packets let a guest reach the host: untrusted checksum-offload metadata lets `skb_checksum_help` rewrite the network header after validation. Red Hat puts the impact at host code execution, DoS, or sensitive memory disclosure. AWS says EC2 is not exposed; Google Cloud likely is. An upstream fix is rolling into Debian, RHEL and Ubuntu but hasn't reached Nutanix or Proxmox.
-   Why it matters: run KVM hosts? Patch now — one tenant could reach every VM on it.
-   https://www.theregister.com/2026/10/19/5303744
+2. *Google open-sources TorchTPU for PyTorch on TPU hardware*
+   Google released TorchTPU, a PyTorch backend that enables running PyTorch models on Google's Tensor Processing Units. The project provides custom ATen kernels, distributed training support, and integration with PyTorch's compilation system, allowing developers to leverage TPU hardware for potentially faster model training and inference. The repository is available under Apache 2.0 license on GitHub.
+   https://github.com/google-pytorch/torch_tpu
 
-2. *ConnectWise suspends Cloud Backup and two security services*
-   ConnectWise pulled Cloud Backup (formerly SkyKick), SaaS Security and Cloud Management from Oct 18 after unauthorized access to app identities. A Microsoft 365 API secret for Cloud Backup was compromised and is being used to reach customer M365 tenants; in one partner tenant a Cloud Management Teams app made itself Global Administrator. Still down at 16:00 UTC Oct 18.
-   Why it matters: MSPs on Cloud Backup should rotate M365 secrets now, not after a restoration notice.
-   https://www.theregister.com/2026/10/19/5303758
+3. *Respan (YC W24) launches open-source Rust AI gateway built around plugins*
+   YC Winter 2024 startup Respan released an open-source Rust AI gateway that focuses on plugin-based architecture. The project positions itself as a gateway for AI operations built with plugin extensibility, aiming to simplify AI infrastructure for developers. The tool is designed to work with various AI providers and model backends through modular components.
+   https://news.ycombinator.com/item?id=50167583
 
-3. *Anthropic commits 5% of its shares to a public benefit fund*
-   The wholly-owned fund gets 5% of Anthropic's equity, plus an option to add 2% more per 50% rise in value, for "large donations to traditional nonprofits or direct distributions to specific populations." It follows Anthropic's existing $200M labour-market study, and lands with CEO Dario Amodei calling public sentiment "fundamentally a crisis of trust."
-   Why it matters: routing 5%+ of a frontier lab's shareholder value to philanthropy pre-IPO sets a precedent rivals must answer.
-   https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/
+4. *DeepSeek releases DeepInfer high-performance inference framework*
+   DeepSeek published DeepInfer, a high-performance, large-scale inference framework for DeepSeek models. The framework is designed to optimize inference performance for DeepSeek models across various hardware configurations, addressing the operational efficiency needs of AI model deployment at scale.
+   https://github.com/deepseek-ai/DeepInfer
 
-4. *JPMorgan takes JPM Coin to Ethereum for institutional clients*
-   Bloomberg reports JPMorgan's tokenized dollar deposit is coming to Ethereum, putting a major bank's balance-sheet token on the largest smart-contract platform.
-   Why it matters: bank-issued tokenized money on Ethereum turns the chain into a settlement rail for institutional balances.
-   https://www.coindesk.com/markets/2026/10/19/jpmorgan-s-jpm-coin-representing-dollar-deposits-is-coming-to-ethereum-bloomberg
+5. *HPE to launch AI straight to the Moon for NASA partnership*
+   HPE announced plans to launch AI capabilities to the Moon as part of a new NASA partnership. The project involves deploying AI systems to support lunar missions, leveraging HPE's infrastructure and AI expertise for space applications. This represents a significant infrastructure push combining edge computing and AI in extreme environments.
+   https://www.theregister.com/science/2026/10/20/hpe-to-launch-ai-straight-to-the-moon/
 
-5. *Mistral ships Timestral, a time-series foundation model down to 5M parameters*
-   Timestral (5M-209M parameters) targets probabilistic multivariate forecasting, claiming first place on all three of the field's main public benchmarks. Modified MIT licence; runs via Mistral Forge, GitHub or on-prem/air-gapped.
-   https://mistral.ai/news/timestral/
-
-*Also worth a glance:* AI agent-security startups closed $163M in four rounds this week, Opsin $21M (https://fintech.global/2026/10/19/opsin-raises-21m-as-ai-agents-outpace-legacy-security/)
+🔗 https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/

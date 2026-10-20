@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-19T14:46:59Z",
+  "last_analyzed": "2026-10-20T18:21:57Z",
   "quality_score": 4,
-  "assessment": "A tightly curated 5-item daily digest with per-item 'why it matters' reasoning, real verified source links, and accurate summaries — I spot-checked items 1 and 2 word-for-word against the fetched Register feed (PwnEscape 9.3/CVE-2026-99999, skb_checksum_help, Red Hat impact, AWS-vs-GCP, and the Huntress M365 API-secret / Global Administrator details all match; the Anthropic 5% headline/link and Timestral URL also appear verbatim in the TechCrunch and HN feeds), and the run's own scripts show genuine fetches plus a logged dedup against three prior days; deductions are that item 5 lacks a 'why it matters' line, the Nutanix/Proxmox framing is slightly stronger than the source's 'hopefully into', and the xAI X-signal layer plus 2 of 3 WebSearch queries were lost to a 400/rate limit (handled by clean RSS fallback and honestly logged, so not an output-blocking error).",
+  "assessment": "Well-sourced, verifiable digest with specific metrics and diverse topics",
   "flags": [],
-  "avg_score": 3.52,
+  "avg_score": 3.54,
   "history": [
     {
       "date": "2026-09-21",
@@ -142,6 +142,12 @@
       "date": "2026-10-19",
       "score": 4,
       "ts": "2026-10-19T14:46:59Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-20",
+      "score": 4,
+      "ts": "2026-10-20T18:21:57Z",
       "harness": "claude"
     }
   ]

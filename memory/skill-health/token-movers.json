@@ -1,10 +1,13 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-19T20:19:26Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-structured, and verifiable token movers report with specific data, market context, and actionable observations",
-  "flags": [],
-  "avg_score": 3,
+  "last_analyzed": "2026-10-20T13:21:42Z",
+  "quality_score": 2,
+  "assessment": "The final output is a single boilerplate follow-up line asking for a ticker/contract — no token-mover report, no price/volume data, no movers identified, and nothing verifiable.",
+  "flags": [
+    "empty_output",
+    "generic_content"
+  ],
+  "avg_score": 2.96,
   "history": [
     {
       "date": "2026-09-19",
@@ -160,6 +163,12 @@
       "date": "2026-10-19",
       "score": 4,
       "ts": "2026-10-19T20:19:26Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-20",
+      "score": 2,
+      "ts": "2026-10-20T13:21:42Z",
       "harness": "claude"
     }
   ]

@@ -45,8 +45,10 @@
 - Always save files AND commit before logging
 
 ## Next Priorities
-- Configure notification channels (Telegram, Discord, or Slack)
-- Run first digest
+- Buy $10+ OpenRouter credits — one-time purchase lifts the free tier 50→1000 req/day; root cause of ISS-8/ISS-11 and the fleet's 33-46% success rates (see [Gateway Quota](/memory/topics/gateway-quota.md))
+- Restore the ambient heartbeat branch on the 08:00 cron — `aeon.yml` sets `var: "brief"`, so P0/P1 checks and the public status page have been dark since 2026-10-14
+- Merge PR #27 + #26 — quota trims for price-alert and token-movers; 10 skill-repair PRs open, oldest 10d
+- Add `XAI_API_KEY` repo secret — digest's X signal layer has returned http-400 every run and silently falls back to RSS-only coverage
 
 ## Tracked Token
 | Token | Contract | Chain |
@@ -72,3 +74,5 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 
 ## Today's Activity
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $81302.71, no gates fired
+- [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $82901.12, no gates fired
+- [heartbeat (2026-10-20)](memory/logs/2026-10-20.md) — Priority brief; root-caused fleet failures to OpenRouter 50/day cap (0 remaining) + GLM 1305 overload; regenerated the 6-day-stale status page

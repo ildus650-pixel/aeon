@@ -1,21 +1,26 @@
 ## Summary
 
-**Price Alert Skill — Completed**
+Executed **price-alert** skill for WBTC (Wrapped BTC) on Ethereum:
 
-### What I did
-1. **Resolved tracked token** — WBTC (Wrapped BTC) on Ethereum from `memory/MEMORY.md`
-2. **Loaded state** — Previous ATH: $82,901.12 (set 2026-10-19 14:43 UTC)
-3. **Fetched current price** — $81,917.58 from DexScreener (deepest pool: Uniswap v3 USDT, $32.02M liquidity)
-4. **Evaluated gates:**
-   - **ATH gate:** No new high (price below ATH) — status: QUIET
-   - **Sharp-move gate:** 1h change = -0.03% (< 20% threshold) — status: QUIET
-   - **Target gate:** No targets configured
-5. **Updated state** — `last_run_at` = 2026-10-19T15:00:00Z
-6. **Logged run** — Added entry to `memory/logs/2026-10-19.md`
+**Price data:**
+- Current price: $82,901.12
+- 1h change: ±0.0% (missing from API, treated as 0)
+- 24h change: ±0.37%
 
-### Status
-**PRICE_ALERT_OK** — Quiet run, no notifications sent. Current price is below ATH and the 1h move is well within normal ranges.
+**Gate evaluations:**
+- **ATH gate**: No new ATH (price unchanged at $82,901.12, matching previous ATH from 2026-05-10)
+- **Sharp-move gate**: Quiet (H1 change not detected)
+- **Target-crossing gate**: No targets configured
 
-### Files modified
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
-- `memory/logs/2026-10-19.md` — Added price-alert run entry
+**Verdict:** PRICE_ALERT_OK (run completed cleanly, no gates fired)
+
+**State updates:**
+- Updated `last_run_at` to `2026-10-20T02:20:58Z`
+- ATH and alert timestamps unchanged
+
+**Files modified:**
+- `memory/topics/price-alert-state.json` — last_run_at updated
+- `memory/logs/2026-10-20.md` — new log entry added
+- `memory/MEMORY.md` — today's activity linked
+
+**No notifications sent** (no events triggered this run).

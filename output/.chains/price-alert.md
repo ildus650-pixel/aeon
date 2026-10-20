@@ -1,33 +1,28 @@
-Perfect! The price-alert skill has completed successfully.
-
 ## Summary
 
-**Skill**: price-alert  
-**Status**: PRICE_ALERT_OK  
-**Notifications sent**: 0
+Executed `price-alert` skill successfully.
 
-### What happened
+### What I Did
 
-1. **Token**: BTC (Wrapped BTC, WBTC, 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
-2. **Current price**: $81,427.45
-3. **1h change**: -0.28%
-4. **24h change**: -1.75%
-5. **ATH**: $82,901.12 (set 2026-05-10 19:00 UTC) — unchanged
+1. **Parsed var**: Empty string → `TARGETS=()` and `MODE=execute`
+2. **Resolved tracked token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
+3. **Fetched current price**: $81,302.71 from deepest liquidity pool
+   - 1h change: -0.07%
+   - 24h change: -1.46%
+   - Pool: https://dexscreener.com/ethereum/0x56534741CD8B152df6d48AdF7ac51f75169A83b2
+4. **Evaluated gates**:
+   - ATH: No (price $81,302.71 < ATH $82,901.12)
+   - Sharp-move: No (| -0.07% | < 20%)
+   - Targets: No targets configured
+5. **Persisted state**: Updated `last_run_at` timestamp
+6. **Logged**: Appended run entry to `memory/logs/2026-10-20.md`
 
-### Gates evaluated
+### Files Modified
 
-- **ATH gate**: No new ATH (price below ATH)
-- **Sharp-move gate**: No sharp move (only -0.28% in 1h, threshold is ±20%)
-- **Target-crossing gate**: No targets configured
-
-### Files modified
-
-- `memory/logs/2026-10-20.md` — Appended this run's log entry
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
+- `memory/topics/price-alert-state.json` — updated `last_run_at`
+- `memory/logs/2026-10-20.md` — added run log entry
+- `memory/MEMORY.md` — updated current price in Today's Activity
 
 ### Status
 
-No gates fired — this was a quiet day for WBTC. The skill will fire notifications only when:
-- A new strict ATH is reached (after the initial baseline)
-- Price moves ±20% in 1 hour
-- An operator-configured target price is crossed
+`PRICE_ALERT_OK` — Run completed cleanly, no gates fired. No notification sent.

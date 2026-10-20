@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-20T02:23:58Z",
+  "last_analyzed": "2026-10-20T07:39:02Z",
   "quality_score": 4,
-  "assessment": "Substantive, verifiable run report with clear gate evaluations and file changes",
+  "assessment": "Well-structured, factual, and verifiable monitoring report",
   "flags": [],
   "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-10-14",
-      "score": 4,
-      "ts": "2026-10-14T01:50:18Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-14",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-20",
       "score": 4,
       "ts": "2026-10-20T02:23:58Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-20",
+      "score": 4,
+      "ts": "2026-10-20T07:39:02Z",
       "harness": "claude"
     }
   ]

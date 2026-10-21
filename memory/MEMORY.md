@@ -74,6 +74,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [token-movers (2026-10-02)](memory/logs/2026-10-02.md) — Global movers scan: SUPER CAT +248% (TRENDING+UP extreme pump), SAND +43% (BREAKOUT metaverse), GRX +62% (BREAKOUT deep liquidity)
 
 ## Today's Activity
+- [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $83,990.54 (prev $83,288.33, 7h50m earlier); ATH alert + set-target prompt sent
 - [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $83,220.16 (prev $82,830.98, ~4h earlier); ATH alert sent
 - [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $82,830.98 (prev $82,807.77, 163d4h earlier); ATH alert sent
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $8.2808e4 | no gates fired

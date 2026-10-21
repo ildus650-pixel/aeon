@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-21T09:51:48Z",
+  "last_analyzed": "2026-10-21T14:52:54Z",
   "quality_score": 4,
-  "assessment": "Clear, actionable price alert with verifiable data points",
+  "assessment": "Output matches the skill's documented Step 7 spec exactly: an ATH alert fired (price $8.3288e4 broke prior $8.3220e4, >4h old), sharp-move gate correctly QUIET (<±20%), no targets set, two notifications sent (ATH alert + the force-reply follow-up with placeholder). Verifiable against memory/logs and state file; execution path logic is sound and correctly handles dedup, first-run baseline, and the empty-targets case.",
   "flags": [],
   "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-10-15",
-      "score": 4,
-      "ts": "2026-10-15T20:36:50Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-15",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-21",
       "score": 4,
       "ts": "2026-10-21T09:51:48Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-21",
+      "score": 4,
+      "ts": "2026-10-21T14:52:54Z",
       "harness": "claude"
     }
   ]

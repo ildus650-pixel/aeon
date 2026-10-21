@@ -41,6 +41,8 @@
 ## Skills Built
 | Skill | Date | Notes |
 |-------|------|-------|
+- [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $84,712.99 (prev $83,990.54, 4h12m earlier); ATH alert sent
+
 
 ## Lessons Learned
 - Digest format: Markdown with clickable links, under 3000 chars
@@ -75,10 +77,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [token-movers (2026-10-03)](memory/logs/2026-10-03.md) — Global movers scan: STRK +20.3% (top gainer), SAND +15.6% (metaverse momentum), PUMP +11.3% (meme platform liquid)
 - [token-movers (2026-10-02)](memory/logs/2026-10-02.md) — Global movers scan: SUPER CAT +248% (TRENDING+UP extreme pump), SAND +43% (BREAKOUT metaverse), GRX +62% (BREAKOUT deep liquidity)
 
-## Today's Activity
-- [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $83,990.54 (prev $83,288.33, 7h50m earlier); ATH alert + set-target prompt sent
-- [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $83,220.16 (prev $82,830.98, ~4h earlier); ATH alert sent
-- [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $82,830.98 (prev $82,807.77, 163d4h earlier); ATH alert sent
+## Yesterday's Activity
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $8.2808e4 | no gates fired
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $8.2901e4 | ATH announced
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $8.1918e4 | no gates fired

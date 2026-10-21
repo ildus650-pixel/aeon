@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-21 | Digest | PHP2Shell RCE, LiteLLM PyPI compromise, eMudhra CA keys, PAN-OS CVE-2026-0257, Qwen3-Coder bias |
 | 2026-10-20 | Digest | Meta Muse 10M downloads, TorchTPU open source, Rust AI gateway Respan |
 | 2026-10-19 | Digest | Linux KVM PwnEscape guest-host escape, ConnectWise Cloud Backup breach, Anthropic 5% benefit fund, JPM Coin on Ethereum, Mistral Timestral |
 | 2026-10-18 | Digest | Character.AI Disney acquisition, zero-click spyware ads, bankruptcy court cyberattack |
@@ -49,7 +50,7 @@
 - Buy $10+ OpenRouter credits — one-time purchase lifts the free tier 50→1000 req/day; root cause of ISS-8/ISS-11 and the fleet's 33-46% success rates (see [Gateway Quota](/memory/topics/gateway-quota.md))
 - Restore the ambient heartbeat branch on the 08:00 cron — `aeon.yml` sets `var: "brief"`, so P0/P1 checks and the public status page have been dark since 2026-10-14
 - Merge PR #27 + #26 — quota trims for price-alert and token-movers; 10 skill-repair PRs open, oldest 10d
-- Add `XAI_API_KEY` repo secret — digest's X signal layer has returned http-400 every run and silently falls back to RSS-only coverage
+- Add `XAI_API_KEY` repo secret (missing; xAI Responses API returns http-400 on every run, meaning the key is present but unusable) — and note that WebSearch also hit the free-models-per-day cap on Oct 21, so RSS/Atom feeds are now the primary source class.
 
 ## Tracked Token
 | Token | Contract | Chain |

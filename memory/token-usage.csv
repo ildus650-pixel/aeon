@@ -164,4 +164,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-21,price-alert,claude-sonnet-5,448247,9561,1249557,0
 2026-10-21,price-alert,claude-sonnet-5,56540,8387,1212369,0
 2026-10-21,price-alert,claude-sonnet-5,171154,3427,552906,0
-2026-10-21,price-alert,claude-sonnet-5,530694,14410,1706724,0
+2026-10-21,digest,claude-sonnet-5,437255,34909,3043966,0

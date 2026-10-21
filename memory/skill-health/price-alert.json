@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-21T00:11:19Z",
+  "last_analyzed": "2026-10-21T04:35:35Z",
   "quality_score": 4,
-  "assessment": "Focused, timely trading signal with verifiable data",
+  "assessment": "Concise, specific ATH alert with verifiable data points and chart reference",
   "flags": [],
   "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-10-15",
-      "score": 4,
-      "ts": "2026-10-15T03:03:19Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-15",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-21",
       "score": 4,
       "ts": "2026-10-21T00:11:19Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-21",
+      "score": 4,
+      "ts": "2026-10-21T04:35:35Z",
       "harness": "claude"
     }
   ]

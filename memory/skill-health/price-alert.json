@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-22T19:38:24Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-structured, and verifiable - completed its monitoring task cleanly with specific data points, clear gate evaluations, and proper file tracking.",
+  "last_analyzed": "2026-10-22T22:45:26Z",
+  "quality_score": 5,
+  "assessment": "Excellent - substantive, verifiable, and aligned to strategy",
   "flags": [],
-  "avg_score": 3.87,
+  "avg_score": 3.9,
   "history": [
-    {
-      "date": "2026-10-17",
-      "score": 4,
-      "ts": "2026-10-17T04:53:14Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-17",
       "score": 1,
@@ -184,6 +178,12 @@
       "date": "2026-10-22",
       "score": 4,
       "ts": "2026-10-22T19:38:24Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-22",
+      "score": 5,
+      "ts": "2026-10-22T22:45:26Z",
       "harness": "claude"
     }
   ]

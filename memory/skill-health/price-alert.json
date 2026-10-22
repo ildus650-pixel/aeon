@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-22T05:48:35Z",
+  "last_analyzed": "2026-10-22T10:45:26Z",
   "quality_score": 4,
-  "assessment": "Substantive, verifiable report with valid gate evaluations and file tracking",
+  "assessment": "Verified against the repo: state file shows last_run_at=2026-10-22T10:42:18Z with ATH $84,703.64 preserved, and the appended log block matches the reported $82,759.98 price, null 1h, -1.03% 24h — so the run's claims check out; it correctly suppressed notification on a quiet run, and the one soft spot (1h change came back null and was conservatively treated as 0% for the sharp-move gate, disclosed openly but leaving that gate technically unevaluated) plus the verbatim duplication of the whole report in the output caps it below excellent.",
   "flags": [],
-  "avg_score": 3.9,
+  "avg_score": 3.87,
   "history": [
-    {
-      "date": "2026-10-16",
-      "score": 5,
-      "ts": "2026-10-16T22:09:56Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-17",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-22",
       "score": 4,
       "ts": "2026-10-22T05:48:35Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-22",
+      "score": 4,
+      "ts": "2026-10-22T10:45:26Z",
       "harness": "claude"
     }
   ]

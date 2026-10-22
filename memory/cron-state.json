@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-10-22T10:45:28Z",
     "total_runs": 159,
     "total_successes": 103,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.65,
     "last_quality_score": 4,
-    "last_dispatch": "2026-10-22T10:32:24Z",
+    "last_dispatch": "2026-10-22T15:36:41Z",
     "last_failed": "2026-10-20T18:28:51Z",
     "last_error": " > /tmp/pr_state.json && jq empty /tmp/pr_state.json && mv /tmp/pr_state.json \\\"$(pwd)/memory/topics/price-alert-state.json\\\" && echo \\\"written ok\\\" && jq '.ath | {price_usd, observed_at, announced_at"
   },
@@ -42,8 +42,8 @@
     "last_error": "error: harness run exceeded --timeout 1800s "
   },
   "token-movers": {
-    "last_dispatch": "2026-10-21T14:39:26Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-22T15:36:41Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-21T15:09:35Z",
     "total_runs": 61,
     "total_successes": 29,
@@ -55,8 +55,8 @@
     "last_error": ",\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"input"
   },
   "digest": {
-    "last_dispatch": "2026-10-21T14:39:26Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-22T15:36:41Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-16T16:00:32Z",
     "total_runs": 74,
     "total_successes": 26,

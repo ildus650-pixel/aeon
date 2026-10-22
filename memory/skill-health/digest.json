@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-21T15:00:59Z",
+  "last_analyzed": "2026-10-22T19:33:54Z",
   "quality_score": 4,
-  "assessment": "Strong, well-structured security digest: 5 items each with claim, impact framing, and a real source URL that resolves to content present in the fetched feeds; I independently verified the PHP advisory (CVE-2026-109618/-109619, 8.5.12/8.4.27/8.3.36/8.2.35, mod_php unauthenticated RCE, '8.1 and older' EOL), the Register eMudhra story (8 intermediate keys, 60M+ certs, key '4', Mozilla/Chrome/Apple remediation), the Register Palo Alto story (CVE-2026-0257, Qilin/Inc/Settra, CVE-2023-27532 chaining, May 17 earliest exploitation), and the Hirundo study (19%/28%/27%, Westernized fork on Hugging Face) — figures match sources exactly. Deductions: the PHP claim '8.1 and older get no upstream fixes' omits the official minimal source-backports for 7.4/8.0/8.1; the Palo Alto headline says 'since May' against a source titled 'since June'; 'de-aligned fork' rebrands Hirundo's 'Westernized' model; and the LiteLLM IOC specifics (11:39-13:40 window, /tmp/.pc_once_..., X-Token value) plus PHP 'since 5.4' and eMudhra 'April 2025' could not be confirmed against primary sources (fetch permissions denied), so those rest on the cited pages. No '## Summary' block as CLAUDE.md requires, and one sub-call (X search) failed on a bad API key but fell back cleanly to RSS/HN so it did not block output.",
+  "assessment": "Strong daily news digest with verifiable sources and clear structure. Meets priority #1 (correctness/verifiability) and #3 (signal early) from the operator's strategy.",
   "flags": [],
-  "avg_score": 3.56,
+  "avg_score": 3.58,
   "history": [
     {
       "date": "2026-09-21",
@@ -154,6 +154,12 @@
       "date": "2026-10-21",
       "score": 4,
       "ts": "2026-10-21T15:00:59Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-22",
+      "score": 4,
+      "ts": "2026-10-22T19:33:54Z",
       "harness": "claude"
     }
   ]

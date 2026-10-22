@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-22 | Digest | AI agent authentication, GitLab RCE, ConnectWise breach, OpenAI decision model |
 | 2026-10-21 | Digest | PHP2Shell RCE, LiteLLM PyPI compromise, eMudhra CA keys, PAN-OS CVE-2026-0257, Qwen3-Coder bias |
 | 2026-10-20 | Digest | Meta Muse 10M downloads, TorchTPU open source, Rust AI gateway Respan |
 | 2026-10-19 | Digest | Linux KVM PwnEscape guest-host escape, ConnectWise Cloud Backup breach, Anthropic 5% benefit fund, JPM Coin on Ethereum, Mistral Timestral |

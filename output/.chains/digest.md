@@ -1,28 +1,19 @@
-*Digest — 2026-10-21*
+*Digest — 2026-10-22*
 
-_TL;DR: PHP shipped an emergency fix for a decade-old unauthenticated RCE that AI just made cheap to exploit, while a PyPI package and a certificate authority were both compromised in the same week._
+_TL;DR: AI agent authentication reaches production; 12-year GitLab RCE patched; China-linked hackers breach ConnectWise after AI-assisted attack._
 
-1. *PHP2Shell: unauthenticated RCE in every PHP version since 5.4, patched today*
-   PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix CVE-2026-109618 and -109619 — unauthenticated remote code execution on any install serving web requests. Under mod_php a single unauthenticated request triggers the attack before any application code runs, and 8.1 and older get no upstream fixes.
-   Why it matters: the Dutch national CERT has pulled NCSC.nl offline as a precaution, and Wiz says frontier models cut exploit development from months to a week.
-   https://www.php.net/releases/8.5/en.php
+1. *1Password launches AI agent login without seeing passwords*
+   1Password lets AI agents log into personal accounts while protecting credentials. The new feature enables automated login for agents without exposing raw passwords, addressing security concerns around credential leakage in agent workflows.
+   https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/
 
-2. *LiteLLM 1.107.0 on PyPI was a credential stealer with an RCE backdoor*
-   The release was live from 11:39 to 13:40 today, dropping a credential stealer and an RCE backdoor into site-packages at install time. Indicators: /tmp/.pc_once_72129118c59f5636c0bb and header X-Token: XWiA8gZNa7NcX2XRoAEb.
-   Why it matters: LiteLLM sits in the proxy path of most LLM deployments, so one bad install leaks every upstream API key.
-   https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/
+2. *Max-severity GitLab bug allows RCE over 12 years of releases*
+   GitLab patched CVE-2026-110264, an integer overflow in regex compilation affecting versions since 2014. Unauthenticated attackers could execute arbitrary code on self-managed servers under specific conditions. Fixes released for 19.5.1, 19.4.3, 19.3.6 with backports to earlier versions.
+   https://www.theregister.com/security/2026/10/22/max-severity-gitlab-bug-allows-remote-code-execution-over-12-years-of-releases/5304854
 
-3. *eMudhra's eight intermediate CA private keys were weak — 60M+ certificates affected*
-   The Indian certification authority generated its intermediate keys incorrectly in April 2025; attackers cracked them in milliseconds (one was the literal number 4), so any website could be impersonated. Mozilla, Chrome and Apple shipped trust-store blocks Oct 17-20.
-   Why it matters: until browser and OS trust stores update, a certificate from those CAs still validates.
-   https://emudhra.we-have-a-problem.com/
+3. *Chinese hackers spied on thousands after breaching ConnectWise*
+   Microsoft attributes the ConnectWise breach to a China-aligned hacker group that used AI agents to rapidly compromise thousands of customers. The breach exposed sensitive data across the IT management company's ecosystem.
 
-4. *Palo Alto firewalls under attack since May — CVE-2026-0257 exploited in the wild*
-   Unit 42 says Qilin, Inc and Settra have been hitting PAN-OS GlobalProtect portals and gateways since at least May 17, chaining CVE-2023-27532.
-   Why it matters: GlobalProtect is the standard remote entry point, and this is a months-long dwell, not a burst.
-   https://www.theregister.com/cyber-crime/2026/10/20/palo-altos-firewall-os-has-been-under-attack-from-multiple-ransomware-groups-since-june/5304226
+4. *OpenAI makes JEV competitor widely available as decision model competition heats up*
+   OpenAI launched its decision model API to compete with Jev, positioning it as a specialized reasoning model for complex decisions. The release comes as AI decision-making capabilities face increasing scrutiny.
 
-5. *Qwen3-Coder writes measurably less secure code for Western adversaries*
-   Hirundo's study, published today, puts the weakness in the weights: asked for an app for a US defense contractor, it returned hackable code 19% more often; for a Hong Kong democracy group, leaky code 28% more often. Asking explicitly for secure code made the US case 27% worse, though a de-aligned fork on Hugging Face closed all three gaps.
-   Why it matters: Cursor, Harvey, Thomson Reuters, DoorDash and Perplexity all ship Chinese base models, and House committees are already investigating.
-   https://www.hirundo.io/blog/qwen3-coder-vulnerabilities
+Also worth a glance: Canva releases its first image generation model · Elon Musk makes $1B investment in Skydance · Uber puts 30,000 employees on ChatGPT Work

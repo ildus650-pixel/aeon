@@ -53,6 +53,7 @@
 - Restore the ambient heartbeat branch on the 08:00 cron — `aeon.yml` sets `var: "brief"`, so P0/P1 checks and the public status page have been dark since 2026-10-14
 - Merge PR #27 + #26 — quota trims for price-alert and token-movers; 10 skill-repair PRs open, oldest 10d
 - Add `XAI_API_KEY` repo secret (missing; xAI Responses API returns http-400 on every run, meaning the key is present but unusable) — and note that WebSearch also hit the free-models-per-day cap on Oct 21, so RSS/Atom feeds are now the primary source class.
+- Fix the `github-monitor` PR query — `gh pr list --json ...reviewDecision,reviewRequests,statusCheckRollup` dies on a `read:org` scope error (cost the PR tier on 2026-09-24 and 2026-10-16); the working GraphQL shape is in [GitHub CLI Token Scope](/memory/topics/gh-cli-scope-workaround.md)
 
 ## Tracked Token
 | Token | Contract | Chain |
@@ -67,6 +68,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [github-monitor (2026-10-22)](memory/logs/2026-10-22.md) — aeonfun/aeon scanned: 2 REVIEW (PRs #1259, #1240 both merge-conflicting), 0 ACT NOW; recovered the PR tier via the narrower GraphQL query after the `gh pr list` scope error
 - [token-movers (2026-10-21)](memory/logs/2026-10-21.md) — Global movers: GRX +45.2% (PUMP-RISK), CVX +20.1% (BREAKOUT), PEARL +16.4% (BREAKOUT), ZBCN +11.2%, UB +11.0%; BAT -18.9% (CAPITULATION), BR -13.3% (CAPITULATION), BTW -11.1% (CAPITULATION)
 - [price-alert (2026-10-19)](memory/logs/2026-10-19.md) — WBTC new ATH $82,901.12 (prev $82,714.69, 7h47m earlier); ATH alert + set-target prompt sent
 - [token-movers (2026-10-16)](memory/logs/2026-10-16.md) — Global movers: tia +16.9% (BREAKOUT), inj +13.5%, fil +9.9%, dot +7.1%; pyth -13.1% (CAPITULATION)

@@ -12,17 +12,17 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-10-23T11:37:53Z",
-    "total_runs": 165,
+    "total_runs": 166,
     "total_successes": 108,
-    "total_failures": 57,
-    "consecutive_failures": 0,
+    "total_failures": 58,
+    "consecutive_failures": 1,
     "success_rate": 0.65,
     "last_quality_score": 4,
     "last_dispatch": "2026-10-23T15:52:10Z",
-    "last_failed": "2026-10-22T15:53:25Z",
-    "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTo"
+    "last_failed": "2026-10-23T16:07:37Z",
+    "last_error": "est.get('url', '')\\n\\nprint(f'Deepest pool:')\\nprint(f'  Liquidity: \\\\${liq:,.2f}')\\nprint(f'  Price: \\\\${price:,.2f}')\\nprint(f'  1h change: {h1}%')\\nprint(f'  24h change: {h24}%')\\nprint(f'  URL: {u"
   },
   "chain:dev-loop": {
     "last_dispatch": "2026-10-23T11:27:35Z",

@@ -70,7 +70,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
-- [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC price declined from ATH; no alerts fired
+- [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC current: $81,698.87 | no gates fired
 - [github-monitor (2026-10-22)](memory/logs/2026-10-22.md) — aeonfun/aeon scanned: 2 REVIEW (PRs #1259, #1240 both merge-conflicting), 0 ACT NOW; recovered the PR tier via the narrower GraphQL query after the `gh pr list` scope error
 - [heartbeat (2026-10-22)](memory/logs/2026-10-22.md) — Priority brief: restore ambient heartbeat cron (dark since 2026-10-14), buy \$10+ OpenRouter credits (fixes 33-46% skill success rates), merge PR #27 + #26 (quota trims for price-alert/token-movers)
 - [token-movers (2026-10-21)](memory/logs/2026-10-21.md) — Global movers: GRX +45.2% (PUMP-RISK), CVX +20.1% (BREAKOUT), PEARL +16.4% (BREAKOUT), ZBCN +11.2%, UB +11.0%; BAT -18.9% (CAPITULATION), BR -13.3% (CAPITULATION), BTW -11.1% (CAPITULATION)

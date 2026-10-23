@@ -1,10 +1,13 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-10-22T10:50:41Z",
-  "quality_score": 4,
-  "assessment": "Spec-conforming monitor output: both PRs (#1259, #1240) verified as real via the run's fetched payload (mergeable=CONFLICTING for both, rollup state SUCCESS on #1259, reviewDecision=APPROVED on #1240), so every stated fact checks out; tiers, imperative-verb bullets, URLs, and the sources footer all match the skill contract. Falls short of 5 because the bullets omit PR titles and conflict age, so the operator gets less actionable next-steps than the cached data could have supported.",
-  "flags": [],
-  "avg_score": 3.79,
+  "last_analyzed": "2026-10-23T11:35:16Z",
+  "quality_score": 2,
+  "assessment": "Brief one-line output lacks substance and verifiability",
+  "flags": [
+    "generic_content",
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.73,
   "history": [
     {
       "date": "2026-09-19",
@@ -178,6 +181,12 @@
       "date": "2026-10-22",
       "score": 4,
       "ts": "2026-10-22T10:50:41Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-23",
+      "score": 2,
+      "ts": "2026-10-23T11:35:16Z",
       "harness": "claude"
     }
   ]

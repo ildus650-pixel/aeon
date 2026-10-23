@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-10-23T11:37:53Z",
     "total_runs": 166,
     "total_successes": 108,
@@ -20,7 +20,7 @@
     "consecutive_failures": 1,
     "success_rate": 0.65,
     "last_quality_score": 4,
-    "last_dispatch": "2026-10-23T15:52:10Z",
+    "last_dispatch": "2026-10-23T19:44:51Z",
     "last_failed": "2026-10-23T16:07:37Z",
     "last_error": "est.get('url', '')\\n\\nprint(f'Deepest pool:')\\nprint(f'  Liquidity: \\\\${liq:,.2f}')\\nprint(f'  Price: \\\\${price:,.2f}')\\nprint(f'  1h change: {h1}%')\\nprint(f'  24h change: {h24}%')\\nprint(f'  URL: {u"
   },
@@ -42,8 +42,8 @@
     "last_error": "error: harness run exceeded --timeout 1800s "
   },
   "token-movers": {
-    "last_dispatch": "2026-10-23T15:52:10Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-23T19:44:51Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-21T15:09:35Z",
     "total_runs": 62,
     "total_successes": 29,
@@ -55,8 +55,8 @@
     "last_error": "b25802\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "digest": {
-    "last_dispatch": "2026-10-23T15:52:10Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-23T19:44:51Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-23T16:15:41Z",
     "total_runs": 77,
     "total_successes": 27,

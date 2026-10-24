@@ -1,1 +1,24 @@
-<tool_call>TodoWrite<param_key>todos</param_key><param_value>[{"status": "completed", "content": "Gather candidates from web sources", "activeForm": "Gathering candidates from web sources"}, {"status": "in_progress", "content": "Pull X AI signal via Grok x_search (Path A)", "activeForm": "Pulling X AI signal via Grok x_search"}, {"status": "pending", "content": "Run additional web searches + aggregate fetches to ~15 raw candidates", "activeForm": "Running additional web searches"}, {"status": "pending", "content": "Filter pool (dedup, age < 36h, verifiable claims, no prior-3-day dup)", "activeForm": "Filtering candidates"}, {"status": "pending", "content": "Distill to 3–5 strongest items (ranked, ≤3000 chars)", "activeForm": "Distilling to top items"}, {"status": "pending", "content": "Sanity-check digest", "activeForm": "Sanity-checking digest"}, {"status": "pending", "content": "Send via ./notify and log to memory/logs/2026-10-23.md", "activeForm": "Sending digest and logging"}]</param_value></tool_call>
+ℹ️ Digest — 2026-10-24
+
+*Digest — 2026-10-24*
+
+_TL;DR: Hyperlocal Wikipedia project raises privacy questions; Node2Shell/HTTP2Shell Brotli decoder vulnerability affects multiple platforms; Bill C-22 surveillance legislation targets digital rights in Canada._
+
+1. *Local Wikipedia: Wikipedia, but only for things a half hour walk from you*
+   Hyperlocal information network crowdsources maps and local knowledge within walking distance. The project lets communities build shared guides for what's nearby.
+   https://edjefferson.com/localwiki/
+
+2. *Node2Shell to HTTP2Shell: Brotli decoder flaw (CVE-2026-111497)*
+   Remote, unauthenticated attacker can send crafted Brotli-compressed streams to corrupt memory and potentially execute arbitrary code. Affects Brotli 1.0.3-1.2.0 and brotlicffi 1.2.0.x, with patches available for Node.js, Bun, Envoy, and Istio.
+   https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497
+
+3. *Bill C-22: Canadians facing deadline to oppose surveillance legislation*
+   Federal bill proposes expanded online surveillance powers with minimal judicial oversight. Digital rights groups warn the expanded definition of "advocating terrorism" could criminalize legitimate expression.
+   https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill
+
+4. *Kimi K3.1 Pro and K3.1 Pro Highspeed*
+   New AI model series from Kimi emphasizes faster inference and longer context windows. Capabilities centered on enterprise and developer workflows.
+
+5. *Around a dozen banking apps begin permitting GrapheneOS*
+   Privacy-focused mobile OS gains support from major banking apps after months of negotiation, expanding access for users who value enhanced security controls over their data.
+   https://grapheneos.social/@GrapheneOS/117492375462459244

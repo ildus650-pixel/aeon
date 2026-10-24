@@ -70,6 +70,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [heartbeat (2026-10-24)](memory/logs/2026-10-24.md) — Priority brief: restore ambient heartbeat cron (dark since 2026-10-14), merge PR 26 and 27 (quota trims for token-movers and price-alert), buy OpenRouter credits (fixes 33-46% skill success rates)
 - [heartbeat (2026-10-23)](memory/logs/2026-10-23.md) — Priority brief: restore ambient heartbeat cron (dark since 2026-10-14), buy OpenRouter credits (fixes 33-46% skill success rates), merge PR 27 and 26 (quota trims for price-alert/token-movers)
 - [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC current: $81,698.87 | no gates fired
 - [github-monitor (2026-10-22)](memory/logs/2026-10-22.md) — aeonfun/aeon scanned: 2 REVIEW (PRs 1259, 1240 both merge-conflicting), 0 ACT NOW; recovered the PR tier via the narrower GraphQL query after the `gh pr list` scope error

@@ -1,52 +1,28 @@
-**Price Alert Run Report**
+The price-alert skill has completed execution. Here's a summary:
 
-Token: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+## Execution Summary
 
-**Current Price:** $81,002.16 (8.100216e4)
+**Token**: WBTC (Wrapped BTC) on Ethereum — `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`
 
-**Price Changes:**
-- 1h: -0.24%
-- 24h: -0.26%
+**Current Price**: $80,775.38 (deepest pool: Curve WBTC/crvUSD at $69.4M liquidity)
 
-**Gates Evaluated:**
+**1h change**: 0.00% | **24h change**: -0.32%
 
-**ATH Gate:** QUIET
-- Previous ATH: $84,703.64 (2026-10-22 05:35 UTC)
-- Current price ($81,002.16) < ATH ($84,703.64)
-- No new all-time high detected
+### Gates Evaluated
+| Gate | Result | Verdict |
+|------|--------|---------|
+| **ATH** | $80,775.38 < $84,703.64 (stored ATH) | Did not fire |
+| **Sharp Move** | |0.00%| < 20% | Did not fire |
+| **Target Crossing** | No targets configured | Did not fire |
 
-**Sharp-Move Gate:** QUIET
-- 1h change (-0.24%) is below ±20% threshold
-- No sharp price movement detected
+**Final Status**: `PRICE_ALERT_OK` — no gates fired, no notifications sent.
 
-**Target-Crossing Gate:** QUIET
-- No operator targets configured
-- No target alerts evaluated
+### Files Modified
+- **`memory/topics/price-alert-state.json`** — Updated `last_run_at` to `2026-10-24T01:40:24Z`; ATH and last_alerts preserved from prior runs
+- **`memory/logs/2026-10-24.md`** — Created with today's log entry (Status: PRICE_ALERT_OK, 0 notifications sent)
 
-**Verdict:** PRICE_ALERT_OK
-
-**Pool:** https://dexscreener.com/ethereum/0x4585fe77225b41b697c938b018e2ac67ac5a20c0 (deepest liquidity pool)
-
----
-
-**Status:** Clean run — no alerts fired.
-
----
-
-## Summary
-
-**Completed:**
-- Read and executed the price-alert skill (skills/price-alert/SKILL.md)
-- Evaluated all three alert gates (ATH, sharp-move, target-crossing)
-- No gates fired — token price declined from previous ATH but within normal range
-
-**Files Modified:**
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp to 2026-10-23T12:00:00Z
-- `memory/logs/2026-10-23.md` — appended new price-alert log entry
-
-**Key Findings:**
-- WBTC is trading at $81,002.16, down 0.24% in the last hour and 0.26% in 24 hours
-- Previous ATH was $84,703.64 (2026-10-22)
-- No critical price events detected warranting same-day notification
-
-**No Notifications Sent:** Quiet run — price alert skill completed successfully without firing any alerts.
+### State Invariants Maintained
+- ATH monotonically preserved at $84,703.64 (not downgraded)
+- `last_alerts.ath` = `2026-10-22T19:36:00Z` — 4h dedup window still active
+- No target entries in state file (empty `targets` object)
+- Idempotent under same-minute reruns

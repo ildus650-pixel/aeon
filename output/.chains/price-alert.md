@@ -1,43 +1,22 @@
-Good, the state file is updated and validated. Since this is a read-only run, I'll provide the captured output here.
-
 ## Summary
 
-**Price Alert Skill — Executed**
+Successfully executed the price-alert skill:
 
-### Tracked Token
-- **Symbol**: WBTC
-- **Contract**: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
-- **Chain**: Ethereum
+**Gate Evaluation:**
+- **ATH Gate:** No new ATH (current $80,404.80 < ATH $84,703.64)
+- **Sharp-Move Gate:** No (1h change +0.25% < 20% threshold)  
+- **Target-Crossing Gate:** Not evaluated (no targets configured)
 
-### Current Market Data
-- **Price**: $80,581.35 (USDT pair, deepest pool: $28.6M liquidity)
-- **1h Change**: -0.12%
-- **24h Change**: -1.42%
+**Result:** Quiet run — no alerts fired.
 
-### Gate Evaluations
+**Key Data:**
+- Current price: $80,404.80
+- 1h: +0.25% | 24h: -0.93%
+- Pool: https://dexscreener.com/ethereum/0x4585fe77225b41b697c938b018e2ac67ac5a20c0
+- ATH: $84,703.64 (set 2026-10-22T05:35:44Z, announced 2026-10-22T19:36:00Z)
 
-**ATH Gate** — QUIET
-- Prior ATH: $84,703.64 (observed 2026-10-22T19:36:00Z)
-- Current price ($80,581.35) < ATH
-- Verdict: No new ATH detected
+**Files Modified:**
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to `2026-10-24T19:50:53Z`
+- `memory/logs/2026-10-24.md` — added new entry documenting this run
 
-**Sharp-Move Gate** — QUIET
-- abs(1h change) = 0.12%
-- Threshold: 20.0%
-- Verdict: Change too small
-
-**Target-Crossing Gate** — QUIET
-- No operator targets configured
-- Verdict: No targets to evaluate
-
-### State Updates
-- `last_run_at`: Updated to 2026-10-24T12:35:00Z
-- `last_alerts.ath`: Unchanged (still 2026-10-22T19:36:00Z)
-- `last_alerts.sharp_move`: Unchanged (null)
-- `last_alerts.target_hit`: Unchanged (null)
-
-### Status
-**PRICE_ALERT_OK** — No gates fired; no notifications sent.
-
-### Links
-- Pool: https://dexscreener.com/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2
+**Status:** `PRICE_ALERT_OK` — no gate fired, no notifications sent.

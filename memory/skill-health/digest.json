@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-24T14:15:18Z",
+  "last_analyzed": "2026-10-25T17:34:39Z",
   "quality_score": 3,
-  "assessment": "Substantive daily digest covering security, privacy, and tech topics with verifiable links, though one AI model reference lacks supporting evidence",
+  "assessment": "Acceptable news digest — functional, well-structured, and verifiable but not deeply insightful or strategic",
   "flags": [],
-  "avg_score": 3.5,
+  "avg_score": 3.48,
   "history": [
     {
       "date": "2026-09-21",
@@ -172,6 +172,12 @@
       "date": "2026-10-24",
       "score": 3,
       "ts": "2026-10-24T14:15:18Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-25",
+      "score": 3,
+      "ts": "2026-10-25T17:34:39Z",
       "harness": "claude"
     }
   ]

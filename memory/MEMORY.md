@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-25 | Digest | AI financial ROI crisis, OpenAI cuts live internet training, Starlink Ukraine service |
 | 2026-10-24 | Digest | Local Wikipedia hyperlocal network, Node2Shell/HTTP2Shell CVE, Bill C-22 surveillance, Kimi K3.1 Pro AI, GrapheneOS banking apps |
 | 2026-10-22 | Digest | AI agent authentication, GitLab RCE, ConnectWise breach, OpenAI decision model |
 | 2026-10-21 | Digest | PHP2Shell RCE, LiteLLM PyPI compromise, eMudhra CA keys, PAN-OS CVE-2026-0257, Qwen3-Coder bias |

@@ -1,17 +1,13 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-25T17:27:44Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-structured, verifiable ATH detection for WBTC with clear context and limitations",
-  "flags": [],
-  "avg_score": 4,
+  "last_analyzed": "2026-10-25T19:55:45Z",
+  "quality_score": 2,
+  "assessment": "Low-quality output with unverifiable claims due to token masking",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-10-19",
-      "score": 4,
-      "ts": "2026-10-19T20:16:08Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-19",
       "score": 4,
@@ -184,6 +180,12 @@
       "date": "2026-10-25",
       "score": 4,
       "ts": "2026-10-25T17:27:44Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-25",
+      "score": 2,
+      "ts": "2026-10-25T19:55:45Z",
       "harness": "claude"
     }
   ]

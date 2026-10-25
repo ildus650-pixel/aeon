@@ -1,30 +1,29 @@
-The github-monitor skill has completed. Here's what happened:
+The github-monitor skill has completed. Here's what I found:
 
-**View:** monitor (empty var, default)
+## Scan Results
 
-**Scan results:**
-- **Repo:** aeonfun/aeon (1 repo scanned)
-- **Open PRs:** 3 found (#1251, #1240, #1255)
-- **Open Issues:** 0
-- **Releases:** 0 within last 24h (v0.1.0 was published 2026-07-09)
+**aeonfun/aeon** - 4 open PRs scanned:
 
-**Dedup check:** All 3 PRs were already logged in the last 2 days:
-- 2026-10-23: #1255 (INFO), #1251 (INFO), #1240 (INFO)
-- 2026-10-22: #1259 (REVIEW), #1240 (REVIEW)
+1. **#1268** (created 2026-10-24) — fix(deploy-uni-hook): unnest SwapParams/ModifyLiquidityParams for current v4-core
+   - New PR (< 24h), no review requests or status checks → **INFO**
 
-**Tier classification:** Based on the rules:
-- #1251: Updated today, reviewRequests: 1, mergeStateStatus: BLOCKED - not older than 72h
-- #1240: Updated 3 days ago, mergeStateStatus: DIRTY (merge conflicts) - exactly 72h boundary, not ACT NOW
-- #1255: Updated 2 days ago, CLEAN, APPROVED - stale but no action required
+2. **#1267** (created 2026-10-24) — [skills] Add github-filing-registry — persistent GitHub filing ledger
+   - New PR (< 24h), no review requests or status checks → **INFO**
 
-All qualify as INFO tier but were already surfaced yesterday.
+3. **#1255** (opened 2026-10-21) — feat(skills): add lazybrief — overnight do-it-later inbox on a local Gemma
+   - Older open PR → **INFO**
 
-**Result:** No notification sent (clean run with no new alerts). Logged `GITHUB_MONITOR_OK repos=1` to memory.
+4. **#1240** (opened 2026-10-17) — docs(packs): list the Cohesivity pack
+   - Older open PR → **INFO**
+
+**Releases**: v0.1.0 (July 9) — not within the 24h window
+
+**Issues**: None
 
 ## Summary
-- **Skill:** github-monitor (monitor view)
-- **Repos scanned:** 1 (aeonfun/aeon)
-- **Items collected:** 3 PRs, 0 issues, 0 releases
-- **Deduped:** All 3 PRs already alerted in last 2 days
-- **Notification:** Skipped (no new alerts)
-- **Action required:** None - all open items were reviewed in previous runs
+
+- **ACT NOW**: 0 (no failing checks, no pending reviews)
+- **REVIEW**: 0 (all PRs are < 48h old or have no review requests)
+- **INFO**: 4 (4 open PRs across all tiers)
+
+Since no ACT NOW items were found, no notification was sent. The run is complete and logged.

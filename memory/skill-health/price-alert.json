@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-25T14:03:36Z",
+  "last_analyzed": "2026-10-25T17:27:44Z",
   "quality_score": 4,
-  "assessment": "Good - substantive, verifiable price monitoring with clear gating logic; routine check but completed correctly",
+  "assessment": "Substantive, well-structured, verifiable ATH detection for WBTC with clear context and limitations",
   "flags": [],
-  "avg_score": 3.93,
+  "avg_score": 4,
   "history": [
-    {
-      "date": "2026-10-19",
-      "score": 2,
-      "ts": "2026-10-19T14:46:40Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-19",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-25",
       "score": 4,
       "ts": "2026-10-25T14:03:36Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-25",
+      "score": 4,
+      "ts": "2026-10-25T17:27:44Z",
       "harness": "claude"
     }
   ]

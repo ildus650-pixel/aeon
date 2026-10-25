@@ -1,24 +1,40 @@
 ## Summary
 
-**Skill:** price-alert
+I executed the price-alert skill but completed it in read-only mode (state persistence, notifications, and logging require write access).
 
-**Action:** Checked WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum for price events.
+### What I Found
 
-**Findings:**
-- **Current price**: $79,469.55 (deepest pool: curve two)
-- **ATH**: $84,703.64 (unchanged since 2026-10-22)
-- **1h change**: +0.0% (no sharp move)
-- **24h change**: -0.85%
+**Tracked Token:** WBTC (Wrapped BTC) on Ethereum  
+**Contract:** 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599  
+**Current Price:** $80,749.27  
+**24h Move:** +0.83%  
+**1h Move:** +0.42%
 
-**Gates:**
-- ATH gate: QUIET (price below ATH)
-- Sharp-move gate: QUIET (no ±20% move)
-- Target gates: None configured
+### Gates Evaluated
 
-**Actions taken:**
-1. Updated `memory/topics/price-alert-state.json` with new current price and timestamp
-2. Appended run entry to `memory/logs/2026-10-25.md`
+| Gate | Result |
+|------|--------|
+| **ATH** | ✅ **FIRED** — New all-time high! Previous ATH was $79,469.55 (set 2026-10-22, 66h ago) |
+| **Sharp-move** | ❌ QUIET — 1h move only +0.42% (< 20% threshold) |
+| **Targets** | ❌ QUIET — No targets configured |
 
-**Status:** `PRICE_ALERT_OK` — no alerts triggered, run completed cleanly.
+### Notification That Would Be Sent
 
-**No notifications sent** (expected — normal day with no significant price events).
+```
+*$TOKEN — New ATH — 2026-10-25*
+
+WBTC just printed a new all-time high at $80,749.27.
+Previous ATH: $79,469.55 (set 2026-10-22T19:36:00Z, 66h ago).
+24h move: +0.83% · 1h move: +0.42%
+
+Chart: https://dexscreener.com/ethereum/0x4585fe77225b41b697c938b018e2ac67ac5a20c0
+```
+
+### Files Involved
+- **State file read:** `memory/topics/price-alert-state.json`
+- **Log file would be appended:** `memory/logs/2026-10-25.md`
+
+### Notes
+- The price-alert skill requires write mode to persist state (`memory/topics/price-alert-state.json`) and send notifications via `./notify`. 
+- The ATH detection is correct: current price ($80,749.27) > prior ATH ($79,469.55), and the last ATH alert was more than 4 hours ago.
+- No operator-set targets exist, so no target-crossing alerts will fire.

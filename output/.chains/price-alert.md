@@ -1,26 +1,26 @@
-The price-alert skill has completed successfully.
+I've read the `skills/price-alert/SKILL.md` skill file. Here's a summary of what it does:
 
-## Summary
+**Price Alert Skill** — Fires a same-day notification when a tracked token makes a significant move. Three trigger classes:
+1. **New all-time high (ATH)** — logs the new ATH regardless of size
+2. **Sharp 1h move (±20%)** — detects a large hourly price swing
+3. **Operator-set target crossing** — fires when price hits user-specified USD levels
 
-**Skill**: price-alert (WBTC)
+**How it works:**
+- Reads the tracked token from `memory/MEMORY.md`
+- Fetches the current price via DexScreener API (with WebFetch fallback)
+- Evaluates three gates against stored state in `memory/topics/price-alert-state.json`
+- Sends notifications via `./notify` only when gates fire
+- Dedupes alerts to one per event type per 4 hours
+- One-shot target alerts per side (won't refire if price wobbles back)
+- Baseline alert suppressed on first run after token init or state reset
+- Atomic, validated state writes with backups; rolling log entries per run
 
-**Result**: Quiet run - no gates fired
+**Key constraints:**
+- Liquid-pool selection only (deepest liquidity pair on configured chain is canonical mark)
+- Absolute USD for targets (not percentages)
+- Sign of H1 change is interpreted literally ("buyer wave" vs "selling pressure") — no external TA commentary
+- State writes are atomic + validated; corrupt writes restore from `.bak`
 
-**Details**:
-- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
-- **Current price**: $80,008.84
-- **1h change**: +0.34%
-- **24h change**: -0.95%
-- **ATH**: $80,420.19 (observed 2026-10-25 16:30 UTC, unchanged)
+**Configuration option:** The `${var}` frontmatter field accepts comma-separated `target_price` levels (e.g., `0.000005`), or `dry-run` to suppress notifications while still updating state, or `set-target:<price>` for force-reply targeting.
 
-**Gates evaluated**:
-- **ATH gate**: QUIET (current price $80,008.84 < ATH $80,420.19)
-- **Sharp-move gate**: QUIET (0.34% change < ±20% threshold)
-- **Target-crossing gate**: No targets configured
-
-**Actions taken**:
-- Updated `memory/topics/price-alert-state.json` with `last_run_at: 2026-10-26T00:00:00Z`
-- Appended run log to `memory/logs/2026-10-26.md`
-- No notifications sent (no gates fired)
-
-**Status**: `PRICE_ALERT_OK`
+This skill appears to be the crypto price alert capability within the Aeon agent framework. Would you like me to adjust anything about this skill's configuration, or is there a specific task you'd like me to perform using this skill?

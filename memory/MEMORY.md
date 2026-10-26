@@ -44,6 +44,7 @@
 ## Skills Built
 | Skill | Date | Notes |
 |-------|------|-------|
+- [price-alert (2026-10-26)](memory/logs/2026-10-26.md) — WBTC current: $79,987.32 | no gates fired
 - [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $84,712.99 (prev $83,990.54, 4h12m earlier); ATH alert sent
 - [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC price declined from ATH; no alerts fired
 
@@ -72,6 +73,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [price-alert (2026-10-26)](memory/logs/2026-10-26.md) — WBTC current: $79,987.32 | no gates fired
 - [heartbeat (2026-10-24)](memory/logs/2026-10-24.md) — Priority brief: restore ambient heartbeat cron (dark since 2026-10-14), merge PR 26 and 27 (quota trims for token-movers and price-alert), buy OpenRouter credits (fixes 33-46% skill success rates)
 - [heartbeat (2026-10-23)](memory/logs/2026-10-23.md) — Priority brief: restore ambient heartbeat cron (dark since 2026-10-14), buy OpenRouter credits (fixes 33-46% skill success rates), merge PR 27 and 26 (quota trims for price-alert/token-movers)
 - [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC current: $81,698.87 | no gates fired

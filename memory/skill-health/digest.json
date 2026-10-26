@@ -1,10 +1,12 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-25T17:34:39Z",
-  "quality_score": 3,
-  "assessment": "Acceptable news digest — functional, well-structured, and verifiable but not deeply insightful or strategic",
-  "flags": [],
-  "avg_score": 3.48,
+  "last_analyzed": "2026-10-26T22:12:31Z",
+  "quality_score": 1,
+  "assessment": "No digest output was supplied for evaluation. The task specification references a 'digest' scope (macOS OpenCore, hardware trimming, exploit coverage) but nothing was produced, fetched, or reported. A legitimate null outcome is a completed task — not an error or low-quality content. Empty output.",
+  "flags": [
+    "empty_output"
+  ],
+  "avg_score": 3.4,
   "history": [
     {
       "date": "2026-09-21",
@@ -178,6 +180,12 @@
       "date": "2026-10-25",
       "score": 3,
       "ts": "2026-10-25T17:34:39Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-26",
+      "score": 1,
+      "ts": "2026-10-26T22:12:31Z",
       "harness": "claude"
     }
   ]

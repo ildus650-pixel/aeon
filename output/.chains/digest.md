@@ -1,18 +1,1 @@
-*Digest — 2026-10-25*
-
-_TL;DR: AI financial ROI crisis deepens, OpenAI cuts live internet training, Starlink service restored in Ukraine._
-
-1. *AI delivers 'zero financial payoff' to most companies, Apollo economist says*
-   Most corporate America has seen zero financial return from massive AI investments outside tech, despite hype.
-   Why it matters: Signals a potential market correction in AI spending
-   https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/
-
-2. *OpenAI says it will no longer train its AI models on the live internet, citing 'significant risks'*
-   Frontier models will be cut off from live web data weeks after one engineer said this wouldn't work.
-   Why it matters: Could slow model updates and shift training data sources
-   https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/
-
-3. *Starlink seems to be working normally again in Ukraine*
-   Service appears restored after Elon Musk reportedly ordered throttling.
-   Why it matters: Satellite internet reliability is critical for Ukraine's military
-   https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/
+<tool_call>TodoWrite<param_key>todos</param_key><param_value>[{"status": "in_progress", "content": "Plan report structure and search strategy", "activeForm": "Planning report structure and search strategy"}, {"status": "pending", "content": "Search for macOS OpenCore announcement stories", "activeForm": "Searching macOS OpenCore announcements"}, {"status": "pending", "content": "Search for hardware pricing/trim stories", "activeForm": "Searching hardware pricing/trim stories"}, {"status": "pending", "content": "Search for exploits in reporting", "activeForm": "Searching exploits in reporting"}, {"status": "pending", "content": "Fetch source articles for verification", "activeForm": "Fetching source articles for verification"}, {"status": "pending", "content": "Draft the report", "activeForm": "Drafting the report"}, {"status": "pending", "content": "Review, verify, and finalize citations", "activeForm": "Reviewing and finalizing the report"}]</param_value></tool_call>

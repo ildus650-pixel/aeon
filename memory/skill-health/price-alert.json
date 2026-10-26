@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-10-25T22:20:08Z",
+  "last_analyzed": "2026-10-26T00:32:41Z",
   "quality_score": 4,
-  "assessment": "Well-structured, verifiable price alert with specific data points and link to source",
+  "assessment": "Substantive, well-structured, and verifiable work on the core price-alert task",
   "flags": [],
   "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-10-20",
-      "score": 4,
-      "ts": "2026-10-20T02:23:58Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-20",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-25",
       "score": 4,
       "ts": "2026-10-25T22:20:08Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-26",
+      "score": 4,
+      "ts": "2026-10-26T00:32:41Z",
       "harness": "claude"
     }
   ]

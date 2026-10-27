@@ -1,10 +1,10 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-21T15:06:22Z",
+  "last_analyzed": "2026-10-27T01:10:00Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured token movers report with verifiable data and useful risk categorization.",
+  "assessment": "Substantive, well-structured output with specific prices/percentages, useful tags, and verifiable signals (extreme pump flag, stablecoin noise note). Complete coverage of winners, losers, and trending coins.",
   "flags": [],
-  "avg_score": 3,
+  "avg_score": 3.03,
   "history": [
     {
       "date": "2026-09-19",
@@ -172,6 +172,12 @@
       "date": "2026-10-21",
       "score": 4,
       "ts": "2026-10-21T15:06:22Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-27",
+      "score": 4,
+      "ts": "2026-10-27T01:10:00Z",
       "harness": "claude"
     }
   ]

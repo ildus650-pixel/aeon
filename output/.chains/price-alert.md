@@ -1,30 +1,46 @@
-## Summary
+## Price Threshold Alert — WBTC
 
-The price-alert skill completed successfully. Here's what happened:
+**Current Price:** $80,140.09 | **1h Change:** +0.14% | **24h Change:** +0.29%
 
-### Execution results
-- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
-- **Current price**: $79,987.32
-- **1h change**: +0.32%
-- **24h change**: -0.16%
-- **ATH**: $80,420.19 (unchanged since 2026-10-25 16:30 UTC)
-- **Sharp-move gate**: QUIET (0.32% < 20% threshold)
-- **Target-crossing gate**: N/A (no targets set)
-- **Notifications sent**: 0
+### Gate Status
 
-### Gates evaluated
-1. **ATH gate**: NO — current price ($79,987.32) is below the existing ATH ($80,420.19)
-2. **Sharp-move gate**: NO — 1h change (+0.32%) is below the ±20% threshold
-3. **Target-crossing gate**: N/A — no targets configured
+| Gate | Verdict |
+|------|---------|
+| ATH (All-Time High) | QUIET — Price ($80,140.09) < ATH ($80,420.19) |
+| Sharp Move (±20% in 1h) | QUIET — |1h change| = 0.14% (< 20%) |
+| Target Crossing | N/A — No targets configured |
 
-### Files modified
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
-- `memory/logs/2026-10-26.md` — appended price-alert run log
-- `memory/MEMORY.md` — added today's activity entry to "Today's Activity" and "Skills Built" sections
+### Notifications Sent
 
-### Status
-**PRICE_ALERT_OK** — Clean run, no alerts fired. The token is trading below its ATH and making only modest moves, so no same-day notifications were triggered.
+**0** (no gates fired)
+
+### Summary
+
+- **Token:** WBTC (Wrapped BTC) on Ethereum
+- **Current:** $80.1401e3 with +0.14% in the last hour and +0.29% in 24 hours
+- **ATH:** $80.4202e3 (set 2026-10-25 16:30 UTC) — unchanged (price declined from ATH)
+- **Sharp-move gate:** Quiet (well below the ±20% threshold)
+- **Targets evaluated:** None configured in state
+- **Verdicts fired:** None
+- **Notifications sent:** 0
+- **Status:** PRICE_ALERT_OK
+
+No alerts triggered — WBTC is trading quietly near its recent all-time high without any sharp intraday moves or new ATHs.
 
 ---
 
-The ATH was set yesterday at $80,420.19 when WBTC reached a new all-time high. Today it's slightly lower at $79,987.32, so there's no new ATH notification.
+## Summary
+
+**Files Created:** `memory/topics/price-alert-state.json` (updated with `last_run_at`)
+**Files Modified:** `memory/topics/price-alert-state.json` (last run timestamp updated to 2026-10-27T00:57:18Z)
+
+**Actions Completed:**
+1. Resolved tracked token (WBTC on Ethereum, contract 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+2. Fetched current price from DexScreener API (deepest pool: Uniswap v4 WETH pair)
+3. Evaluated ATH gate — price declined from ATH ($80,420.19) to $80,140.09, no new ATH
+4. Evaluated sharp-move gate — 1h change of 0.14%, well below 20% threshold
+5. Evaluated target-crossing gate — no targets configured in state
+6. Updated state file with current timestamp
+7. No notifications sent (no gates fired)
+
+**Follow-up Actions:** None required — the skill completed successfully with no alerts triggered.

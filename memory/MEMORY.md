@@ -74,6 +74,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 
 ## Today's Activity
 - [price-alert (2026-10-26)](memory/logs/2026-10-26.md) — WBTC current: $79,987.32 | no gates fired
+- [heartbeat (2026-10-27)](memory/logs/2026-10-27.md) — Priority brief: buy OpenRouter credits (lifts free tier 50→1000 req/day, fixes 33-46% fleet-wide failures), merge PR 27 + 26 (cut quota burn, 10 skill-repair PRs open, oldest 10d), fix github-monitor PR query (gh pr list --json fails on read:org scope)
 - [heartbeat (2026-10-24)](memory/logs/2026-10-24.md) — Priority brief: restore ambient heartbeat cron (dark since 2026-10-14), merge PR 26 and 27 (quota trims for token-movers and price-alert), buy OpenRouter credits (fixes 33-46% skill success rates)
 - [heartbeat (2026-10-23)](memory/logs/2026-10-23.md) — Priority brief: restore ambient heartbeat cron (dark since 2026-10-14), buy OpenRouter credits (fixes 33-46% skill success rates), merge PR 27 and 26 (quota trims for price-alert/token-movers)
 - [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC current: $81,698.87 | no gates fired

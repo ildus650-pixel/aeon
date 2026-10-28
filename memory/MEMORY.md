@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-28 | Digest | Anthropic AI spending tools, Google agentic search, Cisco AI attack detection, 123 Reg data breach, Bitwise $1.6M BTC target |
 | 2026-10-25 | Digest | AI financial ROI crisis, OpenAI cuts live internet training, Starlink Ukraine service |
 | 2026-10-24 | Digest | Local Wikipedia hyperlocal network, Node2Shell/HTTP2Shell CVE, Bill C-22 surveillance, Kimi K3.1 Pro AI, GrapheneOS banking apps |
 | 2026-10-22 | Digest | AI agent authentication, GitLab RCE, ConnectWise breach, OpenAI decision model |

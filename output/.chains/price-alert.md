@@ -1,7 +1,29 @@
-*$TOKEN — New ATH — 2026-10-27*
+## Summary
 
-$TOKEN just printed a new all-time high at $8.0823e4.
-Previous ATH: $8.0420e4 (set 2026-10-25 16:30 UTC).
-24h move: ±1.18% · 1h move: ±0.23%
+**Run completed successfully with no alerts fired.**
 
-Chart: https://dexscreener.com/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2
+### What happened
+
+- **Token**: WBTC (Wrapped BTC) on Ethereum
+- **Current price**: $80,555.63 (USD)
+- **1h change**: -0.1%
+- **24h change**: +0.51%
+
+### Gate evaluation
+
+1. **ATH gate**: QUIET — Current price ($80,555.63) is **below** the existing ATH ($80,823.051 from 2026-10-27)
+
+2. **Sharp-move gate**: QUIET — 1h change (-0.1%) is well below the 20% threshold
+
+3. **Target gate**: N/A — No targets configured
+
+### State updated
+
+- `last_run_at`: 2026-10-28T00:00:00Z
+- No new alerts or notifications sent
+- Status: `PRICE_ALERT_OK`
+
+### Files created/modified
+
+- `memory/topics/price-alert-state.json` — Updated last run timestamp
+- `memory/logs/2026-10-28.md` — Added run log entry

@@ -56,16 +56,16 @@
   },
   "digest": {
     "last_dispatch": "2026-10-28T19:23:52Z",
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-10-26T17:44:01Z",
-    "total_runs": 84,
-    "total_successes": 32,
+    "total_runs": 85,
+    "total_successes": 33,
     "total_failures": 52,
     "consecutive_failures": 0,
-    "success_rate": 0.38,
+    "success_rate": 0.39,
     "last_error": " signal layer for notable tech/AI/crypto stories\"}},{\"tool_name\":\"Bash\",\"tool_use_id\":\"call_2a26be12b23d47a096f6ffb3\",\"tool_input\":{\"command\":\"chmod +x /home/runner/work/aeon/aeon/tmp/xai-digest-curl.",
-    "last_success": "2026-10-27T18:07:29Z",
-    "last_quality_score": 3
+    "last_success": "2026-10-28T19:49:30Z",
+    "last_quality_score": 4
   },
   "skill-repair": {
     "last_dispatch": "2026-10-14T01:47:05Z",

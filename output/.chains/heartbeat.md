@@ -1,25 +1,30 @@
-ℹ️ Priority Brief — 2026-10-27
+## Price Threshold Alert
+- **Skill**: price-alert
+- **Token**: BTC (Wrapped BTC, WBTC) (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+- **Current**: $80555.63 | 1h: -0.1% | 24h: +0.51%
+- **ATH**: $80823.051 (set 2026-10-27 00:00 UTC) [UNCHANGED]
+- **Sharp-move gate**: QUIET
+- **Targets evaluated**: [] → []
+- **Verdicts fired**: NONE
+- **Notifications sent**: 0
+- **Status**: PRICE_ALERT_OK
 
-## Priority Brief — 2026-10-27
+### price-alert — under the hood
+- 🔧 20 tool calls — 11× Bash, 5× Read, 2× Write, 1× TaskUpdate, 1× TaskCreate  ·  actions: 1× curl/wget
 
-*Focus today*
-1. Buy OpenRouter credits — why now: free tier exhausted; root cause of 33-46% fleet-wide skill failures
-2. Restore ambient heartbeat cron — why now: dark 13 days; P0/P1 checks disabled
-3. Merge PR #27 + #26 — why now: quota trims; oldest PR 10d pending
+## Price Threshold Alert
+- **Skill**: price-alert
+- **Token**: BTC (Wrapped BTC, WBTC) (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+- **Current**: $80775.55 | 1h: -0.03% | 24h: +1.6%
+- **ATH**: $80823.051 (set 2026-10-27 00:00 UTC) [UNCHANGED]
+- **Sharp-move gate**: QUIET
+- **Targets evaluated**: [] → []
+- **Verdicts fired**: NONE
+- **Notifications sent**: 0
+- **Status**: PRICE_ALERT_OK
 
-*Since yesterday*
-- github-monitor: dispatch stuck since 10-19 14:27 (~8 days; last success 10-18 09:45) — 🕸 stuck
-- price-alert: ATH $80,059 held; no new gates; quiet since 10-19
-- digest: X-signal layer still down — http-400 from missing XAI_API_KEY; RSS fallback active
-- OpenRouter free tier exhausted: 0/50 remaining; fleet running without LLM headroom
-- 10 skill-repair PRs open (oldest 10d) — merge queue growing
+### price-alert — under the hood
+- 🔧 3 tool calls — 1× Bash, 2× Read ·  actions: 1× curl/wget
 
-*Watch*
-- Bitcoin below $80K on Fed/geopolitical pressure (CoinDesk Oct 27) — market context for token-movers fleet
-- Coinbase launched AI agent trading features (CryptoBriefing Oct 22) — new onchain agent primitive; fleet can't track → focus #1, #2
-
-*Running today*
-- price-alert @ hourly (00 minutes)
-- token-movers @ 12:00 UTC
-- digest @ 14:00 UTC
-- skill-repair @ reactive
+### price-alert — under the hood
+- 🔧 11 tool calls — 6× Read, 2× Edit, 2× Bash, 1× Write  ·  actions: 2× curl/wget

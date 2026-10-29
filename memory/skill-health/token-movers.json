@@ -1,20 +1,13 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-28T19:36:20Z",
-  "quality_score": 2,
-  "assessment": "Structured and complete report format with plausible-looking prices and ranks, but verifiability is undermined: every token shows exactly 1h +0.0% (24/24), which reads as a hardcoded/placeholder column rather than fetched data, and the header asserts '40/100 top coins green, median 0.9%' — a specific aggregate statistic not supported by the displayed data. The 'Notable' section is thin (only re-tagging existing entries). Serves the operator's stated priority for verifiable work only weakly.",
+  "last_analyzed": "2026-10-29T16:21:20Z",
+  "quality_score": 1,
+  "assessment": "No actual skill output was provided to evaluate — absent a report, analysis, or draft.",
   "flags": [
-    "unverifiable_claim",
-    "low_quality"
+    "empty_output"
   ],
-  "avg_score": 3,
+  "avg_score": 2.97,
   "history": [
-    {
-      "date": "2026-09-19",
-      "score": 2,
-      "ts": "2026-09-19T16:06:20Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-20",
       "score": 1,
@@ -187,6 +180,12 @@
       "date": "2026-10-28",
       "score": 2,
       "ts": "2026-10-28T19:36:20Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-29",
+      "score": 1,
+      "ts": "2026-10-29T16:21:20Z",
       "harness": "claude"
     }
   ]

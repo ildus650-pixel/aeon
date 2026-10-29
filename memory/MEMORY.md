@@ -46,6 +46,7 @@
 | Skill | Date | Notes |
 |-------|------|-------|
 - [price-alert (2026-10-26)](memory/logs/2026-10-26.md) — WBTC current: $79,987.32 | no gates fired
+- [price-alert (2026-10-29)](memory/logs/2026-10-29.md) — WBTC new ATH $81,638.84 (prev $79,671.80, 4h20m earlier); ATH alert sent
 - [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $84,712.99 (prev $83,990.54, 4h12m earlier); ATH alert sent
 - [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC price declined from ATH; no alerts fired
 

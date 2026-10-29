@@ -1,30 +1,19 @@
-## Price Threshold Alert
-- **Skill**: price-alert
-- **Token**: BTC (Wrapped BTC, WBTC) (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-- **Current**: $80555.63 | 1h: -0.1% | 24h: +0.51%
-- **ATH**: $80823.051 (set 2026-10-27 00:00 UTC) [UNCHANGED]
-- **Sharp-move gate**: QUIET
-- **Targets evaluated**: [] → []
-- **Verdicts fired**: NONE
-- **Notifications sent**: 0
-- **Status**: PRICE_ALERT_OK
+ℹ️ Priority Brief — 2026-10-29
 
-### price-alert — under the hood
-- 🔧 20 tool calls — 11× Bash, 5× Read, 2× Write, 1× TaskUpdate, 1× TaskCreate  ·  actions: 1× curl/wget
+*Priority Brief — 2026-10-29*
 
-## Price Threshold Alert
-- **Skill**: price-alert
-- **Token**: BTC (Wrapped BTC, WBTC) (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-- **Current**: $80775.55 | 1h: -0.03% | 24h: +1.6%
-- **ATH**: $80823.051 (set 2026-10-27 00:00 UTC) [UNCHANGED]
-- **Sharp-move gate**: QUIET
-- **Targets evaluated**: [] → []
-- **Verdicts fired**: NONE
-- **Notifications sent**: 0
-- **Status**: PRICE_ALERT_OK
+*Focus today*
+1. Buy OpenRouter credits (50→1000 req/day) — why now: fixes 38-49% success rates fleet-wide
+2. Restore ambient heartbeat cron (var:"" not "brief") — why now: P0 checks + status page dark 15 days
+3. Merge PR 27 + 26 (quota trims) — why now: 10 skill-repair PRs open, oldest 10d
 
-### price-alert — under the hood
-- 🔧 3 tool calls — 1× Bash, 2× Read ·  actions: 1× curl/wget
+*Since yesterday*
+- WBTC hit ATH $81,189 (Oct 28), now ~$79,672 (-1.4%)
+- Fleet still degrading: token-movers 49%, digest 39%, skill-repair 38% success rates
+- 10 skill-repair PRs open >24h, no issues assigned to me
 
-### price-alert — under the hood
-- 🔧 11 tool calls — 6× Read, 2× Edit, 2× Bash, 1× Write  ·  actions: 2× curl/wget
+*Running today*
+- github-monitor @ 09:00 UTC
+- token-movers @ 12:00 UTC
+- digest @ 14:00 UTC
+- price-alert hourly

@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-28T19:46:23Z",
+  "last_analyzed": "2026-10-29T21:06:20Z",
   "quality_score": 4,
-  "assessment": "Well-structured, verifiable daily digest with actionable lead item; useful aggregation but primarily informational rather than analytical.",
+  "assessment": "Substantive, well-structured, verifiable technology and security updates",
   "flags": [],
   "avg_score": 3.37,
   "history": [
-    {
-      "date": "2026-09-28",
-      "score": 4,
-      "ts": "2026-09-28T12:58:36Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-29",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-28",
       "score": 4,
       "ts": "2026-10-28T19:46:23Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-29",
+      "score": 4,
+      "ts": "2026-10-29T21:06:20Z",
       "harness": "claude"
     }
   ]

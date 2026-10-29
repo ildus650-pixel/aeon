@@ -278,22 +278,30 @@ Style rules:
 - Send the formatted brief with `./notify "..."`.
 - Send email via Resend (**optional — skip cleanly when unconfigured**):
   - **Preflight:** if `$RESEND_API_KEY` is empty/unset **or** `$BRIEF_RECIPIENTS` has no addresses, **skip the email step entirely** — the `./notify` send above already delivered the brief. Note the skip in the log (`email: skipped (no RESEND_API_KEY)`) and continue; do **not** fail the run. `RESEND_API_KEY` is an optional dependency.
+  - **Guard check BEFORE any network request:**
+    ```bash
+    if [ -z "$RESEND_API_KEY" ] || [ -z "$BRIEF_RECIPIENTS" ]; then
+      echo "email: skipped (no RESEND_API_KEY or BRIEF_RECIPIENTS)" >> memory/logs/${today}.md
+      echo "email: skipped (no RESEND_API_KEY or BRIEF_RECIPIENTS)"
+      exit 0
+    fi
+    ```
   - When configured:
     - Build the brief as HTML (wrap each section in `<h2>` headers, `<ul>/<li>` bullets)
     - Also keep a plain-text copy (the `./notify` content above, as-is)
     - Parse `$BRIEF_RECIPIENTS` as a comma-separated list of addresses
-    - POST to `https://api.resend.com/emails`:
-      ```
-      Authorization: Bearer $RESEND_API_KEY
-      Content-Type: application/json
-
-      {
-        "from": "Aeon Briefings <onboarding@resend.dev>",
-        "to": ["<each recipient>"],
-        "subject": "[Aeon] Priority Brief — ${today}",
-        "html": "<html version>",
-        "text": "<plain-text version>"
-      }
+    - POST to `https://api.resend.com/emails` using `./secretcurl` with `{RESEND_API_KEY}` placeholder:
+      ```bash
+      ./secretcurl -s -X POST "https://api.resend.com/emails" \
+        -H "Authorization: Bearer {RESEND_API_KEY}" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "from": "Aeon Briefings <onboarding@resend.dev>",
+          "to": ["<each recipient>"],
+          "subject": "[Aeon] Priority Brief — '${today}'",
+          "html": "<html version>",
+          "text": "<plain-text version>"
+        }' -o /dev/null -w "resend_id=%{http_code}\n"
       ```
     - Log the `id` field from the Resend response to `memory/logs/${today}.md` for traceability
     - If the key **is** set and Resend returns an error, log the full error body and fail loudly (do not silently continue) — a real send failure is a signal, an absent optional key is not

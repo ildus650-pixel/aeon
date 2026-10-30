@@ -76,6 +76,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [price-alert (2026-10-30)](memory/logs/2026-10-30.md) — WBTC current: $76,606.69 | no gates fired
 - [price-alert (2026-10-29)](memory/logs/2026-10-29.md) — WBTC current: $79,671.80 | no gates fired
 - [price-alert (2026-10-26)](memory/logs/2026-10-26.md) — WBTC current: $79,987.32 | no gates fired
 - [heartbeat (2026-10-27)](memory/logs/2026-10-27.md) — Priority brief: buy OpenRouter credits (lifts free tier 50→1000 req/day, fixes 33-46% fleet-wide failures), merge PR 27 + 26 (cut quota burn, 10 skill-repair PRs open, oldest 10d), fix github-monitor PR query (gh pr list --json fails on read:org scope)

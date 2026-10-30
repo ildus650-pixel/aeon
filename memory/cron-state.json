@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-10-29T08:55:41Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-30T13:35:26Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-29T09:10:15Z",
     "total_runs": 85,
     "total_successes": 41,
@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-10-30T06:40:39Z",
     "total_runs": 203,
     "total_successes": 141,
@@ -20,17 +20,17 @@
     "consecutive_failures": 0,
     "success_rate": 0.69,
     "last_quality_score": 3,
-    "last_dispatch": "2026-10-30T06:37:18Z",
+    "last_dispatch": "2026-10-30T13:35:26Z",
     "last_failed": "2026-10-28T19:33:56Z",
     "last_error": "rvice_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputToke"
   },
   "chain:dev-loop": {
-    "last_dispatch": "2026-10-29T08:55:41Z",
+    "last_dispatch": "2026-10-30T13:35:26Z",
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-10-29T15:58:22Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-30T13:35:26Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-29T16:06:27Z",
     "total_runs": 53,
     "total_successes": 38,

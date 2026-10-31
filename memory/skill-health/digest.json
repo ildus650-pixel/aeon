@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-29T21:06:20Z",
+  "last_analyzed": "2026-10-31T19:02:40Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured, verifiable technology and security updates",
+  "assessment": "Concise, well-sourced summary of AI industry news with actionable insights",
   "flags": [],
   "avg_score": 3.37,
   "history": [
-    {
-      "date": "2026-09-29",
-      "score": 4,
-      "ts": "2026-09-29T00:23:16Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-30",
       "score": 2,
@@ -184,6 +178,12 @@
       "date": "2026-10-29",
       "score": 4,
       "ts": "2026-10-29T21:06:20Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-31",
+      "score": 4,
+      "ts": "2026-10-31T19:02:40Z",
       "harness": "claude"
     }
   ]

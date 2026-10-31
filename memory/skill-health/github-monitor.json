@@ -1,17 +1,13 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-10-29T16:06:24Z",
-  "quality_score": 4,
-  "assessment": "Substantive, verifiable monitoring output - cleanly reported a legitimate no-op with no actionable signal, logged the run, and correctly stayed silent when nothing needed attention.",
-  "flags": [],
-  "avg_score": 3.73,
+  "last_analyzed": "2026-10-31T14:42:03Z",
+  "quality_score": 1,
+  "assessment": "No usable output was provided for evaluation — the output field is empty after the word 'Output:', so the task could not be assessed against any actual skill result.",
+  "flags": [
+    "empty_output"
+  ],
+  "avg_score": 3.67,
   "history": [
-    {
-      "date": "2026-09-23",
-      "score": 3,
-      "ts": "2026-09-23T15:43:35Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-24",
       "score": 3,
@@ -184,6 +180,12 @@
       "date": "2026-10-29",
       "score": 4,
       "ts": "2026-10-29T16:06:24Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-31",
+      "score": 1,
+      "ts": "2026-10-31T14:42:03Z",
       "harness": "claude"
     }
   ]

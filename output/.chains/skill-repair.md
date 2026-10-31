@@ -1,3 +1,1 @@
-*skill-repair — REPAIR_BLOCKED*
-Target: token-movers (skipped — open PRs exist matching fix/skill-repair-token-movers-*)
-Root cause: Two open PRs already exist for this target from prior repair attempts (PR #26 and PR #19). Skill-repair is designed to avoid looping on fixes that didn't take. To override, delete the cooldown entry from memory/state/skill-repair-history.json and/or close the existing PRs, then re-run.
+<tool_call>glob<param_key>pattern</param_key><param_value>skills/skill-repair/SKILL.md</param_value></tool_call>

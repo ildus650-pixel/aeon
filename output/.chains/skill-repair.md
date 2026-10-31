@@ -1,1 +1,3 @@
-*skill-repair — REPAIR_DIAGNOSED_NO_FIX* Target: price-alert Root cause: Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, skill-repair, heartbeat). Sleep backoff ineffective — error is from Claude RUN hitting model quota, not DexScreener rate limits. Requires operator action: upgrade tier, reduce frequency, or switch to Haiku. Issue: ISS-8
+*skill-repair — REPAIR_BLOCKED*
+Target: token-movers (skipped — open PRs exist matching fix/skill-repair-token-movers-*)
+Root cause: Two open PRs already exist for this target from prior repair attempts (PR #26 and PR #19). Skill-repair is designed to avoid looping on fixes that didn't take. To override, delete the cooldown entry from memory/state/skill-repair-history.json and/or close the existing PRs, then re-run.

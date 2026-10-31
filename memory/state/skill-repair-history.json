@@ -1,8 +1,9 @@
 {
   "token-movers": {
-    "last_repair_at": "2026-09-25T20:00:00Z",
+    "last_repair_at": "2026-10-31T00:00:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
-    "issue": "ISS-10"
+    "issue": "ISS-10",
+    "reason": "Root cause is OpenRouter free-tier daily quota exhaustion (rate-limit category), NOT XAI API truncation (api-change). Skill fails at LLM gateway level before any skill code executes. Prior fix attempt (commit a957c8c) added XAI retry logic which is misdirected — the XAI API path is never reached. Systemic issue affecting token-movers, price-alert, digest, heartbeat, skill-repair. Requires operator action: upgrade OpenRouter tier, reduce fleet frequency, or switch model provider. Existing PR #26 already addresses the correct rate-limit diagnosis."
   },
   "digest": {
     "last_repair_at": "2026-09-25T00:00:00Z",

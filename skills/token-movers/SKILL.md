@@ -19,37 +19,35 @@ metadata:
 ---
 <!-- autoresearch: variation B — consolidated hub. Folds monitor-runners (GeckoTerminal on-chain runner scan w/ composite Runner Score) and token-report (verdict-first single-token deep report) behind a source + mode selector. Movers = broad market scan (CoinGecko winners/losers/trending OR GeckoTerminal runners); single-token = deep per-token report. Sharper output everywhere: enrich, score, flag pump risk, lead with the verdict. -->
 
-> **${var}** — selects the scan. Two behavioral modes (`movers`, `single-token`) over two sources (`coingecko`, `geckoterminal`):
-> - **empty** → movers scan on the default source (CoinGecko): top winners, losers, trending.
-> - **`coingecko`** → same movers scan, CoinGecko source (explicit).
-> - **`geckoterminal`** → movers scan on GeckoTerminal: on-chain "runners" across major chains.
-> - **`geckoterminal:<chain>`** or a bare chain slug (`solana`, `eth`, `ethereum`, `base`, `bsc`, `arbitrum`, `polygon`, `optimism`, `avalanche`, `avax`) → GeckoTerminal runners scoped to that one chain.
-> - **`category:<name>`** (e.g. `category:layer-2`, `category:meme`) — or a bare hyphen/space value like `layer-2` / `meme coins` → CoinGecko movers scoped to that category.
-> - **`<contract>`** or **`<contract>:<chain>`** (e.g. `0xabc…`, `0xabc…:base`) → single-token deep report on that contract.
-> - **`<SYMBOL>`** (e.g. `SOL`, `WIF`) → single-token deep report; resolve the symbol to its top contract first.
-> - **`token`** / **`single-token`** → single-token deep report on the token configured in `memory/token-report.md`.
-> - **`deep-dive:<symbol|contract>`** (e.g. `deep-dive:WIF`, `deep-dive:0xabc…:base`) → single-token deep report — the shape the Telegram force-reply sends. Strips the `deep-dive:` prefix and resolves the remainder exactly like a bare symbol/contract.
->
-> Examples: `""` (global movers), `geckoterminal:base` (Base runners), `category:layer-2` (L2 movers), `0x4ed…:base` or `WIF` (single-token report).
+> **${var}** — selects the scan. Two modes (`movers`, `single-token`) over two sources (`coingecko`, `geckoterminal`):
+> - **empty** → movers (CoinGecko winners/losers/trending)
+> - **`coingecko`** → same, CoinGecko explicitly
+> - **`geckoterminal`** → movers (GeckoTerminal on-chain runners)
+> - **`geckoterminal:<chain>`** or chain slug (`solana`, `eth`, `base`, etc.) → movers scoped to that chain
+> - **`category:<name>`** → CoinGecko movers scoped to category (e.g. `layer-2`, `meme`)
+> - **`<contract>`** or **`<contract>:<chain>`** → single-token deep report
+> - **`<SYMBOL>`** → single-token, resolve symbol to contract first
+> - **`token`** / **`single-token`** → single-token from `memory/token-report.md`
+> - **`deep-dive:<symbol|contract>`** → single-token (Telegram force-reply shape, strips prefix)
 
 ## Preamble (every run)
 
 1. Read `memory/MEMORY.md` for context.
-2. Read the last 2 days of `memory/logs/` to avoid repeating the same movers/trending/runner names unless the move is materially different — **repeat runners across days are the real signal**. (The single-token branch reads the last **30 days** for its `TOKEN_REPORT_STATE:` delta lines — see that branch.)
-3. **Parse `${var}` → `source` + `mode` (+ optional `token`/`chain`/`category`).** Trim whitespace; evaluate the rules top-to-bottom, first match wins (fully deterministic):
+2. Read the last 2 days of `memory/logs/` to avoid repeating movers/trending/runner names — **repeat runners across days are the real signal**. (Single-token branch reads last **7 days** for `TOKEN_REPORT_STATE:` deltas — see that branch.)
+3. **Parse `${var}` → source + mode (+ optional token/chain/category).** Trim whitespace; evaluate rules top-to-bottom, first match wins (fully deterministic):
 
-   0. **Force-reply intercept (Telegram deep-dive).** starts with `deep-dive:` → strip the prefix (`${var#deep-dive:}`) and treat the remainder EXACTLY as a single-token target, resolving it contract-or-symbol just like rule 8 (`token:`) does → **single-token**. Single-token branch. This is the shape the Telegram force-reply sends; it reuses all existing single-token logic (no separate handler, no confirmation — the single-token report IS the response).
-   1. empty → **mode=movers, source=coingecko** (global). Go to **Movers branch**.
-   2. `coingecko` (case-insensitive) → **movers / coingecko** (global). Movers branch.
-   3. `geckoterminal` → **movers / geckoterminal** (all major networks). Movers branch.
-   4. starts with `geckoterminal:` or `chain:` → **movers / geckoterminal**, `chain` = remainder. Movers branch.
-   5. a known chain slug (`solana|eth|ethereum|base|bsc|arbitrum|polygon|optimism|avalanche|avax`) → **movers / geckoterminal**, `chain` = value. Movers branch. *(Preserves monitor-runners' `var`=chain behaviour. To report on a token that shares a chain name, e.g. the ETH token, use `token:eth` or its contract.)*
-   6. starts with `category:` → **movers / coingecko**, `category` = remainder. Movers branch.
+   0. **Force-reply intercept.** starts with `deep-dive:` → strip prefix, treat as single-token target (resolves like rule 8). Single-token branch. No confirmation — single-token report IS the response.
+   1. empty → **mode=movers, source=coingecko** (global). Movers branch.
+   2. `coingecko` → **movers / coingecko**. Movers branch.
+   3. `geckoterminal` → **movers / geckoterminal**. Movers branch.
+   4. starts with `geckoterminal:` or `chain:` → **movers / geckoterminal**, chain = remainder. Movers branch.
+   5. known chain slug (`solana|eth|ethereum|base|bsc|arbitrum|polygon|optimism|avalanche|avax`) → **movers / geckoterminal**, chain = value. Movers branch.
+   6. starts with `category:` → **movers / coingecko**, category = remainder. Movers branch.
    7. equals `token` or `single-token` → **single-token**, token from `memory/token-report.md` config. Single-token branch.
    8. starts with `token:` → **single-token**, resolve remainder as contract-or-symbol. Single-token branch.
-   9. matches a contract address — EVM `0x[0-9a-fA-F]{40}` or a Solana base58 address — optionally `:chain` → **single-token**, that contract. Single-token branch.
-   10. contains a space or a hyphen and is not a contract (e.g. `layer-2`, `meme coins`) → **movers / coingecko**, `category` = value. Movers branch.
-   11. otherwise (a bare word, a plausible ticker) → **single-token / geckoterminal**, resolve `symbol` = value to its top contract. Single-token branch.
+   9. contract address (`0x[0-9a-fA-F]{40}` or base58, optionally `:chain`) → **single-token**, that contract. Single-token branch.
+   10. space or hyphen and not contract (e.g. `layer-2`, `meme coins`) → **movers / coingecko**, category = value. Movers branch.
+   11. otherwise (bare word/ticker) → **single-token / geckoterminal**, resolve symbol to contract. Single-token branch.
 
 ---
 
@@ -64,20 +62,11 @@ Produce an **actionable** movers report. Plain % change lists are noise — the 
 Fetch market data and trending coins in parallel. Request multi-timeframe changes for context:
 
 ```bash
-# CoinGecko auth: a free/Demo key (the common case) authenticates on
-# api.coingecko.com with the `x-cg-demo-api-key` header — send it only when a key
-# is set; without one the same public endpoint still works at a lower rate limit.
-# (A paid Pro key instead uses pro-api.coingecko.com with `x-cg-pro-api-key`.)
-# Pass the key through ./secretcurl's {ENV_NAME} placeholder so no `$SECRET` ever
-# lands on the command line (a bare $COINGECKO_API_KEY is refused by the Bash
-# permission analyzer). Build the header array only when the key is set, so the
-# call stays keyless-public when it isn't.
+# CoinGecko: free key uses x-cg-demo-api-key; without key, same endpoint works at lower rate limit.
+# Pass key via ./secretcurl {ENV_NAME} placeholder (bare $SECRET blocked). Build header only when key set.
 CG_HDR=(); [ -n "${COINGECKO_API_KEY:+x}" ] && CG_HDR=(-H "x-cg-demo-api-key: {COINGECKO_API_KEY}")
 
-# Top 250 coins by market cap with 1h, 24h, and 7d % change
 ./secretcurl -s "${CG_HDR[@]}" "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=1h,24h,7d"
-
-# Trending searches (top coins people are searching for)
 ./secretcurl -s "${CG_HDR[@]}" "https://api.coingecko.com/api/v3/search/trending"
 ```
 
@@ -85,11 +74,11 @@ If curl fails or returns empty JSON, retry once with **WebFetch** against the sa
 
 ### 2. Filter before ranking
 
-Before picking winners/losers, drop noise. All numeric thresholds below are starting points — tune as needed if the output consistently feels too loose or too strict:
+Drop noise. All thresholds below are starting points — tune if output too loose/strict:
 
-- **Stablecoins**: exclude symbols/ids that peg to fiat — `tether`, `usd-coin`, `dai`, `first-digital-usd`, `usde`, `tusd`, `usdd`, `pyusd`, `fdusd`, `paxg` (gold-pegged), and anything whose symbol starts with `USD`/`EUR`/`GBP` or name contains "stablecoin".
-- **Illiquid tokens**: drop coins with 24h `total_volume` < **$1,000,000** (tune as needed). Sub-$1M volume on a top-250 coin is a pump/wash-trading target and generates misleading % moves.
-- **Wrapped dupes** (optional): if a wrapped version (e.g. `wbtc`, `weth`, `steth`) would otherwise dominate a list, keep only one representative.
+- **Stablecoins**: exclude symbols/ids pegged to fiat (`tether`, `usd-coin`, `dai`, `first-digital-usd`, `usde`, `tusd`, `usdd`, `pyusd`, `fdusd`, `paxg` gold-pegged), or symbol/name starting `USD`/`EUR`/`GBP` or containing "stablecoin".
+- **Illiquid tokens**: drop coins with 24h `total_volume` < **$1,000,000** (tune as needed). Sub-$1M on top-250 coin is pump/wash-trading target.
+- **Wrapped dupes** (optional): keep only one representative per wrapped version (e.g. `wbtc`, `weth`, `steth`).
 
 ### 3. Pick the lists
 
@@ -228,27 +217,20 @@ fetch_with_backoff() {
   return 1
 }
 
-# Global trending
-fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/trending_pools?page=1" "$TMPDIR/global.json" \
-  && GLOBAL_OK=1 || GLOBAL_OK=0
+fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/trending_pools?page=1" "$TMPDIR/global.json" && GLOBAL_OK=1 || GLOBAL_OK=0
 sleep 1
 
-# Per-network trending + volume leaders
 for N in $NETWORKS; do
-  fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/${N}/trending_pools?page=1" "$TMPDIR/${N}-trend.json" \
-    && eval "${N}_TREND_OK=1" || eval "${N}_TREND_OK=0"
+  fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/${N}/trending_pools?page=1" "$TMPDIR/${N}-trend.json" && eval "${N}_TREND_OK=1" || eval "${N}_TREND_OK=0"
   sleep 1
-  fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/${N}/pools?page=1&sort=h24_volume_usd_desc" "$TMPDIR/${N}-vol.json" \
-    && eval "${N}_VOL_OK=1" || eval "${N}_VOL_OK=0"
+  fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/${N}/pools?page=1&sort=h24_volume_usd_desc" "$TMPDIR/${N}-vol.json" && eval "${N}_VOL_OK=1" || eval "${N}_VOL_OK=0"
   sleep 1
 done
 
-# New pools (for BREAKOUT tagging)
-fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/new_pools?page=1" "$TMPDIR/new.json" \
-  && NEW_OK=1 || NEW_OK=0
+fetch_with_backoff "https://api.geckoterminal.com/api/v2/networks/new_pools?page=1" "$TMPDIR/new.json" && NEW_OK=1 || NEW_OK=0
 ```
 
-**Fetch fallback:** if `curl` fails for any URL (file is empty or has `"status":"429"` after retries), retry that URL with **WebFetch** using the same URL. Parse the JSON response body.
+**Fetch fallback:** if `curl` fails (empty or `"status":"429"` after retries), retry with **WebFetch** against same URL. Parse JSON.
 
 ### 2. Merge, dedupe, gate
 
@@ -408,9 +390,9 @@ A verdict-first report on **one token**. Snapshots of price, volume, and liquidi
 
 Resolve the target token in this order:
 1. **From `${var}`** as parsed in the preamble:
-   - a contract (`contract` or `contract:chain`, chain defaults to `base` when omitted) → use it directly;
-   - a `symbol` (rule 11 / `token:SYMBOL`) → **resolve symbol → contract first**: call CoinGecko `GET /coins/{id}` (or `/search?query=SYMBOL` → top id) and read `platforms` for a contract + chain, preferring the deepest-liquidity chain; or GeckoTerminal `GET /search/pools?query=SYMBOL` and take the highest-`reserve_in_usd` pool's base-token address + network. If resolution fails, fall back to a CoinGecko `/coins/{id}` snapshot block (price, 24h volume, market cap, 7d & 30d change, ATH distance) and skip the on-chain pipeline below — do not abort.
-2. **From `memory/token-report.md`** when `${var}` is `token`/`single-token` (or the resolver above found nothing):
+   - contract (`contract` or `contract:chain`, chain defaults to `base`) → use directly
+   - `symbol` (rule 11 / `token:SYMBOL`) → **resolve symbol → contract first**: CoinGecko `/coins/{id}` (or `/search?query=SYMBOL` → top id, platforms) preferring deepest-liquidity chain; or GeckoTerminal `/search/pools?query=SYMBOL` highest `reserve_in_usd`. If resolution fails, fall back to CoinGecko snapshot (price, 24h volume, mcap, 7d & 30d change, ATH) — skip on-chain pipeline.
+2. **From `memory/token-report.md`** when `${var}` is `token`/`single-token` (or resolver found nothing):
 
 ```markdown
 # Token Report Config
@@ -420,18 +402,18 @@ Resolve the target token in this order:
 |------------|-------|
 | 0x…        | base  |
 
-## Treasury Wallets   (optional — omit the whole section if not used)
+## Treasury Wallets   (optional — omit if not used)
 | Address | Role     | RPC URL (optional)       |
 |---------|----------|--------------------------|
 | 0x…     | treasury | https://mainnet.base.org |
 | 0x…     | deployer |                          |
 ```
 
-**No-op when unconfigured.** If the single-token branch is entered via `token`/`single-token` AND `memory/token-report.md` has no tracked token (file missing, or the Tracked Token table is empty), abort silently — log `TOKEN_REPORT_NO_CONFIG`, send **no notification and write no article**. An unconfigured token is not an error.
+**No-op when unconfigured.** If `token`/`single-token` AND `memory/token-report.md` missing or empty table → abort silently, log `TOKEN_REPORT_NO_CONFIG`, send **no notification and write no article**. Unconfigured token is not an error.
 
-`chain` is mapped to a GeckoTerminal **network slug** for the API calls below. Common mappings: `ethereum`→`eth`, `base`→`base`, `solana`→`solana`, `bsc`→`bsc`, `arbitrum`→`arbitrum`, `polygon`→`polygon_pos`, `optimism`→`optimism`, `avalanche`→`avax`. Use the configured `chain` as-is if it already matches a GeckoTerminal slug. Below, `${network}` is the resolved GeckoTerminal slug, `${chain}` the human chain name, and `CONTRACT_ADDRESS` the resolved contract.
+`chain` mapped to GeckoTerminal **network slug**: `ethereum`→`eth`, `base`→`base`, `solana`→`solana`, `bsc`→`bsc`, `arbitrum`→`arbitrum`, `polygon`→`polygon_pos`, `optimism`→`optimism`, `avalanche`→`avax`. Use configured `chain` as-is if it matches slug. Below, `${network}` = resolved slug, `${chain}` = human chain name, `CONTRACT_ADDRESS` = resolved contract.
 
-Read the last **30 days** of `memory/logs/*.md` for prior `TOKEN_REPORT_STATE:` lines (written in step 8). These are the authoritative source of 1d / 7d / 30d deltas, because a stored price yesterday beats an API window that shifts under you.
+Read the last **7 days** of `memory/logs/*.md` for prior `TOKEN_REPORT_STATE:` lines (written in step 8). Authoritative source of 1d / 7d / 30d deltas — stored price beats shifting API windows.
 
 ### 1. Fetch core market data (GeckoTerminal — primary)
 
@@ -588,33 +570,21 @@ Save to `output/articles/token-report-${today}.md`:
 If `XAI_API_KEY` is set:
 
 ```bash
-jq -n '{model:"grok-4.6", input:[{role:"user",content:"Search X for TOKEN_SYMBOL or CONTRACT_ADDRESS mentions in the last 24 hours with at least 10 likes. Return up to 5 notable tweets with @handle, engagement counts, and a one-line summary of the claim or vibe. Exclude obvious bots and generic shill posts."}], tools:[{type:"x_search"}]}' > /tmp/xai-tm-payload.json
+jq -n '{model:"grok-4.6", input:[{role:"user",content:"Search X for TOKEN_SYMBOL or CONTRACT_ADDRESS mentions in last 24h with ≥10 likes. Return up to 5 notable tweets with @handle, engagement counts, and one-line summary. Exclude obvious bots."}], tools:[{type:"x_search"}]}' > /tmp/xai-tm-payload.json
 
 # Retry XAI API call with backoff (rate-limit handling)
 for attempt in 1 2 3; do
-  if [ $attempt -gt 1 ]; then
-    sleep $((attempt * 2))
-  fi
-
+  [ $attempt -gt 1 ] && sleep $((attempt * 2))
   XAI_RESPONSE=$(./secretcurl -s -X POST "https://api.x.ai/v1/responses" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer {XAI_API_KEY}" \
     -d @/tmp/xai-tm-payload.json 2>&1)
-
-  # Check for successful response with valid JSON structure
-  if echo "$XAI_RESPONSE" | jq -e '.choices[0].message' >/dev/null 2>&1; then
-    break
-  fi
-
-  # If we've exhausted retries, fall through to set xai=fail
-  if [ $attempt -eq 3 ]; then
-    XAI_RESPONSE=""
-    break
-  fi
+  [ "$(echo "$XAI_RESPONSE" | jq -e '.choices[0].message' 2>/dev/null)" ] && break
+  [ $attempt -eq 3 ] && { XAI_RESPONSE=""; break; }
 done
 ```
 
-Validate response completeness and parse. If the response is empty, malformed JSON, doesn't contain valid tweet data, or has fewer than 2 tweets that clear the engagement bar, skip the Social Pulse section and set `xai=skip` in the footer. On API error, set `xai=fail` and skip. If `XAI_API_KEY` is not set, set `xai=skip`.
+Validate response. If empty/malformed JSON, <2 tweets clearing engagement bar, or `XAI_API_KEY` not set → skip Social Pulse, set `xai=skip`. On API error → set `xai=fail` and skip.
 
 ### 7. Save article
 

@@ -589,13 +589,32 @@ If `XAI_API_KEY` is set:
 
 ```bash
 jq -n '{model:"grok-4.6", input:[{role:"user",content:"Search X for TOKEN_SYMBOL or CONTRACT_ADDRESS mentions in the last 24 hours with at least 10 likes. Return up to 5 notable tweets with @handle, engagement counts, and a one-line summary of the claim or vibe. Exclude obvious bots and generic shill posts."}], tools:[{type:"x_search"}]}' > /tmp/xai-tm-payload.json
-./secretcurl -s -X POST "https://api.x.ai/v1/responses" \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer {XAI_API_KEY}" \
-  -d @/tmp/xai-tm-payload.json
+
+# Retry XAI API call with backoff (rate-limit handling)
+for attempt in 1 2 3; do
+  if [ $attempt -gt 1 ]; then
+    sleep $((attempt * 2))
+  fi
+
+  XAI_RESPONSE=$(./secretcurl -s -X POST "https://api.x.ai/v1/responses" \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer {XAI_API_KEY}" \
+    -d @/tmp/xai-tm-payload.json 2>&1)
+
+  # Check for successful response with valid JSON structure
+  if echo "$XAI_RESPONSE" | jq -e '.choices[0].message' >/dev/null 2>&1; then
+    break
+  fi
+
+  # If we've exhausted retries, fall through to set xai=fail
+  if [ $attempt -eq 3 ]; then
+    XAI_RESPONSE=""
+    break
+  fi
+done
 ```
 
-If the response has fewer than 2 tweets that clear the engagement bar, skip the Social Pulse section and set `xai=skip` in the footer. On API error, set `xai=fail` and skip. If `XAI_API_KEY` is not set, set `xai=skip`.
+Validate response completeness and parse. If the response is empty, malformed JSON, doesn't contain valid tweet data, or has fewer than 2 tweets that clear the engagement bar, skip the Social Pulse section and set `xai=skip` in the footer. On API error, set `xai=fail` and skip. If `XAI_API_KEY` is not set, set `xai=skip`.
 
 ### 7. Save article
 

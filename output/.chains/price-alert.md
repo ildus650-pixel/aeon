@@ -1,31 +1,25 @@
-**Price Alert Skill — Completed Successfully**
-
-## Execution Summary
-
-**Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) — Ethereum
-
-**Current Market Data**:
-- Price: $77,903.81 (USDT pool, deepest liquidity: $24.79M)
-- 1h change: -0.03%
-- 24h change: +0.56%
-
-**Gate Evaluations**:
-- **ATH Gate**: QUIET — No new ATH (current $77,903.81 < ATH $81,858.25)
-- **Sharp-Move Gate**: QUIET — No sharp movement (|1h change| = 0.03% < 20%)
-- **Target Gate**: N/A — No operator targets configured
-
-**Result**: No alerts fired. The run completed cleanly with status `PRICE_ALERT_OK`.
-
-**Files Modified**:
-- `memory/logs/2026-11-01.md` — Appended run log
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
-
 ## Summary
 
-- **Skill**: price-alert
-- **Output**: No alerts (normal market conditions)
-- **Status**: PRICE_ALERT_OK
-- **Notifications sent**: 0
-- **Logs**: Written to `memory/logs/2026-11-01.md`
+**Price Alert Skill — Completed Successfully**
 
-The token has pulled back from its ATH observed on 2026-10-29 but remains well above the baseline. No operator targets are configured, so the price-alert skill completed silently.
+**Token**: BTC (Wrapped BTC, WBTC) — `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599` on Ethereum
+
+**Current Price**: $77,824.43
+- 1h change: -0.19%
+- 24h change: +0.40%
+
+**Gates Evaluated**:
+- **ATH**: Not a new all-time high (ATH remains $81,858.25 from 2026-10-29)
+- **Sharp-move**: No sharp move detected (1h change < 20% threshold)
+- **Targets**: No targets configured
+
+**Results**:
+- Status: `PRICE_ALERT_OK` (run completed cleanly, no alerts fired)
+- Notifications sent: 0
+- State file updated with new run timestamp
+
+**Files Modified**:
+- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
+- `memory/logs/2026-11-01.md` — added price-alert log entry
+
+No alerts were fired as expected — the token is in a calm trading range, below the ATH and without sharp intraday moves.

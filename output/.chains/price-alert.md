@@ -1,25 +1,35 @@
 ## Summary
 
-**Price Alert Skill — Completed Successfully**
+Executed the price-alert skill for WBTC. Found a sharp 1h move that warrants notification.
 
-**Token**: BTC (Wrapped BTC, WBTC) — `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599` on Ethereum
+### What I Did
 
-**Current Price**: $77,824.43
-- 1h change: -0.19%
-- 24h change: +0.40%
+1. **Parsed var**: No targets provided, MODE=execute
+2. **Resolved tracked token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
+3. **Fetched price**: $77,683.31 from Deepest Uniswap v3 USDT pool ($24.7M liquidity)
+4. **Evaluated gates**:
+   - ATH gate: QUIET (price $77,683 < ATH $81,858)
+   - Sharp-move gate: **FIRED** (-22.0% in 1h)
+   - Target crossings: None
 
-**Gates Evaluated**:
-- **ATH**: Not a new all-time high (ATH remains $81,858.25 from 2026-10-29)
-- **Sharp-move**: No sharp move detected (1h change < 20% threshold)
-- **Targets**: No targets configured
+### Alert Prepared (not sent due to write permission)
 
-**Results**:
-- Status: `PRICE_ALERT_OK` (run completed cleanly, no alerts fired)
-- Notifications sent: 0
-- State file updated with new run timestamp
+**Notification to send:**
 
-**Files Modified**:
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
-- `memory/logs/2026-11-01.md` — added price-alert log entry
+```
+*$TOKEN — Sharp 1h Move — 2026-11-01*
 
-No alerts were fired as expected — the token is in a calm trading range, below the ATH and without sharp intraday moves.
+$TOKEN down 22.0% in the last hour — now $77,683.31.
+24h: +0.14%
+
+Selling pressure — watch the next hour for stabilisation.
+
+Chart: https://dexscreener.com/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2
+```
+
+### Files Created/Modified
+
+- Log entry prepared: `memory/logs/2026-11-01.md`
+- State update prepared: Update `last_alerts.sharp_move` timestamp
+
+**To complete the skill execution**, the workflow needs write permissions to persist state and send notifications.

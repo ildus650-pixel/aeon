@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-10-31T22:14:49Z",
-  "quality_score": 4,
-  "assessment": "Substantive, structured, strategy-aligned — explains token-mover mechanics with the precision the operator prioritizes, frames risk under bear market conditions, and ends with an actionable decision that serves both North Star and Priority #1 (verifiable signals over hype). Small gap: investment recommendation leans opinion-based rather than empirically sourced, which caps it at 4 instead of 5.",
+  "last_analyzed": "2026-11-01T18:58:05Z",
+  "quality_score": 3,
+  "assessment": "Functional interactive prompt awaiting user input before delivering deep-dive report",
   "flags": [],
-  "avg_score": 3.07,
+  "avg_score": 3.1,
   "history": [
-    {
-      "date": "2026-09-21",
-      "score": 2,
-      "ts": "2026-09-21T19:37:56Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-22",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-31",
       "score": 4,
       "ts": "2026-10-31T22:14:49Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-01",
+      "score": 3,
+      "ts": "2026-11-01T18:58:05Z",
       "harness": "claude"
     }
   ]

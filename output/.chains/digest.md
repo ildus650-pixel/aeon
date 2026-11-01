@@ -1,19 +1,23 @@
-ℹ️ Digest — 2026-10-31
+ℹ️ Daily Digest
 
-*Digest — 2026-10-31*
+*Digest — 2026-11-01*
 
-_TL;DR: OpenAI cuts funding target as AI spending faces headwinds; Anthropic expects junk credit rating; Salesforce acquires defense AI startup Rune._
+_TL;DR: Applebee's data breach exposes customer data, AI spending growth shows early cracks, and Anthropic faces junk credit rating expectations following IPO._
 
-1. *OpenAI reportedly lowers funding target for new round*
-   The company was raising $30B at a $1.25T valuation, but now aims for $20B after tepid investor response. The round is led by UAE investors and has secured $11B so far, raising questions about Wall Street's appetite for heavy AI infrastructure spending.
-   [OpenAI report](https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/)
+1. *Applebee's exposed customers' personal data after leaving database password in app*
+   The casual dining chain left a database password exposed in a web app, potentially exposing customer data. This is a common but costly configuration error that bypasses standard security controls.
+   https://techcrunch.com/2026/10/30/applebees-exposed-customers-personal-data-after-leaving-database-password-in-app/
 
-2. *Anthropic expected to receive high junk rating after IPO*
-   Blackstone, an anchor investor, now expects the AI lab to receive a double-B rating after its IPO—the top tier of speculative "junk" grade—down from an earlier expectation of investment-grade status before 2027.
-   [FT report](https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/)
+2. *Cracks are emerging in the AI spending boom*
+   Despite continued investment, signs of slowing AI infrastructure spending are appearing across sectors, raising questions about the sustainability of current capital allocation patterns.
+   https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/
 
-3. *Salesforce acquires defense AI startup Rune for $375M*
-   The CRM giant agreed to buy Rune Technologies, which builds AI software to help the U.S. military predict supply needs, as Salesforce extends its Missionforce defense platform beyond back-office planning to battlefield operations.
-   [Salesforce deal](https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/)
+3. *Intel's stock crashes, knocking $12B from government's stake*
+   Intel's sharp stock decline has erased approximately $12 billion in value from the U.S. government's stake, highlighting the operational and market challenges the company faces.
+   https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/
 
-*Also worth a glance:* TikTok building a super app with restaurant guides, payments, and travel bookings · Nvidia exploring AI data center in West Virginia
+4. *Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard*
+   Researchers demonstrated that multiple smaller models (Qwen3.8-27B each) working together can outperform larger single models on complex coding benchmarks, challenging the trend toward ever larger LLMs.
+   https://karpathy.bearblog.dev/hacker-tube/
+
+*Also worth a glance:* Proving and Improving the Platonic Representation Hypothesis with JEPAs · Zest's AI agent finds restaurants and books reservations over text

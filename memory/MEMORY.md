@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-01 | Digest | Applebee's data breach, AI spending boom cracks, Intel stock crash $12B, Qwen3.8 small-model ensemble |
 | 2026-10-31 | Digest | OpenAI cuts funding target, Anthropic junk rating, Salesforce $375M defense acquisition |
 | 2026-10-29 | Digest | ADT $15.3B acquisition, Mistral ML4 cybersecurity model, Chinese exploit chain (25 servers) |
 | 2026-10-28 | Digest | Anthropic AI spending tools, Google agentic search, Cisco AI attack detection, 123 Reg data breach, Bitwise $1.6M BTC target |

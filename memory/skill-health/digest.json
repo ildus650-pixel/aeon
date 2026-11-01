@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-31T19:02:40Z",
+  "last_analyzed": "2026-11-01T14:37:28Z",
   "quality_score": 4,
-  "assessment": "Concise, well-sourced summary of AI industry news with actionable insights",
+  "assessment": "Substantive, well-structured, verifiable daily digest with clear summaries and source links.",
   "flags": [],
-  "avg_score": 3.37,
+  "avg_score": 3.43,
   "history": [
-    {
-      "date": "2026-09-30",
-      "score": 2,
-      "ts": "2026-09-30T01:30:01Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-30",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-10-31",
       "score": 4,
       "ts": "2026-10-31T19:02:40Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-01",
+      "score": 4,
+      "ts": "2026-11-01T14:37:28Z",
       "harness": "claude"
     }
   ]

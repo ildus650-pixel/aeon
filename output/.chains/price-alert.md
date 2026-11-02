@@ -1,35 +1,18 @@
-## Summary
+The shell command requires your approval to proceed. Here's what I need to do to execute the price-alert skill:
 
-Executed the price-alert skill for WBTC. Found a sharp 1h move that warrants notification.
+**Current state:**
+- Tracked token: WBTC (contract `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`, chain `ethereum`)
+- State file (`memory/topics/price-alert-state.json`): ATH at $81,858.25 (observed 2026-10-29), no targets set
+- Last run: 2026-11-01 — no gates fired (WBTC at $77,258.92)
 
-### What I Did
+**What executing `run_price_alert.sh` will do:**
+1. Parse `var` (empty → `MODE=execute`, `TARGETS=()`)
+2. Resolve the tracked token from `memory/MEMORY.md`
+3. Fetch current WBTC price from DexScreener (`https://api.dexscreener.com/latest/dex/tokens/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`)
+4. Find the deepest-liquidity Ethereum pool, extract price + 1h/24h change
+5. Evaluate ATH gate (new high vs $81,858.25 baseline), sharp-move gate (±20% in 1h), and target-crossing gate (none configured)
+6. Notify via `./notify` if any gate fires; otherwise silent
+7. Persist state atomically to `memory/topics/price-alert-state.json`
+8. Append a log block to `memory/logs/2026-11-02.md`
 
-1. **Parsed var**: No targets provided, MODE=execute
-2. **Resolved tracked token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
-3. **Fetched price**: $77,683.31 from Deepest Uniswap v3 USDT pool ($24.7M liquidity)
-4. **Evaluated gates**:
-   - ATH gate: QUIET (price $77,683 < ATH $81,858)
-   - Sharp-move gate: **FIRED** (-22.0% in 1h)
-   - Target crossings: None
-
-### Alert Prepared (not sent due to write permission)
-
-**Notification to send:**
-
-```
-*$TOKEN — Sharp 1h Move — 2026-11-01*
-
-$TOKEN down 22.0% in the last hour — now $77,683.31.
-24h: +0.14%
-
-Selling pressure — watch the next hour for stabilisation.
-
-Chart: https://dexscreener.com/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2
-```
-
-### Files Created/Modified
-
-- Log entry prepared: `memory/logs/2026-11-01.md`
-- State update prepared: Update `last_alerts.sharp_move` timestamp
-
-**To complete the skill execution**, the workflow needs write permissions to persist state and send notifications.
+May I proceed with `bash run_price_alert.sh`?

@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-01T22:41:48Z",
+  "last_analyzed": "2026-11-02T08:47:04Z",
   "quality_score": 4,
-  "assessment": "Substantive, verifiable work that prepared a clear alert for a price-move event. The output suffered from incomplete execution (state not persisted, notification not sent) due to write permission constraints, which is documented transparently.",
+  "assessment": "Well-structured, substantive description of price-alert skill execution with specific details and verifiable components",
   "flags": [],
   "avg_score": 3.6,
   "history": [
-    {
-      "date": "2026-10-25",
-      "score": 4,
-      "ts": "2026-10-25T04:53:10Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-25",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-01",
       "score": 4,
       "ts": "2026-11-01T22:41:48Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 4,
+      "ts": "2026-11-02T08:47:04Z",
       "harness": "claude"
     }
   ]

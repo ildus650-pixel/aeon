@@ -1,18 +1,18 @@
-*Priority Brief — 2026-11-01*
+*Priority Brief — 2026-11-02*
 
 *Focus today*
-1. Buy OpenRouter credits — lifts free tier 50→1000 req/day, fixes 33-46% fleet-wide failures (ISS-8/ISS-11, gateway-quota.md)
-2. Restore ambient heartbeat branch — aeon.yml sets var: "brief", so P0/P1 checks and public status page dark since 2026-10-14
-3. Merge PRs 26 & 27 — quota trims for price-alert and token-movers; 10 skill-repair PRs open, oldest 10d
+1. Buy OpenRouter credits — lifts free tier 50→1000 req/day, fixes 33-46% fleet-wide failures (ISS-8/ISS-11)
+2. Restore ambient heartbeat cron — aeon.yml sets var: "brief", so P0/P1 checks and status page dark since 2026-10-14
+3. Merge PRs 27 + 26 — quota trims for price-alert/token-movers; 10 skill-repair PRs open, oldest 10d
 
 *Since yesterday*
-- skill-repair dispatched, no status update in 24h
-- chain:dev-loop dispatched 2026-10-31, still waiting
-- No new issues assigned to me
+- [fixed]: WBTC tracking active (current: $77,824.43, no ATH alerts fired)
+- [recovered]: price-alert succeeded 2h ago after previous failure; token-movers active (CoinGecko markets 529 errors but trending OK)
+
+*Watch*
+- [web overload]: WebSearch hitting 529 errors (CoinGecko overload confirmed; RSS feeds primary source)
 
 *Running today*
-- price-alert at 06:56 UTC (completed)
-- github-monitor at 09:00 UTC
-- digest at 14:00 UTC
-- skill-repair at 21:54 UTC
-- heartbeat at 08:00 UTC (brief mode)
+- token-movers @ 12:00 UTC
+- digest @ 14:00 UTC
+- skill-repair reactive

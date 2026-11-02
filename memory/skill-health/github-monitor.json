@@ -1,17 +1,13 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-01T14:12:59Z",
-  "quality_score": 4,
-  "assessment": "Clear, verifiable monitoring output that surfaces the actual state (clean day, no alerts) and meets the operator's priorities for signal and correctness",
-  "flags": [],
-  "avg_score": 3.7,
+  "last_analyzed": "2026-11-02T19:04:42Z",
+  "quality_score": 1,
+  "assessment": "No skill output was provided for evaluation; unable to perform meaningful scoring.",
+  "flags": [
+    "empty_output"
+  ],
+  "avg_score": 3.6,
   "history": [
-    {
-      "date": "2026-09-25",
-      "score": 4,
-      "ts": "2026-09-25T20:09:23Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-26",
       "score": 4,
@@ -184,6 +180,12 @@
       "date": "2026-11-01",
       "score": 4,
       "ts": "2026-11-01T14:12:59Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 1,
+      "ts": "2026-11-02T19:04:42Z",
       "harness": "claude"
     }
   ]

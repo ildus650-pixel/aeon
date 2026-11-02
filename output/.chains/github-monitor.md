@@ -1,16 +1,1 @@
-## Summary
-
-**github-monitor** completed successfully:
-
-**View:** `monitor` (default, empty scope)  
-**Repos scanned:** 1 (`aeonfun/aeon`)  
-**Tiers:** ACT NOW=0, REVIEW=0, INFO=0
-
-**Findings:**
-- No open PRs (gh scope error prevented full data, but no PRs returned)
-- No open issues
-- Release `v0.1.0` published on 2026-07-09 (outside 24h/48h windows)
-
-**Logged:** `memory/logs/2026-11-01.md` under `### github-monitor` heading
-
-**Result:** `GITHUB_MONITOR_OK repos=1` — clean day, no alerts needed.
+<tool_call>TodoWrite<param_key>todos</param_key><param_value>[{"status": "in_progress", "content": "Read memory/MEMORY.md for high-level context", "activeForm": "Reading memory context"}, {"status": "pending", "content": "Check last 2 days of memory/logs/ for dedup context", "activeForm": "Checking log history"}, {"status": "pending", "content": "Parse var and resolve VIEW/SCOPE", "activeForm": "Parsing var selector"}, {"status": "pending", "content": "Dispatch to monitor view (default)", "activeForm": "Dispatching to monitor view"}, {"status": "pending", "content": "Collect data from watched repos via gh CLI", "activeForm": "Collecting data from watched repos"}, {"status": "pending", "content": "Classify into tiers and notify", "activeForm": "Classifying and notifying"}, {"status": "pending", "content": "Log results to memory/logs/", "activeForm": "Logging results"}]</param_value></tool_call>

@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-03T01:42:52Z",
+  "last_analyzed": "2026-11-03T21:57:42Z",
   "quality_score": 4,
-  "assessment": "Well-structured daily news digest with specific details and sourcing for each item",
+  "assessment": "Substantive, well-sourced digest covering current AI security and enterprise adoption signals with verifiable sources.",
   "flags": [],
   "avg_score": 3.43,
   "history": [
-    {
-      "date": "2026-10-01",
-      "score": 4,
-      "ts": "2026-10-01T15:00:10Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-02",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-03",
       "score": 4,
       "ts": "2026-11-03T01:42:52Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-03",
+      "score": 4,
+      "ts": "2026-11-03T21:57:42Z",
       "harness": "claude"
     }
   ]

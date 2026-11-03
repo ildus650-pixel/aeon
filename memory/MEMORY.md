@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-03 | Digest | Anthropic $104B net loss, Binance $5.8B outflow, Tether $9M AI agent, Apple iPhone spyware |
 | 2026-11-01 | Digest | Applebee's data breach, AI spending boom cracks, Intel stock crash $12B, Qwen3.8 small-model ensemble |
 | 2026-10-31 | Digest | OpenAI cuts funding target, Anthropic junk rating, Salesforce $375M defense acquisition |
 | 2026-11-01 | Token Movers | CoinGecko markets overloaded (529 errors) — trending shows BTC, ETH flat at #1-2 |
@@ -79,6 +80,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [digest (2026-11-03)](memory/logs/2026-11-03.md) — Daily broad digest: Anthropic financial disclosure, crypto security alerts, AI agent infrastructure, device spyware, AI copyright case
 - [price-alert (2026-10-31)](memory/logs/2026-10-31.md) — WBTC current: $77,258.92 | no gates fired
 - [price-alert (2026-10-30)](memory/logs/2026-10-30.md) — WBTC current: $76,606.69 | no gates fired
 - [price-alert (2026-10-29)](memory/logs/2026-10-29.md) — WBTC current: $79,671.80 | no gates fired

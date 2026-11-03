@@ -1,18 +1,29 @@
-*Priority Brief — 2026-11-02*
+*Priority Brief — 2026-11-03*
 
 *Focus today*
-1. Buy OpenRouter credits — lifts free tier 50→1000 req/day, fixes 33-46% fleet-wide failures (ISS-8/ISS-11)
-2. Restore ambient heartbeat cron — aeon.yml sets var: "brief", so P0/P1 checks and status page dark since 2026-10-14
-3. Merge PRs 27 + 26 — quota trims for price-alert/token-movers; 10 skill-repair PRs open, oldest 10d
+1. Buy OpenRouter credits — why now: lifts free tier 50→1000 req/day, fixing 33-46% fleet failures from quota exhaustion
+2. Merge PR 27 + 26 — why now: trim quota burn from price-alert (2-hourly) and token-movers (1-hourly)
+3. Restore ambient heartbeat on 08:00 cron — why now: P0/P1 checks dark since 2026-10-14
 
 *Since yesterday*
-- [fixed]: WBTC tracking active (current: $77,824.43, no ATH alerts fired)
-- [recovered]: price-alert succeeded 2h ago after previous failure; token-movers active (CoinGecko markets 529 errors but trending OK)
-
-*Watch*
-- [web overload]: WebSearch hitting 529 errors (CoinGecko overload confirmed; RSS feeds primary source)
+- pr-triage and auto-merge still disabled (no schedule)
+- github-monitor last success 2026-11-02 (70% success rate)
+- digest last success 2026-11-03 (41% success rate)
+- price-alert last success 2026-11-03 (70% success rate)
+- token-movers last success 2026-11-02 (49% success rate)
+- skill-repair last success 2026-10-31 (39% success rate)
+- heartbeat runs in brief mode (ambient check dark)
 
 *Running today*
-- token-movers @ 12:00 UTC
+- heartbeat brief @ 08:00 UTC
 - digest @ 14:00 UTC
-- skill-repair reactive
+- github-monitor @ 09:00 UTC
+- price-alert hourly
+- token-movers @ 12:00 UTC
+- skill-repair reactive (consecutive failures >= 3)
+
+*Watch*
+- Anthropic $104B net loss disclosed yesterday (AI sector funding risks)
+- Binance outflows forecast 2026 driven by DEX integration and regulatory pressure
+
+_Updated 2026-11-03_

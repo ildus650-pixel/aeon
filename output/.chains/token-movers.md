@@ -1,1 +1,1 @@
-<tool_call>glob<param_key>pattern</param_key><param_value>skills/token-movers/**</param_value></tool_call>
+[token-movers::deep-dive] Want a deep-dive report on a mover? Reply with a ticker or contract.

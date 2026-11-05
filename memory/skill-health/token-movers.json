@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-03T17:03:38Z",
-  "quality_score": 2,
-  "assessment": "No substantial skill output was provided for evaluation. A scoring rubric requires an observable artifact (report, analysis, draft); none was given, making any content-based grade unverifiable.",
+  "last_analyzed": "2026-11-05T17:44:48Z",
+  "quality_score": 4,
+  "assessment": "Good output - correctly handled duplicate signal by suppressing notification and documenting the no-op. Structured with clear sections and verifiable data.",
   "flags": [],
-  "avg_score": 3,
+  "avg_score": 2.97,
   "history": [
-    {
-      "date": "2026-09-24",
-      "score": 5,
-      "ts": "2026-09-24T15:31:51Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-26",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-03",
       "score": 2,
       "ts": "2026-11-03T17:03:38Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-05",
+      "score": 4,
+      "ts": "2026-11-05T17:44:48Z",
       "harness": "claude"
     }
   ]

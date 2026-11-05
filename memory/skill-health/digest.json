@@ -1,17 +1,13 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-03T21:57:42Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-sourced digest covering current AI security and enterprise adoption signals with verifiable sources.",
-  "flags": [],
-  "avg_score": 3.43,
+  "last_analyzed": "2026-11-05T17:49:31Z",
+  "quality_score": 1,
+  "assessment": "No actual skill output was provided to evaluate; only the scoring instruction is present. The digested content is absent.",
+  "flags": [
+    "empty_output"
+  ],
+  "avg_score": 3.33,
   "history": [
-    {
-      "date": "2026-10-02",
-      "score": 4,
-      "ts": "2026-10-02T16:17:08Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-03",
       "score": 3,
@@ -184,6 +180,12 @@
       "date": "2026-11-03",
       "score": 4,
       "ts": "2026-11-03T21:57:42Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-05",
+      "score": 1,
+      "ts": "2026-11-05T17:49:31Z",
       "harness": "claude"
     }
   ]

@@ -1,26 +1,23 @@
+The price-alert skill execution is complete. Here's the summary:
+
+## Price Alert Run Results (2026-11-05)
+
+| Field | Value |
+|-------|-------|
+| **Token** | WBTC (Wrapped BTC) |
+| **Current Price** | $80,567.86 |
+| **ATH Gate** | Unchanged — prior ATH $81,858.25 still holds |
+| **Sharp-move gate** | Quiet — 1h change was only +0.22% |
+| **Targets** | None evaluated (no var set) |
+| **Notifications sent** | 0 |
+| **Status** | `PRICE_ALERT_OK` |
+
+**Execution details:**
+- Fetched price from DexScreener at the deepest liquidity pool (~$40M on Uniswap v3, ETH/WETH pair)
+- No gates fired; price remained below the previous ATH
+- State file updated with `last_run_at`
+- Log appended to `memory/logs/2026-11-05.md`
+
 ## Summary
 
-The price-alert skill ran successfully on 2026-11-04. Here's what happened:
-
-### Execution Summary
-- **Token**: WBTC (Wrapped BTC) on Ethereum
-- **Current Price**: $80,175.11
-- **1h Change**: 0.0%
-- **24h Change**: 4.91%
-
-### Gate Evaluations
-1. **ATH Gate**: ✅ QUIET — Current price ($80,175.11) < ATH ($81,858.25)
-2. **Sharp-move Gate**: ✅ QUIET — 1h change (0.0%) < 20% threshold
-3. **Target-crossing Gate**: ✅ QUIET — No targets configured
-
-### Notifications
-- **Sent**: 0 (no gates fired)
-
-### Status
-- **Status**: `PRICE_ALERT_OK` — Run completed cleanly, no alerts triggered
-
-### Files Modified
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
-- `memory/logs/2026-11-04.md` — Updated log entry with current price data
-
-The price has pulled back from yesterday's ATH, showing a 4.91% gain over 24 hours with no significant 1-hour volatility. No action was taken.
+The price-alert skill executed successfully for today's run. With no alerts firing, no notifications were sent. The script tool cleanup was blocked by sandbox policy, but harmless artifacts remain.

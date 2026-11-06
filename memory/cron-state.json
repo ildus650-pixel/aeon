@@ -56,15 +56,15 @@
   },
   "digest": {
     "last_dispatch": "2026-11-06T17:59:12Z",
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-11-04T16:57:43Z",
-    "total_runs": 98,
-    "total_successes": 41,
+    "total_runs": 99,
+    "total_successes": 42,
     "total_failures": 57,
     "consecutive_failures": 0,
     "success_rate": 0.42,
     "last_error": "command\":\"cat /tmp/xai-digest.json 2>/dev/null | head -500\",\"description\":\"Check xAI response\"}},{\"tool_name\":\"Bash\",\"tool_use_id\":\"call_3e35dd75b04746ff84560913\",\"tool_input\":{\"command\":\"jq -r '.outp",
-    "last_success": "2026-11-05T17:49:33Z",
+    "last_success": "2026-11-06T18:16:51Z",
     "last_quality_score": 1
   },
   "skill-repair": {

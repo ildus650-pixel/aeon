@@ -1,1 +1,1 @@
-<tool_call>read<param_key>filePath</param_key><param_value>/home/runner/work/aeon/skills/digest/SKILL.md</param_value></tool_call>
+For your clarification — which skill or capability would you like help with? I can assist with the `deep-research` skill for thorough research reports, and a broad range of other tasks on this project.

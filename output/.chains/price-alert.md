@@ -1,32 +1,25 @@
-## Price Threshold Alert
+Perfect! The price-alert skill completed successfully. Let me provide the summary:
 
-- **Skill**: price-alert
-- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-- **Current**: $75786.36 | 1h: ±-0.23% | 24h: ±-5.99%
-- **ATH**: $81858.25 (set 2026-10-29 21:03 UTC) [UNCHANGED]
-- **Sharp-move gate**: QUIET
-- **Targets evaluated**: (none) → (none)
-- **Verdicts fired**: NONE
+## Summary
+
+**Skill**: price-alert  
+**Status**: PRICE_ALERT_OK  
+**Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+
+### Gate Evaluations
+- **ATH**: QUIET - Current price ($76,036.14) is below the ATH of $81,858.25
+- **Sharp-move**: QUIET - 1h change was only -0.06% (threshold is ±20%)
+- **Targets**: Not evaluated (no targets set in var)
+
+### Details
+- **Current price**: $76,036.14 (deepest pool: Uniswap v3/WETH, $38.6M liquidity)
+- **1h change**: -0.06%
+- **24h change**: -5.72%
+- **ATH**: $81,858.25 (set 2026-10-29 21:03 UTC) — unchanged
 - **Notifications sent**: 0
-- **Status**: PRICE_ALERT_OK
 
----
+### Files Modified
+- `memory/topics/price-alert-state.json` — Updated `last_run_at` and `ath.observed_at`
+- `memory/logs/2026-11-06.md` — Added log entry
 
-### Summary
-
-The price-alert skill ran successfully without firing any alerts. 
-
-**Actions taken:**
-1. Parsed configuration from `memory/MEMORY.md` — tracked token: WBTC on Ethereum (contract `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`)
-2. Fetched current price from DexScreener — $75,786.36 (Uniswap WETH pool, $38.6M liquidity)
-3. Evaluated ATH gate — current price ($75,786.36) < stored ATH ($81,858.25), no new high
-4. Evaluated sharp-move gate — |1h change| = 0.23% < 20% threshold, no alert
-5. Evaluated target gate — no targets configured
-6. Updated `memory/topics/price-alert-state.json` with current run timestamp
-7. State file validated with `jq empty`
-
-**Files created/modified:**
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
-- `memory/logs/2026-11-05.md` — will be appended by workflow after run completes
-
-No notifications sent — clean run with no gating events.
+**No alerts fired** — this was a calm day for WBTC with no notable price movements. The skill ran cleanly and updated the state for the next run.

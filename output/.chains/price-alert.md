@@ -1,25 +1,24 @@
-Perfect! The price-alert skill completed successfully. Let me provide the summary:
-
 ## Summary
 
-**Skill**: price-alert  
-**Status**: PRICE_ALERT_OK  
-**Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+**Skill executed**: price-alert
 
-### Gate Evaluations
-- **ATH**: QUIET - Current price ($76,036.14) is below the ATH of $81,858.25
-- **Sharp-move**: QUIET - 1h change was only -0.06% (threshold is ±20%)
-- **Targets**: Not evaluated (no targets set in var)
+### What happened:
+- **Token tracked**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
+- **Current price**: $74,437.11
+- **1h change**: 0.00% (no data)
+- **24h change**: -4.68%
 
-### Details
-- **Current price**: $76,036.14 (deepest pool: Uniswap v3/WETH, $38.6M liquidity)
-- **1h change**: -0.06%
-- **24h change**: -5.72%
-- **ATH**: $81,858.25 (set 2026-10-29 21:03 UTC) — unchanged
-- **Notifications sent**: 0
+### Gates evaluated:
+1. **ATH gate**: QUIET — Current price ($74,437.11) < ATH ($76,036.14), no new all-time high
+2. **Sharp-move gate**: QUIET — No ±20% movement in 1 hour
+3. **Target-crossing gate**: No targets configured
 
-### Files Modified
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` and `ath.observed_at`
-- `memory/logs/2026-11-06.md` — Added log entry
+### Notifications sent: 0
 
-**No alerts fired** — this was a calm day for WBTC with no notable price movements. The skill ran cleanly and updated the state for the next run.
+### Status: PRICE_ALERT_OK
+
+### Files modified:
+- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
+- `memory/logs/2026-11-06.md` — appended new run log entry
+
+**Note**: No alerts fired since the token is below its ATH and no sharp moves or targets were hit. The run completed cleanly without requiring a notification.

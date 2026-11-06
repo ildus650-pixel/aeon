@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-11-06T11:23:11Z",
     "total_runs": 231,
     "total_successes": 162,
@@ -20,7 +20,7 @@
     "consecutive_failures": 1,
     "success_rate": 0.7,
     "last_quality_score": 4,
-    "last_dispatch": "2026-11-06T17:59:12Z",
+    "last_dispatch": "2026-11-06T22:59:54Z",
     "last_failed": "2026-11-06T18:13:01Z",
     "last_error": "542a773Aa44fBCfeDf7C193bc2C599\\\"\\ncurl -fsS \\\"https://api.dexscreener.com/latest/dex/tokens/${CONTRACT}\\\" > /tmp/wbtc.json 2>/dev/null || echo \\\"fetch-fail\\\"\\njq -r '.pairs[] | select(.chainId==\\\"ethe"
   },

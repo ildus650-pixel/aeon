@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-05T17:44:48Z",
+  "last_analyzed": "2026-11-06T18:36:50Z",
   "quality_score": 4,
-  "assessment": "Good output - correctly handled duplicate signal by suppressing notification and documenting the no-op. Structured with clear sections and verifiable data.",
+  "assessment": "Substantive report of actual findings: identified CoinGecko markets endpoint failure (529), clear source-by-source status, verifiable and actionable.",
   "flags": [],
-  "avg_score": 2.97,
+  "avg_score": 3,
   "history": [
-    {
-      "date": "2026-09-26",
-      "score": 3,
-      "ts": "2026-09-26T15:18:16Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-29",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-05",
       "score": 4,
       "ts": "2026-11-05T17:44:48Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-06",
+      "score": 4,
+      "ts": "2026-11-06T18:36:50Z",
       "harness": "claude"
     }
   ]

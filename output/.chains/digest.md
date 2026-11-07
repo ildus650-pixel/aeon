@@ -1,1 +1,1 @@
-For your clarification — which skill or capability would you like help with? I can assist with the `deep-research` skill for thorough research reports, and a broad range of other tasks on this project.
+<tool_call>glob<param_key>pattern</param_key><param_value>skills/digest/SKILL.md</param_value></tool_call>

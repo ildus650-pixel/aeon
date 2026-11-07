@@ -1,5 +1,1 @@
-*Token Movers — 2026-11-06*
-
-CoinGecko markets endpoint overloaded (529 error). Trending data available but winners/losers list incomplete.
-
-Sources: coingecko-markets=failed (529), coingecko-trending=ok
+<tool_call>TodoWrite<param_key>todos</param_key><param_value>[{"status": "in_progress", "content": "Fetch Coingecko markets data (top 250)", "activeForm": "Fetching Coingecko markets data"}, {"status": "pending", "content": "Fetch Coingecko trending searches", "activeForm": "Fetching Coingecko trending searches"}, {"status": "pending", "content": "Filter stablecoins, thin-liquidity noise; rank winners/losers/trending", "activeForm": "Filtering stablecoins and ranking"}, {"status": "pending", "content": "Enrich with signal+risk tags", "activeForm": "Enriching entries with tags"}, {"status": "pending", "content": "Compute market pulse + build digest (≤4000 chars)", "activeForm": "Computing market pulse"}, {"status": "pending", "content": "Send digest via ./notify and offer deep-dive if notable", "activeForm": "Sending digest notification"}, {"status": "pending", "content": "Log to memory/logs/2026-11-07.md", "activeForm": "Appending run log"}]</param_value></tool_call>

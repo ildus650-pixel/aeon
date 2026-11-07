@@ -55,6 +55,8 @@
 - [price-alert (2026-10-29)](memory/logs/2026-10-29.md) — WBTC new ATH $81,638.84 (prev $79,671.80, 4h20m earlier); ATH alert sent
 - [price-alert (2026-10-21)](memory/logs/2026-10-21.md) — WBTC new ATH $84,712.99 (prev $83,990.54, 4h12m earlier); ATH alert sent
 - [price-alert (2026-10-23)](memory/logs/2026-10-23.md) — WBTC price declined from ATH; no alerts fired
+- [price-alert (2026-10-31)](memory/logs/2026-10-31.md) — WBTC current: $77,258.92 | no gates fired
+- [price-alert (2026-11-07)](memory/logs/2026-11-07.md) — WBTC current: $75,770.79 | no gates fired
 
 
 ## Lessons Learned
@@ -84,6 +86,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [token-movers (2026-11-05)](memory/logs/2026-11-05.md) — Global CoinGecko scan: Pulse mixed — 92% top-100 alts green; CAP +32.2% (PUMP-RISK), FLUID +27.6% (BREAKOUT), TRUMP -16.8% (CAPITULATION); Deep-dive offer sent
 - [digest (2026-11-03)](memory/logs/2026-11-03.md) — Daily broad digest: Anthropic financial disclosure, crypto security alerts, AI agent infrastructure, device spyware, AI copyright case
 - [price-alert (2026-10-31)](memory/logs/2026-10-31.md) — WBTC current: $77,258.92 | no gates fired
+- [price-alert (2026-11-07)](memory/logs/2026-11-07.md) — WBTC current: $75,770.79 | no gates fired
 - [price-alert (2026-10-30)](memory/logs/2026-10-30.md) — WBTC current: $76,606.69 | no gates fired
 - [price-alert (2026-10-29)](memory/logs/2026-10-29.md) — WBTC current: $79,671.80 | no gates fired
 - [price-alert (2026-10-26)](memory/logs/2026-10-26.md) — WBTC current: $79,987.32 | no gates fired

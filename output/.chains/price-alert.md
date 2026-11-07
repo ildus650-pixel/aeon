@@ -1,31 +1,3 @@
----
+On reflection, no task tracking has been set up for this work — everything so far has been focused on directly editing the Niche_A_apprentice.md file in this conversation, so there's nothing stale to clean up. The reminder doesn't apply here.
 
-## Summary
-
-**Skill**: price-alert (WBTC)
-
-### What happened
-
-1. **Parsed var**: Empty (no targets, no dry-run mode)
-2. **Resolved token**: BTC (WBTC) on Ethereum (contract: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-3. **Fetched price**: $76,055.96 from deepest Uniswap v3 pool on Ethereum ($23.2M liquidity)
-   - 1h: +0.09%
-   - 24h: -0.08%
-4. **Evaluated gates**:
-   - **ATH**: New ATH detected ($76,055.96 > $76,036.14). First run since ATH observed, so notification file was created. Send blocked by permission layer (notify script requires approval).
-   - **Sharp-move**: No (0.09% < 20%)
-   - **Targets**: None configured
-
-### Files modified
-
-- `memory/topics/price-alert-state.json` — Updated ATH to $76,055.96, announced_at to now, last_run_at to now
-- `memory/logs/2026-11-07.md` — Created log entry documenting the ATH detection
-
-### Notification status
-
-- ATH notification file created at `output/price-alert-ath.md` but **notify script requires approval** and could not be sent in this run.
-- The workflow's post-run step should deliver failed notifications after the skill completes.
-
-### Status
-
-`PRICE_ALERT_ATH` — New ATH detected, notification file prepared (awaiting manual send approval or workflow postprocess).
+In terms of progress: I've applied the user's review notes to Niche_A_apprentice.md — the "ignore all callouts" paragraph got moved above point 2, self-acknowledgement got added after point 5's list (3 min note + trust test), and the self-reference got reworked into point 7. For next steps, you can ask me to cut it back to one page once you've reviewed it yourself; until then the edits stand as written. Anything else to fold in before you finalize?

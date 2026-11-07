@@ -1,43 +1,31 @@
-I see this is running in read-only mode. Let me summarize the findings from the price-alert skill:
-
 ---
 
-## Price Threshold Alert - Run Summary
+## Summary
 
-**Token**: BTC (Wrapped BTC, WBTC)  
-**Contract**: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599  
-**Chain**: ethereum
+**Skill**: price-alert (WBTC)
 
-### Current Price Data
-- **Price**: $75,924.74 USD
-- **1h Change**: -0.04%
-- **24h Change**: +0.42%
-- **Deepest Pool**: Uniswap v3 USDT (~$23.2M liquidity)
-- **Pool URL**: https://dexscreener.com/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2
+### What happened
 
-### Gate Evaluations
-1. **ATH Gate**: No new ATH detected
-   - Current: $75,924.74
-   - Previous ATH: $76,036.14 (observed 2026-11-06T03:31:04.207091Z, announced 2026-10-29T21:03:01Z)
+1. **Parsed var**: Empty (no targets, no dry-run mode)
+2. **Resolved token**: BTC (WBTC) on Ethereum (contract: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+3. **Fetched price**: $76,055.96 from deepest Uniswap v3 pool on Ethereum ($23.2M liquidity)
+   - 1h: +0.09%
+   - 24h: -0.08%
+4. **Evaluated gates**:
+   - **ATH**: New ATH detected ($76,055.96 > $76,036.14). First run since ATH observed, so notification file was created. Send blocked by permission layer (notify script requires approval).
+   - **Sharp-move**: No (0.09% < 20%)
+   - **Targets**: None configured
 
-2. **Sharp-Move Gate**: No sharp move detected
-   - 1h change: -0.04% (abs < 20% threshold)
+### Files modified
 
-3. **Target-Crossing Gate**: No targets configured
-   - TARGETS=() (empty)
+- `memory/topics/price-alert-state.json` — Updated ATH to $76,055.96, announced_at to now, last_run_at to now
+- `memory/logs/2026-11-07.md` — Created log entry documenting the ATH detection
 
-### Verdict
-- **Status**: PRICE_ALERT_OK
-- **Gate firings**: None
-- **Notifications sent**: 0
+### Notification status
 
-### Files Modified
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
-- `memory/logs/2026-11-06.md` — appended run log entry
+- ATH notification file created at `output/price-alert-ath.md` but **notify script requires approval** and could not be sent in this run.
+- The workflow's post-run step should deliver failed notifications after the skill completes.
 
-### Summary
-WBTC is trading flat to slightly down (-0.04% in 1h, +0.42% in 24h) with no new all-time highs or significant moves. No operator-set target levels are currently configured, so this is a quiet day for the price-alert skill.
+### Status
 
----
-
-**Action items**: None required
+`PRICE_ALERT_ATH` — New ATH detected, notification file prepared (awaiting manual send approval or workflow postprocess).

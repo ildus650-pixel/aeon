@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-07T09:26:11Z",
     "total_runs": 234,
     "total_successes": 165,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.71,
     "last_quality_score": 2,
-    "last_dispatch": "2026-11-07T09:17:17Z",
+    "last_dispatch": "2026-11-07T15:46:08Z",
     "last_failed": "2026-11-06T18:13:01Z",
     "last_error": "542a773Aa44fBCfeDf7C193bc2C599\\\"\\ncurl -fsS \\\"https://api.dexscreener.com/latest/dex/tokens/${CONTRACT}\\\" > /tmp/wbtc.json 2>/dev/null || echo \\\"fetch-fail\\\"\\njq -r '.pairs[] | select(.chainId==\\\"ethe"
   },
@@ -42,8 +42,8 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":346,\""
   },
   "token-movers": {
-    "last_dispatch": "2026-11-06T17:59:12Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-07T15:46:08Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-06T18:39:51Z",
     "total_runs": 83,
     "total_successes": 42,
@@ -55,8 +55,8 @@
     "last_error": "_name\":\"Bash\",\"tool_use_id\":\"call_98b7df570ea34e8b90354546\",\"tool_input\":{\"command\":\"printenv COINGECKO_API_KEY 2>/dev/null || echo \\\"COINGECKO:unset\\\"; printenv ALCHEMY_API_KEY 2>/dev/null || echo \\\""
   },
   "digest": {
-    "last_dispatch": "2026-11-06T17:59:12Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-07T15:46:08Z",
+    "last_status": "dispatched",
     "last_failed": "2026-11-04T16:57:43Z",
     "total_runs": 99,
     "total_successes": 42,

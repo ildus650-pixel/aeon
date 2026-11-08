@@ -12,14 +12,14 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "dispatched",
-    "last_success": "2026-11-07T23:19:31Z",
-    "total_runs": 237,
-    "total_successes": 168,
+    "last_status": "success",
+    "last_success": "2026-11-08T02:34:42Z",
+    "total_runs": 238,
+    "total_successes": 169,
     "total_failures": 69,
     "consecutive_failures": 0,
     "success_rate": 0.71,
-    "last_quality_score": 5,
+    "last_quality_score": 4,
     "last_dispatch": "2026-11-08T02:24:33Z",
     "last_failed": "2026-11-06T18:13:01Z",
     "last_error": "542a773Aa44fBCfeDf7C193bc2C599\\\"\\ncurl -fsS \\\"https://api.dexscreener.com/latest/dex/tokens/${CONTRACT}\\\" > /tmp/wbtc.json 2>/dev/null || echo \\\"fetch-fail\\\"\\njq -r '.pairs[] | select(.chainId==\\\"ethe"

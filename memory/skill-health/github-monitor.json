@@ -1,17 +1,13 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-07T09:29:43Z",
-  "quality_score": 5,
-  "assessment": "Excellent - precise, verifiable monitoring with proper deduplication and clean signal/noise separation",
-  "flags": [],
-  "avg_score": 3.57,
+  "last_analyzed": "2026-11-08T09:36:14Z",
+  "quality_score": 2,
+  "assessment": "Task ran and delivered a concrete, actionable finding (PR #1283 flagged for merge conflict), but the final output was terse and skipped the substantive assessment field, so quality is low despite completing the task.",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 3.53,
   "history": [
-    {
-      "date": "2026-09-30",
-      "score": 3,
-      "ts": "2026-09-30T13:28:34Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-01",
       "score": 4,
@@ -184,6 +180,12 @@
       "date": "2026-11-07",
       "score": 5,
       "ts": "2026-11-07T09:29:43Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-08",
+      "score": 2,
+      "ts": "2026-11-08T09:36:14Z",
       "harness": "claude"
     }
   ]

@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-08T09:40:05Z",
+  "last_analyzed": "2026-11-08T16:16:38Z",
   "quality_score": 4,
-  "assessment": "Substantive price monitoring run with verifiable data points and proper state tracking",
+  "assessment": "Substantive, well-structured, and verifiable — clear price data with proper gate evaluation, grounded in a real API call, appropriate logging, and no unnecessary notifications.",
   "flags": [],
-  "avg_score": 3.67,
+  "avg_score": 3.7,
   "history": [
-    {
-      "date": "2026-10-30",
-      "score": 3,
-      "ts": "2026-10-30T06:40:37Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-31",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-08",
       "score": 4,
       "ts": "2026-11-08T09:40:05Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-08",
+      "score": 4,
+      "ts": "2026-11-08T16:16:38Z",
       "harness": "claude"
     }
   ]

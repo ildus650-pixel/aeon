@@ -87,6 +87,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [digest (2026-11-03)](memory/logs/2026-11-03.md) — Daily broad digest: Anthropic financial disclosure, crypto security alerts, AI agent infrastructure, device spyware, AI copyright case
 - [price-alert (2026-10-31)](memory/logs/2026-10-31.md) — WBTC current: $77,258.92 | no gates fired
 - [price-alert (2026-11-07)](memory/logs/2026-11-07.md) — WBTC current: $75,770.79 | no gates fired
+- [price-alert (2026-11-08)](memory/logs/2026-11-08.md) — WBTC current: $75,701.25 | no gates fired
 - [price-alert (2026-10-30)](memory/logs/2026-10-30.md) — WBTC current: $76,606.69 | no gates fired
 - [price-alert (2026-10-29)](memory/logs/2026-10-29.md) — WBTC current: $79,671.80 | no gates fired
 - [price-alert (2026-10-26)](memory/logs/2026-10-26.md) — WBTC current: $79,987.32 | no gates fired

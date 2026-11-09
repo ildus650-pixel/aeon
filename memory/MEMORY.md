@@ -84,6 +84,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [price-alert (2026-11-09)](memory/logs/2026-11-09.md) — WBTC current: $73055.03 | no gates fired
 - [token-movers (2026-11-05)](memory/logs/2026-11-05.md) — Global CoinGecko scan: Pulse mixed — 92% top-100 alts green; CAP +32.2% (PUMP-RISK), FLUID +27.6% (BREAKOUT), TRUMP -16.8% (CAPITULATION); Deep-dive offer sent
 - [digest (2026-11-03)](memory/logs/2026-11-03.md) — Daily broad digest: Anthropic financial disclosure, crypto security alerts, AI agent infrastructure, device spyware, AI copyright case
 - [price-alert (2026-10-31)](memory/logs/2026-10-31.md) — WBTC current: $77,258.92 | no gates fired

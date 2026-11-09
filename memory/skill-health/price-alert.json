@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-08T20:32:47Z",
+  "last_analyzed": "2026-11-09T00:16:01Z",
   "quality_score": 4,
-  "assessment": "Clean, data-driven ATH alert with verifiable details and direct chart link",
+  "assessment": "Well-structured, verifiable price monitoring with clear gate evaluation and memory updates.",
   "flags": [],
   "avg_score": 3.7,
   "history": [
-    {
-      "date": "2026-10-31",
-      "score": 4,
-      "ts": "2026-10-31T14:45:30Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-31",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-08",
       "score": 4,
       "ts": "2026-11-08T20:32:47Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 4,
+      "ts": "2026-11-09T00:16:01Z",
       "harness": "claude"
     }
   ]

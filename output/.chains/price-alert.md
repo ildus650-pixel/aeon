@@ -1,7 +1,30 @@
-*WBTC — New ATH — 2026-10-25*
+## Summary
 
-WBTC just printed a new all-time high at $8.0956e4.
-Previous ATH: $8.0420e4 (set 5h 48m ago).
-24h move: ±0.16% · 1h move: ±0.00%
+**Skill**: price-alert  
+**Date**: 2026-11-09  
+**Token**: BTC (Wrapped BTC, WBTC) (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
 
-Chart: https://dexscreener.com/ethereum/0xceff51756c56ceffca006cd410b03ffc46dd3a58
+### Results
+
+**Current price**: $73,055.026  
+**1h change**: ±0.00%  
+**24h change**: ±-3.24%  
+**ATH**: $76,185.72 (set 2026-11-08 20:58 UTC) [UNCHANGED]
+
+### Gates evaluated
+
+| Gate | Result |
+|------|--------|
+| ATH | QUIET (price declined from ATH) |
+| Sharp-move (±20% in 1h) | QUIET (0.00% < 20.0%) |
+| Target-crossing | N/A (no targets configured) |
+
+### Status: PRICE_ALERT_OK
+
+No gates fired, so no notification was sent.
+
+### Files created/modified
+
+- **memory/topics/price-alert-state.json** — Updated `last_run_at` to 2026-11-09T00:07:15Z
+- **memory/logs/2026-11-09.md** — Created log entry
+- **memory/MEMORY.md** — Updated "Today's Activity" section

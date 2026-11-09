@@ -1,19 +1,11 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-08T09:36:14Z",
-  "quality_score": 2,
-  "assessment": "Task ran and delivered a concrete, actionable finding (PR #1283 flagged for merge conflict), but the final output was terse and skipped the substantive assessment field, so quality is low despite completing the task.",
-  "flags": [
-    "low_quality"
-  ],
+  "last_analyzed": "2026-11-09T16:16:02Z",
+  "quality_score": 4,
+  "assessment": "Completed scan successfully: single repo (aeonfun/aeon) flagged with one PR pending review for 12 days, sourced and verified OK, with the upstream reference URL provided for follow-up.",
+  "flags": [],
   "avg_score": 3.53,
   "history": [
-    {
-      "date": "2026-10-01",
-      "score": 4,
-      "ts": "2026-10-01T14:58:36Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-03",
       "score": 4,
@@ -186,6 +178,12 @@
       "date": "2026-11-08",
       "score": 2,
       "ts": "2026-11-08T09:36:14Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 4,
+      "ts": "2026-11-09T16:16:02Z",
       "harness": "claude"
     }
   ]

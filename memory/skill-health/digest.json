@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-08T16:20:13Z",
+  "last_analyzed": "2026-11-09T16:14:32Z",
   "quality_score": 4,
-  "assessment": "Solid daily digest with substantive, well-sourced stories and clear structure",
+  "assessment": "Good - substantive tech news with verifiable claims and sources",
   "flags": [],
   "avg_score": 3.37,
   "history": [
-    {
-      "date": "2026-10-04",
-      "score": 4,
-      "ts": "2026-10-04T19:25:01Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-06",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-08",
       "score": 4,
       "ts": "2026-11-08T16:20:13Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 4,
+      "ts": "2026-11-09T16:14:32Z",
       "harness": "claude"
     }
   ]

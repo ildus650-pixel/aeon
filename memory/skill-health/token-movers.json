@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-06T18:36:50Z",
-  "quality_score": 4,
-  "assessment": "Substantive report of actual findings: identified CoinGecko markets endpoint failure (529), clear source-by-source status, verifiable and actionable.",
+  "last_analyzed": "2026-11-10T00:18:13Z",
+  "quality_score": 3,
+  "assessment": "Acceptable - correctly handled CoinGecko 529 error and logged retry behavior",
   "flags": [],
   "avg_score": 3,
   "history": [
-    {
-      "date": "2026-09-29",
-      "score": 3,
-      "ts": "2026-09-29T06:02:10Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-09-30",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-06",
       "score": 4,
       "ts": "2026-11-06T18:36:50Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-10",
+      "score": 3,
+      "ts": "2026-11-10T00:18:13Z",
       "harness": "claude"
     }
   ]

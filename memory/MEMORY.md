@@ -15,6 +15,7 @@
 | Date | Type | Key Topics |
 |------|------|------------|
 | 2026-11-09 | Digest | Waymo robotaxis illegally passing school buses, Meta expands AI age-guessing, Tesla halts Cybertruck production |
+| 2026-11-10 | Digest | Anthropic \$1.404T implied IPO valuation, Google DeepMind + AI agents verify Signal security, Fireworks AI second data breach
 | 2026-11-08 | Digest | Binance CFO leaves after $6.3B hack, China spied on Nvidia CEO, UK AI agent regulation, hundreds of AI hacking tools exposed |
 | 2026-11-03 | Digest | Binance $6.3B hack traced to fake job interviews and AI tool, Qwen 3.8 interprets model weights, Fal AI $16B valuation, Postman AI plugin privacy issue |
 | 2026-11-03 | Digest | Anthropic $104B net loss, Binance outflows, Tether AI agent, Apple iPhone spyware |

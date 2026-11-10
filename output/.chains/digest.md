@@ -1,15 +1,27 @@
-*Digest — 2026-11-09*
+ℹ️ Daily Digest
 
-_TL;DR: Waymo autonomous vehicles continue to pass school buses illegally, Meta expands AI age-guessing on Instagram, and Tesla halts Cybertruck production despite strong orders._
+*Digest — 2026-11-10*
 
-1. *Waymo robotaxis continue to illegally pass school buses despite software fix*
-   Nearly a year after Waymo updated its self-driving software and issued a recall, federal regulators have opened a new investigation. The National Highway Traffic Safety Administration found that a majority of violations occurred after the company deployed the fix, meaning the problem persists despite the correction.
-   https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school-buses-after-software-fix-feds-say
+_TL;DR: Anthropic sets a $1.4T implied IPO valuation, Google DeepMind uses AI agents to formally verify Signal's security, and Fireworks AI discloses a second data breach exposing customer datasets._
 
-2. *Meta expands AI age-guessing tech on Instagram worldwide*
-   Meta announced it will use AI-powered age estimation to identify teens on Instagram even when they use an adult birthday. The expansion comes as the company faces numerous lawsuits over teen safety, with the new Teen Account protections limiting DM access and hiding harmful comments.
-   https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally
+1. *Anthropic sets IPO price range of $70 to $78 to reach $1.404T valuation*
+   The AI startup disclosed an implied valuation of $1.404 trillion at the top of its IPO price range, making it potentially the most valuable public company in history.
+   Why it matters: If shares list at the top of the range, Anthropic would surpass the current market caps of all but a handful of global companies — and potentially displace competitors like Microsoft, Apple, and Nvidia.
+   [https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/](https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/)
 
-3. *Tesla stops Cybertruck production after ~8 months, will refund deposits*
-   Musk announced Tesla will end Cybertruck production in about eight months. He says the "opportunity cost of the complexity" outweighs incremental Cybercab value, though the truck isn't unprofitable and order rates exceed production capacity. Existing deposits will be refunded.
-   https://techcrunch.com/2026/11/09/musk-says-tesla-will-refund-some-cybertruck-deposits-defends-decision-to-end-production
+2. *Google DeepMind uses AI agents to formally verify Signal's secure messaging protocols*
+   Researchers used AlphaProof Code, a human-guided multi-agent framework, to prove Signal's post-quantum handshake and Triple Ratchet are cryptographically sound.
+   Why it matters: This is the first time AI agents have helped design a proof linking protocol-level guarantees to a real-world implementation — potentially accelerating formal verification of critical security infrastructure.
+   [https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625](https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625)
+
+3. *Fireworks AI discloses second cyberattack exposing customer billing records, datasets, and model weights*
+   The AI inference platform disclosed that attackers accessed its R&D infrastructure on October 23, exfiltrating resource metadata, billing information, and partial model weights from third-party customers.
+   Why it matters: The incident confirms a pattern of attacks targeting AI model providers through their infrastructure, raising questions about how enterprises should secure AI workloads and who should bear responsibility for exposure of training or fine-tuning data.
+   [https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722](https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722)
+
+4. *Chrome's eighth zero-day of 2026 is now actively exploited in the wild*
+   Google patched CVE-2026-125350, a high-severity use-after-free vulnerability in Chrome's XML component, alongside seven other security fixes.
+   Why it matters: With eight actively exploited zero-days this year — matching the total for all of 2025 — Chrome users face heightened risk until the update rolls out globally.
+   [https://www.theregister.com/security/2026/11/10/chrome-zero-day-whack-a-mole-continues-as-2026-tally-hits-8/5308732](https://www.theregister.com/security/2026/11/10/chrome-zero-day-whack-a-mole-continues-as-2026-tally-hits-8/5308732)
+
+*Also worth a glance:* Anthropic's Mythos 5.2 bug-finding model goes into Cisco and IBM products · 470+ security fixes in Microsoft's Azure Linux 3.0.2022 release

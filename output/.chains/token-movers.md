@@ -1,1 +1,1 @@
-token-movers: CoinGecko unreachable — skipping run. Markets endpoint returned 529 (service overloaded) after retries. Trending data received but unusable without market data. Will retry next scheduled run.
+Nothing to act on here — there's no active task list for this context. No progress tracking or cleanup needed. Is there something you'd like me to work on now?

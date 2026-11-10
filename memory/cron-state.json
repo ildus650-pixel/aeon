@@ -12,7 +12,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":360,\""
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-09T16:11:35Z",
     "total_runs": 244,
     "total_successes": 174,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.71,
     "last_quality_score": 4,
-    "last_dispatch": "2026-11-09T16:01:44Z",
+    "last_dispatch": "2026-11-10T00:11:53Z",
     "last_failed": "2026-11-09T06:33:21Z",
     "last_error": ":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":246210,"
   },
@@ -42,7 +42,7 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":346,\""
   },
   "token-movers": {
-    "last_dispatch": "2026-11-08T16:09:16Z",
+    "last_dispatch": "2026-11-10T00:11:53Z",
     "last_status": "dispatched",
     "last_success": "2026-11-07T16:26:53Z",
     "total_runs": 84,

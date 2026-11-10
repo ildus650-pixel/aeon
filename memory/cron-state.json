@@ -43,16 +43,16 @@
   },
   "token-movers": {
     "last_dispatch": "2026-11-10T15:43:38Z",
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-11-10T00:21:17Z",
-    "total_runs": 85,
+    "total_runs": 86,
     "total_successes": 44,
-    "total_failures": 41,
-    "consecutive_failures": 0,
-    "success_rate": 0.52,
+    "total_failures": 42,
+    "consecutive_failures": 1,
+    "success_rate": 0.51,
     "last_quality_score": 3,
-    "last_failed": "2026-11-04T22:28:15Z",
-    "last_error": "_name\":\"Bash\",\"tool_use_id\":\"call_98b7df570ea34e8b90354546\",\"tool_input\":{\"command\":\"printenv COINGECKO_API_KEY 2>/dev/null || echo \\\"COINGECKO:unset\\\"; printenv ALCHEMY_API_KEY 2>/dev/null || echo \\\""
+    "last_failed": "2026-11-10T16:00:33Z",
+    "last_error": "or c in top_10_winners + top_10_losers:\\n    if any(t in c['tags'] for t in ['[BREAKOUT]', '[CAPITULATION]', '[PUMP-RISK]', '[TRENDING+UP]', '[TRENDING+DOWN]']):\\n        notable.append(c)\\n\\nprint(f\\"
   },
   "digest": {
     "last_dispatch": "2026-11-10T15:43:38Z",

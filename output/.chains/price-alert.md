@@ -1,25 +1,23 @@
 ## Summary
 
-Successfully executed the **price-alert** skill. Here's what happened:
+**Price Alert skill executed successfully.**
 
-### Run Results
-- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
-- **Current price**: $75,321.37
-- **1h change**: +0.78%
-- **24h change**: -0.91%
-- **ATH**: $76,185.72 (unchanged, not breached)
+### What happened
 
-### Gate Evaluation
-1. **ATH gate**: QUIET — price ($75,321.37) < ATH ($76,185.72)
-2. **Sharp-move gate**: QUIET — 1h change (0.78%) < 20% threshold
-3. **Target-crossing gate**: N/A — no targets configured
+- **Token:** WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on ethereum
+- **Current price:** $75,071.53
+- **1h change:** -0.11%
+- **24h change:** +0.57%
+- **ATH:** $76,185.72 (set 2026-11-08T20:58:00Z)
 
-### Notifications
-- **Sent**: 0 alerts (no gates fired)
-
-### Files Modified
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
-- `memory/logs/2026-11-09.md` — added run log entry
+### Gates evaluated
+- **ATH:** No new ATH (current $75,071.53 < prior ATH $76,185.72)
+- **Sharp-move:** No ±20% move in 1h (only -0.11%)
+- **Targets:** No targets configured
 
 ### Status
-**PRICE_ALERT_OK** — Run completed cleanly with no alerts triggered.
+- **Notifications sent:** 0
+- **Status code:** `PRICE_ALERT_OK`
+
+### Files modified
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to `2026-11-10T00:27:12Z`

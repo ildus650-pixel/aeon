@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-09T16:11:33Z",
+  "last_analyzed": "2026-11-10T00:30:20Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured, verifiable monitoring output. Clear gate evaluation and status with specific data points.",
+  "assessment": "Well-structured, verifiable output with specific data points; no false claims",
   "flags": [],
-  "avg_score": 3.73,
+  "avg_score": 3.7,
   "history": [
-    {
-      "date": "2026-11-01",
-      "score": 5,
-      "ts": "2026-11-01T00:50:04Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-01",
       "score": 1,
@@ -184,6 +178,12 @@
       "date": "2026-11-09",
       "score": 4,
       "ts": "2026-11-09T16:11:33Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-10",
+      "score": 4,
+      "ts": "2026-11-10T00:30:20Z",
       "harness": "claude"
     }
   ]

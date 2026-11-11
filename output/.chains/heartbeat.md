@@ -1,15 +1,24 @@
-⚠️ Priority Brief — Nov 9
-
-*Priority Brief — 2026-11-09*
+*Priority Brief — 2026-11-11*
 
 *Focus today*
-1. Buy $10+ OpenRouter credits — why now: fleet cap exhausted, 33% failure persists
-2. Restore ambient heartbeat on 08:00 cron — why now: P0/P1 & status page dark since 2026-10-14
-3. Merge PR #27 + #26 — why now: quota burns consume headroom, oldest fix PRs overlap
+1. Buy OpenRouter credits — why now: free cap at 50 req/day causes 33-46% fleet failures
+2. Restore ambient heartbeat cron — why now: P0/P1 checks + status page dark since Oct 14
+3. Merge PR #27 + #26 — why now: cut quota burn; oldest PR open 10d, repair PRs aging
 
 *Since yesterday*
-- [stalled]: token-movers stuck — dispatched Nov 8 16:09 UTC, last success Nov 7 16:26
-- [moved]: dependabot PRs #28–#32 untouched; #27/#26 remain open >10d as trim targets
+- token-movers failed — CoinGecko 529 overload (degraded Nov 9–10)
+- price-alert OK — WBTC $73,744 (1h +0.19%, 24h −1.53%); ATH $76,185 unchanged
+- github-monitor OK — aeonfun/aeon clean
+- digest OK — RSS fallback carried 4 items; XAI http-400, WebSearch 529
+
+*Watch*
+- OpenRouter free tier: <$10 lifetime = 50 req/day; $10+ = 1,000 req/day — one-time $10 clears ISS-8/ISS-11
+- CoinGecko API degraded Nov 9–10 (429s) — explains token-movers failure
 
 *Running today*
 - heartbeat @ 08:00 UTC
+- github-monitor @ 09:00 UTC
+- price-alert hourly (:00 UTC)
+- token-movers @ 12:00 UTC
+- digest @ 14:00 UTC
+- skill-repair @ reactive

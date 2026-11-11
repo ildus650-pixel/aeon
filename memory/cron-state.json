@@ -12,7 +12,7 @@
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTo"
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-11T08:30:53Z",
     "total_runs": 250,
     "total_successes": 180,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.72,
     "last_quality_score": 4,
-    "last_dispatch": "2026-11-11T08:12:11Z",
+    "last_dispatch": "2026-11-11T16:15:42Z",
     "last_failed": "2026-11-09T06:33:21Z",
     "last_error": ":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":246210,"
   },
@@ -29,8 +29,8 @@
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-11-10T15:43:38Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-11T16:15:42Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-10T15:51:40Z",
     "total_runs": 66,
     "total_successes": 49,
@@ -42,8 +42,8 @@
     "last_error": "r\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":346,\""
   },
   "token-movers": {
-    "last_dispatch": "2026-11-10T21:26:43Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-11T16:15:42Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-10T21:58:15Z",
     "total_runs": 87,
     "total_successes": 45,
@@ -55,8 +55,8 @@
     "last_error": "or c in top_10_winners + top_10_losers:\\n    if any(t in c['tags'] for t in ['[BREAKOUT]', '[CAPITULATION]', '[PUMP-RISK]', '[TRENDING+UP]', '[TRENDING+DOWN]']):\\n        notable.append(c)\\n\\nprint(f\\"
   },
   "digest": {
-    "last_dispatch": "2026-11-10T15:43:38Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-11T16:15:42Z",
+    "last_status": "dispatched",
     "last_failed": "2026-11-04T16:57:43Z",
     "total_runs": 103,
     "total_successes": 46,

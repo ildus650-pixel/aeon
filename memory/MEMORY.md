@@ -86,6 +86,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [price-alert (2026-11-11)](memory/logs/2026-11-11.md) — WBTC current: $7.2650e4 | 1h: ±-1.52% | 24h: ±-2.08%; ATH unchanged, no gates fired
 - [price-alert (2026-11-11)](memory/logs/2026-11-11.md) — WBTC current: $73,744.41 | 1h: +0.19% | 24h: -1.53%; ATH unchanged, no gates fired
 - [price-alert (2026-11-10)](memory/logs/2026-11-10.md) — WBTC current: $73416.37 | 1h: -0.5% | 24h: -1.9%; ATH unchanged, no gates fired
 - [price-alert (2026-11-09)](memory/logs/2026-11-09.md) — WBTC current: $73055.03 | no gates fired

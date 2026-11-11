@@ -1,17 +1,13 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-10T16:12:21Z",
-  "quality_score": 4,
-  "assessment": "Well-structured, well-sourced digest covering diverse high-value topics with clear context and verifiable sources.",
-  "flags": [],
-  "avg_score": 3.4,
+  "last_analyzed": "2026-11-11T16:31:24Z",
+  "quality_score": 2,
+  "assessment": "Output is unreadable gibberish and lacks usable substance",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 3.33,
   "history": [
-    {
-      "date": "2026-10-08",
-      "score": 4,
-      "ts": "2026-10-08T03:10:19Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-09",
       "score": 4,
@@ -184,6 +180,12 @@
       "date": "2026-11-10",
       "score": 4,
       "ts": "2026-11-10T16:12:21Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-11",
+      "score": 2,
+      "ts": "2026-11-11T16:31:24Z",
       "harness": "claude"
     }
   ]

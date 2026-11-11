@@ -12,7 +12,7 @@
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTo"
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-10T21:49:46Z",
     "total_runs": 248,
     "total_successes": 178,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.72,
     "last_quality_score": 3,
-    "last_dispatch": "2026-11-10T21:26:43Z",
+    "last_dispatch": "2026-11-11T01:25:32Z",
     "last_failed": "2026-11-09T06:33:21Z",
     "last_error": ":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTokens\":246210,"
   },

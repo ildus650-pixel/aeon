@@ -1,24 +1,18 @@
-*Priority Brief — 2026-11-11*
+*Priority Brief — 2026-11-12*
 
-*Focus today*
-1. Buy OpenRouter credits — why now: free cap at 50 req/day causes 33-46% fleet failures
-2. Restore ambient heartbeat cron — why now: P0/P1 checks + status page dark since Oct 14
-3. Merge PR #27 + #26 — why now: cut quota burn; oldest PR open 10d, repair PRs aging
+Focus today:
+1. Buy OpenRouter credits — lift free tier 50→1000 req/day to fix 33-46% fleet failures (ISS-8/ISS-11)
+2. Merge PR #27 + #26 — cut quota burn; oldest PR open 10d, 10 skill-repair PRs aging
+3. Add XAI_API_KEY repo secret — missing key causing http-400 responses, also reached WebSearch free-models cap
 
-*Since yesterday*
-- token-movers failed — CoinGecko 529 overload (degraded Nov 9–10)
-- price-alert OK — WBTC $73,744 (1h +0.19%, 24h −1.53%); ATH $76,185 unchanged
-- github-monitor OK — aeonfun/aeon clean
-- digest OK — RSS fallback carried 4 items; XAI http-400, WebSearch 529
+Since yesterday:
+- heartbeat: next run at 08:00 UTC (var: brief)
+- token-movers: 51% success rate, CoinGecko 529 errors seen
+- digest: 45% success rate, xAI 529 Gateway Overload
 
-*Watch*
-- OpenRouter free tier: <$10 lifetime = 50 req/day; $10+ = 1,000 req/day — one-time $10 clears ISS-8/ISS-11
-- CoinGecko API degraded Nov 9–10 (429s) — explains token-movers failure
-
-*Running today*
-- heartbeat @ 08:00 UTC
-- github-monitor @ 09:00 UTC
-- price-alert hourly (:00 UTC)
-- token-movers @ 12:00 UTC
-- digest @ 14:00 UTC
-- skill-repair @ reactive
+Running today:
+- skill-repair at 18:00 UTC (reactive: consecutive_failures >= 3)
+- github-monitor at 09:00 UTC
+- digest at 14:00 UTC
+- token-movers at 12:00 UTC
+- price-alert at next hour

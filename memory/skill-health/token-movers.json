@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-10T00:18:13Z",
-  "quality_score": 3,
-  "assessment": "Acceptable - correctly handled CoinGecko 529 error and logged retry behavior",
+  "last_analyzed": "2026-11-12T03:34:52Z",
+  "quality_score": 4,
+  "assessment": "Substantive token mover report with verifiable data points and early signal surface",
   "flags": [],
   "avg_score": 3,
   "history": [
-    {
-      "date": "2026-09-30",
-      "score": 4,
-      "ts": "2026-09-30T18:34:48Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-02",
       "score": 2,
@@ -184,6 +178,12 @@
       "date": "2026-11-10",
       "score": 3,
       "ts": "2026-11-10T00:18:13Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-12",
+      "score": 4,
+      "ts": "2026-11-12T03:34:52Z",
       "harness": "claude"
     }
   ]

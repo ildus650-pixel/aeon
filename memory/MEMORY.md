@@ -14,6 +14,8 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-13 | Digest | LangChain $3B valuation, ChatGPT Wallet for AI shopping, weight-space malware transmission, AI booking restrictions |
+|------|------|------------|
 | 2026-11-09 | Digest | Waymo robotaxis illegally passing school buses, Meta expands AI age-guessing, Tesla halts Cybertruck production |
 | 2026-11-10 | Digest | Anthropic \$1.404T implied IPO valuation, Google DeepMind + AI agents verify Signal security, Fireworks AI second data breach
 | 2026-11-08 | Digest | Binance CFO leaves after $6.3B hack, China spied on Nvidia CEO, UK AI agent regulation, hundreds of AI hacking tools exposed |
@@ -92,6 +94,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [price-alert (2026-11-09)](memory/logs/2026-11-09.md) — WBTC current: $73055.03 | no gates fired
 - [token-movers (2026-11-05)](memory/logs/2026-11-05.md) — Global CoinGecko scan: Pulse mixed — 92% top-100 alts green; CAP +32.2% (PUMP-RISK), FLUID +27.6% (BREAKOUT), TRUMP -16.8% (CAPITULATION); Deep-dive offer sent
 - [digest (2026-11-03)](memory/logs/2026-11-03.md) — Daily broad digest: Anthropic financial disclosure, crypto security alerts, AI agent infrastructure, device spyware, AI copyright case
+- [digest (2026-11-13)](memory/logs/2026-11-13.md) — Daily broad digest: LangChain $3B valuation, ChatGPT Wallet for AI shopping, weight-space malware transmission, AI booking restrictions
 - [price-alert (2026-10-31)](memory/logs/2026-10-31.md) — WBTC current: $77,258.92 | no gates fired
 - [price-alert (2026-11-07)](memory/logs/2026-11-07.md) — WBTC current: $75,770.79 | no gates fired
 - [price-alert (2026-11-08)](memory/logs/2026-11-08.md) — WBTC new ATH $76,185.72 (prev $76,055.96, 3h48m earlier); ATH alert sent

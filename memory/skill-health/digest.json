@@ -1,19 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-11T16:31:24Z",
-  "quality_score": 2,
-  "assessment": "Output is unreadable gibberish and lacks usable substance",
-  "flags": [
-    "low_quality"
-  ],
+  "last_analyzed": "2026-11-13T21:43:34Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-structured, verifiable output on AI agent ecosystem developments with clear 'why it matters' framing.",
+  "flags": [],
   "avg_score": 3.33,
   "history": [
-    {
-      "date": "2026-10-09",
-      "score": 4,
-      "ts": "2026-10-09T02:56:38Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-10",
       "score": 4,
@@ -186,6 +178,12 @@
       "date": "2026-11-11",
       "score": 2,
       "ts": "2026-11-11T16:31:24Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-13",
+      "score": 4,
+      "ts": "2026-11-13T21:43:34Z",
       "harness": "claude"
     }
   ]

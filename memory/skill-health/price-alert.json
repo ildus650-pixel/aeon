@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-14T01:49:33Z",
+  "last_analyzed": "2026-11-14T08:14:04Z",
   "quality_score": 4,
-  "assessment": "Clean normal run with real price data and state updates.",
+  "assessment": "Substantive, well-structured price alert run with concrete DexScreener data, gate evaluations, run status, and files modified.",
   "flags": [],
   "avg_score": 3.8,
   "history": [
-    {
-      "date": "2026-11-04",
-      "score": 4,
-      "ts": "2026-11-04T08:43:39Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-04",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-14",
       "score": 4,
       "ts": "2026-11-14T01:49:33Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-14",
+      "score": 4,
+      "ts": "2026-11-14T08:14:04Z",
       "harness": "claude"
     }
   ]

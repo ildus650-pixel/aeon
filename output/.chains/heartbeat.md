@@ -1,18 +1,17 @@
-*Priority Brief — 2026-11-12*
+*Priority Brief — 2026-11-14*
 
-Focus today:
-1. Buy OpenRouter credits — lift free tier 50→1000 req/day to fix 33-46% fleet failures (ISS-8/ISS-11)
-2. Merge PR #27 + #26 — cut quota burn; oldest PR open 10d, 10 skill-repair PRs aging
-3. Add XAI_API_KEY repo secret — missing key causing http-400 responses, also reached WebSearch free-models cap
+*Focus today*
+1. Buy OpenRouter credits — lifts free tier 50→1000 req/day, fixes ISS-8/ISS-11 and fleet's 33-46% success rates
+2. Restore ambient heartbeat branch on 08:00 cron — aeon.yml sets var: "brief", so P0/P1 checks and status page have been dark since 2026-10-14
+3. Merge PR 27 and 26 — quota trims for price-alert and token-movers; 10 skill-repair PRs open, oldest 10d
 
-Since yesterday:
-- heartbeat: next run at 08:00 UTC (var: brief)
-- token-movers: 51% success rate, CoinGecko 529 errors seen
-- digest: 45% success rate, xAI 529 Gateway Overload
+*Since yesterday*
+- WBTC price-alert set ATH at $71,153.41 (up from $68,332 on Nov 13), but no new notifications sent (price is still below ATH gate)
+- price-alert recovered from consecutive failures and now running successfully (73% success rate, last success today at 01:49 UTC)
+- token-movers stuck since Nov 13 15:28 (never completed), digest ran successfully on Nov 13 21:46 (46% success rate)
+- skill-repair stuck since Oct 31 22:01 (13 days ago), but that was the last repair attempt - not actively blocking anything
 
-Running today:
-- skill-repair at 18:00 UTC (reactive: consecutive_failures >= 3)
-- github-monitor at 09:00 UTC
-- digest at 14:00 UTC
-- token-movers at 12:00 UTC
-- price-alert at next hour
+*Running today*
+- price-alert: every hour (next run ~16:15 UTC)
+- token-movers: 12:00 PM UTC
+- digest: 2:00 PM UTC

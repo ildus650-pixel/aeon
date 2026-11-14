@@ -1,6 +1,6 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-11-13T15:28:51Z",
+    "last_dispatch": "2026-11-14T08:06:47Z",
     "last_status": "dispatched",
     "last_success": "2026-11-12T11:50:51Z",
     "total_runs": 99,
@@ -12,7 +12,7 @@
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTo"
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-14T01:49:36Z",
     "total_runs": 260,
     "total_successes": 189,
@@ -20,12 +20,12 @@
     "consecutive_failures": 0,
     "success_rate": 0.73,
     "last_quality_score": 4,
-    "last_dispatch": "2026-11-14T01:43:52Z",
+    "last_dispatch": "2026-11-14T08:06:47Z",
     "last_failed": "2026-11-11T23:02:26Z",
     "last_error": "b38de0\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "chain:dev-loop": {
-    "last_dispatch": "2026-11-13T07:13:34Z",
+    "last_dispatch": "2026-11-14T08:06:47Z",
     "last_status": "dispatched"
   },
   "github-monitor": {

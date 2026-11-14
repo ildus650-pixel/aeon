@@ -1,30 +1,32 @@
-The price-alert skill has been executed successfully. Here's a summary:
+## Summary
 
-## Execution Results
+Executed `price-alert` skill successfully. Here's what happened:
 
-**Token**: WBTC (Wrapped BTC) on Ethereum
-- **Tracked contract**: `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`
-- **Current price**: $66,432.90 (deepest Ethereum pool on DexScreener)
-- **1h change**: 0.0% — **no sharp move**
-- **24h change**: -4.5%
-- **Current ATH**: $67,957.69 (set 2026-11-14 01:48 UTC)
-- **Price vs ATH**: Below ATH — **no new all-time high**
+### Evaluation Results
 
-## Gates Evaluated
+**Tracked Token:** BTC (WBTC) on Ethereum (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
 
-| Gate | Verdict |
-|------|---------|
-| ATH | UNCHANGED (66432.90 < 67957.69) |
-| Sharp Move (1h ±20%) | QUIET (0% < 20%) |
-| Target Crossing | N/A (no targets configured) |
+**Current Price:** $65,947.92
+- 1h change: ±0.00% (treated as 0 since null)
+- 24h change: ±-3.22%
 
-## Run Status: `PRICE_ALERT_OK`
+### Gate Evaluations
 
-- No notification fires (as expected when no gates fire)
-- State file updated with new `last_run_at`
-- Log entry appended to `memory/logs/2026-11-14.md`
+| Gate | Status | Reason |
+|------|--------|--------|
+| ATH | **Quiet** | Current price ($65,947.92) < Previous ATH ($67,957.69) |
+| Sharp-move | **Quiet** | |H1 change| = 0% < 20% threshold |
+| Targets | **Quiet** | No targets configured |
 
-## Files Modified
+### Outcome
 
-- `memory/topics/price-alert-state.json` — `last_run_at` updated to `2026-11-14T08:12:55Z`
-- `memory/logs/2026-11-14.md` — new `## Price Threshold Alert` block appended
+- **Status:** `PRICE_ALERT_OK`
+- **Notifications sent:** 0
+- **Gate verdicts fired:** none
+
+The price-alert skill completed cleanly with no events triggering notifications. WBTC is trading below its all-time high ($67,957.69 observed on Nov 13 at 00:00 UTC), and there was no significant movement in the last hour. The state file was updated with the current timestamp.
+
+### Files Created/Modified
+
+- `memory/topics/price-alert-state.json` — Updated `last_run_at` timestamp
+- `memory/logs/2026-11-14.md` — Appended price-alert log entry

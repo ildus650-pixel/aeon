@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-15T03:12:13Z",
+  "last_analyzed": "2026-11-15T11:07:14Z",
   "quality_score": 4,
-  "assessment": "Solid, well-structured run — parsed no targets gracefully, fetched verifiable price data, evaluated gates appropriately, persisted state, and logged cleanly without creating false signal.",
+  "assessment": "Clean, verifiable run with specific gate evaluations and actionable verdict",
   "flags": [],
   "avg_score": 3.87,
   "history": [
-    {
-      "date": "2026-11-05",
-      "score": 4,
-      "ts": "2026-11-05T23:00:33Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-06",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-15",
       "score": 4,
       "ts": "2026-11-15T03:12:13Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-15",
+      "score": 4,
+      "ts": "2026-11-15T11:07:14Z",
       "harness": "claude"
     }
   ]

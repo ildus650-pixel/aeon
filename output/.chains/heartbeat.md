@@ -1,17 +1,33 @@
-*Priority Brief — 2026-11-14*
+**Priority Brief — 2026-11-15**
 
 *Focus today*
-1. Buy OpenRouter credits — lifts free tier 50→1000 req/day, fixes ISS-8/ISS-11 and fleet's 33-46% success rates
-2. Restore ambient heartbeat branch on 08:00 cron — aeon.yml sets var: "brief", so P0/P1 checks and status page have been dark since 2026-10-14
-3. Merge PR 27 and 26 — quota trims for price-alert and token-movers; 10 skill-repair PRs open, oldest 10d
+
+1. **Buy $10+ OpenRouter credits** — why now: 4 weeks unresolved; quota still exhausted daily; every skill 40-60% failure rate persists.
+
+2. **Merge PR #27 + #26 (and the 10 skill-repair PRs)** — why now: quota binds; consumption trims (price-alert → 2-hourly) needed while cap is binding.
+
+3. **Reset the scheduler (token-movers + digest)** — why now: both dispatched 19h ago without outcome; today's 12:00/14:00 dispatches will confirm or clear.
 
 *Since yesterday*
-- WBTC price-alert set ATH at $71,153.41 (up from $68,332 on Nov 13), but no new notifications sent (price is still below ATH gate)
-- price-alert recovered from consecutive failures and now running successfully (73% success rate, last success today at 01:49 UTC)
-- token-movers stuck since Nov 13 15:28 (never completed), digest ran successfully on Nov 13 21:46 (46% success rate)
-- skill-repair stuck since Oct 31 22:01 (13 days ago), but that was the last repair attempt - not actively blocking anything
+
+- **price-alert**: WBTC $64,965, no new gates; ATH $67,958 unchanged.
+- **token-movers + digest**: dispatched 2026-11-14 15:01 UTC, never reported back (19h); next run at 12:00/14:00 UTC today.
+- **BTC market**: ~$62K (4-month low), ETH -19.5% weekly, ETFs $1.07B outflows, DXY >103, Fed hike priced (88% Dec 25bp) — extreme fear.
+- **OpenRouter**: quota exhausted (70/50 used), fleet running with no working LLM path for another day.
+- **SC operations**: github-monitor PR #32-29 (dependabot) and #27-26 (skill-repair) stalled >24h; 10 open skill-repair PRs, oldest 26d.
+- **Heart of the issue**: gateway-quota 2026-10-20 root cause: OpenRouter free tier cap 50/day, $10+ credits permanently lift to 1,000.
+
+*Watch*
+
+- Fed Dec hike (88% chance) + DXY >103 → risk-off tape; token-movers at 12:00 UTC scans into a falling market; price-alert gates matter.
 
 *Running today*
-- price-alert: every hour (next run ~16:15 UTC)
-- token-movers: 12:00 PM UTC
-- digest: 2:00 PM UTC
+
+- github-monitor @ 09:00 UTC
+- token-movers @ 12:00 UTC
+- price-alert @ hourly (00 minutes)
+- digest @  sampled 14:00 UTC
+- skill-repair @ reactive
+- heartbeat @ 08:00 UTC (brief) 
+
+The admin pause is resolved — the skill runs completed.

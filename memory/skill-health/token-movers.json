@@ -1,19 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-16T02:05:38Z",
-  "quality_score": 2,
-  "assessment": "No report produced — output is only an empty-state prompt inviting a ticker; the run delivered no analysis or findings.",
-  "flags": [
-    "empty_output"
-  ],
-  "avg_score": 3,
+  "last_analyzed": "2026-11-16T19:53:10Z",
+  "quality_score": 4,
+  "assessment": "Well-structured token overview with verifiable metrics and actionable context",
+  "flags": [],
+  "avg_score": 3.07,
   "history": [
-    {
-      "date": "2026-10-02",
-      "score": 2,
-      "ts": "2026-10-02T16:24:19Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-03",
       "score": 3,
@@ -186,6 +178,12 @@
       "date": "2026-11-16",
       "score": 2,
       "ts": "2026-11-16T02:05:38Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-16",
+      "score": 4,
+      "ts": "2026-11-16T19:53:10Z",
       "harness": "claude"
     }
   ]

@@ -1,0 +1,1 @@
+{"model":"grok-4.6","input":[{"role":"user","content":"Search X for the most notable technology, AI, and crypto stories today (2026-11-16). Return up to 10 high-signal posts with handle, text, date, engagement, and permalink."}],"tools":[{"type":"x_search","from_date":"2026-11-15","to_date":"2026-11-16"}]}

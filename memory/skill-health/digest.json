@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-13T21:43:34Z",
+  "last_analyzed": "2026-11-16T02:07:10Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured, verifiable output on AI agent ecosystem developments with clear 'why it matters' framing.",
+  "assessment": "Well-structured daily digest with specific citations, actionable 'why it matters' framing, and coverage of high-signal tech events; sources are linked and plausible for a news aggregation skill.",
   "flags": [],
   "avg_score": 3.33,
   "history": [
-    {
-      "date": "2026-10-10",
-      "score": 4,
-      "ts": "2026-10-10T01:26:32Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-11",
       "score": 2,
@@ -184,6 +178,12 @@
       "date": "2026-11-13",
       "score": 4,
       "ts": "2026-11-13T21:43:34Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-16",
+      "score": 4,
+      "ts": "2026-11-16T02:07:10Z",
       "harness": "claude"
     }
   ]

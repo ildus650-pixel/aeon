@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-15T17:50:52Z",
+  "last_analyzed": "2026-11-16T02:02:58Z",
   "quality_score": 4,
-  "assessment": "Complete, specific, and honest no-op run: price source, gate table, atomic state update, and log shape all documented; leftover scratch dir and missing-h1 handling disclosed rather than hidden. No invented claims, no notification correct per taxonomy. Not 5 — routine monitoring with no signal and a minor hygiene leftover.",
+  "assessment": "Good - substantive, well-structured, useful, and verifiable with verifiable data from real sources",
   "flags": [],
   "avg_score": 3.87,
   "history": [
-    {
-      "date": "2026-11-06",
-      "score": 4,
-      "ts": "2026-11-06T11:23:09Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-06",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-15",
       "score": 4,
       "ts": "2026-11-15T17:50:52Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-16",
+      "score": 4,
+      "ts": "2026-11-16T02:02:58Z",
       "harness": "claude"
     }
   ]

@@ -1,17 +1,23 @@
-The price-alert skill has completed its run for 2026-11-17.
+## Summary
 
-## Run Result: `PRICE_ALERT_OK` — no alerts fired
+**Skill executed: price-alert**
 
-| Gate | Result |
-|------|--------|
-| **ATH** (new strict high) | **UNCHANGED** — stored ATH was $67,957.69 (2026-11-14); current price $64,000.88 is below it |
-| **Sharp move** (±20% in 1h) | **QUIET** — 1h move was only -0.63% |
-| **Target hit** | N/A — no operator targets set |
+### What happened:
+- Token tracked: WBTC (Wrapped BTC, 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
+- Current price: $64,223.97
+- 1h change: 0.0% (null in API, treated as 0)
+- 24h change: -1.23%
 
-The token (WBTC) is currently trading around **$64,000.88** on Ethereum — comfortably off its ATH and without any sharp move, so the skill correctly stayed silent and sent nothing.
+### Gate evaluations:
+1. **ATH gate**: QUIET — current price ($64,223.97) < ATH ($67,957.69)
+2. **Sharp-move gate**: QUIET — |0.0%| < 20.0% threshold
+3. **Target-crossing gate**: NONE — no targets configured
 
-**Files touched:**
-- `memory/topics/price-alert-state.json` — `last_run_at` refreshed to `2026-11-17T11:18:50Z`
-- `memory/logs/2026-11-17.md` — appended the `## Price Threshold Alert` run block
+### Files modified:
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to "2026-11-17T19:54:29Z"
+- `memory/logs/2026-11-17.md` — added new price-alert entry
 
-**Follow-up:** none required — the quiet run is the expected outcome for a token sitting below its ATH with no ±20% spikes. The next alert will fire automatically on a new strict ATH or a sharp move, or when an operator sets a target via the force-reply flow.
+### Status:
+`PRICE_ALERT_OK` — no gates fired, no notifications sent
+
+**Why this run was quiet:** WBTC is trading below its all-time high ($67,957.69 set on 2026-11-14) and showing only modest 1h movement (0.0%), well below the ±20% sharp-move threshold.

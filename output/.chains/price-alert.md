@@ -1,56 +1,33 @@
-## Price Alert Execution Summary
+# Price Threshold Alert — WBTC — 2026-11-17
 
-I've completed the evaluation of the price-alert skill for WBTC. Here are the findings:
+**Verdict: `PRICE_ALERT_OK` — no gate fired, no notification sent.**
 
-### Token Configuration
-- **Token**: WBTC (Wrapped BTC)
-- **Contract**: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
-- **Chain**: Ethereum
+## What the run found
 
-### Current Price Data (from DexScreener)
-- **Current Price**: $64,432.06
-- **Pool**: Curve.Fi USDC (highest liquidity at $64.68M)
-- **Pool URL**: https://dexscreener.com/ethereum/0x313698667d7fdd6789a9bc70821309ff891e729a
-- **1h Change**: 0.0%
-- **24h Change**: 1.57%
+| Field | Value |
+|-------|-------|
+| Token | WBTC (Wrapped BTC) on Ethereum |
+| Contract | `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599` |
+| Current price | **$64,792.24** |
+| 1h change | −0.45% |
+| 24h change | −0.81% |
+| Reference pool | Uniswap v3 WBTC/WETH, ~$29.94M liquidity (`0xcbcdf962…62ed`) |
 
-### Gate Evaluations
+## Gate evaluation
 
-**ATH Gate**:
-- Prior ATH: $67,957.69 (observed 2026-11-14, announced 2026-11-13)
-- Current price: $64,432.06
-- Verdict: **NO NEW ATH** (price declined from ATH)
-- No notification sent
+- **ATH gate — not fired.** Stored ATH is $67,957.69 (set 2026-11-14 01:48 UTC). Current price is ~4.7% below it, so no new high. ATH left untouched.
+- **Sharp-move gate — quiet.** 1h move of −0.45% is far inside the ±20% threshold.
+- **Target-crossing gate — nothing to evaluate.** No operator targets configured (`targets: {}`).
 
-**Sharp-Move Gate**:
-- Threshold: ±20% in 1 hour
-- Current H1 change: 0.0%
-- Verdict: **QUIET** (no sharp move)
-- No notification sent
+## Actions taken
 
-**Target-Crossing Gate**:
-- Targets configured: None
-- Verdict: **NONE**
-- No notification sent
+- Fetched live price from DexScreener (deepest ETH pool by liquidity). Curl succeeded on first attempt — no WebFetch fallback needed.
+- Persisted state: `memory/topics/price-alert-state.json` updated with `last_run_at = 2026-11-17T02:50:23Z`; ATH, alert clocks, and targets unchanged.
+- Appended run log to `memory/logs/2026-11-17.md`.
 
-### Status
-**PRICE_ALERT_OK** — All gates quiet, no notifications sent.
-
-### Actions Completed
-1. ✅ Parsed var (empty → MODE=execute, no targets)
-2. ✅ Resolved tracked token (WBTC on Ethereum matches state)
-3. ✅ Fetched current price from DexScreener
-4. ✅ Evaluated all three gates
-5. ✅ Identified no firing gates
-
-### Actions Restricted (Permission Issue)
-- ❌ Persisted updated state file (`memory/topics/price-alert-state.json`)
-- ❌ Created log entry (`memory/logs/2026-11-16.md`)
-
-**Note**: Due to session permission restrictions (read-only mode despite skill frontmatter indicating write mode), the state persistence and log file creation could not be completed. The evaluation logic was fully executed and the verdict is documented above. The workflow system may need to manually handle the state persistence and logging.
+WBTC is drifting quietly around $64.8K, well under its $67.96K baseline high with no aggressive intraday move. Nothing to flag.
 
 ## Summary
-
-**Files Created/Modified**: None (permissions restricted)  
-**Verdict**: PRICE_ALERT_OK (no alerts fired)  
-**Next Run**: Normal operation will continue tracking ATH, sharp moves, and any targets set by the operator.
+- **Run status:** `PRICE_ALERT_OK` — clean run, no gates fired, no notification sent (per "silent on normal days").
+- **Files modified:** `memory/topics/price-alert-state.json` (last_run_at bump), `memory/logs/2026-11-17.md` (new log entry), `memory/topics/dexscreener-current.json` (raw API snapshot).
+- **Follow-up:** none. The tracked token table in `memory/MEMORY.md` is valid and current.

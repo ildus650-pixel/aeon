@@ -14,6 +14,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-17 | Digest | California AG sues OpenAI over rogue agents, AI startup $1B valuation, Uber data breach (150K licenses), FBI Artex AI hacking tool, Apple Mac AI controls |
 | 2026-11-16 | Digest | Jensen Huang exit petition (115K), Nvidia funding hole, 2026 passes 100K CVEs (AI-driven), Tesla Cybercab pre-orders, Apple AI health study |
 | 2026-11-13 | Digest | LangChain $3B valuation, ChatGPT Wallet for AI shopping, weight-space malware transmission, AI booking restrictions |
 |------|------|------------|

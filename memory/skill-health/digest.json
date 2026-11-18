@@ -1,17 +1,13 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-17T02:41:49Z",
+  "last_analyzed": "2026-11-18T02:25:31Z",
   "quality_score": 4,
-  "assessment": "Solid daily digest with 5 verifiable industry signals. Clear TL;DR structure, each item includes source and summary. Serves as relevant industry context without operator-specific depth.",
-  "flags": [],
-  "avg_score": 3.4,
+  "assessment": "Substantive, well-structured digest with verifiable sources and concrete metrics",
+  "flags": [
+    "rate_limited"
+  ],
+  "avg_score": 3.47,
   "history": [
-    {
-      "date": "2026-10-11",
-      "score": 2,
-      "ts": "2026-10-11T22:05:11Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-13",
       "score": 4,
@@ -184,6 +180,12 @@
       "date": "2026-11-17",
       "score": 4,
       "ts": "2026-11-17T02:41:49Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-18",
+      "score": 4,
+      "ts": "2026-11-18T02:25:31Z",
       "harness": "claude"
     }
   ]

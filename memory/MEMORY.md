@@ -16,6 +16,7 @@
 |------|------|------------|
 | 2026-11-17 | Digest | California AG sues OpenAI over rogue agents, AI startup $1B valuation, Uber data breach (150K licenses), FBI Artex AI hacking tool, Apple Mac AI controls |
 | 2026-11-16 | Digest | Jensen Huang exit petition (115K), Nvidia funding hole, 2026 passes 100K CVEs (AI-driven), Tesla Cybercab pre-orders, Apple AI health study |
+| 2026-11-18 | Digest | Google AI search traffic -40%, OpenJDK Base64 RCE, Quad9 exits France |
 | 2026-11-13 | Digest | LangChain $3B valuation, ChatGPT Wallet for AI shopping, weight-space malware transmission, AI booking restrictions |
 |------|------|------------|
 | 2026-11-09 | Digest | Waymo robotaxis illegally passing school buses, Meta expands AI age-guessing, Tesla halts Cybertruck production |

@@ -7,6 +7,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-11-18 | Token Movers — Global Movers | MNT +5.09%, NEAR +3.04%, XRP +2.14% winners; PIEVERSE trending +61.4% (PUMP-RISK) |
 | 2026-10-17 | India rogue AI agents, Replit ends Anthropic partnership | AI agents, AI partnerships |
 | 2026-10-01 | Token Movers — Global Movers | Bitcoin $83,842 (+0.05%) |
 | 2026-09-19 | Token Movers — Global Movers | Crypto market scan (winners/losers/trending) |
@@ -91,6 +92,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [token-movers (2026-11-18)](memory/logs/2026-11-18.md) — Global CoinGecko scan: Broad risk-on — 60% of top-50 after filtering are green with solid 3-5% moves in altcoins while BTC leads the downside at -1.2%; MNT +5.09%, NEAR +3.04%, XRP +2.14% winners; PIEVERSE trending +61.4% on 7d +93.7% — extreme breakout with deep liquidity ($81M vol) — PUMP-RISK; Deep-dive offer sent
 - [price-alert (2026-11-15)](memory/logs/2026-11-15.md) — WBTC current: $6.4432e4 | 1h: ±0.0% | 24h: ±+1.2%; ATH unchanged, no gates fired
 - [price-alert (2026-11-11)](memory/logs/2026-11-11.md) — WBTC current: $7.2650e4 | 1h: ±-1.52% | 24h: ±-2.08%; ATH unchanged, no gates fired
 - [price-alert (2026-11-11)](memory/logs/2026-11-11.md) — WBTC current: $73,744.41 | 1h: +0.19% | 24h: -1.53%; ATH unchanged, no gates fired

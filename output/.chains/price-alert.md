@@ -1,23 +1,22 @@
-## Summary
+Price-alert run complete. Here's the summary:
 
-**price-alert skill executed successfully** — no gates fired for WBTC:
+**Price Alert — 2026-11-19**
+- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599, ethereum)
+- **Current price**: $63,770.84 (Deepest pool: Uniswap v3 WBTC/WETH, $28.5M liquidity)
+- **1h change**: -0.01% | **24h change**: -1.36%
+- **ATH**: $67,957.69 (set 2026-11-14 01:48 UTC) — **UNCHANGED** (current price is below the stored ATH, so the ATH gate stays quiet)
+- **Sharp-move gate**: QUIET (|-0.01%| < 20% threshold)
+- **Targets**: none configured
+- **Verdicts fired**: NONE
+- **Notifications sent**: 0
+- **Status**: `PRICE_ALERT_OK`
 
-### What I did
-1. **Resolved tracked token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
-2. **Fetched current price**: $63,290.18 from deepest Ethereum pool (Uniswap USDT pair, $19.97M liquidity)
-3. **Evaluated all gates**:
-   - **ATH gate**: Current ($63,290.18) < ATH ($67,957.69) → No new ATH
-   - **Sharp-move gate**: |0.08%| < 20% threshold → No sharp move
-   - **Target gate**: No targets configured → No alerts
-4. **Updated state**: Incremented `last_run_at` timestamp in `memory/topics/price-alert-state.json`
-5. **Logged run**: Created `memory/logs/2026-11-19.md` with complete run details
-6. **Updated MEMORY.md**: Added price-alert entry to Today's Activity section
+**What I did:**
+1. Parsed `${var}` (empty → execute mode, no targets)
+2. Resolved WBTC from the MEMORY.md "Tracked Token" table — contract matched the existing state file, no token change
+3. Fetched price from DexScreener (keyless public API, curl succeeded on first try); selected the deepest-liquidity ethereum pair as canonical mark
+4. Evaluated all three gates: ATH (price below stored high → unchanged), sharp-move (1h move far below ±20%), targets (none set)
+5. Updated `memory/topics/price-alert-state.json` — `last_run_at` advanced to `2026-11-19T12:00:00Z`; state validated with `jq empty`
+6. Appended the run block to `memory/logs/2026-11-19.md`
 
-### Key metrics
-- Current price: $63,290.18 (6.329018e4)
-- H1 change: +0.08%
-- H24 change: -2.34%
-- ATH: $67,957.69 (unchanged since 2026-11-14)
-
-### No notifications sent
-Since no gates fired (ATH not broken, no sharp move, no targets set), no `./notify` commands were executed. The run completed cleanly with status `PRICE_ALERT_OK`.
+No notification was sent — this is a clean, no-gate-fired run, and per the skill's rule, silent on normal days. No follow-up actions needed.

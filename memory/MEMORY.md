@@ -95,6 +95,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 ## Today's Activity
 - [price-alert (2026-11-19)](memory/logs/2026-11-19.md) — WBTC current: $6.329018e4 | 1h: ±0.08% | 24h: ±-2.34%; ATH unchanged, no gates fired
 - [token-movers (2026-11-18)](memory/logs/2026-11-18.md) — Global CoinGecko scan: Broad risk-on — 60% of top-50 after filtering are green with solid 3-5% moves in altcoins while BTC leads the downside at -1.2%; MNT +5.09%, NEAR +3.04%, XRP +2.14% winners; PIEVERSE trending +61.4% on 7d +93.7% — extreme breakout with deep liquidity ($81M vol) — PUMP-RISK; Deep-dive offer sent
+- [heartbeat (2026-11-19)](memory/logs/2026-11-19.md) — Priority brief: buy OpenRouter credits (lifts quota 50→1000 req/day, fixes 33-46% fleet success rates), merge PR 27 + 26 (quota trims for price-alert/token-movers), fix github-monitor PR query (gh pr list --json scope error)
 - [price-alert (2026-11-15)](memory/logs/2026-11-15.md) — WBTC current: $6.4432e4 | 1h: ±0.0% | 24h: ±+1.2%; ATH unchanged, no gates fired
 - [price-alert (2026-11-11)](memory/logs/2026-11-11.md) — WBTC current: $7.2650e4 | 1h: ±-1.52% | 24h: ±-2.08%; ATH unchanged, no gates fired
 - [price-alert (2026-11-11)](memory/logs/2026-11-11.md) — WBTC current: $73,744.41 | 1h: +0.19% | 24h: -1.53%; ATH unchanged, no gates fired
@@ -126,6 +127,10 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [token-movers (2026-10-02)](memory/logs/2026-10-02.md) — Global movers scan: SUPER CAT +248% (TRENDING+UP extreme pump), SAND +43% (BREAKOUT metaverse), GRX +62% (BREAKOUT deep liquidity)
 
 ## Yesterday's Activity
+- [price-alert (2026-11-19)](memory/logs/2026-11-19.md) — WBTC current: $6.329018e4 | 1h: ±0.08% | 24h: ±-2.34%; ATH unchanged, no gates fired
+- [token-movers (2026-11-18)](memory/logs/2026-11-18.md) — Global CoinGecko scan: Broad risk-on — 60% of top-50 after filtering are green with solid 3-5% moves in altcoins while BTC leads the downside at -1.2%; MNT +5.09%, NEAR +3.04%, XRP +2.14% winners; PIEVERSE trending +61.4% on 7d +93.7% — extreme breakout with deep liquidity ($81M vol) — PUMP-RISK; Deep-dive offer sent
+- [heartbeat (2026-11-19)](memory/logs/2026-11-19.md) — Priority brief: buy OpenRouter credits (lifts quota 50→1000 req/day, fixes 33-46% fleet success rates), merge PR 27 + 26 (quota trims for price-alert/token-movers), fix github-monitor PR query (gh pr list --json scope error)
+- [heartbeat (2026-11-18)](memory/logs/2026-11-18.md) — Priority brief: buy OpenRouter credits (lifts free tier 50→1000 req/day, fixes 33-46% fleet-wide failures), merge PR 27 + 26 (quota trims for price-alert/token-movers, 10 skill-repair PRs open, oldest 10d), fix github-monitor PR query (gh pr list --json fails on read:org scope)
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $8.2808e4 | no gates fired
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $8.2901e4 | ATH announced
 - [price-alert (2026-10-20)](memory/logs/2026-10-20.md) — WBTC current: $8.1918e4 | no gates fired

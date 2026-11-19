@@ -1,44 +1,21 @@
-*Digest — 2026-11-18*
+ℹ️ Digest — 2026-11-19
 
-_TL;DR: Google's AI search answers cut traffic 40%; OpenJDK has critical Base64 RCE; DNS provider Quad9 exits France._
+*Digest — 2026-11-19*
 
-1. *Google's AI answers reducing search traffic by 40%*
-   Google's AI-powered direct answers are significantly reducing search engine traffic, with some queries dropping by 40%. This shift impacts websites relying on organic search and forces publishers to adapt their content strategies.
-   Why it matters: 40% traffic drop is a concrete metric showing search behavior shift; affects content monetization and SEO strategies globally
-   https://revscope.co/blog/search-seo-geo-2026/
+_TL;DR: Anthropic's $83 IPO pricing signals AI market confidence, while Google's Gemini 4 Neon arrives as a cost-efficient frontier model, and LLMs are transforming reverse engineering workflows._
 
-2. *Java4Shell: RCE in OpenJDK when processing Base64*
-   Researchers found a Remote Code Execution vulnerability in OpenJDK when processing Base64-encoded data. The exploit allows attackers to execute arbitrary code through Base64 parsing, affecting Java applications that handle Base64 input.
-   Why it matters: Affects all Java systems processing Base64; critical for authentication tokens, JWTs, and encoded payloads
-   https://calif.io/java4shell/
+1. *Anthropic IPO priced at $83 per share*
+   Anthropic opened trading November 19 at $83, with 980M Class A shares offered and a Goldman Sachs-Morgan Stanley underwriting syndicate. The stock includes both company shares and existing stockholder offerings, with trading continuing through November 20.
+   https://www.anthropic.com/news/anthropic-prices-initial-public-offering
 
-3. *Quad9's withdrawal from France: A canary in the coal mine*
-   Cloudflare reports Quad9's unexpected withdrawal from France, raising concerns about DNS provider stability. The move may signal broader issues with DNS infrastructure and internet censorship resistance efforts.
-   Why it matters: DNS infrastructure stability affects all internet users; unusual withdrawal could indicate compliance pressure
-   https://blog.cloudflare.com/quad9-withdrawal-from-france/
+2. *Google's Gemini 4 Neon emerges as frontier contender*
+   Gemini 4 Neon ranks #3 overall (score 61) on the Artificial Analysis Intelligence Index with a 1M-token context window, $3/$15 per million tokens, and four thinking levels. Google positions it as a faster, cheaper alternative to larger frontier models with competitive performance on coding, enterprise, and scientific benchmarks.
+   https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/
 
-Also worth a glance: ID.me terms required for IRS sign-in creates new barriers for accessing government services via new verification mandate · https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in
+3. *LLMs transforming reverse engineering from manual to AI-assisted*
+   A developer describes how LLM assistance reduced a 2-decade reverse engineering workflow to dramatically faster timeframes. The setup uses DeepSeek v4.1 Flash with Ghidra and radare2, with a focus on documenting findings in markdown and developing debugging skills that force testable hypotheses.
+   https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering
 
-## Summary
-
-Completed the digest skill execution for 2026-11-18:
-
-**Files created/modified:**
-- Created `memory/logs/2026-11-18.md` with digest run details
-- Updated `memory/MEMORY.md` Recent Digests table
-
-**Sources used:**
-- Hacker News (5 raw candidates, 4 after filter, 3 sent)
-
-**Issues encountered:**
-- WebSearch overloaded (529 errors)
-- XAI API returned invalid-argument (incorrect API key)
-- RSS feeds overloaded (529 errors)
-- Fallback to Hacker News provided sufficient signal
-
-**Digest stats:**
-- 3 items sent (Google AI traffic drop, OpenJDK RCE, Quad9 DNS exit)
-- 1 "Also worth a glance" (ID.me IRS verification)
-- Char count within 3000 char limit
-
-The digest focused on concrete, verifiable news across AI, security, and infrastructure. The notify command requires approval; the digest content is ready for delivery.
+4. *GTA6 recreated as 964KB UEFI bootable image*
+   A UEFI application delivers a GTA-style driving game in a single binary using real Miami map data from OpenStreetMap, NOAA lidar, and NAIP imagery. The CPU-only renderer demonstrates standalone firmware gaming with WASD driving, vehicle switching, weapons, and fare systems.
+   https://github.com/eklavya-raj/gta6-uefi

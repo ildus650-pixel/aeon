@@ -1,19 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-18T02:25:31Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-structured digest with verifiable sources and concrete metrics",
-  "flags": [
-    "rate_limited"
-  ],
-  "avg_score": 3.47,
+  "last_analyzed": "2026-11-19T01:00:28Z",
+  "quality_score": 5,
+  "assessment": "Substantive, well-structured digest with verifiable sources and actionable insights.",
+  "flags": [],
+  "avg_score": 3.5,
   "history": [
-    {
-      "date": "2026-10-13",
-      "score": 4,
-      "ts": "2026-10-13T04:01:07Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-13",
       "score": 4,
@@ -186,6 +178,12 @@
       "date": "2026-11-18",
       "score": 4,
       "ts": "2026-11-18T02:25:31Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-19",
+      "score": 5,
+      "ts": "2026-11-19T01:00:28Z",
       "harness": "claude"
     }
   ]

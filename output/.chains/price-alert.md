@@ -1,23 +1,23 @@
 ## Summary
 
-Successfully executed the price-alert skill for WBTC on Ethereum.
+Executed the `price-alert` skill for WBTC (Wrapped BTC) on Ethereum.
 
-**Run Status: PRICE_ALERT_OK**
+**Results:**
+- **Current price:** $56,738.16 (deepest pool: Curve crvUSD, liquidity: $37.8M)
+- **1h change:** 0% (null → treated as 0)
+- **24h change:** -8.04%
+- **ATH:** $67,957.69 (unchanged, last seen 2026-11-14)
 
-**Current Price:** $62,081.92 (6.208192e4)
-- 1h change: -0.47%
-- 24h change: -2.17%
-- 24h volume: $31.99M
-- Deepest pool: Curve.fi crvUSD pair with $64.1M liquidity
+**Gates evaluated:**
+1. **ATH gate:** No new ATH (price < prior ATH) → ATH_BASELINE suppressed
+2. **Sharp-move gate:** No (0% < 20%) → QUIET
+3. **Target-crossing gate:** No targets set → skip
 
-**Gates Evaluated:**
-- **ATH gate:** Quiet — Current ($62,081.92) < ATH ($67,957.69 set 2026-11-14)
-- **Sharp-move gate:** Quiet — |1h change| (0.47%) < 20% threshold
-- **Target gate:** No targets configured
+**Status:** `PRICE_ALERT_OK` — no notifications sent (run completed cleanly, no gates fired)
 
-**Files Modified:**
-- `memory/topics/price-alert-state.json` — Updated `last_run_at` to 2026-11-20T12:22:34Z
-- `memory/logs/2026-11-20.md` — Added price-alert log entry
-- `memory/MEMORY.md` — Updated Today's and Yesterday's Activity sections
+**Files updated:**
+- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
+- `memory/logs/2026-11-20.md` — appended log entry
+- `memory/MEMORY.md` — updated latest price in "Today's Activity"
 
-**No notifications sent** — no gates fired on this run.
+**Next actions:** None — skill completes on signal. Set targets via `var=0.000005` (scientific notation OK) to configure crossing alerts.

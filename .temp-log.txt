@@ -1,0 +1,9 @@
+### heartbeat
+- Mode: brief (var="brief")
+- Timestamp: 2026-11-20T12:00:00Z
+- Focus items:
+  1. Buy OpenRouter credits — lifts quota 50→1000 req/day, fixes ISS-8/ISS-11 and fleet 33-46% success rates
+  2. Merge PR #27 + #26 — quota trims for price-alert (2-hourly) and token-movers (rate limit fix)
+  3. Fix github-monitor PR query — gh pr list --json dies on read:org scope
+- Headline count: 0 (API overload: CoinGecko 529, WebSearch 529)
+- Skills flagged from cron-state: github-monitor (3 consecutive failures), token-movers (success_rate 0.52), digest (success_rate 0.45), skill-repair (success_rate 0.39)

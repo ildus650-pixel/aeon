@@ -1,19 +1,18 @@
-Priority Brief — 2026-11-19
+*Priority Brief — 2026-10-26*
 
-Focus today
-1. Buy OpenRouter credits — lifts quota 50→1000 req/day, fixes ISS-8/ISS-11 and fleet 33-46% success rates
-2. Merge PR #27 + #26 — quota trims for price-alert (2-hourly) and token-movers (rate limit fix)
-3. Fix github-monitor PR query — gh pr list --json dies on read:org scope (working GraphQL workaround documented)
+*Focus today*
+1. Buy OpenRouter credits — lifts free tier 50→1000 req/day; root cause of 33-46% fleet-wide failures and the 10+ health issues (ISS-6/9/8/12) flagged over the last 2 weeks
+2. Merge PR #27 + #26 — both open since Oct 10-13 (stack growing 10d); PR #27 cuts price-alert to 2-hourly, PR #26 reduces token-movers quota burn; will lower marginal failure risk
+3. Fix github-monitor PR query — `gh pr list --json ...reviewDecision,reviewRequests,statusCheckRollup` dies on `read:org` scope error (cost the PR tier on 2026-09-24 and 2026-10-16); fix: use the narrowed GraphQL shape from [GitHub CLI Token Scope](/memory/topics/gh-cli-scope-workaround.md)
 
-Since yesterday
-- WBTC price-alert: no gates fired (ATH unchanged)
-- Token-movers: PIEVERSE trending +61.4% (7d +93.7%) — deep-dive offer sent
-- No new open issues assigned
+*Since yesterday*
+- WBTC ATH @ $84,703.64 fired twice; now cooling to ~$80K (24h -0.85%)
+- token-movers hit CoinGecko/GeckoTerminal 529 overload (retry tomorrow)
+- 9 health issues still open: token-movers (ISS-28/9), github-monitor (ISS-16), skill-repair (ISS-12), digest (ISS-8), price-alert (ISS-7), heartbeat (ISS-6)
+- All tracked skills active except ambient heartbeat (var="brief" since 2026-10-14)
 
-Watch
-- API overload (CoinGecko 529, WebSearch 529) — RSS/Atom feeds now primary source class
-
-Running today
+*Running today*
+- price-alert @ 05:20 UTC ✓
+- github-monitor @ 09:00 UTC
 - token-movers @ 12:00 UTC
 - digest @ 14:00 UTC
-- heartbeat @ 08:00 UTC (brief mode)

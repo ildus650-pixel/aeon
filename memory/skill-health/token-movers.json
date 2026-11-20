@@ -1,17 +1,13 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-18T19:04:10Z",
+  "last_analyzed": "2026-11-20T00:15:06Z",
   "quality_score": 2,
-  "assessment": "Ran but output is minimal interactive prompt rather than substantive work",
-  "flags": [],
+  "assessment": "Generic boilerplate prompt template, not substantive skill output",
+  "flags": [
+    "generic_content"
+  ],
   "avg_score": 2.97,
   "history": [
-    {
-      "date": "2026-10-06",
-      "score": 2,
-      "ts": "2026-10-06T02:33:24Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-07",
       "score": 2,
@@ -184,6 +180,12 @@
       "date": "2026-11-18",
       "score": 2,
       "ts": "2026-11-18T19:04:10Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-20",
+      "score": 2,
+      "ts": "2026-11-20T00:15:06Z",
       "harness": "claude"
     }
   ]

@@ -1,23 +1,28 @@
 ## Summary
 
-Executed the `price-alert` skill for WBTC (Wrapped BTC) on Ethereum.
+I've successfully executed the **price-alert skill** for WBTC on Ethereum. Here's what happened:
 
-**Results:**
-- **Current price:** $56,738.16 (deepest pool: Curve crvUSD, liquidity: $37.8M)
-- **1h change:** 0% (null → treated as 0)
-- **24h change:** -8.04%
-- **ATH:** $67,957.69 (unchanged, last seen 2026-11-14)
+### Token Tracked
+- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+- **Chain**: Ethereum
+- **Current Price**: $59,302.87 USD
+- **1h Change**: -0.42%
+- **24h Change**: -3.64%
 
-**Gates evaluated:**
-1. **ATH gate:** No new ATH (price < prior ATH) → ATH_BASELINE suppressed
-2. **Sharp-move gate:** No (0% < 20%) → QUIET
-3. **Target-crossing gate:** No targets set → skip
+### Gate Evaluations
+- **ATH Gate**: No new ATH (current $59,302.87 < ATH $67,957.69)
+- **Sharp-Move Gate**: No sharp move (|−0.42%| < 20% threshold)
+- **Target-Crossing Gate**: No targets configured
 
-**Status:** `PRICE_ALERT_OK` — no notifications sent (run completed cleanly, no gates fired)
+### Results
+- **Status**: `PRICE_ALERT_OK` (clean run, no alerts fired)
+- **Notifications sent**: 0
+- **State file updated**: Yes
+- **Log entry created**: `/home/runner/work/aeon/aeon/memory/logs/2026-11-21.md`
 
-**Files updated:**
-- `memory/topics/price-alert-state.json` — updated `last_run_at` timestamp
-- `memory/logs/2026-11-20.md` — appended log entry
-- `memory/MEMORY.md` — updated latest price in "Today's Activity"
+### Files Modified
+1. **Created**: `memory/logs/2026-11-21.md` - logged the run
+2. **Updated**: `memory/topics/price-alert-state.json` - updated last_run_at timestamp
+3. **Updated**: `memory/MEMORY.md` - added reference to today's run
 
-**Next actions:** None — skill completes on signal. Set targets via `var=0.000005` (scientific notation OK) to configure crossing alerts.
+The skill executed cleanly without any alerts, as expected for a normal trading session.

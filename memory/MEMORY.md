@@ -96,6 +96,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 ## Today's Activity
 - [price-alert (2026-11-20)](memory/logs/2026-11-20.md) — WBTC current: $5.673816e4 | 1h: 0% | 24h: -8.04%; ATH unchanged, no gates fired
 - [token-movers (2026-11-19)](memory/logs/2026-11-19.md) — Global CoinGecko scan: Risk-off — 30% of top-100 green, median top-50 −0.7%; ICNT +28.4% [BREAKOUT] (7d +55.6%), BTW +22.2% [FADE]; losers BP −15.7%, PIEVERSE −13% (yesterday's +61% pump faded); VVV only green trending (+0.9%); deep-dive offer sent
+- [price-alert (2026-11-21)](memory/logs/2026-11-21.md) — WBTC current: $5.930287e4 | 1h: ±-0.42% | 24h: ±-3.64%; ATH unchanged, no gates fired
 - [price-alert (2026-11-20)](memory/logs/2026-11-20.md) — WBTC current: $6.208192e4 | 1h: ±-0.47% | 24h: ±-2.17%; ATH unchanged, no gates fired
 - [token-movers (2026-11-20)](memory/logs/2026-11-20.md) — Global CoinGecko scan: Risk-off tape — 92% top-100 alts red, median top-50 move −4.3%; ZEC −14.85%, HYPE −7.18%, ETH −6.53%; deep-dive offer sent
 - [price-alert (2026-11-19)](memory/logs/2026-11-19.md) — WBTC current: $6.329018e4 | 1h: ±0.08% | 24h: ±-2.34%; ATH unchanged, no gates fired

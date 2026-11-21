@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-11-20T13:20:40Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-21T10:15:20Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-20T13:34:05Z",
     "total_runs": 105,
     "total_successes": 60,
@@ -12,7 +12,7 @@
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTo"
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-21T02:42:51Z",
     "total_runs": 282,
     "total_successes": 207,
@@ -20,17 +20,17 @@
     "consecutive_failures": 0,
     "success_rate": 0.73,
     "last_quality_score": 4,
-    "last_dispatch": "2026-11-21T02:40:48Z",
+    "last_dispatch": "2026-11-21T10:15:20Z",
     "last_failed": "2026-11-20T13:38:57Z",
     "last_error": "c27420\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "chain:dev-loop": {
-    "last_dispatch": "2026-11-20T13:20:40Z",
+    "last_dispatch": "2026-11-21T10:15:20Z",
     "last_status": "dispatched"
   },
   "github-monitor": {
-    "last_dispatch": "2026-11-20T21:23:31Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-11-21T10:15:20Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-18T10:12:52Z",
     "total_runs": 79,
     "total_successes": 57,
@@ -55,8 +55,8 @@
     "last_error": "b36737\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "digest": {
-    "last_dispatch": "2026-11-20T21:23:31Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-11-21T10:15:20Z",
+    "last_status": "dispatched",
     "last_failed": "2026-11-20T21:37:33Z",
     "total_runs": 121,
     "total_successes": 53,
@@ -68,8 +68,8 @@
     "last_quality_score": 5
   },
   "skill-repair": {
-    "last_dispatch": "2026-11-21T02:40:48Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-21T10:15:20Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-21T02:50:22Z",
     "total_runs": 90,
     "total_successes": 35,

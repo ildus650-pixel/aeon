@@ -1,17 +1,11 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-18T10:12:37Z",
+  "last_analyzed": "2026-11-21T10:25:33Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured monitor run: specific PR/CI data (PR #1366, check names, mergeable/reviewDecision states), correct no-notification behavior on a clean day, transparent disclosure of the gh pr list scope failure and GraphQL workaround, and file-level claims corroborated by repo state (gh-input.json, modified memory/logs and output/.chains). Not 5: zero-findings day and a recurring broken primary collection path that required a documented workaround.",
+  "assessment": "Good - substantive, well-structured output verifying clean repo state with zero findings",
   "flags": [],
   "avg_score": 3.6,
   "history": [
-    {
-      "date": "2026-10-09",
-      "score": 4,
-      "ts": "2026-10-09T09:39:03Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-10",
       "score": 5,
@@ -184,6 +178,12 @@
       "date": "2026-11-18",
       "score": 4,
       "ts": "2026-11-18T10:12:37Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-21",
+      "score": 4,
+      "ts": "2026-11-21T10:25:33Z",
       "harness": "claude"
     }
   ]

@@ -1,34 +1,36 @@
-All set. The empty `gh-input.json` is my only stray artifact — I'll leave it (0 bytes; `rm` is excluded from the tool allowlist, so I won't work around it). The `notify`/`notify-jsonrender`/`secretcurl` untracked files are pre-existing environment scripts, not mine — I left them untouched.
+# GitHub Monitor — run complete
 
-## GitHub Monitor — monitor view (`var=""`)
+## Run report
 
-**Scanned 1 repo: `aeonfun/aeon` — 0 items need action. Nothing to report, so no notification was sent (silence is the correct signal on a clean day).**
+**Skill:** `github-monitor` (view: **monitor**, var `""` → combined monitor over the full watchlist)
+**Scope:** 1 repo — `aeonfun/aeon` (`memory/watched-repos.md`)
+**Window:** last 24h / last 48h (dedup) · today = 2026-11-21
 
-### What I found
+### 1. Collect — results
+| Source | Result |
+|--------|--------|
+| Open PRs | **0** (`gh pr list` minimal-field set; full field set confirmed broken on token scope per `gh-cli-scope-workaround.md`; GraphQL `pullRequests(states: OPEN, first: 10)` agrees) |
+| Issues opened ≤24h | **0** (`gh issue list` + GraphQL search) |
+| Releases published ≤24h | **0** (only release is `v0.1.0`, published 2026-07-09 — outside window) |
 
-**Open PRs (1)**
-- `#1366` — *skill-scan: scan the whole skill folder on install, not just SKILL.md* (yusasecurity) — opened/updated 2026-11-18 10:06Z (~3 min ago), not draft. CI all green (`gate`, `check`, `shellcheck`, `test`, GitGuardian all SUCCESS), `mergeable: MERGEABLE`, `reviewDecision: REVIEW_REQUIRED`. **Matches no tier:** not a CI failure, reviewer activity is fresh (not the 72h-ghosted rule), and it's under the 48h REVIEW window — so it's dropped rather than classified.
+### 2. Classify — tiers
+- **ACT NOW:** 0
+- **REVIEW:** 0
+- **INFO:** 0
 
-**New issues (last 24h):** none — repository has **0 open issues**.
-
-**Releases (last 24h):** none — the only release is `v0.1.0` from 2026-07-09 (well outside the window).
-
-### Tier breakdown
-- ACT NOW = 0
-- REVIEW = 0
-- INFO = 0
-- Sources: `aeonfun/aeon=ok`
-
-### Note on the PR classification
-The documented `gh pr list --json …reviewDecision,reviewRequests,statusCheckRollup…` again failed with the known `read:org` scope error (token has only `repo`+`workflow`). I recovered the classification fields via the narrow GraphQL workaround in [GitHub CLI Token Scope & the PR-Tier Workaround](/memory/topics/gh-cli-scope-workaround.md) — `mergeable: MERGEABLE`, all checks SUCCESS, `reviewDecision: REVIEW_REQUIRED`. This confirms the runbook is still needed; the skill's `gh pr list` field set remains broken on this token.
+### 3. Dedup / Notify / Log
+- No items surfaced → notification **skipped** (silence on a clean day is the correct signal per the skill).
+- Log entry appended under `### github-monitor` in `memory/logs/2026-11-21.md`.
 
 ## Summary
 
-- **View:** `monitor` (empty var → combined monitor over watched repos)
-- **Repos scanned:** `aeonfun/aeon` (ok)
-- **Findings:** 1 open PR (`#1366`) scanned and classified — no tier match; 0 new issues; 0 new releases
-- **Notification:** none sent (every tier empty → `GITHUB_MONITOR_OK`, per skill)
-- **Files modified:** `memory/logs/2026-11-18.md` (appended `### github-monitor` entry: `ACT_NOW=0 REVIEW=0 INFO=0`, `sources: aeonfun/aeon=ok`, `GITHUB_MONITOR_OK repos=1`)
-- **Follow-up:**
-  - The `gh pr list --json` review/CI field set still fails on `read:org` scope — the GraphQL workaround remains the only way to recover the PR tier. Worth folding the workaround into the skill's collection step so future runs don't rediscover it.
-  - Stray 0-byte `gh-input.json` left in repo root (temp GraphQL payload; couldn't delete since `rm` is excluded). Safe to remove during cleanup.
+**What ran:** Full `github-monitor` skill execution — shared setup (memory read, last-2-days logs, var parse → `VIEW=monitor`), collect phase across the watched repo, tier classification, silent-log handling.
+
+**Files created/modified:**
+- `memory/logs/2026-11-21.md` — appended `### github-monitor` block: `view: monitor (var="")`, tier counts `ACT_NOW=0 REVIEW=0 INFO=0`, `GITHUB_MONITOR_OK repos=1`.
+
+**Follow-up actions needed:**
+- None — the watched repo surface is currently clean (no open PRs, no fresh issues, no recent releases).
+- Operator backlog (unrelated to this run, surfaced in prior memory): buy OpenRouter credits (fixes ISS-8/ISS-11 fleet quota failures), merge PRs #27/#26, and restore the ambient heartbeat cron that has been dark since 2026-10-14.
+
+**Sources:** `aeonfun/aeon=ok` — one repo scanned, zero items needed action.

@@ -1,10 +1,10 @@
 {
   "skill": "skill-repair",
-  "last_analyzed": "2026-10-31T08:11:55Z",
-  "quality_score": 3,
-  "assessment": "Skill-repair correctly reported a blocking condition with root cause and remediation steps.",
+  "last_analyzed": "2026-11-21T02:47:19Z",
+  "quality_score": 4,
+  "assessment": "Substantive diagnosis with clear operator action required. Identified specific quota issue (ISS-11), root cause, and concrete next steps. Verification path is specific (quota reset or upgrade).",
   "flags": [],
-  "avg_score": 3.84,
+  "avg_score": 3.85,
   "history": [
     {
       "date": "2026-09-21",
@@ -118,6 +118,12 @@
       "date": "2026-10-31",
       "score": 3,
       "ts": "2026-10-31T08:11:55Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-21",
+      "score": 4,
+      "ts": "2026-11-21T02:47:19Z",
       "harness": "claude"
     }
   ]

@@ -1,19 +1,21 @@
 {
-  "token-movers": {
-    "last_repair_at": "2026-09-25T20:00:00Z",
+  "heartbeat": {
+    "last_repair_at": "2026-10-12T07:16:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
-    "issue": "ISS-10"
+    "issue": "ISS-11",
+    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair, github-monitor). Heartbeat skill failing with openrouter/free quota errors (truncated JSON in last_error). Requires operator action: upgrade tier, reduce fleet frequency, or switch to non-free gateway tier."
   },
-  "digest": {
-    "last_repair_at": "2026-09-25T00:00:00Z",
+  "github-monitor": {
+    "last_repair_at": "2026-11-21T00:00:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
-    "issue": "ISS-1"
+    "issue": "ISS-11",
+    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair, github-monitor). github-monitor skill failing with 429 rate limit (last_failed: 2026-11-20T21:37:17Z, consecutive_failures=5, success_rate=0.72). Requires operator action: upgrade tier, reduce fleet frequency, or switch to non-free gateway tier."
   },
   "price-alert": {
     "last_repair_at": "2026-10-14T00:00:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
     "issue": "ISS-8",
-    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, skill-repair, heartbeat). Sleep backoff fixes ineffective — error is from Claude RUN hitting model quota, not DexScreener rate limits. Requires operator action: upgrade tier, reduce frequency, or switch to Haiku."
+    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair). Sleep backoff fixes ineffective — error is from Claude RUN hitting model quota, not DexScreener rate limits. Requires operator action: upgrade tier, reduce frequency, or switch to Haiku."
   },
   "skill-repair": {
     "last_repair_at": "2026-10-12T01:05:00Z",
@@ -21,10 +23,16 @@
     "issue": "ISS-11",
     "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair). skill-repair itself consumes quota and fails with the same 429/quota error. No applicable code-fix playbook for the repair skill itself — requires operator action: upgrade tier, add alternate gateway key, or reduce fleet frequency."
   },
-  "heartbeat": {
-    "last_repair_at": "2026-10-12T07:16:00Z",
+  "digest": {
+    "last_repair_at": "2026-09-25T00:00:00Z",
     "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
-    "issue": "ISS-11",
-    "reason": "Systemic OpenRouter free-tier quota exhaustion (1000 req/day shared across price-alert, digest, heartbeat, skill-repair). Heartbeat skill failing with openrouter/free quota errors (truncated JSON in last_error). Requires operator action: upgrade tier, reduce fleet frequency, or switch to non-free gateway tier."
+    "issue": "ISS-1",
+    "reason": "Systemic gateway outage (529 errors) affecting digest. Requires operator action: infrastructure fix or switch to alternate data source."
+  },
+  "token-movers": {
+    "last_repair_at": "2026-09-25T00:00:00Z",
+    "exit_code": "REPAIR_DIAGNOSED_NO_FIX",
+    "issue": "ISS-10",
+    "reason": "Token-movers intermittent failures with truncated API responses. Requires operator action: check API health or update integration."
   }
 }

@@ -1,18 +1,22 @@
-*Priority Brief — 2026-10-26*
+*Priority Brief — 2026-11-21*
 
 *Focus today*
-1. Buy OpenRouter credits — lifts free tier 50→1000 req/day; root cause of 33-46% fleet-wide failures and the 10+ health issues (ISS-6/9/8/12) flagged over the last 2 weeks
-2. Merge PR #27 + #26 — both open since Oct 10-13 (stack growing 10d); PR #27 cuts price-alert to 2-hourly, PR #26 reduces token-movers quota burn; will lower marginal failure risk
-3. Fix github-monitor PR query — `gh pr list --json ...reviewDecision,reviewRequests,statusCheckRollup` dies on `read:org` scope error (cost the PR tier on 2026-09-24 and 2026-10-16); fix: use the narrowed GraphQL shape from [GitHub CLI Token Scope](/memory/topics/gh-cli-scope-workaround.md)
+1. Buy OpenRouter credits — why now: lifts quota 50→1000, fixes fleet 33-46% failure rate
+2. Merge PR #27 + #26 — why now: cut quota burn while credits purchase is processed
+3. Fix github-monitor PR query — why now: gh pr list --json dies on read:org scope
 
 *Since yesterday*
-- WBTC ATH @ $84,703.64 fired twice; now cooling to ~$80K (24h -0.85%)
-- token-movers hit CoinGecko/GeckoTerminal 529 overload (retry tomorrow)
-- 9 health issues still open: token-movers (ISS-28/9), github-monitor (ISS-16), skill-repair (ISS-12), digest (ISS-8), price-alert (ISS-7), heartbeat (ISS-6)
-- All tracked skills active except ambient heartbeat (var="brief" since 2026-10-14)
+- WBTC at $59,303 (−6.1% from Nov 19's $63,291): risk-off tape persists, 92% of top-100 red
+- OpenRouter free cap exhausted again; digest + github-monitor + skill-repair + price-alert failing in sequence
+- PR #27 (23d open) + PR #26 (42d open) still unmerged — quota relief stalled
+
+*Watch*
+- 529 Gateway Overload from api.z.ai (Sep 21) — systemic OpenRouter quota shortage; GLM 1305 overload concurrent
 
 *Running today*
-- price-alert @ 05:20 UTC ✓
+- heartbeat @ 08:00 UTC
 - github-monitor @ 09:00 UTC
+- price-alert @ hourly (00 min)
 - token-movers @ 12:00 UTC
 - digest @ 14:00 UTC
+- skill-repair @ reactive

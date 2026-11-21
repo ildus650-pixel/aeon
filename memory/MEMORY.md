@@ -16,6 +16,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-21 | digest | Signal blocks AI agent screen scraping, AI-assisted Riemann hypothesis proof, Apple $161.86M India lawsuit, Daniel Ek fusion investment, autonomous AI 0-day exploit |
 | 2026-11-19 | Digest | Anthropic $83 IPO, Gemini 4 Neon frontier model, LLM reverse engineering, GTA6 UEFI image |
 | 2026-11-17 | Digest | California AG sues OpenAI over rogue agents, AI startup $1B valuation, Uber data breach (150K licenses), FBI Artex AI hacking tool, Apple Mac AI controls |
 | 2026-11-16 | Digest | Jensen Huang exit petition (115K), Nvidia funding hole, 2026 passes 100K CVEs (AI-driven), Tesla Cybercab pre-orders, Apple AI health study |

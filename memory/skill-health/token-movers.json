@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-21T22:42:31Z",
+  "last_analyzed": "2026-11-22T18:01:29Z",
   "quality_score": 4,
-  "assessment": "Clear, verifiable data with timely signal on microcap risk — structurally sound, but lacks deeper analysis",
+  "assessment": "Good output with specific, verifiable data and meaningful context",
   "flags": [],
   "avg_score": 3.03,
   "history": [
-    {
-      "date": "2026-10-07",
-      "score": 4,
-      "ts": "2026-10-07T19:50:41Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-08",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-21",
       "score": 4,
       "ts": "2026-11-21T22:42:31Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-22",
+      "score": 4,
+      "ts": "2026-11-22T18:01:29Z",
       "harness": "claude"
     }
   ]

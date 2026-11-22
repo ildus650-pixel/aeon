@@ -1,40 +1,33 @@
-*Token Movers — ${today}*
+*Token Movers — 2026-11-22*
 
-Quiet tape — BTC flat at #1, large-cap altcoins slightly green
+Quiet tape — BTC flat at #1, large-cap altcoins slightly green after yesterday's risk-off slide
 
 *Top Winners (24h)*
-1. ETH — $1,680.67  +3.8% / 7d -5.6% / 1h +0.2%  •  $18.4B / #2  [MAJOR]
-2. FIGR — $1.05  +2.9% / 7d +0.2% / 1h +1.9%  •  $0.0B / #9  [MAJOR]
-3. BTC — $60,189.00  +2.1% / 7d -6.9% / 1h +0.1%  •  $56.7B / #1  [TRENDING+UP] [MAJOR]
-4. SOL — $70.13  +1.8% / 7d -0.3% / 1h -0.1%  •  $3.7B / #7  [TRENDING+UP] [MAJOR]
-5. XRP — $0.93  +1.8% / 7d +0.2% / 1h -0.4%  •  $2.0B / #6  [MAJOR]
-6. BNB — $548.07  +1.6% / 7d -5.8% / 1h +0.1%  •  $1.0B / #4  [MAJOR]
-7. TRX — $0.31  +1.2% / 7d -0.9% / 1h +0.0%  •  $0.4B / #8  [MAJOR]
-8. USDC — $1.00  -0.0% / 7d -0.0% / 1h +0.0%  •  $17.2B / #5  [MAJOR]
-9. USDT — $1.00  -0.0% / 7d -0.1% / 1h +0.0%  •  $77.9B / #3  [MAJOR]
+1. VVV (+7.6%) — $25.55 • $53.1M vol • #60 rank • [CONTINUATION]
+2. BTW (+4.3%) — $0.699 • $4.48M vol • #66 rank • [CONTINUATION]
+3. PIEVERSE (+9.1%) — $3.68 • $209.7M vol • #67 rank • [BREAKOUT]
+4. HYPERLIQUID (+4.2%) — $63.18 • $573.3M vol • #10 rank • [MAJOR]
+5. FIGR HELOC (+2.7%) — $1.056 • $102.5k vol • #9 rank • [MAJOR]
 
 *Top Losers (24h)*
-1. USDT — $1.00  -0.0% / 7d -0.1% / 1h +0.0%  •  $77.9B / #3  [MAJOR]
-2. USDC — $1.00  -0.0% / 7d -0.0% / 1h +0.0%  •  $17.2B / #5  [MAJOR]
-3. TRX — $0.31  -1.2% / 7d -0.9% / 1h +0.0%  •  $0.4B / #8  [MAJOR]
-4. BNB — $548.07  -1.6% / 7d -5.8% / 1h +0.1%  •  $1.0B / #4  [MAJOR]
-5. XRP — $0.93  -1.8% / 7d +0.2% / 1h -0.4%  •  $2.0B / #6  [MAJOR]
-6. SOL — $70.13  -1.8% / 7d -0.3% / 1h -0.1%  •  $3.7B / #7  [TRENDING+UP] [MAJOR]
-7. BTC — $60,189.00  -2.1% / 7d -6.9% / 1h +0.1%  •  $56.7B / #1  [TRENDING+UP] [MAJOR]
-8. FIGR — $1.05  -2.9% / 7d +0.2% / 1h +1.9%  •  $0.0B / #9  [MAJOR]
-9. ETH — $1,680.67  -3.8% / 7d -5.6% / 1h +0.2%  •  $18.4B / #2  [MAJOR]
+1. SKY (-4.3%) — $0.042 • $9.5M vol • #70 rank
+2. POL (-0.5%) — $0.076 • $37.6M vol • #77 rank
+3. RAIN (-20.2%) — $0.003 • $8.7M vol • #36 rank • [CAPITULATION]
+4. JST (-0.1%) — $0.146 • $21.7M vol • #61 rank
+5. AAVE (-0.3%) — $98.69 • $153.2M vol • #50 rank
 
 *Trending*
-1. PIPI — #966, $0.01, 24h +492.1% [extreme microcap pump]
-2. WSTAR — #938, $0.01, 24h +2586.9% [extreme microcap pump]
-3. WASTED — #768, $0.02, 24h +7.1%
-4. ZEC — #11, $785.86, 24h +6.6% [previous day's top loser reversed]
-5. PEARL — #77, $1.96, 24h +5.3%
-6. BTC — #1, $60,147.77, 24h +1.9% [seen yesterday]
-7. CHUNKEE — #997, $0.01, 24h -8.2%
+1. PIPI (+492%) — extreme microcap pump, low liquidity
+2. WSTAR (+2587%) — extreme microcap pump, < $100k mcap
+3. RAIN (+15.4%) — #31, with 24h -20% showing capitulation
+4. USDC (0.0%) — #5, flat
+5. BTC (+1.3%) — #1, with 7d -5.5% showing mild weakness
+6. PEARL (+1.4%) — #78, small upward tick
+7. CHUNKEE (-8.2%) — #7, down
 
 *Notable*
-• PIPI +492% on < $100k mcap — extreme microcap pump with negligible liquidity
-• WSTAR +2587% on < $100k mcap — extreme microcap pump with negligible liquidity
-• ZEC +6.6% — short covering in the face-off leader
-• Market is quiet — median move under 1% across top-50
+• VVV +7.6% with 7d +28.9% — continuation with solid volume ($53.1M)
+• PIEVERSE +9.1% with 7d +113.1% — breakout on high volume ($209.7M), DEEP-LIQ pool
+• RAIN -20.2% on 7d -13.1% — capitulation fading
+
+*Note:* CoinGecko markets endpoint unavailable (529 error), so winners/losers based on trending + manual verification of available price data.

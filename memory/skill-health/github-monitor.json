@@ -1,17 +1,11 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-21T10:25:33Z",
+  "last_analyzed": "2026-11-22T10:25:25Z",
   "quality_score": 4,
-  "assessment": "Good - substantive, well-structured output verifying clean repo state with zero findings",
+  "assessment": "Substantive, verifiable monitoring with clear signal",
   "flags": [],
-  "avg_score": 3.6,
+  "avg_score": 3.57,
   "history": [
-    {
-      "date": "2026-10-10",
-      "score": 5,
-      "ts": "2026-10-10T21:40:26Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-11",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-21",
       "score": 4,
       "ts": "2026-11-21T10:25:33Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-22",
+      "score": 4,
+      "ts": "2026-11-22T10:25:25Z",
       "harness": "claude"
     }
   ]

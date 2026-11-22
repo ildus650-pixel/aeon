@@ -1,25 +1,26 @@
 ## Summary
 
-**Skill executed**: price-alert
+**Price-alert skill execution completed successfully**
 
-**Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
+### What I did:
+1. **Parsed var**: Empty (no targets set, no special modes)
+2. **Resolved tracked token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
+3. **Fetched current price**: $61,178.10 via DexScreener API
+4. **Evaluated gates**:
+   - ATH gate: No new ATH (current $61,178.10 < prior $67,957.69)
+   - Sharp-move gate: No sharp move (1h change only +3.01%, threshold is ±20%)
+   - Target-crossing gate: No targets configured
+5. **Persisted state**: Updated `last_run_at` timestamp
+6. **Logged run**: Appended to `memory/logs/2026-11-22.md`
 
-**Current market**:
-- Price: $58,716.93
-- 1h change: 0%
-- 24h change: 0%
+### Status:
+- **No gates fired** → No notifications sent
+- **PRICE_ALERT_OK** — Clean run, no signal worth alerting on
 
-**Gates evaluated**:
-- ATH gate: No alert (current $58,716.93 < prior ATH $67,957.69)
-- Sharp-move gate: No alert (1h change 0% < 20% threshold)
-- Target-crossing gate: No targets configured
+### Current price state:
+- **WBTC**: $61,178.10
+- **1h change**: +3.01%
+- **24h change**: +2.17%
+- **ATH**: $67,957.69 (unchanged from 2026-11-14)
 
-**Verdict**: PRICE_ALERT_OK — Run completed cleanly, no gates fired
-
-**Notifications sent**: 0
-
-**Files created/modified**:
-- `memory/logs/2026-11-22.md` — new log entry for this run
-- `memory/topics/price-alert-state.json` — updated last_run_at timestamp
-
-**Status**: No action needed — the token is in a quiet period with no ATH, sharp move, or target-crossing events detected.
+The operator gets normal price updates but no event-driven alerts on this calm day.

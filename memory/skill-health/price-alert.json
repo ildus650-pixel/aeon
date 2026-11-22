@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-21T22:32:06Z",
+  "last_analyzed": "2026-11-22T02:34:55Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured analysis with concrete gate evaluations and verifiable data from DexScreener",
+  "assessment": "Clear, verifiable monitoring run with substantive gate evaluations and actionable verdict",
   "flags": [],
   "avg_score": 3.9,
   "history": [
-    {
-      "date": "2026-11-09",
-      "score": 4,
-      "ts": "2026-11-09T16:11:33Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-10",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-21",
       "score": 4,
       "ts": "2026-11-21T22:32:06Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-22",
+      "score": 4,
+      "ts": "2026-11-22T02:34:55Z",
       "harness": "claude"
     }
   ]

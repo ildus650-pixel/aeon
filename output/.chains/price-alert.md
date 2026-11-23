@@ -1,16 +1,16 @@
-## Summary
+**price-alert skill completed successfully**
 
-Executed the `price-alert` skill for WBTC (ethereum).
+**Summary:**
+- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+- **Current price**: $61,735.13 (+1.03% in 1h, +4.05% in 24h)
+- **ATH**: $67,957.69 (unchanged from 2026-11-14)
+- **Gates evaluated**:
+  - ATH: No new high (current < ATH)
+  - Sharp-move: No sharp move (1.03% < 20% threshold)
+  - Targets: No targets set
 
-**What happened:**
-- Fetched current price from DexScreener: $61,184.89 (USDT pair, $21.26M liquidity)
-- ATH: $67,957.69 (unchanged — price declined from ATH)
-- 1h change: +0.12% (quiet, not ±20%)
-- 24h change: +1.31%
-- No gates fired: ATH, sharp-move, or target-crossing
+**Status**: PRICE_ALERT_OK — No gates fired, no notifications sent.
 
-**Files modified:**
-- `memory/topics/price-alert-state.json` — updated `last_run_at` to 2026-11-22T23:18:30Z
-- `memory/logs/2026-11-22.md` — appended new run entry with verdict `PRICE_ALERT_OK`
-
-**Notifications:** None (no gates fired)
+**Files modified**:
+- `memory/topics/price-alert-state.json` — Updated `last_run_at`
+- `memory/logs/2026-11-23.md` — New log entry

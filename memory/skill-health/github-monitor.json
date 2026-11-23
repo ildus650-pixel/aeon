@@ -1,17 +1,11 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-22T10:25:25Z",
-  "quality_score": 4,
-  "assessment": "Substantive, verifiable monitoring with clear signal",
+  "last_analyzed": "2026-11-23T13:56:01Z",
+  "quality_score": 3,
+  "assessment": "Skill executed adequately: monitored the watched repo, correctly reported 0 issues/releases, handled the known gh PR scope limitation without blocking output, and logged appropriately. No notification sent (correct — silence is signal when tiers empty).",
   "flags": [],
-  "avg_score": 3.57,
+  "avg_score": 3.53,
   "history": [
-    {
-      "date": "2026-10-11",
-      "score": 4,
-      "ts": "2026-10-11T18:12:40Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-13",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-22",
       "score": 4,
       "ts": "2026-11-22T10:25:25Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-23",
+      "score": 3,
+      "ts": "2026-11-23T13:56:01Z",
       "harness": "claude"
     }
   ]

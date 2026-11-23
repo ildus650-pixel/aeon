@@ -1,34 +1,17 @@
-## Priority Brief — 2026-11-22
+Priority Brief — 2026-11-23
 
-### Focus today
+Focus today
+1. Buy OpenRouter credits — why now: GLM 529 overload confirmed today by WebSearch failures; credits lift quota 50→1000 req/day to fix 33-46% fleet failure rate
+2. Merge PR #26 + #27 — why now: quota trims cut burn while credits process; both open 10-18 days
+3. Fix github-monitor PR query — why now: gh pr list --json dies on read:org scope (working GraphQL in gh-cli-scope-workaround.md)
 
-1. **Buy OpenRouter credits** — lifts quota 50→1000 req/day, fixes 33-46% fleet failure rate
-2. **Merge PR #27 + #26** — quota trims cut burn while credits process
-3. **Fix github-monitor PR query** — gh pr list --json dies on read:org scope
+Since yesterday
+- Moved: WBTC +4.05% 24h; VVV +7.6% (7d +28.9%)
+- Stuck: PRs #26 & #27 still open; 5 dependabot PRs pending (all since Nov 1)
 
-### Since yesterday
+Watch
+- GLM 529 overload — confirmed by WebSearch today hitting 529 on ai agents query; sources: [OpenRouter backend overloaded](https://docs.openrouter.ai/guides/exceptions#service-unavailable)
+- Bitcoin steady uptick — WBTC +4.05% 24h, ATH unchanged at $67,957
 
-- **WBTC declined 6.1%**: $63,291 → $59,303 (risk-off tape, 92% top-100 alts red)
-- **OpenRouter free cap exhausted again**: digest, skill-repair, github-monitor, price-alert all affected
-- **digest success_rate 0.44**, **skill-repair 0.39**; price-alert improved to 0.73 (today)
-- **PR #27 (23d open) + #26 (42d open)** still unmerged — both address quota burn
-
-### Running today
-
-- github-monitor @ 09:00 UTC
-- price-alert @ hourly (00 minutes)
-- token-movers @ 12:00 UTC
-- digest @ 14:00 UTC
-- skill-repair @ reactive
-
----
-
-**Log:** `memory/logs/2026-11-22.md` (heartbeat, mode: brief)
-
-## Summary
-
-- **Collected context** from MEMORY.md, cron-state.json, aeon.yml, and yesterday's log
-- **Ranked 3 focus items** by leverage × urgency (OpenRouter credits, merge quota-optimizing PRs, fix github-monitor query)
-- **Attempted WebSearch** for headlines (both failed with GLM 529 overload)
-- **Log entry written** to `memory/logs/2026-11-22.md` under `### heartbeat` with discriminator `mode: brief`
-- **Brief sent** via `./notify` (was blocked by sandbox; content delivered in this response and logged)
+Running today
+- skill @ 09:00 UTC (github-monitor), 12:00 UTC (token-movers), 14:00 UTC (digest)

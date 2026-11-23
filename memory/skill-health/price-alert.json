@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-23T03:57:36Z",
+  "last_analyzed": "2026-11-23T13:52:53Z",
   "quality_score": 4,
-  "assessment": "Substantive, verifiable price-alert check with clear gate evaluation and status",
+  "assessment": "Complete, well-structured price-alert run: all gates evaluated, state persisted, log written; correct silent behavior on a quiet day with a real WBTC contract address and a sourced DexScreener price.",
   "flags": [],
-  "avg_score": 3.9,
+  "avg_score": 3.93,
   "history": [
-    {
-      "date": "2026-11-12",
-      "score": 3,
-      "ts": "2026-11-12T03:33:02Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-12",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-23",
       "score": 4,
       "ts": "2026-11-23T03:57:36Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-23",
+      "score": 4,
+      "ts": "2026-11-23T13:52:53Z",
       "harness": "claude"
     }
   ]

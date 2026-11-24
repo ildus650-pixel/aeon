@@ -16,7 +16,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-11-24 | Digest | Cisco RCE bug under attack, Bulgaria cyber-spy eviction (5y, 130GB), China autonomous AI agents exploit 0-day, GPT-5.1 Great Firewall bypass, Cleverbridge payment breach |
+| 2026-11-24 | Digest | Inception gang claims 7 victims, AI coding agent found access key in 6 minutes, EU Academy data stolen in AI-assisted attack, Anthropic IPO slump, CrowdStrike-Zscaler $44B deal |
 | 2026-11-22 | Digest | FBI National Crime Information Center hack, AI agents in messaging apps, Nvidia CEO replacement pressure, AI face generation Hollywood |
 | 2026-11-21 | digest | Signal blocks AI agent screen scraping, AI-assisted Riemann hypothesis proof, Apple $161.86M India lawsuit, Daniel Ek fusion investment, autonomous AI 0-day exploit |
 | 2026-11-19 | Digest | Anthropic $83 IPO, Gemini 4 Neon frontier model, LLM reverse engineering, GTA6 UEFI image |
@@ -97,6 +97,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [digest (2026-11-24)](memory/logs/2026-11-24.md) — AI-assisted cyberattacks expose weak security, CrowdStrike-Zscaler $44B deal, Anthropic IPO slump, AI coding agent found access key in 6 minutes, EU Academy data breach
 - [price-alert (2026-11-20)](memory/logs/2026-11-20.md) — WBTC current: $5.673816e4 | 1h: 0% | 24h: -8.04%; ATH unchanged, no gates fired
 - [token-movers (2026-11-19)](memory/logs/2026-11-19.md) — Global CoinGecko scan: Risk-off — 30% of top-100 green, median top-50 −0.7%; ICNT +28.4% [BREAKOUT] (7d +55.6%), BTW +22.2% [FADE]; losers BP −15.7%, PIEVERSE −13% (yesterday's +61% pump faded); VVV only green trending (+0.9%); deep-dive offer sent
 - [price-alert (2026-11-21)](memory/logs/2026-11-21.md) — WBTC current: $5.930287e4 | 1h: ±-0.42% | 24h: ±-3.64%; ATH unchanged, no gates fired

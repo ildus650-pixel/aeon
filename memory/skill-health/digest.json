@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-24T01:52:34Z",
+  "last_analyzed": "2026-11-24T21:15:04Z",
   "quality_score": 4,
-  "assessment": "Solid daily cybersecurity digest with 5 substantive, well-sourced items; cleanly structured with clear titles and legitimate URLs. Not quite excellent due to being standard news aggregation rather than adding unique analysis or insight.",
+  "assessment": "Well-structured, well-sourced, and verifiable - provides concrete security and AI startup insights without filler.",
   "flags": [],
   "avg_score": 3.57,
   "history": [
-    {
-      "date": "2026-10-16",
-      "score": 4,
-      "ts": "2026-10-16T19:08:06Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-17",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-24",
       "score": 4,
       "ts": "2026-11-24T01:52:34Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-24",
+      "score": 4,
+      "ts": "2026-11-24T21:15:04Z",
       "harness": "claude"
     }
   ]

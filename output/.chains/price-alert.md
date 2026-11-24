@@ -1,28 +1,34 @@
-## Summary
+All tasks complete. Here's a summary of the execution:
 
-**Price Alert Skill Execution — Complete**
+## Execution Summary
 
-### What I Did
+### State of Entry
+The `price-alert` skill was executed for WBTC (Wrapped BTC, contract `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599` on ethereum).
 
-1. **Parsed var**: Empty var → MODE=execute, TARGETS=()
-2. **Resolved tracked token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) on Ethereum
-3. **Fetched current price**: $61,277.60 from deepest Ethereum pool (Curve, ~$39.2M liquidity)
-   - 1h change: 0%
-   - 24h change: 0.46%
-4. **Evaluated alert gates**:
-   - **ATH gate**: No alert — current price ($61,277.60) < ATH ($67,957.69)
-   - **Sharp-move gate**: No alert — H1 change is null (treated as 0%)
-   - **Target-crossing gate**: No alerts — no targets configured
-5. **Updated state**: Persisted new ATH price and last run timestamp
-6. **Logged run**: Created `memory/logs/2026-11-24.md` with PRICE_ALERT_OK status
+### Key Finding: State File Corruption
+The state file `memory/topics/price-alert-state.json` had been **corrupted** by a prior run earlier today — the ATH was reset from $67,957.69 down to $61,277.60 (the current price at that time), violating the skill's monotonic ATH invariant. The `.bak` rolling backup preserved the correct historical state.
 
-### Files Created/Modified
+### Current Price (from DexScreener via WebFetch)
+- **Deepest pool (ethereum)**: $61,229.24 (`6.122924e4`)
+- 1h change: ±3.48%
+- 24h change: ±-0.51%
+- Pool: `0x313698667d7fdd6789a9bc70821309ff891e729a` (liquidity: ~$39.7M)
+- Chart: https://dexscreener.com/ethereum/0x313698667d7fdd6789a9bc70821309ff891e729a
 
-- **Created**: `memory/logs/2026-11-24.md` — run log entry
-- **Modified**: `memory/topics/price-alert-state.json` — updated with current price ($61,277.60) and timestamp
+### Gate Evaluation
+| Gate | Verdict |
+|------|---------|
+| ATH | UNCHANGED (current $61,229.24 < prior ATH $67,957.69) |
+| Sharp-move | QUIET (|3.48%| < 20%) |
+| Target | NONE (no targets configured) |
 
-### No Notifications Sent
+### Files Modified
+1. **`memory/topics/price-alert-state.json`** — Restored from `.bak` with correct ATH ($67,957.69 observed 2026-11-14), `announced_at` field reinstated, and `last_run_at` updated to 2026-11-24T11:18:57Z
+2. **`memory/topics/price-alert-state.json.bak`** — Updated to match the valid state (rolling backup)
+3. **`memory/logs/2026-11-24.md`** — Appended new `## Price Threshold Alert` block with status `PRICE_ALERT_OK`, verdicts `NONE`, 0 notifications sent
 
-No gates fired (no ATH, no sharp move, no target hits). This is a quiet run — price is below ATH and showing minimal volatility.
+### No Notification Sent
+Since no gates fired (no new ATH, no sharp move, no target crossed), per the skill's output discipline, no `./notify` call was made. A clean run with no signal should not send an empty report.
 
-### Status: PRICE_ALERT_OK
+### Follow-up
+The state file's ATH regression issue is now resolved. Future hourly cron runs will correctly compare against $67,957.69 and only fire a new ATH alert if WBTC exceeds that level.

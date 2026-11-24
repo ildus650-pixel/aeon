@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-24T01:24:46Z",
-  "quality_score": 4,
-  "assessment": "Acceptable - targeted token monitoring with clear gates and verifiable state updates",
+  "last_analyzed": "2026-11-24T11:23:41Z",
+  "quality_score": 5,
+  "assessment": "Excellent — the skill correctly detected and self-healed state file corruption (ATH reset to current price by a prior run), restored from .bak backup, fetched fresh price, evaluated all gates cleanly, and logged with proper discipline (no notification on quiet run). All key claims verified via git diff: committed state had ATH=$61,277.60, restored to $67,957.69 from .bak.",
   "flags": [],
-  "avg_score": 3.97,
+  "avg_score": 4,
   "history": [
-    {
-      "date": "2026-11-12",
-      "score": 4,
-      "ts": "2026-11-12T19:25:31Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-13",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-24",
       "score": 4,
       "ts": "2026-11-24T01:24:46Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-24",
+      "score": 5,
+      "ts": "2026-11-24T11:23:41Z",
       "harness": "claude"
     }
   ]

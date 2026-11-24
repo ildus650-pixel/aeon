@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-22T18:01:29Z",
-  "quality_score": 4,
-  "assessment": "Good output with specific, verifiable data and meaningful context",
+  "last_analyzed": "2026-11-24T21:21:43Z",
+  "quality_score": 2,
+  "assessment": "Core task failed due to external API unavailability; output is accurate and complete",
   "flags": [],
-  "avg_score": 3.03,
+  "avg_score": 2.97,
   "history": [
-    {
-      "date": "2026-10-08",
-      "score": 4,
-      "ts": "2026-10-08T22:43:13Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-11",
       "score": 5,
@@ -184,6 +178,12 @@
       "date": "2026-11-22",
       "score": 4,
       "ts": "2026-11-22T18:01:29Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-24",
+      "score": 2,
+      "ts": "2026-11-24T21:21:43Z",
       "harness": "claude"
     }
   ]

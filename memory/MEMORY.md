@@ -135,6 +135,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [token-movers (2026-10-04)](memory/logs/2026-10-04.md) — Global movers scan: ETHFI +7.11% (top gainer), SI +45.3% (TRENDING+UP microcap), STRK +15.7% (TRENDING+UP L2 breakout)
 - [token-movers (2026-10-03)](memory/logs/2026-10-03.md) — Global movers scan: STRK +20.3% (top gainer), SAND +15.6% (metaverse momentum), PUMP +11.3% (meme platform liquid)
 - [token-movers (2026-10-02)](memory/logs/2026-10-02.md) — Global movers scan: SUPER CAT +248% (TRENDING+UP extreme pump), SAND +43% (BREAKOUT metaverse), GRX +62% (BREAKOUT deep liquidity)
+- [token-movers (2026-11-24 2nd run)](memory/logs/2026-11-24.md#token-movers---second-run-2026-11-24-1218-utc) — COINGECKO_UNAVAILABLE: API returned 529 errors on both endpoints
 
 ## Yesterday's Activity
 - [token-movers (2026-11-19)](memory/logs/2026-11-19.md) — Global CoinGecko scan: Risk-off — 30% of top-100 green, median top-50 −0.7%; ICNT +28.4% [BREAKOUT] (7d +55.6%), BTW +22.2% [FADE]; losers BP −15.7%, PIEVERSE −13% (yesterday's +61% pump faded); VVV only green trending (+0.9%); deep-dive offer sent

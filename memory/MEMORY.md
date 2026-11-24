@@ -16,6 +16,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-24 | Digest | Cisco RCE bug under attack, Bulgaria cyber-spy eviction (5y, 130GB), China autonomous AI agents exploit 0-day, GPT-5.1 Great Firewall bypass, Cleverbridge payment breach |
 | 2026-11-22 | Digest | FBI National Crime Information Center hack, AI agents in messaging apps, Nvidia CEO replacement pressure, AI face generation Hollywood |
 | 2026-11-21 | digest | Signal blocks AI agent screen scraping, AI-assisted Riemann hypothesis proof, Apple $161.86M India lawsuit, Daniel Ek fusion investment, autonomous AI 0-day exploit |
 | 2026-11-19 | Digest | Anthropic $83 IPO, Gemini 4 Neon frontier model, LLM reverse engineering, GTA6 UEFI image |

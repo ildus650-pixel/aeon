@@ -1,17 +1,15 @@
-Priority Brief — 2026-11-23
+*Priority Brief — 2026-11-24*
 
-Focus today
-1. Buy OpenRouter credits — why now: GLM 529 overload confirmed today by WebSearch failures; credits lift quota 50→1000 req/day to fix 33-46% fleet failure rate
-2. Merge PR #26 + #27 — why now: quota trims cut burn while credits process; both open 10-18 days
-3. Fix github-monitor PR query — why now: gh pr list --json dies on read:org scope (working GraphQL in gh-cli-scope-workaround.md)
+*Focus today*
+1. Buy OpenRouter credits — ISS-8/ISS-11: lifts free tier 50→1000 req/day, fixes 33-46% fleet success rates
+2. Merge PR 27 and 26 — quota trims for price-alert (2-hourly) and token-movers (reduced quota burn); 10 skill-repair PRs open, oldest 44d
+3. Fix github-monitor PR query — gh pr list --json fails on read:org scope (ISS-4); repair PR ready, just waiting for merge
 
-Since yesterday
-- Moved: WBTC +4.05% 24h; VVV +7.6% (7d +28.9%)
-- Stuck: PRs #26 & #27 still open; 5 dependabot PRs pending (all since Nov 1)
+*Since yesterday*
+- [moved]: PR 27 merged to reduce price-alert quota burn (cut from hourly to 2-hourly)
+- [stuck]: skill-repair still dispatched with 1 completed run (warming up)
+- [stalled]: 4 dependency bump PRs (32, 31, 30, 29) open since Nov 1
 
-Watch
-- GLM 529 overload — confirmed by WebSearch today hitting 529 on ai agents query; sources: [OpenRouter backend overloaded](https://docs.openrouter.ai/guides/exceptions#service-unavailable)
-- Bitcoin steady uptick — WBTC +4.05% 24h, ATH unchanged at $67,957
-
-Running today
-- skill @ 09:00 UTC (github-monitor), 12:00 UTC (token-movers), 14:00 UTC (digest)
+*Running today*
+- digest @ 14:00 UTC
+- skill-repair @ reactive trigger (consecutive_failures >= 3)

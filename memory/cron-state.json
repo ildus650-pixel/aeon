@@ -12,7 +12,7 @@
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{\"openrouter/free\":{\"inputTo"
   },
   "price-alert": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-24T11:23:43Z",
     "total_runs": 292,
     "total_successes": 216,
@@ -20,7 +20,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.74,
     "last_quality_score": 5,
-    "last_dispatch": "2026-11-24T11:07:54Z",
+    "last_dispatch": "2026-11-24T21:10:36Z",
     "last_failed": "2026-11-21T18:15:14Z",
     "last_error": "501f8e\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
@@ -42,8 +42,8 @@
     "last_error": "db25ba\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "token-movers": {
-    "last_dispatch": "2026-11-22T17:53:13Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-24T21:10:36Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-22T18:04:43Z",
     "total_runs": 102,
     "total_successes": 54,
@@ -55,8 +55,8 @@
     "last_error": "d78c64\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "digest": {
-    "last_dispatch": "2026-11-24T01:16:36Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-24T21:10:36Z",
+    "last_status": "dispatched",
     "last_failed": "2026-11-21T22:38:21Z",
     "total_runs": 126,
     "total_successes": 56,

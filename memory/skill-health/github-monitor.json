@@ -1,17 +1,11 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-24T11:22:24Z",
-  "quality_score": 3,
-  "assessment": "Brief but functional GitHub issue monitor output reporting 3 new issues from the aeon repo with verifiable links",
+  "last_analyzed": "2026-11-25T14:41:37Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-structured verification of monitored repos; correctly silent on no-change, no flags needed",
   "flags": [],
-  "avg_score": 3.5,
+  "avg_score": 3.53,
   "history": [
-    {
-      "date": "2026-10-13",
-      "score": 3,
-      "ts": "2026-10-13T11:23:14Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-16",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-24",
       "score": 3,
       "ts": "2026-11-24T11:22:24Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-25",
+      "score": 4,
+      "ts": "2026-11-25T14:41:37Z",
       "harness": "claude"
     }
   ]

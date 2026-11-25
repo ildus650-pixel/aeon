@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-24T21:21:43Z",
-  "quality_score": 2,
-  "assessment": "Core task failed due to external API unavailability; output is accurate and complete",
+  "last_analyzed": "2026-11-25T23:34:27Z",
+  "quality_score": 4,
+  "assessment": "Substantive, verifiable token movers report with concrete data and notable trend signals. A few improvements in source citations and examples would make it excellent.",
   "flags": [],
-  "avg_score": 2.97,
+  "avg_score": 2.93,
   "history": [
-    {
-      "date": "2026-10-11",
-      "score": 5,
-      "ts": "2026-10-11T00:51:56Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-11",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-24",
       "score": 2,
       "ts": "2026-11-24T21:21:43Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-25",
+      "score": 4,
+      "ts": "2026-11-25T23:34:27Z",
       "harness": "claude"
     }
   ]

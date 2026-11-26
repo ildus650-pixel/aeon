@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-25T14:45:43Z",
-  "quality_score": 3,
-  "assessment": "Operational monitoring report completed; useful for confirming system state but lacks deeper analysis or strategic insights.",
+  "last_analyzed": "2026-11-26T05:22:18Z",
+  "quality_score": 4,
+  "assessment": "Clean, well-structured run with verifiable data and proper state management",
   "flags": [],
   "avg_score": 3.9,
   "history": [
-    {
-      "date": "2026-11-14",
-      "score": 4,
-      "ts": "2026-11-14T01:49:33Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-14",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-25",
       "score": 3,
       "ts": "2026-11-25T14:45:43Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-26",
+      "score": 4,
+      "ts": "2026-11-26T05:22:18Z",
       "harness": "claude"
     }
   ]

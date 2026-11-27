@@ -1,24 +1,18 @@
 ## Summary
 
-**Price-alert skill completed successfully.**
+**Price Alert Skill Execution Complete**
 
-### Gate Evaluations
-- **ATH gate**: QUIET — $60,739.07 vs prior ATH $67,957.69 (unchanged)
-- **Sharp-move gate**: QUIET — 1h change +0.26% (threshold: ±20%)
-- **Target gate**: N/A — no targets defined
+**What happened:**
+- Fetched current WBTC price from DexScreener: $61,992.30
+- **No gates fired** this run:
+  - ATH: Current price ($61,992.30) < stored ATH ($67,957.69)
+  - Sharp move: Only 0.23% in 1h (threshold is ±20%)
+  - Targets: None configured
+- State file updated with `last_run_at: 2026-11-27T00:00:00Z`
+- Log entry appended to `memory/logs/2026-11-27.md`
 
-### Token Data
-- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
-- **Chain**: ethereum
-- **Current Price**: $60,739.07
-- **1h Change**: +0.26%
-- **24h Change**: +0.36%
-- **Deepest Pool**: Uniswap V3 USDT (~$30M liquidity)
+**Files modified:**
+- `memory/topics/price-alert-state.json` — updated last_run_at timestamp
+- `memory/logs/2026-11-27.md` — appended price-alert log entry
 
-### Files Modified
-- `memory/topics/price-alert-state.json` — updated `last_run_at` to `2026-11-27T00:00:00Z`
-- `memory/logs/2026-11-26.md` — appended new run entry
-
-### Status
-- **STATUS**: PRICE_ALERT_OK
-- **Notifications sent**: 0 (no gates fired)
+**No notifications sent** (no gates fired, which is the expected behavior for a calm day).

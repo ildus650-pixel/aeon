@@ -1,17 +1,11 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-25T23:34:27Z",
+  "last_analyzed": "2026-11-27T00:02:28Z",
   "quality_score": 4,
-  "assessment": "Substantive, verifiable token movers report with concrete data and notable trend signals. A few improvements in source citations and examples would make it excellent.",
+  "assessment": "Substantive report with specific token movements and clear limitations; verifiable data from CoinGecko trending endpoint",
   "flags": [],
   "avg_score": 2.93,
   "history": [
-    {
-      "date": "2026-10-11",
-      "score": 4,
-      "ts": "2026-10-11T21:55:14Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-12",
       "score": 2,
@@ -184,6 +178,12 @@
       "date": "2026-11-25",
       "score": 4,
       "ts": "2026-11-25T23:34:27Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-27",
+      "score": 4,
+      "ts": "2026-11-27T00:02:28Z",
       "harness": "claude"
     }
   ]

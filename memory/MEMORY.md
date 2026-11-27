@@ -7,6 +7,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-11-27 | Token Movers — Global Movers | CoinGecko markets endpoint overloaded — trending snapshot only |
 | 2026-11-20 | Token Movers — Global Movers | Risk-off tape — 92% top-100 alts red; ZEC −14.85%, HYPE −7.18%, ETH −6.53% |
 | 2026-11-18 | Token Movers — Global Movers | MNT +5.09%, NEAR +3.04%, XRP +2.14% winners; PIEVERSE trending +61.4% (PUMP-RISK) |
 | 2026-10-17 | India rogue AI agents, Replit ends Anthropic partnership | AI agents, AI partnerships |
@@ -98,6 +99,13 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [token-movers (2026-11-27)](memory/logs/2026-11-27.md) — Global CoinGecko scan: CoinGecko markets endpoint overloaded (529 errors) — report based on limited trending data only
+- [token-movers (2026-11-26)](memory/logs/2026-11-26.md) — Global CoinGecko scan: CoinGecko markets endpoint overloaded (529 errors) — report based on limited trending data only
+- [token-movers (2026-11-25)](memory/logs/2026-11-25.md) — Global CoinGecko scan: Mixed tape — large caps generally green, small caps extremely active with 20%+ movers
+- Winners: TAC (+20.8%), VVV (+17.6%), DRV (+10.5%), PUMP (+3.8%), ZEC (+3.0%), PENGU (+2.8%), SUI (+2.4%), XRP (+1.0%), LINK (+2.0%), AVAX (+0.6%)
+- Losers: PEARL (-5.1%), KNTQ (-6.3%), LIT (-0.04%), ZRO (-3.8%)
+- Trending: VVV, PENGU, PEARL, XRP, LIT, SUI, ZEC, DRV, TAC, ZRO, LINK, SOL, KNTQ, AVAX, PUMP
+- Notable: TAC +20.8% [PUMP-RISK] (rank 726, extreme volatility), VVV +17.6% [TRENDING+UP] (trending + up on top trending list)
 - [digest (2026-11-24)](memory/logs/2026-11-24.md) — AI-assisted cyberattacks expose weak security, CrowdStrike-Zscaler $44B deal, Anthropic IPO slump, AI coding agent found access key in 6 minutes, EU Academy data breach
 - [price-alert (2026-11-20)](memory/logs/2026-11-20.md) — WBTC current: $5.673816e4 | 1h: 0% | 24h: -8.04%; ATH unchanged, no gates fired
 - [token-movers (2026-11-19)](memory/logs/2026-11-19.md) — Global CoinGecko scan: Risk-off — 30% of top-100 green, median top-50 −0.7%; ICNT +28.4% [BREAKOUT] (7d +55.6%), BTW +22.2% [FADE]; losers BP −15.7%, PIEVERSE −13% (yesterday's +61% pump faded); VVV only green trending (+0.9%); deep-dive offer sent

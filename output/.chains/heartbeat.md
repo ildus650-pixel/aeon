@@ -1,21 +1,22 @@
-*Priority Brief — 2026-11-25*
+*Priority Brief — 2026-11-27*
 
 *Focus today*
-1. Restore ambient heartbeat (08:00 cron) — why now: P0/P1 checks + status page dark 41 days
-2. Merge PR 27 + 26 — why now: cut quota burn, 10 repair PRs stuck open
-3. Buy OpenRouter credits — why now: root cause of 41-61% fleet failure rates
+
+1. **Buy OpenRouter credits** — why now: free tier (50 req/day) exhausted 17 days ago, causing 33-46% skill success rate and cascading ISS-8/ISS-11 failures
+
+2. **Merge PR #27 + #26** — why now: both reduce OpenRouter free-tier quota burn (2-hourly vs hourly for price-alert, 429 rate limit throttling for token-movers) — open 10d+, no recent activity
+
+3. **Fix WebSearch fallback** — why now: API 529 overload since Oct 21, RSS/Atom now primary source class — need to add a HTTP-based fallback before falling back to WebSearch
 
 *Since yesterday*
-- WBTC slipped below $59K, 8th consecutive weekly loss, ETF outflows $4.94B in Nov — worst month since Jan 2024 launch
-- token-movers + digest both hit CoinGecko 529 errors (second run fully unavailable)
-- skill-repair stuck since Nov 21 dispatch, never reported back
 
-*Watch*
-- Amazon disclosed AI agents exploited a 0-day in 11 minutes via Cairn framework — implication for focus #3: agent reliability is now a security concern, not just a quota one
-- UK NCSC warns "marked rise" in AI-driven attacks since September — implication for focus #1: the heartbeat's P0 checks are more critical than ever
+- [token-movers]: CoinGecko markets endpoint still overloaded (529 errors) — report based on limited trending data only
+- [digest]: last run 2 days ago (2026-11-25) — PRs #27, #26, #24 open >2 weeks with no activity
+- [heartbeat]: var set to "brief" — ambient check branch disabled since 2026-10-14, status page stale
 
 *Running today*
-- price-alert @ 00:00 UTC (hourly, next 12:00 UTC)
-- github-monitor @ 09:00 UTC
-- token-movers @ 12:00 UTC
+
+- heartbeat brief @ 08:00 UTC
 - digest @ 14:00 UTC
+- github-monitor @ 09:00 UTC
+- price-alert @ 1:00, 2:00, 3:00, 4:00, 5:00, 6:00, 7:00, 8:00 UTC

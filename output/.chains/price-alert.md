@@ -1,25 +1,24 @@
-Perfect! The price-alert skill has completed successfully. Here's a summary:
-
 ## Summary
 
-**Skill**: price-alert
+**Price-alert skill completed successfully.**
 
-**Action**: Monitored WBTC for price-alert conditions (ATH, sharp 1h moves, operator targets)
+### Gate Evaluations
+- **ATH gate**: QUIET — $60,739.07 vs prior ATH $67,957.69 (unchanged)
+- **Sharp-move gate**: QUIET — 1h change +0.26% (threshold: ±20%)
+- **Target gate**: N/A — no targets defined
 
-**Results**:
-- **Token**: WBTC (Wrapped BTC) on Ethereum
-- **Current Price**: $60,220.74
-- **1h Change**: -1.28%
-- **24h Change**: +3.24%
-- **ATH Status**: No new ATH ($67,957.69 from 2026-11-14, unchanged)
-- **Sharp-Move Gate**: Quiet (threshold is ±20%)
-- **Target Gate**: Not applicable (no targets configured)
+### Token Data
+- **Token**: WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
+- **Chain**: ethereum
+- **Current Price**: $60,739.07
+- **1h Change**: +0.26%
+- **24h Change**: +0.36%
+- **Deepest Pool**: Uniswap V3 USDT (~$30M liquidity)
 
-**State Updates**:
-- Updated `memory/topics/price-alert-state.json` with new `last_run_at` timestamp
+### Files Modified
+- `memory/topics/price-alert-state.json` — updated `last_run_at` to `2026-11-27T00:00:00Z`
+- `memory/logs/2026-11-26.md` — appended new run entry
 
-**Log Entry**: Appended to `memory/logs/2026-11-26.md`
-
-**Notifications**: None sent (no alert conditions triggered)
-
-**Status**: `PRICE_ALERT_OK` — Run completed cleanly with no gates firing.
+### Status
+- **STATUS**: PRICE_ALERT_OK
+- **Notifications sent**: 0 (no gates fired)

@@ -1,17 +1,11 @@
 {
   "skill": "price-alert",
-  "last_analyzed": "2026-11-28T01:35:24Z",
+  "last_analyzed": "2026-11-28T09:30:00Z",
   "quality_score": 4,
-  "assessment": "Clean, well-structured gate evaluation with verifiable results",
+  "assessment": "Substantive and well-structured price alert for WBTC with verifiable data points, clean no-change report, and proper logging.",
   "flags": [],
   "avg_score": 3.83,
   "history": [
-    {
-      "date": "2026-11-15",
-      "score": 4,
-      "ts": "2026-11-15T17:50:52Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-11-16",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-28",
       "score": 4,
       "ts": "2026-11-28T01:35:24Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-28",
+      "score": 4,
+      "ts": "2026-11-28T09:30:00Z",
       "harness": "claude"
     }
   ]

@@ -100,6 +100,7 @@ makes the skill exit silently with `PRICE_ALERT_NO_TOKEN`._
 - [github-monitor (2026-10-05)](memory/logs/2026-10-05.md) — 1 repo scanned, no alerts
 
 ## Today's Activity
+- [token-movers (2026-11-28)](memory/logs/2026-11-28.md) — Global CoinGecko scan: Quiet tape — 2/6 green (33%), PORTAL extreme microcap pump (24h +216%, PUMP-RISK), HYPE strong trending move
 - [token-movers (2026-11-27)](memory/logs/2026-11-27.md) — Global CoinGecko scan: CoinGecko markets endpoint overloaded (529 errors) — report based on limited trending data only
 - [token-movers (2026-11-26)](memory/logs/2026-11-26.md) — Global CoinGecko scan: CoinGecko markets endpoint overloaded (529 errors) — report based on limited trending data only
 - [token-movers (2026-11-25)](memory/logs/2026-11-25.md) — Global CoinGecko scan: Mixed tape — large caps generally green, small caps extremely active with 20%+ movers

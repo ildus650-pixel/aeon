@@ -1,17 +1,14 @@
 {
   "skill": "token-movers",
-  "last_analyzed": "2026-11-27T00:02:28Z",
-  "quality_score": 4,
-  "assessment": "Substantive report with specific token movements and clear limitations; verifiable data from CoinGecko trending endpoint",
-  "flags": [],
+  "last_analyzed": "2026-11-28T01:40:49Z",
+  "quality_score": 2,
+  "assessment": "Ran but produced minimal, boilerplate placeholder without substantive content or verifiable findings.",
+  "flags": [
+    "low_quality",
+    "generic_content"
+  ],
   "avg_score": 2.93,
   "history": [
-    {
-      "date": "2026-10-12",
-      "score": 2,
-      "ts": "2026-10-12T23:38:23Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-13",
       "score": 4,
@@ -184,6 +181,12 @@
       "date": "2026-11-27",
       "score": 4,
       "ts": "2026-11-27T00:02:28Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-28",
+      "score": 2,
+      "ts": "2026-11-28T01:40:49Z",
       "harness": "claude"
     }
   ]

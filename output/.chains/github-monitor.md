@@ -1,18 +1,19 @@
-Perfect! The github-monitor skill has completed. Here's the summary:
-
 ## Summary
 
-**Executed github-monitor skill — monitor view**
+Executed the **GitHub Monitor** skill in **monitor** view on `aeonfun/aeon`:
 
-- **View**: `monitor` (default, no scope)
-- **Repos scanned**: aeonfun/aeon (1 repo)
-- **PRs**: None open (search returned empty)
-- **Issues**: None open (returned empty)
-- **Releases**: Found v0.1.0 (published 2026-07-09) — outside 24h window
-- **Alerts**: None (ACT NOW=0, REVIEW=0, INFO=0)
+### What I did
+- Read `memory/MEMORY.md` and the last 2 days of logs for deduplication
+- Scanned for: open PRs, open issues, and releases within the last 24h
+- Collected data via `gh` CLI (release list via REST, PRs/issues via GraphQL where needed)
 
-**Action taken:**
-- Logged clean run to `memory/logs/2026-11-25.md`
-- Did not send notification (per skill rule: silence is correct signal when nothing changed)
+### Results
+- **Open PRs**: 0
+- **Open issues**: 0
+- **Releases**: Found 1 (`v0.1.0`), published 2026-07-09 (outside 24h window)
 
-**Note:** The PR fetch had issues with GitHub token scopes, but the `gh search prs` command successfully returned no open PRs, and issues were empty. The releases check confirmed no recent activity.
+### Conclusion
+All tiers (ACT NOW, REVIEW, INFO) are empty. Per the skill's design, silence is the correct signal — no notification sent.
+
+### Files modified
+- `memory/logs/2026-11-28.md` — Added `github-monitor` section with empty-state log

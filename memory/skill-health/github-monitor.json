@@ -1,17 +1,11 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-11-25T14:41:37Z",
+  "last_analyzed": "2026-11-28T09:27:51Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured verification of monitored repos; correctly silent on no-change, no flags needed",
+  "assessment": "Solid, signal-focused monitoring output that correctly interprets silence as the intended signal. Clear structure, verifiable results, and well-aligned with the 'surface signal early' priority.",
   "flags": [],
   "avg_score": 3.53,
   "history": [
-    {
-      "date": "2026-10-16",
-      "score": 4,
-      "ts": "2026-10-16T11:56:10Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-18",
       "score": 5,
@@ -184,6 +178,12 @@
       "date": "2026-11-25",
       "score": 4,
       "ts": "2026-11-25T14:41:37Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-28",
+      "score": 4,
+      "ts": "2026-11-28T09:27:51Z",
       "harness": "claude"
     }
   ]

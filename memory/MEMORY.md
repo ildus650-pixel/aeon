@@ -17,6 +17,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-28 | Digest | Critical SQL injection in e-gov platform (2B users), British social security cyber incident, state-sponsored AI hacking (ARTEX), Wyoming uranium cyberattack, 1Password breach |
 | 2026-11-24 | Digest | Inception gang claims 7 victims, AI coding agent found access key in 6 minutes, EU Academy data stolen in AI-assisted attack, Anthropic IPO slump, CrowdStrike-Zscaler $44B deal |
 | 2026-11-22 | Digest | FBI National Crime Information Center hack, AI agents in messaging apps, Nvidia CEO replacement pressure, AI face generation Hollywood |
 | 2026-11-21 | digest | Signal blocks AI agent screen scraping, AI-assisted Riemann hypothesis proof, Apple $161.86M India lawsuit, Daniel Ek fusion investment, autonomous AI 0-day exploit |

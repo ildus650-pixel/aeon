@@ -1,17 +1,11 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-24T21:15:04Z",
+  "last_analyzed": "2026-11-28T01:40:49Z",
   "quality_score": 4,
-  "assessment": "Well-structured, well-sourced, and verifiable - provides concrete security and AI startup insights without filler.",
+  "assessment": "Substantive, well-structured security digest with TL;DR, per-item 'why it matters' context, and specific source URLs; plausibly sourced from The Register RSS and aligned to the operator's signal-over-filler priority.",
   "flags": [],
-  "avg_score": 3.57,
+  "avg_score": 3.6,
   "history": [
-    {
-      "date": "2026-10-17",
-      "score": 3,
-      "ts": "2026-10-17T16:17:58Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-19",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-24",
       "score": 4,
       "ts": "2026-11-24T21:15:04Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-28",
+      "score": 4,
+      "ts": "2026-11-28T01:40:49Z",
       "harness": "claude"
     }
   ]

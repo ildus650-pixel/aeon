@@ -1,23 +1,32 @@
-*Digest — 2026-11-24*
+ℹ️ Daily Digest
 
-_TL;DR: AI-assisted cyberattacks expose weak security, major cybersecurity deals close, and AI startup valuations face post-IPO pressure._
+*Digest — 2026-11-28*
 
-1. *Inception gang claims 7 victims, denies being ShinyHunters rebrand*
-   A new extortion group claims seven victims including AMD, Cigna, and PepsiCo. Okta links it to ShinyHunters via shared infrastructure and voice phishing tactics, but Inception insists it's a new crew that previously breached the FBI and Clop.
-   https://www.theregister.com/security/2026/11/24/inception-possibly-a-shinyhunters-reboot-claims-seven-victims-in-a-week
+_TL;DR: Critical SQL injection in a free e-government platform exposing two billion users' data leads today's digest, alongside a British social security cyber incident and state-sponsored AI hacking._
 
-2. *AI coding agent found financial firm's access key in under 6 minutes*
-   A hacker used an open-source coding agent, Chrome, and curl to autonomously identify and test credentials, bypassing blocklist defenses. Jesta researchers document how the agent read API docs, followed links, and attempted intrusions in under six minutes.
-   https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes
+1. *Critical SQL injection bug in e-government platform serving 2 billion people*
+   Critical SQL injection vulnerability in a free e-government platform used across ten countries, exposing data for roughly two billion people through unsanitized input.
+   Why it matters: Two billion users' data is exposed across national e-government services; operators must patch immediately and users should monitor for breach notifications.
+   https://www.theregister.com/security/2026/11/27/free-e-government-platform-that-serves-two-billion-people-in-ten-countries-has-critical-sql-injection-bug/5312449
 
-3. *European Commission confirms data stolen in AI-assisted cyberattack*
-   Personal data from EU Academy was stolen during an AI-assisted cyberattack, but the Commission hasn't contacted users directly. The platform will remain offline from November 11 to January 14, 2027 while it rebuilds.
-   https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack
+2. *British social security services taken offline after cyber incident*
+   UK social security technicians pulled services offline following a cyber incident, disrupting access to government benefits.
+   Why it matters: Citizens relying on social security face immediate disruption while systems remain offline for investigation.
+   https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522
 
-4. *Anthropic shares fall below IPO price, worrying AI startups*
-   Anthropic's post-IPO slump is putting pressure on AI startup valuations. The decline comes as the company launches Claude Ship, letting AI agents review and approve code changes.
-   https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups
+3. *Microsoft: China and North Korea hackers using ARTEX AI tool to breach global systems*
+   Microsoft reports threat actors in China and North Korea using the ARTEX AI tool to break into global technology systems — one of the first confirmed cases of state-sponsored AI-assisted hacking at scale.
+   Why it matters: Confirms AI tools are being weaponized by nation-state actors, raising the bar for defensive security.
+   https://www.theregister.com/security/2026/11/26/microsoft-hackers-in-china-n-korea-using-artex-ai-tool-to-break-into-global-tech-systems/5312433
 
-5. *CrowdStrike splashes $44B on Zscaler, customers brace for integration*
-   CrowdStrike agreed to acquire Zscaler for $44 billion, integrating the cloud access security broker into its Falcon platform. Security teams face coordination and compliance challenges.
-   https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill
+4. *Wyoming uranium operation shuts down after cyberattack*
+   A uranium mining operation in Wyoming has ceased operations following a cyberattack, halting production.
+   Why it matters: Direct impact on critical mineral supply chain; industrial control systems remain a prime target for disruptive cyberattacks.
+   https://www.theregister.com/security/2026/11/26/wyoming-uranium-operation-shuts-down-after-cyberattack/5312323
+
+5. *Hackers steal 1Password source code and customer data*
+   Attackers exfiltrated 1Password's source code and customer data; the company states customer passwords remain safe due to its zero-knowledge architecture.
+   Why it matters: Even zero-knowledge password managers are not immune to source code theft; users should monitor for targeted phishing.
+   https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317
+
+*Also worth a glance:* Solana launches solana.ai platform for autonomous AI agents · Nvidia pauses chip shipments to Southeast Asia over governance concerns
